@@ -3,106 +3,339 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>US Visa Photo — Privacy Policy</title>
+    <title>US Visa Photo — Studio-Quality Passport Photos in Seconds</title>
+    <meta name="description" content="Create compliant U.S. visa, passport, and green card photos on your iPhone. AI-powered, 100% on-device. Your photos never leave your phone.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#0071e3',
+                        'brand-dark': '#0059b3',
+                        navy: '#0a1628',
+                    },
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.7;
-            color: #1d1d1f;
-            background: #fff;
-            padding: 40px 20px;
+        .gradient-hero {
+            background: linear-gradient(135deg, #0a1628 0%, #0d2137 50%, #0f2b46 100%);
         }
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 6px;
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
         }
-        .subtitle {
-            font-size: 1.1rem;
-            color: #6e6e73;
-            margin-bottom: 8px;
-        }
-        .updated {
-            font-size: 0.85rem;
-            color: #86868b;
-            margin-bottom: 36px;
-        }
-        h2 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-top: 32px;
-            margin-bottom: 10px;
-        }
-        p, li {
-            font-size: 1rem;
-            color: #1d1d1f;
-            margin-bottom: 12px;
-        }
-        ul {
-            padding-left: 22px;
-            margin-bottom: 12px;
-        }
-        li { margin-bottom: 8px; }
-        strong { font-weight: 600; }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover { text-decoration: underline; }
-        .footer {
-            margin-top: 48px;
-            padding-top: 24px;
-            border-top: 1px solid #e5e5e7;
-            font-size: 0.85rem;
-            color: #86868b;
+        .price-strikethrough {
+            text-decoration: line-through;
+            text-decoration-color: #ef4444;
+            text-decoration-thickness: 2px;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="subtitle">US Visa Photo</p>
-        <p class="updated">Last updated: April 5, 2026</p>
+<body class="bg-white text-gray-900 font-sans antialiased">
 
-        <h2>Overview</h2>
-        <p>US Visa Photo is an iOS application that helps you crop and format photos for U.S. visa (DS-160) applications. Your privacy is important to us, and this app is designed with a privacy-first approach.</p>
-
-        <h2>Data Collection</h2>
-        <p><strong>We do not collect, store, or transmit any personal data.</strong></p>
-        <ul>
-            <li><strong>No photos leave your device.</strong> All image processing — face detection, cropping, background removal — happens entirely on your iPhone using Apple's on-device Vision framework. No images are uploaded to any server.</li>
-            <li><strong>No analytics or tracking.</strong> We do not use any analytics SDKs, crash reporting services, or advertising frameworks.</li>
-            <li><strong>No accounts required.</strong> You do not need to create an account or provide any personal information to use this app.</li>
-            <li><strong>No network requests.</strong> The app does not make any network connections for its core functionality.</li>
-        </ul>
-
-        <h2>Photos Library Access</h2>
-        <p>The app requests access to your photo library solely to let you select a photo for processing. The selected photo is processed in memory on your device and is never transmitted externally.</p>
-
-        <h2>In-App Purchases</h2>
-        <p>Payments are handled entirely by Apple through the App Store. We do not have access to your payment information, Apple ID, or any transaction details beyond what Apple provides to developers (anonymous transaction records). Please refer to <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a> for details on how Apple handles payment data.</p>
-
-        <h2>Third-Party Services</h2>
-        <p>This app does not integrate any third-party services, SDKs, or APIs.</p>
-
-        <h2>Children's Privacy</h2>
-        <p>This app does not knowingly collect any information from children under the age of 13.</p>
-
-        <h2>Changes to This Policy</h2>
-        <p>If we update this privacy policy, the revised version will be posted at this URL with an updated date.</p>
-
-        <h2>Contact</h2>
-        <p>If you have questions about this privacy policy, please contact us at:<br>
-        <a href="mailto:zhangjj2007@yahoo.com">zhangjj2007@yahoo.com</a></p>
-
-        <div class="footer">
-            &copy; 2026 US Visa Photo. All rights reserved.
+    <!-- Nav -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="AppIcon.png" alt="US Visa Photo" class="w-8 h-8 rounded-lg">
+                <span class="font-semibold text-gray-900">US Visa Photo</span>
+            </div>
+            <div class="flex items-center gap-6 text-sm">
+                <a href="#features" class="text-gray-500 hover:text-gray-900 transition hidden sm:block">Features</a>
+                <a href="#pricing" class="text-gray-500 hover:text-gray-900 transition hidden sm:block">Pricing</a>
+                <a href="#download" class="bg-brand text-white px-4 py-1.5 rounded-full text-sm font-medium hover:bg-brand-dark transition">Download</a>
+            </div>
         </div>
-    </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="gradient-hero text-white overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 py-20 md:py-32">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur rounded-full px-4 py-1.5 text-sm mb-8">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+                    <span class="text-gray-200">100% on-device processing — your photos never leave your iPhone</span>
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-6">
+                    Studio-Quality<br>
+                    <span class="text-cyan-400">Passport Photos</span><br>
+                    in Seconds
+                </h1>
+
+                <p class="text-lg md:text-xl text-gray-300 max-w-xl mx-auto mb-10 leading-relaxed">
+                    AI-powered background removal and smart cropping that meets U.S. State Department requirements. No studio visit needed.
+                </p>
+
+                <div id="download" class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#" class="inline-flex items-center gap-2 bg-white text-navy px-8 py-3.5 rounded-xl font-semibold hover:bg-gray-100 transition text-base">
+                        <i data-lucide="download" class="w-5 h-5"></i>
+                        Download on the App Store
+                    </a>
+                    <span class="text-gray-400 text-sm">iOS 17+ &middot; iPhone</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-gray-50 border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 py-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-gray-500">
+            <div class="flex items-center gap-2">
+                <i data-lucide="wifi-off" class="w-4 h-4 text-brand"></i>
+                <span>No internet required</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i data-lucide="eye-off" class="w-4 h-4 text-brand"></i>
+                <span>Zero data collection</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i data-lucide="cpu" class="w-4 h-4 text-brand"></i>
+                <span>Apple Vision AI</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-brand"></i>
+                <span>DS-160 compliant</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 md:py-28">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Everything you need.<br class="hidden md:block"> Nothing you don't.</h2>
+                <p class="text-gray-500 text-lg max-w-xl mx-auto">Three steps. One tap. A compliant photo ready for your visa application.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="card-hover bg-white border border-gray-100 rounded-2xl p-8">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-5">
+                        <i data-lucide="sparkles" class="w-6 h-6 text-brand"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">AI Background Removal</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Instantly removes any background and replaces it with a clean white — the only color accepted by U.S. consulates. Powered by Apple's on-device neural engine.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="card-hover bg-white border border-gray-100 rounded-2xl p-8">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-5">
+                        <i data-lucide="scan-face" class="w-6 h-6 text-brand"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Smart Compliance Cropping</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Automatically positions your head at 50–69% of frame height with eyes at 56–69% from the bottom — exactly what the State Department requires. No guesswork.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="card-hover bg-white border border-gray-100 rounded-2xl p-8">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-5">
+                        <i data-lucide="lock" class="w-6 h-6 text-brand"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">100% Private &amp; Secure</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Every pixel is processed on your iPhone. No uploads, no servers, no analytics. Your biometric data stays where it belongs — with you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="bg-gray-50 py-20 md:py-28">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Three steps. Done.</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-5">1</div>
+                    <h3 class="font-semibold mb-2">Pick a Photo</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Choose any front-facing photo from your library. Natural lighting works best.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-5">2</div>
+                    <h3 class="font-semibold mb-2">Auto Process</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">AI removes the background, crops to 2×2", and checks compliance — all in seconds.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-5">3</div>
+                    <h3 class="font-semibold mb-2">Export &amp; Submit</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Unlock for $1.99, save to Photos, and upload directly to your DS-160 form or print at home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 md:py-28">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Save $15 every time.</h2>
+                <p class="text-gray-500 text-lg max-w-xl mx-auto">Why drive to a pharmacy and wait in line when your iPhone does it better?</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <!-- Our price -->
+                <div class="bg-brand text-white rounded-2xl p-8 relative md:scale-105 shadow-xl shadow-brand/20">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-cyan-400 text-navy text-xs font-bold px-3 py-1 rounded-full">BEST VALUE</div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="AppIcon.png" alt="US Visa Photo" class="w-10 h-10 rounded-xl">
+                        <span class="font-semibold">US Visa Photo</span>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold">$1.99</span>
+                        <span class="text-white/70 ml-1">/ photo</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-white/90">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0"></i>
+                            DS-160 compliant (600–1200 px)
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0"></i>
+                            AI background removal
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0"></i>
+                            Instant — done in seconds
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0"></i>
+                            Retry unlimited times
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 mt-0.5 text-cyan-400 flex-shrink-0"></i>
+                            100% private, on-device
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- CVS -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center">
+                            <i data-lucide="store" class="w-5 h-5 text-red-400"></i>
+                        </div>
+                        <span class="font-semibold text-gray-400">CVS Pharmacy</span>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-gray-300">$16.99</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="x" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                            Drive to store
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="x" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                            Wait in line
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="x" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                            Physical prints only
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="x" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                            Retakes cost extra
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Walgreens -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center">
+                            <i data-lucide="store" class="w-5 h-5 text-green-400"></i>
+                        </div>
+                        <span class="font-semibold text-gray-400">Walgreens</span>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-gray-300">$16.99</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="x" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                            Drive to store
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="x" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                            Wait in line
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="x" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                            Physical prints only
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="x" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                            Retakes cost extra
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="bg-gray-50 py-20 md:py-28">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Works for all U.S. photo IDs</h2>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-3 max-w-3xl mx-auto">
+                <span class="bg-white border border-gray-200 rounded-full px-5 py-2 text-sm font-medium">🛂 U.S. Visa (DS-160)</span>
+                <span class="bg-white border border-gray-200 rounded-full px-5 py-2 text-sm font-medium">🪪 U.S. Passport</span>
+                <span class="bg-white border border-gray-200 rounded-full px-5 py-2 text-sm font-medium">🟢 Green Card</span>
+                <span class="bg-white border border-gray-200 rounded-full px-5 py-2 text-sm font-medium">📋 Passport Renewal</span>
+                <span class="bg-white border border-gray-200 rounded-full px-5 py-2 text-sm font-medium">🎓 Student Visa (F-1)</span>
+                <span class="bg-white border border-gray-200 rounded-full px-5 py-2 text-sm font-medium">💼 Work Visa (H-1B)</span>
+                <span class="bg-white border border-gray-200 rounded-full px-5 py-2 text-sm font-medium">🏠 DV Lottery</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 md:py-28">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <img src="AppIcon.png" alt="US Visa Photo" class="w-20 h-20 rounded-[22px] mx-auto mb-8 shadow-lg">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Your next visa photo<br>is already on your phone.</h2>
+            <p class="text-gray-500 text-lg mb-10">Pick a selfie. Get a compliant photo. Done.</p>
+            <a href="#" class="inline-flex items-center gap-2 bg-brand text-white px-8 py-4 rounded-xl font-semibold hover:bg-brand-dark transition text-base">
+                <i data-lucide="download" class="w-5 h-5"></i>
+                Download on the App Store
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 py-10">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+            <div class="flex items-center gap-3">
+                <img src="AppIcon.png" alt="US Visa Photo" class="w-6 h-6 rounded-md">
+                <span>&copy; 2026 US Visa Photo. All rights reserved.</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="privacy.html" class="hover:text-gray-600 transition">Privacy Policy</a>
+                <a href="mailto:zhangjj2007@yahoo.com" class="hover:text-gray-600 transition">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
 </body>
 </html>
