@@ -39,6 +39,22 @@
             text-decoration-color: #ef4444;
             text-decoration-thickness: 2px;
         }
+        @keyframes complianceRowIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .compliance-row {
+            opacity: 0;
+            animation: complianceRowIn 0.5s ease forwards;
+        }
+        .compliance-row:nth-child(1) { animation-delay: 0.05s; }
+        .compliance-row:nth-child(2) { animation-delay: 0.12s; }
+        .compliance-row:nth-child(3) { animation-delay: 0.19s; }
+        .compliance-row:nth-child(4) { animation-delay: 0.26s; }
+        .compliance-row:nth-child(5) { animation-delay: 0.33s; }
+        .compliance-row:nth-child(6) { animation-delay: 0.40s; }
+        .compliance-row:nth-child(7) { animation-delay: 0.47s; }
+        .compliance-row:nth-child(8) { animation-delay: 0.54s; }
     </style>
 </head>
 <body class="bg-white text-gray-900 font-sans antialiased">
@@ -52,8 +68,9 @@
             </div>
             <div class="flex items-center gap-6 text-sm">
                 <a href="#features" class="text-gray-500 hover:text-gray-900 transition hidden sm:block">Features</a>
+                <a href="#compliance-checklist" class="text-gray-500 hover:text-gray-900 transition hidden sm:block">Compliance</a>
                 <a href="#pricing" class="text-gray-500 hover:text-gray-900 transition hidden sm:block">Pricing</a>
-                <a href="#download" class="bg-brand text-white px-4 py-1.5 rounded-full text-sm font-medium hover:bg-brand-dark transition">Download</a>
+                <a href="https://apps.apple.com/us/app/us-visa-photo/id6761959861" target="_blank" rel="noopener noreferrer" class="bg-brand text-white px-4 py-1.5 rounded-full text-sm font-medium hover:bg-brand-dark transition">Download</a>
             </div>
         </div>
     </nav>
@@ -78,7 +95,7 @@
                 </p>
 
                 <div id="download" class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#" class="inline-flex items-center gap-2 bg-white text-navy px-8 py-3.5 rounded-xl font-semibold hover:bg-gray-100 transition text-base">
+                    <a href="https://apps.apple.com/us/app/us-visa-photo/id6761959861" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-navy px-8 py-3.5 rounded-xl font-semibold hover:bg-gray-100 transition text-base">
                         <i data-lucide="download" class="w-5 h-5"></i>
                         Download on the App Store
                     </a>
@@ -152,6 +169,53 @@
             <div class="mt-16 text-center">
                 <p class="text-gray-400 text-sm mb-4">Real-time compliance check in the app</p>
                 <img src="demo-app.png" alt="App compliance preview" class="mx-auto rounded-[2rem] shadow-2xl border border-gray-200 max-w-xs">
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance checklist (matches in-app export checklist) -->
+    <section id="compliance-checklist" class="py-16 md:py-24 bg-white border-t border-gray-100">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">What we check for every export</h2>
+                <p class="text-gray-500">The app walks you through the same DS-160&ndash;style requirements as a live checklist after each successful crop.</p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl border border-gray-100 p-6 md:p-8">
+                <ul class="space-y-4 text-left text-sm md:text-base text-gray-800">
+                    <li class="compliance-row flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                        <span><strong>Print size</strong> &mdash; 2 &times; 2 in (51 &times; 51 mm), square crop.</span>
+                    </li>
+                    <li class="compliance-row flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                        <span><strong>Digital resolution</strong> &mdash; square side between 600 and 1200 px; the app shows your exact export size (e.g. 1200 &times; 1200).</span>
+                    </li>
+                    <li class="compliance-row flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                        <span><strong>Eye position</strong> &mdash; from the bottom of the frame, U.S. guidance targets 56&ndash;69%; we display your measured percentage.</span>
+                    </li>
+                    <li class="compliance-row flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                        <span><strong>Head height</strong> &mdash; 50&ndash;69% of the image height; we show your measured value against the template.</span>
+                    </li>
+                    <li class="compliance-row flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                        <span><strong>Background</strong> &mdash; plain white or off-white after processing.</span>
+                    </li>
+                    <li class="compliance-row flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                        <span><strong>Lighting</strong> &mdash; even lighting; avoid heavy shadows on the face (follow our photo tips when shooting).</span>
+                    </li>
+                    <li class="compliance-row flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                        <span><strong>File format</strong> &mdash; exported as JPEG for upload or printing.</span>
+                    </li>
+                    <li class="compliance-row flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                        <span><strong>No biometric editing</strong> &mdash; we do not reshape or slim the outline of the head, face, or neck; cropping and background replacement only.</span>
+                    </li>
+                </ul>
+                <p class="text-xs text-gray-400 mt-6 leading-relaxed">Final acceptance is always at the discretion of the U.S. embassy, consulate, or the system you upload to. Use official State Department instructions when in doubt.</p>
             </div>
         </div>
     </section>
@@ -361,7 +425,7 @@
             <img src="AppIcon.png" alt="US Visa Photo" class="w-20 h-20 rounded-[22px] mx-auto mb-8 shadow-lg">
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Your next visa photo<br>is already on your phone.</h2>
             <p class="text-gray-500 text-lg mb-10">Pick a selfie. Get a compliant photo. Done.</p>
-            <a href="#" class="inline-flex items-center gap-2 bg-brand text-white px-8 py-4 rounded-xl font-semibold hover:bg-brand-dark transition text-base">
+            <a href="https://apps.apple.com/us/app/us-visa-photo/id6761959861" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-brand text-white px-8 py-4 rounded-xl font-semibold hover:bg-brand-dark transition text-base">
                 <i data-lucide="download" class="w-5 h-5"></i>
                 Download on the App Store
             </a>
