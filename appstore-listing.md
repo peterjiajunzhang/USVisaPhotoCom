@@ -1,5 +1,11 @@
 # App Store Connect — Listing Content
 
+**Live product page (US):** [US Visa Photo on the App Store](https://apps.apple.com/us/app/us-visa-photo/id6761959861)
+
+**Marketing / support site:** [https://peterjiajunzhang.github.io/USVisaPhotoCom/](https://peterjiajunzhang.github.io/USVisaPhotoCom/)
+
+---
+
 ## App Name
 US Visa Photo
 
@@ -10,70 +16,77 @@ AI Passport Photo in Seconds
 
 ## 1. Screenshots — iPhone 6.5" (1290 × 2796 px)
 
-Recommended 6 screenshots in this order:
+Recommended order (up to 10 on the App Store):
 
 | # | Screen | Caption |
 |---|--------|---------|
-| 1 | Before/after split — original photo on left, white-background result on right | **Before → After. One tap.** |
-| 2 | Main screen showing "Ready to use" with the schematic overlay | **Meets U.S. State Department specs** |
-| 3 | Paywall screen showing preview + $1.99 price | **$1.99 — skip the $17 pharmacy trip** |
-| 4 | Export/share screen with full-resolution photo | **Export, save, or print at home** |
-| 5 | Photo tips / guidelines checklist | **Built-in compliance checker** |
-| 6 | Processing screen showing "Analyzing photo…" | **AI-powered. 100% on your iPhone.** |
+| 1 | Before/after — original vs white-background result | **Before → After. One tap.** |
+| 2 | Main screen: **Take Photo** + **Choose from Photos**, then workflow | **Camera or library — your choice** |
+| 3 | After crop: **Ready to use** + animated **export checklist** (size, px, head %, eye %, …) | **See every spec before you pay** |
+| 4 | Schematic overlay on soft preview (head / eye guides) | **Meets U.S. State Department layout** |
+| 5 | Paywall: preview + price + benefits | **$1.99 — skip the $17 pharmacy trip** |
+| 6 | Unlocked: full image + **Download / share** | **Export, save, or print at home** |
+| 7 | **Saved Photos** grid + detail (share / delete) | **Past exports stay on this iPhone** |
+| 8 | Toolbar **language** menu (globe): EN / 简中 / 繁中 / ES / JA / DE / FR | **7 languages, one tap** |
+| 9 | Photo tips disclosure + checklist | **Built-in shooting tips** |
+| 10 | Processing: **Analyzing photo…** | **AI on-device. No upload.** |
 
-> **How to capture:** Run the app on an iPhone 15 Pro Max (or 15 Plus) in Simulator or device. Take screenshots with ⌘+S (Simulator) or Side+Volume Up (device). The resolution will match 6.5" requirements.
+> **How to capture:** Run on iPhone 15 Pro Max or 15 Plus (or any 6.5" class device). Simulator: ⌘+S. Device: Side + Volume Up.
 
 ---
 
 ## 2. Promotional Text (170 chars max — can be updated anytime without review)
 
 ```
-Get compliant U.S. visa & passport photos instantly. AI removes the background, crops to 2×2", and checks State Department specs — all on your iPhone. No upload, no studio.
+Get compliant U.S. visa & passport photos on your iPhone. Camera or library, 7 languages, DS-160 crop + checklist — all on-device. No upload, no studio.
 ```
 
-(170 chars ✓)
+(152 characters — under the 170 limit for Promotional Text.)
 
 ---
 
 ## 3. Description (4000 chars max)
 
 ```
-US Visa Photo turns any selfie into a compliant 2×2" visa photo in seconds — right on your iPhone.
+US Visa Photo turns any front-facing shot into a compliant 2×2" visa-style photo — right on your iPhone.
 
 WHAT IT DOES
-• AI Background Removal — Instantly replaces any backdrop with a clean white background, the only color accepted by U.S. consulates.
-• Smart Compliance Cropping — Automatically positions your head at 50–69% of frame height and eyes at 56–69% from the bottom, exactly matching State Department requirements.
-• Real-Time Validation — Shows you a schematic overlay with measured head ratio and eye position before you export. If something's off, you'll know immediately.
-• High-Resolution Export — Generates a 600–1200 px square image ready for DS-160 online upload or home printing.
+• AI background removal — Replaces any backdrop with a clean white background suitable for U.S. visa-style submissions.
+• Smart DS-160 cropping — Targets head height 50–69% of the frame and eyes 56–69% from the bottom, aligned with the State Department digital template.
+• Live measurements — Schematic overlay shows head and eye percentages before you export.
+• Export checklist — After a successful preview, an animated checklist walks through size (2×2"), pixel range (600–1200, with your actual export size), measured head % and eye-from-bottom %, white background, lighting guidance, JPEG export, and our no–face-reshaping policy.
+• High-resolution export — Square JPEG from 600 up to 1200 px per side for DS-160-style uploads or printing.
+
+INPUT & LANGUAGE
+• Take a new picture with the camera, or pick from your photo library.
+• In-app language switcher: English, 简体中文, 繁體中文, Español, 日本語, Deutsch, Français — defaults to your device language when supported.
 
 WHY CHOOSE US VISA PHOTO
-• 100% Private — Every pixel is processed on your iPhone using Apple's Vision framework. No photos are uploaded. No servers. No analytics. No accounts.
-• Save Money — Just $1.99 per photo, compared to $16.99+ at CVS or Walgreens. Try different photos as many times as you want before you buy.
-• Save Time — No driving, no waiting in line, no retake fees. Done in under 10 seconds.
-• No Subscription — Pay only when you're happy with the result. One-time purchase per photo.
+• 100% private — Processing uses Apple’s Vision framework on-device. No photo upload for editing. No accounts. No analytics SDKs in the app.
+• Save money — $1.99 per export compared to $16+ at many retail photo kiosks. Reprocess as many times as you like before purchasing.
+• Save time — No trip to a studio for a single print. Typical flow completes in seconds on-device.
+• No subscription — One-time unlock per exported photo.
+
+SAVED PHOTOS
+• After a successful purchase, the exported image can be kept in the app’s on-device “Saved Photos” list (same device only; deleting the app removes local app data). Share or delete from the detail screen anytime.
 
 WORKS FOR
-• U.S. Visa applications (DS-160)
-• U.S. Passport (new & renewal)
-• Green Card / Permanent Resident
-• DV Lottery
-• Student Visa (F-1, J-1)
-• Work Visa (H-1B, L-1, O-1)
+• U.S. Nonimmigrant visa (DS-160) digital photo workflows
+• U.S. Passport-style 2×2" photos (verify current Department of State / USPS rules before submitting)
+• Green Card / permanent resident–style submissions where a 2×2" digital image is accepted
+• DV Lottery, student (F/J), work (H/L/O), and other categories that use the same photo spec — always confirm with official instructions.
 
 HOW IT WORKS
-1. Pick any front-facing photo from your library.
-2. Tap "Crop to DS-160" — the AI analyzes your face, removes the background, and crops to spec.
-3. Preview the result with a compliance overlay showing exact measurements.
-4. Unlock for $1.99, then save to Photos or share directly.
+1. Tap Take Photo or Choose from Photos.
+2. Tap “Crop to DS-160 & remove background” — the app detects the face, crops to a square, and composites a white background.
+3. Review the preview, overlay numbers, and animated export checklist.
+4. Unlock with a one-time in-app purchase when you’re satisfied, then save or share the JPEG. Find past exports under Saved Photos.
 
-TECHNICAL DETAILS
-• Powered by Apple Vision framework (on-device neural engine)
-• Outputs 2×2" square at 600–1200 px (meets DS-160 digital requirements)
-• White background (RGB 255,255,255)
-• Validates head size, eye position, and framing automatically
-• No internet connection required for processing
+TECHNICAL NOTES
+• iOS 17+. iPhone. Core processing does not require internet; App Store / StoreKit needs connectivity for purchases.
+• Export compliance and encryption: see your App Store Connect answers; the app does not add its own cloud storage for user photos.
 
-Your photos never leave your device. Period.
+Your edited images are not sent to our servers for processing. Final acceptance of any photo remains with the U.S. government or the system you upload to.
 ```
 
 ---
@@ -81,12 +94,12 @@ Your photos never leave your device. Period.
 ## 4. Keywords (100 chars max, comma-separated)
 
 ```
-passport,DS-160,2x2,ID,green card,immigration,background,removal,crop,biometric,selfie,DV lottery
+passport,DS-160,2x2,ID,green,card,crop,selfie,DV,photo,library,camera,multilingual,中文,visa
 ```
 
-(98 chars ✓)
+(91 characters — under the 100 limit.)
 
-> Note: Don't repeat words already in your app name ("US", "visa", "photo" are already indexed).
+> Don’t repeat words from the app name that Apple already indexes (“US”, “visa”, “photo”).
 
 ---
 
@@ -104,6 +117,8 @@ https://peterjiajunzhang.github.io/USVisaPhotoCom/
 https://peterjiajunzhang.github.io/USVisaPhotoCom/
 ```
 
+(Optional: use the App Store URL as marketing URL — usually the website is better for press and policy links.)
+
 ---
 
 ## 7. Copyright
@@ -116,22 +131,36 @@ https://peterjiajunzhang.github.io/USVisaPhotoCom/
 
 ## 8. Routing App Coverage File
 
-**Not applicable.** This field is only for apps whose features vary by geographic location (e.g., transit apps, region-locked content). US Visa Photo works the same everywhere — leave this blank.
+**Not applicable.** Leave blank unless you ship region-dependent routing features.
 
 ---
 
 ## Additional Fields
 
 ### Age Rating
-4+ (no objectionable content)
+4+
 
 ### Price
-Free (with $1.99 consumable in-app purchase)
+Free app with **$1.99** consumable IAP (“Single Photo Export” or equivalent product id in Connect).
 
 ### Category
-Primary: **Photography**
-Secondary: **Utilities**
+Use what matches your live listing. Examples:
+- **Primary:** Utilities *or* Photography  
+- **Secondary:** Photography *or* Utilities  
 
-### App Privacy (App Store Privacy Labels)
-Select: **Data Not Collected**
-(The app does not collect any data from users.)
+Align with the category you selected in App Store Connect to avoid confusion.
+
+### App Privacy (labels)
+**Data Not Collected** — consistent with on-device processing and no first-party analytics in the app binary.
+
+### What’s new (release notes template)
+
+```
+• Take a new photo in-app or choose from your library.
+• Seven interface languages with an in-app switcher.
+• Animated export checklist after each successful crop.
+• Saved Photos: keep past exports on this iPhone; share or delete anytime.
+• UI polish and bug fixes.
+```
+
+(Trim to your actual ship contents per version.)
