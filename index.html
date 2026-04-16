@@ -55,6 +55,47 @@
         .compliance-row:nth-child(6) { animation-delay: 0.40s; }
         .compliance-row:nth-child(7) { animation-delay: 0.47s; }
         .compliance-row:nth-child(8) { animation-delay: 0.54s; }
+        /* Demo wall (minimal): results grid + originals film strip */
+        .demo-wall-img {
+            aspect-ratio: 1;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 1.25rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            background: #fff;
+        }
+        .demo-film {
+            display: flex;
+            gap: 14px;
+            overflow-x: auto;
+            padding: 4px 2px 10px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .demo-film::-webkit-scrollbar { height: 8px; }
+        .demo-film::-webkit-scrollbar-thumb { background: rgba(15, 23, 42, 0.16); border-radius: 999px; }
+        .demo-film-item {
+            flex: 0 0 auto;
+            width: 148px;
+            scroll-snap-align: start;
+        }
+        .demo-film-thumb {
+            width: 148px;
+            height: 148px;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 1px solid rgba(15, 23, 42, 0.10);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+            background: #0a1628;
+        }
+        .demo-film-label {
+            margin-top: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            color: rgba(15, 23, 42, 0.55);
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900 font-sans antialiased">
@@ -67,6 +108,7 @@
                 <span class="font-semibold text-gray-900">US Visa Photo</span>
             </div>
             <div class="flex items-center gap-6 text-sm">
+                <a href="#demos" class="text-gray-500 hover:text-gray-900 transition hidden sm:block">Demos</a>
                 <a href="#features" class="text-gray-500 hover:text-gray-900 transition hidden sm:block">Features</a>
                 <a href="#compliance-checklist" class="text-gray-500 hover:text-gray-900 transition hidden sm:block">Compliance</a>
                 <a href="#languages" class="text-gray-500 hover:text-gray-900 transition hidden sm:block">Languages</a>
@@ -128,48 +170,65 @@
         </div>
     </section>
 
-    <!-- Before / After Demo -->
-    <section class="py-20 md:py-28">
+    <!-- Before / After Demo collection -->
+    <section id="demos" class="py-20 md:py-28 scroll-mt-20">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-14">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">See the difference.</h2>
-                <p class="text-gray-500 text-lg max-w-xl mx-auto">From a casual snapshot to a compliant visa photo — automatically.</p>
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Any background in. DS-160 out.</h2>
+                <p class="text-gray-500 text-lg max-w-3xl mx-auto">Four real outputs with a clean white background and compliant crop. Scroll the originals below to see the variety of input scenes.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 items-center max-w-5xl mx-auto">
-                <!-- Original -->
-                <div class="text-center">
-                    <div class="relative inline-block">
-                        <img src="demo-original.png" alt="Original photo" class="rounded-2xl shadow-lg w-full max-w-xs mx-auto">
-                        <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">Original photo</span>
-                    </div>
-                </div>
+            <!-- Results wall -->
+            <div class="grid sm:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+                <figure class="relative">
+                    <img src="demos/demo-01-result.png" alt="DS-160 result example 1" class="demo-wall-img" width="800" height="800" decoding="async">
+                </figure>
+                <figure class="relative">
+                    <img src="demos/demo-02-result.png" alt="DS-160 result example 2" class="demo-wall-img" width="800" height="800" decoding="async">
+                </figure>
+                <figure class="relative">
+                    <img src="demos/demo-03-result.png" alt="DS-160 result example 3" class="demo-wall-img" width="800" height="800" decoding="async">
+                </figure>
+                <figure class="relative">
+                    <img src="demos/demo-04-result.png" alt="DS-160 result example 4" class="demo-wall-img" width="800" height="800" decoding="async">
+                </figure>
+            </div>
 
-                <!-- Arrow -->
-                <div class="flex items-center justify-center">
-                    <div class="hidden md:flex flex-col items-center gap-2">
-                        <i data-lucide="arrow-right" class="w-10 h-10 text-brand"></i>
-                        <span class="text-xs text-gray-400 font-medium">AI processes<br>in seconds</span>
-                    </div>
-                    <div class="md:hidden flex items-center gap-2 py-4">
-                        <i data-lucide="arrow-down" class="w-8 h-8 text-brand"></i>
-                        <span class="text-xs text-gray-400 font-medium">AI processes in seconds</span>
-                    </div>
+            <!-- Originals film strip -->
+            <div class="mt-10 max-w-5xl mx-auto">
+                <div class="flex items-center justify-between gap-4 mb-3">
+                    <p class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Originals (different scenes)</p>
+                    <p class="text-xs text-gray-400 hidden sm:block">Scroll &rarr;</p>
                 </div>
-
-                <!-- Result -->
-                <div class="text-center">
-                    <div class="relative inline-block">
-                        <img src="demo-result.png" alt="Compliant visa photo" class="rounded-2xl shadow-lg w-full max-w-xs mx-auto border border-gray-100">
-                        <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-brand text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">DS-160 ready</span>
+                <div class="demo-film" aria-label="Original photo film strip">
+                    <div class="demo-film-item">
+                        <img src="demos/demo-01-original.png" alt="Original example 1" class="demo-film-thumb" width="296" height="296" decoding="async">
+                        <div class="demo-film-label">Everyday portrait</div>
+                    </div>
+                    <div class="demo-film-item">
+                        <img src="demos/demo-02-original.png" alt="Original example 2" class="demo-film-thumb" width="296" height="296" decoding="async">
+                        <div class="demo-film-label">Indoor room</div>
+                    </div>
+                    <div class="demo-film-item">
+                        <img src="demos/demo-03-original.png" alt="Original example 3" class="demo-film-thumb" width="296" height="296" decoding="async">
+                        <div class="demo-film-label">Outdoor + dark hoodie</div>
+                    </div>
+                    <div class="demo-film-item">
+                        <img src="demos/demo-04-original.png" alt="Original example 4" class="demo-film-thumb" width="296" height="296" decoding="async">
+                        <div class="demo-film-label">Busy background</div>
                     </div>
                 </div>
             </div>
 
             <!-- App screenshot -->
-            <div class="mt-16 text-center">
+            <div class="mt-20 text-center">
                 <p class="text-gray-400 text-sm mb-4">Real-time compliance check in the app</p>
-                <img src="demo-app.png" alt="App compliance preview" class="mx-auto rounded-[2rem] shadow-2xl border border-gray-200 max-w-xs">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center max-w-6xl mx-auto">
+                    <img src="demo-app-0.png" alt="Pick a photo screen preview" class="rounded-[2rem] shadow-2xl border border-gray-200 w-full max-w-xs" width="390" height="844" decoding="async">
+                    <img src="demo-app-1.png" alt="App checklist preview" class="rounded-[2rem] shadow-2xl border border-gray-200 w-full max-w-xs" width="390" height="844" decoding="async">
+                    <img src="demo-app-2.png" alt="App paywall preview" class="rounded-[2rem] shadow-2xl border border-gray-200 w-full max-w-xs" width="390" height="844" decoding="async">
+                    <img src="demo-app-3.png" alt="Saved photo detail preview" class="rounded-[2rem] shadow-2xl border border-gray-200 w-full max-w-xs" width="390" height="844" decoding="async">
+                </div>
             </div>
         </div>
     </section>
@@ -470,6 +529,11 @@
         </div>
     </footer>
 
+    <script>
+    (function () {
+        // Intentionally empty: demos are static in the minimal layout.
+    })();
+    </script>
     <script>lucide.createIcons();</script>
 </body>
 </html>
