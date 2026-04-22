@@ -1,0 +1,16 @@
+{
+  "name": "usvisaphoto-appstore-marketing",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "generate": "node generate.mjs",
+    "build:site-shots": "node build-site-shots-html.mjs",
+    "export:site-shots": "node export-site-shots.mjs",
+    "site-shots": "node build-site-shots-html.mjs && node export-site-shots.mjs",
+    "site-shots:appstore-6.5": "node build-site-shots-html.mjs --config site-shots-appstore.json && node export-site-shots.mjs --config site-shots-appstore.json --targets targets-6.5.json --out ../../dist/appstore-site-6.5"
+  },
+  "dependencies": {
+    "playwright": "^1.51.0"
+  }
+}

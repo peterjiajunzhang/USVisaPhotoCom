@@ -1,0 +1,16 @@
+{
+  "indexHtml": "../../index.html",
+  "shots": [
+    { "id": "hero", "title": "Hero" },
+    { "id": "trust-bar", "title": "Trust bar" },
+    { "id": "demos", "title": "Demos" },
+    { "id": "compliance-checklist", "title": "Compliance checklist" },
+    { "id": "features", "title": "Features" },
+    { "id": "languages", "title": "Languages" },
+    { "id": "how-it-works", "title": "How it works" },
+    { "id": "pricing", "title": "Pricing" },
+    { "id": "use-cases", "title": "Use cases" },
+    { "id": "final-cta", "title": "Final CTA" },
+    { "id": "footer", "title": "Footer" }
+  ]
+}

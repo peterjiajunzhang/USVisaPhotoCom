@@ -1,0 +1,130 @@
+{
+  "defaults": {
+    "background": {
+      "type": "brand_gradient",
+      "top": "#0071e3",
+      "bottom": "#004ea8"
+    },
+    "card": {
+      "padding": 26,
+      "radius": 70,
+      "frostAlpha": 46,
+      "tintAlpha": 22
+    },
+    "deviceFrame": {
+      "enabled": false,
+      "variant": "iphone_flat",
+      "shadow": true,
+      "bezelScale": 0.92,
+      "screenInset": { "top": 18, "right": 18, "bottom": 22, "left": 18 }
+    },
+    "copy": {
+      "title": "",
+      "subtitle": ""
+    }
+  },
+  "screens": [
+    {
+      "id": "01_hero_site",
+      "layout": "brand_frosted_card",
+      "asset": {
+        "type": "image",
+        "path": "../../appstore/shot-hero.png"
+      },
+      "copy": {
+        "title": "Studio-quality visa photos — on your iPhone",
+        "subtitle": "On-device background removal + DS-160 style checks. Your photos never leave your phone."
+      },
+      "deviceFrame": {
+        "enabled": false
+      }
+    },
+    {
+      "id": "02_demos_site",
+      "layout": "brand_frosted_card",
+      "asset": {
+        "type": "image",
+        "path": "../../appstore/shot-demos.png"
+      },
+      "copy": {
+        "title": "Any background in. DS-160 out.",
+        "subtitle": "Real examples: messy scenes become clean white-background exports — automatically."
+      },
+      "deviceFrame": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "03_app_home",
+      "layout": "brand_frosted_card",
+      "asset": {
+        "type": "image",
+        "path": "../../marketing/app-screens/IMG_3363.png"
+      },
+      "copy": {
+        "title": "",
+        "subtitle": ""
+      }
+    },
+    {
+      "id": "04_app_saved_list",
+      "layout": "brand_frosted_card",
+      "asset": {
+        "type": "image",
+        "path": "../../marketing/app-screens/IMG_3364.png"
+      },
+      "copy": {
+        "title": "",
+        "subtitle": ""
+      }
+    },
+    {
+      "id": "05_app_saved_detail",
+      "layout": "brand_frosted_card",
+      "asset": {
+        "type": "image",
+        "path": "../../marketing/app-screens/IMG_3365.png"
+      },
+      "copy": {
+        "title": "",
+        "subtitle": ""
+      }
+    },
+    {
+      "id": "06_app_export_checklist",
+      "layout": "brand_frosted_card",
+      "asset": {
+        "type": "image",
+        "path": "../../marketing/app-screens/IMG_3366.png"
+      },
+      "copy": {
+        "title": "",
+        "subtitle": ""
+      }
+    },
+    {
+      "id": "07_app_paywall",
+      "layout": "brand_frosted_card",
+      "asset": {
+        "type": "image",
+        "path": "../../marketing/app-screens/IMG_3367.png"
+      },
+      "copy": {
+        "title": "",
+        "subtitle": ""
+      }
+    },
+    {
+      "id": "08_app_home_with_original",
+      "layout": "brand_frosted_card",
+      "asset": {
+        "type": "image",
+        "path": "../../marketing/app-screens/IMG_3368.png"
+      },
+      "copy": {
+        "title": "",
+        "subtitle": ""
+      }
+    }
+  ]
+}
