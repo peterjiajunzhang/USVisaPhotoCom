@@ -1,0 +1,4 @@
+dist/
+marketing/appstore/generated/
+.DS_Store
+node_modules/
