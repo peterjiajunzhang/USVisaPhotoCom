@@ -1,0 +1,13 @@
+{
+  "indexHtml": "../../index.html",
+  "shots": [
+    { "id": "hero", "title": "Hero" },
+    { "id": "trust-bar", "title": "Trust" },
+    { "id": "demos", "title": "Before / after" },
+    { "id": "compliance-checklist", "title": "Compliance" },
+    { "id": "features", "title": "Features" },
+    { "id": "how-it-works", "title": "How it works" },
+    { "id": "pricing", "title": "Pricing" },
+    { "id": "final-cta", "title": "Download" }
+  ]
+}

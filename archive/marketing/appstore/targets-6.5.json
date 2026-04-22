@@ -1,0 +1,9 @@
+[
+  {
+    "name": "iphone_6_5",
+    "width": 1284,
+    "height": 2778,
+    "layoutViewportCssWidth": 428,
+    "notes": "App Store Connect 6.5\" portrait. CSS viewport 428×926 (mobile Tailwind); deviceScaleFactor 3 → 1284×2778 PNG."
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "iphone_6_7",
+    "width": 1290,
+    "height": 2796,
+    "notes": "Common 6.7\" marketing size (verify against current App Store Connect requirements)."
+  },
+  {
+    "name": "iphone_6_5",
+    "width": 1284,
+    "height": 2778,
+    "notes": "Common 6.5\" marketing size (verify against current App Store Connect requirements)."
+  }
+]
