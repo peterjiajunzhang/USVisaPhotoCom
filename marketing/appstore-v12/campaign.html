@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1284, initial-scale=1.0, user-scalable=no" />
+  <title>US Visa Photo — App Store campaign v1.2</title>
+  <!-- Keep visual system aligned with USVisaPhotoCom/index.html -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#0071e3",
+            "brand-dark": "#0059b3",
+            navy: "#0a1628",
+          },
+          fontFamily: {
+            sans: [
+              "-apple-system",
+              "BlinkMacSystemFont",
+              '"SF Pro Display"',
+              '"Segoe UI"',
+              "Roboto",
+              "Helvetica",
+              "Arial",
+              "sans-serif",
+            ],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    /* Unified hero frame for slides 2–5 (export + preview); top copy must stay above this line */
+    :root {
+      /* =========================
+         LOCKED: IMAGE SLOTS
+         Do NOT change after this point
+         ========================= */
+
+      /* Slides 2–5 screenshot slot (LOCKED) */
+      --campaign-hero-width: 1024px; /* locked */
+      --campaign-hero-ar-w: 1284;
+      --campaign-hero-ar-h: 2778;
+      /* Align screenshot slot to the slide's inner bottom edge (padding-bottom = 88px). */
+      --campaign-hero-bottom: 12px; /* locked */
+      --campaign-hero-height: calc(var(--campaign-hero-width) * var(--campaign-hero-ar-h) / var(--campaign-hero-ar-w));
+      --campaign-hero-top: calc(2778px - var(--campaign-hero-bottom) - var(--campaign-hero-height));
+
+      /* Slide 1: 2×2 results grid (LOCKED) */
+      --s1-edge: 58px; /* locked: left/right/bottom */
+      --s1-gap: 18px;  /* locked */
+      --s1-tile: calc((1284px - 2 * var(--s1-edge) - var(--s1-gap)) / 2); /* locked */
+
+      /* =========================
+         COPY SLOTS (safe to tweak)
+         ========================= */
+      --campaign-copy-top: 77px; /* 72px padding + 5px */
+      --campaign-copy-gap: 5px;  /* distance to screenshot slot */
+      --campaign-copy-height: calc(var(--campaign-hero-top) - var(--campaign-copy-top) - var(--campaign-copy-gap));
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 1284px;
+      height: 2778px;
+      overflow: hidden;
+      background: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    [data-slide] {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1284px;
+      height: 2778px;
+      padding: 72px 56px 88px;
+      background: #ffffff;
+      color: #0a0a0a;
+    }
+    .gradient-hero {
+      background: linear-gradient(135deg, #0a1628 0%, #0d2137 50%, #0f2b46 100%);
+    }
+    .slide--hero {
+      color: #ffffff;
+    }
+    .slide--hero .headline { color: #ffffff; }
+    .slide--hero .subline { color: rgba(255, 255, 255, 0.78); }
+    .accent {
+      color: #22d3ee;
+    }
+    .headline {
+      font-size: 104px;
+      line-height: 1.04;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      text-align: center;
+      margin: 0 0 40px;
+      color: #050505;
+    }
+    .slide-1 .headline {
+      font-size: 118px;
+      margin: 0 0 20px;
+    }
+    .subline {
+      font-size: 56px;
+      line-height: 1.22;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+      color: #1a1a1c;
+      letter-spacing: -0.02em;
+    }
+    .slide-1 .subline {
+      font-size: 52px;
+    }
+    .subline--top {
+      margin: 0 0 64px;
+    }
+    .slide-1 .subline--top {
+      margin: 0 0 18px;
+    }
+    .slide-1 {
+      text-align: center;
+    }
+    .fineprint {
+      font-size: 34px;
+      font-weight: 600;
+      color: #6b7280;
+      line-height: 1.35;
+    }
+    .foot {
+      display: none;
+    }
+
+    .s1-2x2 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      padding: 16px 32px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      font-size: 64px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .s1-2x2 span {
+      color: #22d3ee;
+      font-size: 1.12em;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin: 0 6px;
+    }
+
+    .s1-stack {
+      position: absolute;
+      left: 56px;
+      right: 56px;
+      top: 620px;
+      /* Clear the enlarged 2×2 grid + bottom offset */
+      bottom: calc(var(--s1-edge) + 2 * var(--s1-tile) + var(--s1-gap) + 100px);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 26px;
+    }
+    .s1-stack .subline--top {
+      margin: 0 0 18px;
+    }
+
+    .s1-use-title {
+      text-align: center;
+      font-size: 64px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      margin: 0;
+    }
+    .s1-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px 16px;
+    }
+    .s1-pill {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      padding: 12px 18px;
+      font-size: 32px;
+      font-weight: 600;
+      color: #111827;
+      line-height: 1.1;
+    }
+
+    /* —— Slide 1: 4 outputs in a 2×2 grid —— */
+    .s1-grid {
+      position: absolute;
+      left: var(--s1-edge);
+      right: var(--s1-edge);
+      bottom: var(--s1-edge);
+      display: grid;
+      --gap: var(--s1-gap);
+      grid-template-columns: 1fr 1fr;
+      gap: var(--gap);
+      align-content: start;
+    }
+    .s1-cell {
+      border-radius: 14px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 18px 46px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      aspect-ratio: 1 / 1;
+    }
+    .s1-cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 22%;
+      display: block;
+    }
+
+    /* —— Slides 2–5: hero (fixed slot; use .slide--with-fixed-hero) —— */
+    .hero-shot {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: calc(100% - 88px);
+    }
+    .slide--with-fixed-hero .hero-shot {
+      top: auto;
+      bottom: var(--campaign-hero-bottom);
+      width: var(--campaign-hero-width);
+      z-index: 2;
+      height: var(--campaign-hero-height);
+      aspect-ratio: var(--campaign-hero-ar-w) / var(--campaign-hero-ar-h);
+    }
+    .hero-shot img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 22px;
+      box-shadow: 0 26px 78px rgba(0, 0, 0, 0.16);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    .slide--with-fixed-hero .hero-shot img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    /* —— Copy slot auto-fit (slides 2–5) —— */
+    [data-copy-slot] {
+      overflow: hidden;
+    }
+    [data-copy-fit] {
+      transform-origin: top center;
+      -webkit-transform-origin: top center;
+      will-change: transform;
+    }
+
+    /* —— Slide 2: privacy line + fixed hero —— */
+    .s2-head {
+      position: absolute;
+      left: 40px;
+      right: 40px;
+      top: var(--campaign-copy-top);
+      max-height: var(--campaign-copy-height);
+      overflow: hidden;
+      text-align: center;
+      z-index: 1;
+    }
+    .s2-head .headline {
+      margin: 0 0 14px;
+      font-size: 100px;
+      line-height: 1.05;
+    }
+    .s2-head .subline--top {
+      margin: 0 0 16px;
+      font-size: 44px;
+    }
+    .s2-privacy {
+      margin: 0 auto;
+      max-width: 1120px;
+      font-size: 30px;
+      line-height: 1.38;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.88);
+      letter-spacing: -0.02em;
+    }
+
+    /* —— Slide 3: languages (same copy as index.html #languages) —— */
+    .slide-3 .headline {
+      font-size: 88px;
+      margin: 0 0 16px;
+      line-height: 1.06;
+    }
+    .s3-copy {
+      position: absolute;
+      left: 48px;
+      right: 48px;
+      top: var(--campaign-copy-top);
+      max-height: var(--campaign-copy-height);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .s3-lede {
+      font-size: 34px;
+      line-height: 1.38;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.78);
+      max-width: 1080px;
+      margin: 0 auto 22px;
+      letter-spacing: -0.015em;
+    }
+    .s3-lang-label {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.42);
+      margin: 0 0 12px;
+    }
+    .s3-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 12px;
+      max-width: 1120px;
+    }
+    .s3-pill {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      padding: 11px 18px;
+      font-size: 28px;
+      font-weight: 600;
+      color: #111827;
+      line-height: 1.1;
+    }
+    /* —— Slide 4: compliance checklist (site style, shortened; no Lighting) —— */
+    .s4-top {
+      position: absolute;
+      left: 40px;
+      right: 40px;
+      top: var(--campaign-copy-top);
+      max-height: var(--campaign-copy-height);
+      overflow: hidden;
+      text-align: center;
+      z-index: 1;
+    }
+    .slide-4 .headline {
+      font-size: 92px;
+      margin: 0 0 12px;
+    }
+    .s4-tagline {
+      text-align: center;
+      font-size: 34px;
+      line-height: 1.35;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.76);
+      max-width: 1000px;
+      margin: 0 auto 22px;
+      padding: 0 40px;
+      letter-spacing: -0.02em;
+    }
+    .s4-wrap {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .s4-check-card {
+      width: 100%;
+      max-width: 1160px;
+      flex: 0 0 auto;
+      background: #f9fafb;
+      border: 1px solid #f3f4f6;
+      border-radius: 22px;
+      padding: 20px 24px 16px;
+      display: flex;
+      flex-direction: column;
+    }
+    .s4-sprite {
+      position: absolute;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+    .s4-check-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, auto);
+      grid-auto-flow: column;
+      gap: 12px 36px;
+      overflow: hidden;
+      align-content: start;
+    }
+    .s4-row {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 25px;
+      line-height: 1.28;
+      font-weight: 600;
+      color: #1f2937;
+    }
+    .s4-row svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .s4-row strong {
+      font-weight: 800;
+      color: #0f172a;
+    }
+    /* —— Slide 5: pricing (site style, shortened) —— */
+    .s5-top {
+      position: absolute;
+      left: 32px;
+      right: 32px;
+      top: var(--campaign-copy-top);
+      max-height: var(--campaign-copy-height);
+      overflow: hidden;
+      text-align: center;
+      z-index: 1;
+    }
+    .slide-5 .headline {
+      font-size: 92px;
+      margin: 0 0 10px;
+    }
+    .s5-lede {
+      text-align: center;
+      font-size: 34px;
+      line-height: 1.28;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.78);
+      max-width: 1080px;
+      margin: 0 auto 14px;
+      padding: 0 32px;
+      letter-spacing: -0.02em;
+    }
+    .s5-grid {
+      margin-top: 6px;
+      display: grid;
+      grid-template-columns: 1.08fr 0.96fr 0.96fr;
+      gap: 12px;
+      align-items: stretch;
+    }
+    .s5-app {
+      background: #0071e3;
+      color: #ffffff;
+      border-radius: 22px;
+      padding: 28px 16px 18px;
+      position: relative;
+      box-shadow: 0 22px 56px rgba(0, 113, 227, 0.38);
+      transform: scale(1.02);
+      z-index: 1;
+    }
+    .s5-badge {
+      position: absolute;
+      top: -11px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #22d3ee;
+      color: #0a1628;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      padding: 7px 16px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .s5-app-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 6px 0 14px;
+    }
+    .s5-app-head img {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+    .s5-app-name {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .s5-price-row {
+      margin-bottom: 8px;
+    }
+    .s5-price-big {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+    .s5-price-suf {
+      font-size: 24px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.72);
+      margin-left: 4px;
+    }
+    .s5-rival-price {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #d1d5db;
+      margin-bottom: 6px;
+    }
+    .s5-list {
+      list-style: none;
+      margin: 18px 0 0;
+      padding: 0;
+    }
+    .s5-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 22px;
+      line-height: 1.28;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .s5-app .s5-list li {
+      color: rgba(255, 255, 255, 0.94);
+    }
+    .s5-li-ico {
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-weight: 900;
+      color: #22d3ee;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .s5-rival {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 22px;
+      padding: 24px 14px 16px;
+      color: #9ca3af;
+    }
+    .s5-rival-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      min-height: 48px;
+    }
+    .s5-rival-ico {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .s5-rival-ico--cvs {
+      background: #fef2f2;
+    }
+    .s5-rival-ico--wag {
+      background: #f0fdf4;
+    }
+    .s5-rival-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: #9ca3af;
+      letter-spacing: -0.02em;
+    }
+    .s5-rival .s5-list li {
+      color: #9ca3af;
+      font-size: 21px;
+      margin-bottom: 6px;
+    }
+    .s5-li-x {
+      flex-shrink: 0;
+      margin-top: 2px;
+      color: #d1d5db;
+      font-weight: 800;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slide 1: hero + use-cases + 4 outputs (2×2) -->
+  <section data-slide="1" class="slide slide-1 slide--hero gradient-hero" style="display: block;">
+    <h1 class="headline">Studio‑Quality<br /><span class="accent">Passport Photos</span><br />in Seconds</h1>
+    <div class="s1-2x2" aria-label="Output format">Built for <span>2×2</span> DS‑160 square exports</div>
+
+    <div class="s1-stack" aria-label="Marketing copy">
+      <p class="subline subline--top">AI‑powered background removal and smart cropping for U.S. visa photo workflows.</p>
+      <h2 class="s1-use-title">Works for all U.S. photo IDs</h2>
+      <div class="s1-pills" aria-label="Supported IDs">
+        <span class="s1-pill">🛂 U.S. Visa (DS-160)</span>
+        <span class="s1-pill">🪪 U.S. Passport</span>
+        <span class="s1-pill">🟢 Green Card</span>
+        <span class="s1-pill">📋 Passport Renewal</span>
+        <span class="s1-pill">🎓 Student Visa (F-1)</span>
+        <span class="s1-pill">💼 Work Visa (H-1B)</span>
+        <span class="s1-pill">🏠 DV Lottery</span>
+      </div>
+    </div>
+
+    <div class="s1-grid" aria-label="Example outputs">
+      <div class="s1-cell"><img src="../../demos/demo-01-result.png" alt="" decoding="async" loading="eager" /></div>
+      <div class="s1-cell"><img src="../../demos/demo-02-result.png" alt="" decoding="async" loading="eager" /></div>
+      <div class="s1-cell"><img src="../../demos/demo-03-result.png" alt="" decoding="async" loading="eager" /></div>
+      <div class="s1-cell"><img src="../../demos/demo-04-result.png" alt="" decoding="async" loading="eager" /></div>
+    </div>
+  </section>
+
+  <!-- Slide 2: hero before/after (1/4) -->
+  <section data-slide="2" class="slide slide-2 slide--hero slide--with-fixed-hero gradient-hero" style="display: none;">
+    <div class="s2-head" data-copy-slot>
+      <div data-copy-fit>
+        <h1 class="headline"><span class="accent">Three steps.</span> Done.</h1>
+        <p class="subline subline--top">Pick a photo. <span class="accent">Auto process.</span> Export &amp; submit.</p>
+        <p class="s2-privacy">No account · No cloud · Strong privacy · <span class="accent">Zero data collection</span> · No biometric reshaping — crop &amp; background only · <span class="accent">100% on-device</span> processing.</p>
+      </div>
+    </div>
+    <div class="hero-shot">
+      <img src="../../demos/hero/IMG_3379.PNG" alt="" decoding="async" loading="eager" />
+    </div>
+  </section>
+
+  <!-- Slide 3: languages copy (index #languages) + hero (2/4) -->
+  <section data-slide="3" class="slide slide-3 slide--hero slide--with-fixed-hero gradient-hero" style="display: none;">
+    <div class="s3-copy" aria-label="Languages" data-copy-slot>
+      <div data-copy-fit>
+        <h1 class="headline">Built for a <span class="accent">global audience</span></h1>
+        <p class="s3-lede">The app includes a built-in language switcher. Pick your preferred language anytime; if your iPhone language is supported, we start there automatically.</p>
+        <p class="s3-lang-label">Supported languages</p>
+        <div class="s3-pills">
+          <span class="s3-pill">🇺🇸 English</span>
+          <span class="s3-pill">🇨🇳 简体中文</span>
+          <span class="s3-pill">🇹🇼 繁體中文</span>
+          <span class="s3-pill">🇪🇸 Español</span>
+          <span class="s3-pill">🇯🇵 日本語</span>
+          <span class="s3-pill">🇩🇪 Deutsch</span>
+          <span class="s3-pill">🇫🇷 Français</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shot">
+      <img src="../../demos/hero/IMG_3380.PNG" alt="" decoding="async" loading="eager" />
+    </div>
+  </section>
+
+  <!-- Slide 4: compliance checklist + hero (3/4) -->
+  <section data-slide="4" class="slide slide-4 slide--hero slide--with-fixed-hero gradient-hero" style="display: none;">
+    <div class="s4-top" data-copy-slot>
+      <svg width="0" height="0" class="s4-sprite" aria-hidden="true" focusable="false">
+        <defs>
+          <symbol id="s4-check" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" fill="none" stroke="#10b981" stroke-width="2" />
+            <path d="m8 12 2.5 2.5 5.5-5.5" fill="none" stroke="#10b981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+          </symbol>
+        </defs>
+      </svg>
+      <div data-copy-fit>
+        <h1 class="headline">What we <span class="accent">check</span> for every export</h1>
+        <p class="s4-tagline">Same DS-160-style checks as in the app — right after each successful crop.</p>
+        <div class="s4-wrap">
+          <div class="s4-check-card" aria-label="Export checks">
+            <div class="s4-check-grid">
+              <div class="s4-row">
+                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>Print</strong> — 2×2 in, square crop.</span>
+              </div>
+              <div class="s4-row">
+                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>Resolution</strong> — square 600–1200 px.</span>
+              </div>
+              <div class="s4-row">
+                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>Eyes</strong> — 56–69% from bottom of frame.</span>
+              </div>
+              <div class="s4-row">
+                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>Head</strong> — 50–69% of image height.</span>
+              </div>
+              <div class="s4-row">
+                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>Background</strong> — plain white or off-white.</span>
+              </div>
+              <div class="s4-row">
+                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>Format</strong> — JPEG for upload or print.</span>
+              </div>
+              <div class="s4-row">
+                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>No face reshape</strong> — crop &amp; background only.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shot">
+      <img src="../../demos/hero/IMG_3381.PNG" alt="" decoding="async" loading="eager" />
+    </div>
+  </section>
+
+  <!-- Slide 5: pricing + hero (4/4) -->
+  <section data-slide="5" class="slide slide-5 slide--hero slide--with-fixed-hero gradient-hero" style="display: none;">
+    <div class="s5-top" data-copy-slot>
+      <div data-copy-fit>
+        <h1 class="headline">Save <span class="accent">$15</span> every time.</h1>
+        <p class="s5-lede">Compliant photo on your iPhone — <span class="accent">instant</span>, private, and a fraction of pharmacy pricing.</p>
+        <div class="s5-grid" aria-label="Price comparison">
+          <div class="s5-app">
+            <div class="s5-badge">BEST VALUE</div>
+            <div class="s5-app-head">
+              <img src="../../AppIcon.png" alt="" width="48" height="48" decoding="async" loading="eager" />
+              <span class="s5-app-name">US Visa Photo</span>
+            </div>
+            <div class="s5-price-row">
+              <span class="s5-price-big">$1.99</span><span class="s5-price-suf">/ photo</span>
+            </div>
+            <ul class="s5-list">
+              <li><span class="s5-li-ico" aria-hidden="true">✓</span> DS-160 square — export in seconds</li>
+              <li><span class="s5-li-ico" aria-hidden="true">✓</span> AI background removal</li>
+              <li><span class="s5-li-ico" aria-hidden="true">✓</span> On-device · retry anytime</li>
+            </ul>
+          </div>
+          <div class="s5-rival">
+            <div class="s5-rival-head">
+              <span class="s5-rival-ico s5-rival-ico--cvs" aria-hidden="true">🏪</span>
+              <span class="s5-rival-name">CVS Pharmacy</span>
+            </div>
+            <div class="s5-rival-price">$16.99</div>
+            <ul class="s5-list">
+              <li><span class="s5-li-x" aria-hidden="true">✕</span> Drive, wait, in-store only</li>
+              <li><span class="s5-li-x" aria-hidden="true">✕</span> Typical ~$17 photo pricing</li>
+              <li><span class="s5-li-x" aria-hidden="true">✕</span> Retakes cost extra</li>
+            </ul>
+          </div>
+          <div class="s5-rival">
+            <div class="s5-rival-head">
+              <span class="s5-rival-ico s5-rival-ico--wag" aria-hidden="true">🏪</span>
+              <span class="s5-rival-name">Walgreens</span>
+            </div>
+            <div class="s5-rival-price">$16.99</div>
+            <ul class="s5-list">
+              <li><span class="s5-li-x" aria-hidden="true">✕</span> Drive, wait, in-store only</li>
+              <li><span class="s5-li-x" aria-hidden="true">✕</span> Typical ~$17 photo pricing</li>
+              <li><span class="s5-li-x" aria-hidden="true">✕</span> Retakes cost extra</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shot">
+      <img src="../../demos/hero/IMG_3382.PNG" alt="" decoding="async" loading="eager" />
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      function showSingleSlideFromQuery() {
+        var m = /^([1-5])$/.exec(new URLSearchParams(window.location.search).get("slide") || "");
+        if (!m) return;
+        var n = m[1];
+        document.querySelectorAll("[data-slide]").forEach(function (el) {
+          el.style.display = el.getAttribute("data-slide") === n ? "block" : "none";
+        });
+      }
+
+      function fitCopySlots() {
+        document.querySelectorAll("[data-copy-slot]").forEach(function (slot) {
+          var inner = slot.querySelector("[data-copy-fit]");
+          if (!inner) return;
+
+          // Reset transform so measurements are stable.
+          inner.style.transform = "translateY(0px) scale(1)";
+          inner.style.webkitTransform = "translateY(0px) scale(1)";
+
+          var sw = slot.clientWidth || 0;
+          var sh = slot.clientHeight || 0;
+          if (!sw || !sh) return;
+
+          var r = inner.getBoundingClientRect();
+          var iw = r.width || 0;
+          var ih = r.height || 0;
+          if (!iw || !ih) return;
+
+          // Fill the slot as much as possible without overflow.
+          var s = Math.min(sw / iw, sh / ih);
+          // Avoid crazy upscales on tiny text, but still allow mild enlargement.
+          s = Math.max(0.5, Math.min(1.35, s));
+
+          var scaledH = ih * s;
+          var ty = Math.max(0, (sh - scaledH) / 2);
+
+          inner.style.transform = "translateY(" + ty + "px) scale(" + s + ")";
+          inner.style.webkitTransform = "translateY(" + ty + "px) scale(" + s + ")";
+        });
+      }
+
+      showSingleSlideFromQuery();
+      // Run multiple times to catch late font/layout changes.
+      function runFit() {
+        fitCopySlots();
+        requestAnimationFrame(fitCopySlots);
+        setTimeout(fitCopySlots, 50);
+        setTimeout(fitCopySlots, 250);
+      }
+      window.addEventListener("resize", runFit);
+      window.addEventListener("load", runFit);
+      runFit();
+    })();
+  </script>
+</body>
+</html>
