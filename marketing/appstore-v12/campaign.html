@@ -50,8 +50,8 @@
 
       /* Slide 1: 2×2 results grid (LOCKED) */
       --s1-edge: 58px; /* locked: left/right/bottom */
-      --s1-gap: 18px;  /* locked */
-      --s1-tile: calc((1284px - 2 * var(--s1-edge) - var(--s1-gap)) / 2); /* locked */
+      --s1-grid-gap: 18px; /* locked: 2×2 tile gutter (not copy spacing) */
+      --s1-tile: calc((1284px - 2 * var(--s1-edge) - var(--s1-grid-gap)) / 2); /* locked */
 
       /* =========================
          COPY SLOTS (safe to tweak)
@@ -59,6 +59,20 @@
       --campaign-copy-top: 77px; /* 72px padding + 5px */
       --campaign-copy-gap: 5px;  /* distance to screenshot slot */
       --campaign-copy-height: calc(var(--campaign-hero-top) - var(--campaign-copy-top) - var(--campaign-copy-gap));
+
+      /* Slide 1: one variable = one gutter (see .s1-gutter--*). Five-up preview is heavily scaled — small px changes look flat; use large steps or full-size campaign.html / PNG export to judge. */
+      --s1-space-headline-lede: 35px; /* h1 block → 3-line lede */
+      --s1-space-lede-ids: 35px; /* lede → “Works for all…” */
+      --s1-space-ids-pills: 60px; /* h2 → pills */
+
+      /* Slide 2 (save money): card sizing + right lede slot */
+      --s2-best-card-h: 440px;  /* BEST VALUE (blue) card height */
+      --s2-rival-card-h: 310px; /* CVS / Walgreens card height (same for both) */
+      --s2-right-lede-h: 120px; /* lede slot height (above rival cards, right of BEST VALUE) */
+      --s2-grid-gap: 12px;
+
+      /* Slide 3 (We check): checklist slot height */
+      --s3-checklist-h: 360px;
     }
     * { box-sizing: border-box; }
     html, body {
@@ -70,6 +84,20 @@
       background: #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
+    }
+    /* Dev preview convenience:
+       - Default keeps fixed 1284×2778 canvas for exports
+       - Add `&scroll=1` to allow scrolling the full slide in a normal browser viewport */
+    html.is-scroll,
+    html.is-scroll body {
+      width: auto;
+      height: auto;
+      overflow: auto;
+      background: #0b1220;
+    }
+    html.is-scroll [data-slide] {
+      position: relative;
+      margin: 0 auto;
     }
     [data-slide] {
       position: absolute;
@@ -101,9 +129,22 @@
       margin: 0 0 40px;
       color: #050505;
     }
-    .slide-1 .headline {
-      font-size: 118px;
-      margin: 0 0 20px;
+    .slide-1 .s1-block--headline .headline {
+      font-size: 128px;
+      line-height: 1.02;
+      margin: 0;
+    }
+    .slide-1 .s1-2x2 {
+      display: inline-block;
+      font-size: 1.22em;
+      letter-spacing: -0.04em;
+      text-shadow: 0 10px 28px rgba(34, 211, 238, 0.35);
+    }
+    .slide-1 .s1-h1-soft {
+      display: inline-block;
+      font-size: 0.88em;
+      letter-spacing: -0.03em;
+      opacity: 0.98;
     }
     .subline {
       font-size: 56px;
@@ -117,11 +158,19 @@
     .slide-1 .subline {
       font-size: 52px;
     }
+    .slide-1 .s1-block--lede .s1-subtitle {
+      font-size: 70px; /* -10% */
+      line-height: 1.03;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: rgba(255, 255, 255, 0.68);
+      margin: 0;
+    }
     .subline--top {
       margin: 0 0 64px;
     }
     .slide-1 .subline--top {
-      margin: 0 0 18px;
+      margin: 0;
     }
     .slide-1 {
       text-align: center;
@@ -136,48 +185,53 @@
       display: none;
     }
 
-    .s1-2x2 {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 24px;
-      padding: 16px 32px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.10);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      color: #ffffff;
-      font-size: 64px;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-    }
-    .s1-2x2 span {
-      color: #22d3ee;
-      font-size: 1.12em;
-      font-weight: 900;
-      letter-spacing: -0.03em;
-      margin: 0 6px;
-    }
-
-    .s1-stack {
-      position: absolute;
-      left: 56px;
-      right: 56px;
-      top: 620px;
-      /* Clear the enlarged 2×2 grid + bottom offset */
-      bottom: calc(var(--s1-edge) + 2 * var(--s1-tile) + var(--s1-gap) + 100px);
-      overflow: hidden;
+    .slide-1 .s1-top {
+      position: relative;
+      z-index: 1;
+      margin: 0 56px;
       display: flex;
       flex-direction: column;
       align-items: stretch;
-      gap: 26px;
+      /* Reserve vertical band for locked 2×2 grid (not a “text gutter”; keep calc here) */
+      padding-bottom: calc(var(--s1-edge) + 2 * var(--s1-tile) + var(--s1-grid-gap) + 100px);
     }
-    .s1-stack .subline--top {
-      margin: 0 0 18px;
+    /* Gutters: must not use min-height:0 (flex would shrink empty tracks to 0). Main-axis size = flex-basis. */
+    .slide-1 .s1-gutter {
+      flex-shrink: 0;
+      flex-grow: 0;
+      width: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .slide-1 .s1-gutter--headline-lede {
+      flex-basis: var(--s1-space-headline-lede);
+      height: var(--s1-space-headline-lede);
+    }
+    .slide-1 .s1-gutter--lede-ids {
+      flex-basis: var(--s1-space-lede-ids);
+      height: var(--s1-space-lede-ids);
+    }
+    .slide-1 .s1-gutter--ids-pills {
+      flex-basis: var(--s1-space-ids-pills);
+      height: var(--s1-space-ids-pills);
+    }
+    .slide-1 .s1-block--headline,
+    .slide-1 .s1-block--lede,
+    .slide-1 .s1-block--ids,
+    .slide-1 .s1-block--pills {
+      margin: 0;
+      padding: 0;
+      flex: 0 0 auto;
+      min-height: 0;
+    }
+    .slide-1 .s1-block--pills {
+      overflow: hidden;
     }
 
     .s1-use-title {
       text-align: center;
       font-size: 64px;
+      line-height: 1.08;
       font-weight: 800;
       letter-spacing: -0.03em;
       color: #ffffff;
@@ -187,14 +241,14 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 16px 16px;
+      gap: 18px 18px;
     }
     .s1-pill {
       background: #ffffff;
       border: 1px solid #e5e7eb;
       border-radius: 999px;
-      padding: 12px 18px;
-      font-size: 32px;
+      padding: 21px 33px; /* ~-10% total */
+      font-size: 50px; /* ~-10% total */
       font-weight: 600;
       color: #111827;
       line-height: 1.1;
@@ -206,8 +260,9 @@
       left: var(--s1-edge);
       right: var(--s1-edge);
       bottom: var(--s1-edge);
+      /* absolute children anchor to this positioned box */
       display: grid;
-      --gap: var(--s1-gap);
+      --gap: var(--s1-grid-gap);
       grid-template-columns: 1fr 1fr;
       gap: var(--gap);
       align-content: start;
@@ -271,8 +326,8 @@
     /* —— Slide 2: privacy line + fixed hero —— */
     .s2-head {
       position: absolute;
-      left: 40px;
-      right: 40px;
+      left: 0px;
+      right: 0px;
       top: var(--campaign-copy-top);
       max-height: var(--campaign-copy-height);
       overflow: hidden;
@@ -280,13 +335,40 @@
       z-index: 1;
     }
     .s2-head .headline {
-      margin: 0 0 14px;
-      font-size: 100px;
-      line-height: 1.05;
+      margin: 0 0 28px;
+      font-size: 92px;
     }
     .s2-head .subline--top {
-      margin: 0 0 16px;
+      margin: 0 0 32px;
       font-size: 44px;
+    }
+    .s2-flow {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      max-width: 1120px;
+    }
+    .s2-step {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.92);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+    .s2-arrow {
+      color: rgba(34, 211, 238, 0.92);
+      font-weight: 900;
+      font-size: 46px;
+      line-height: 1;
+      transform: translateY(-1px);
     }
     .s2-privacy {
       margin: 0 auto;
@@ -297,11 +379,95 @@
       color: rgba(255, 255, 255, 0.88);
       letter-spacing: -0.02em;
     }
+    .s2-cards {
+      margin: 0 auto;
+      max-width: 1120px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      text-align: left;
+      margin-top: 14px;
+    }
+    .s2-card {
+      background: #f9fafb;
+      border: 1px solid #f3f4f6;
+      border-radius: 18px;
+      padding: 16px 16px 14px;
+      overflow: hidden;
+    }
+    .s2-card-kicker {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 10px;
+    }
+    .s2-card-ico {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(34, 211, 238, 0.14);
+      border: 1px solid rgba(34, 211, 238, 0.30);
+      color: #22d3ee;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .s2-card-title {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+    }
+    .s2-card-desc {
+      margin: 0;
+      font-size: 26px;
+      line-height: 1.28;
+      font-weight: 650;
+      color: rgba(255, 255, 255, 0.78);
+      letter-spacing: -0.01em;
+    }
+    .s2-card-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .s2-card-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 26px;
+      line-height: 1.26;
+      font-weight: 700;
+      color: #1f2937;
+      letter-spacing: -0.01em;
+    }
+    .s2-card-bullet {
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.14);
+      border: 1px solid rgba(16, 185, 129, 0.28);
+      color: #22d3ee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-size: 16px;
+      line-height: 1;
+      font-weight: 900;
+    }
 
     /* —— Slide 3: languages (same copy as index.html #languages) —— */
     .slide-3 .headline {
-      font-size: 88px;
-      margin: 0 0 16px;
+      font-size: 92px;
+      margin: 0 0 26px;
       line-height: 1.06;
     }
     .s3-copy {
@@ -323,33 +489,32 @@
       font-weight: 600;
       color: rgba(255, 255, 255, 0.78);
       max-width: 1080px;
-      margin: 0 auto 22px;
+      margin: 0 auto 34px;
       letter-spacing: -0.015em;
-    }
-    .s3-lang-label {
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.42);
-      margin: 0 0 12px;
     }
     .s3-pills {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px 12px;
+      gap: 16px 18px;
       max-width: 1120px;
     }
     .s3-pill {
       background: #ffffff;
       border: 1px solid #e5e7eb;
       border-radius: 999px;
-      padding: 11px 18px;
-      font-size: 28px;
-      font-weight: 600;
+      padding: 15px 23px;
+      font-size: 40px; /* -5% */
+      font-weight: 650;
       color: #111827;
       line-height: 1.1;
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+    }
+    .s3-flag {
+      font-size: 1.5em; /* +50% emoji size */
+      line-height: 1;
     }
     /* —— Slide 4: compliance checklist (site style, shortened; no Lighting) —— */
     .s4-top {
@@ -364,11 +529,11 @@
     }
     .slide-4 .headline {
       font-size: 92px;
-      margin: 0 0 12px;
+      margin: 0 0 10px;
     }
     .s4-tagline {
       text-align: center;
-      font-size: 34px;
+      font-size: 50px;
       line-height: 1.35;
       font-weight: 600;
       color: rgba(255, 255, 255, 0.76);
@@ -386,14 +551,16 @@
     }
     .s4-check-card {
       width: 100%;
-      max-width: 1160px;
+      max-width: 1280px;
       flex: 0 0 auto;
       background: #f9fafb;
       border: 1px solid #f3f4f6;
       border-radius: 22px;
-      padding: 20px 24px 16px;
+      padding: 40px 20px 20px;
       display: flex;
       flex-direction: column;
+      height: var(--s3-checklist-h);
+      overflow: hidden;
     }
     .s4-sprite {
       position: absolute;
@@ -406,7 +573,7 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(4, auto);
       grid-auto-flow: column;
-      gap: 12px 36px;
+      gap: 28px 36px;
       overflow: hidden;
       align-content: start;
     }
@@ -414,14 +581,16 @@
       display: flex;
       gap: 10px;
       align-items: flex-start;
-      font-size: 25px;
-      line-height: 1.28;
+      font-size: 31px;
+      line-height: 1.30;
       font-weight: 600;
       color: #1f2937;
     }
     .s4-row svg {
       flex-shrink: 0;
-      margin-top: 3px;
+      width: 30px;
+      height: 30px;
+      margin-top: 6px;
     }
     .s4-row strong {
       font-weight: 800;
@@ -456,8 +625,8 @@
     .s5-grid {
       margin-top: 6px;
       display: grid;
-      grid-template-columns: 1.08fr 0.96fr 0.96fr;
-      gap: 12px;
+      grid-template-columns: 1.08fr 1.92fr;
+      gap: var(--s2-grid-gap);
       align-items: stretch;
     }
     .s5-app {
@@ -469,6 +638,41 @@
       box-shadow: 0 22px 56px rgba(0, 113, 227, 0.38);
       transform: scale(1.02);
       z-index: 1;
+      height: var(--s2-best-card-h);
+      overflow: hidden;
+    }
+    .s5-right {
+      display: grid;
+      grid-template-rows: var(--s2-right-lede-h) auto;
+      gap: var(--s2-grid-gap);
+      align-items: stretch;
+      min-width: 0;
+    }
+    .s5-right-lede {
+      border-radius: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 18px;
+      overflow: hidden;
+    }
+    .s5-right-lede .s5-lede {
+      margin: 0;
+      padding: 0;
+      max-width: none;
+      text-align: left;
+      font-size: 36px;
+      line-height: 1.25;
+      color: rgba(255, 255, 255, 0.78);
+    }
+    .s5-right-rivals {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--s2-grid-gap);
+      align-items: stretch;
+      min-width: 0;
     }
     .s5-badge {
       position: absolute;
@@ -553,6 +757,8 @@
       border-radius: 22px;
       padding: 24px 14px 16px;
       color: #9ca3af;
+      height: var(--s2-rival-card-h);
+      overflow: hidden;
     }
     .s5-rival-head {
       display: flex;
@@ -601,20 +807,28 @@
 
   <!-- Slide 1: hero + use-cases + 4 outputs (2×2) -->
   <section data-slide="1" class="slide slide-1 slide--hero gradient-hero" style="display: block;">
-    <h1 class="headline">Studio‑Quality<br /><span class="accent">Passport Photos</span><br />in Seconds</h1>
-    <div class="s1-2x2" aria-label="Output format">Built for <span>2×2</span> DS‑160 square exports</div>
-
-    <div class="s1-stack" aria-label="Marketing copy">
-      <p class="subline subline--top">AI‑powered background removal and smart cropping for U.S. visa photo workflows.</p>
-      <h2 class="s1-use-title">Works for all U.S. photo IDs</h2>
-      <div class="s1-pills" aria-label="Supported IDs">
-        <span class="s1-pill">🛂 U.S. Visa (DS-160)</span>
-        <span class="s1-pill">🪪 U.S. Passport</span>
-        <span class="s1-pill">🟢 Green Card</span>
-        <span class="s1-pill">📋 Passport Renewal</span>
-        <span class="s1-pill">🎓 Student Visa (F-1)</span>
-        <span class="s1-pill">💼 Work Visa (H-1B)</span>
-        <span class="s1-pill">🏠 DV Lottery</span>
+    <div class="s1-top">
+      <div class="s1-block s1-block--headline">
+        <h1 class="headline"><span class="s1-h1-soft">Studio‑Quality</span><br /><span class="accent s1-2x2">2×2 Photos</span><br /><span class="s1-h1-soft">in Seconds</span></h1>
+      </div>
+      <div class="s1-gutter s1-gutter--headline-lede" aria-hidden="true"></div>
+      <div class="s1-block s1-block--lede">
+        <p class="subline s1-subtitle">On-device-AI<br />Background Removal<br />Smart cropping</p>
+      </div>
+      <div class="s1-gutter s1-gutter--lede-ids" aria-hidden="true"></div>
+      <div class="s1-block s1-block--ids">
+        <h2 class="s1-use-title">Works for all 2×2 U.S. Photo IDs</h2>
+      </div>
+      <div class="s1-gutter s1-gutter--ids-pills" aria-hidden="true"></div>
+      <div class="s1-block s1-block--pills">
+        <div class="s1-pills" aria-label="Supported IDs">
+          <span class="s1-pill">🛂 U.S. Visa (DS-160)</span>
+          <span class="s1-pill">🪪 U.S. Passport &amp; Renewal</span>
+          <span class="s1-pill">🟢 Green Card</span>
+          <span class="s1-pill">🏠 DV Lottery</span>
+          <span class="s1-pill">🎓 Student Visa (F-1)</span>
+          <span class="s1-pill">💼 Work Visa (H-1B)</span>
+        </div>
       </div>
     </div>
 
@@ -626,35 +840,54 @@
     </div>
   </section>
 
-  <!-- Slide 2: hero before/after (1/4) -->
-  <section data-slide="2" class="slide slide-2 slide--hero slide--with-fixed-hero gradient-hero" style="display: none;">
+  <!-- Slide 4: three steps (was Slide 2) -->
+  <section data-slide="4" class="slide slide-2 slide--hero slide--with-fixed-hero gradient-hero" style="display: none;">
     <div class="s2-head" data-copy-slot>
       <div data-copy-fit>
-        <h1 class="headline"><span class="accent">Three steps.</span> Done.</h1>
-        <p class="subline subline--top">Pick a photo. <span class="accent">Auto process.</span> Export &amp; submit.</p>
-        <p class="s2-privacy">No account · No cloud · Strong privacy · <span class="accent">Zero data collection</span> · No biometric reshaping — crop &amp; background only · <span class="accent">100% on-device</span> processing.</p>
-      </div>
-    </div>
-    <div class="hero-shot">
-      <img src="../../demos/hero/IMG_3379.PNG" alt="" decoding="async" loading="eager" />
-    </div>
-  </section>
-
-  <!-- Slide 3: languages copy (index #languages) + hero (2/4) -->
-  <section data-slide="3" class="slide slide-3 slide--hero slide--with-fixed-hero gradient-hero" style="display: none;">
-    <div class="s3-copy" aria-label="Languages" data-copy-slot>
-      <div data-copy-fit>
-        <h1 class="headline">Built for a <span class="accent">global audience</span></h1>
-        <p class="s3-lede">The app includes a built-in language switcher. Pick your preferred language anytime; if your iPhone language is supported, we start there automatically.</p>
-        <p class="s3-lang-label">Supported languages</p>
-        <div class="s3-pills">
-          <span class="s3-pill">🇺🇸 English</span>
-          <span class="s3-pill">🇨🇳 简体中文</span>
-          <span class="s3-pill">🇹🇼 繁體中文</span>
-          <span class="s3-pill">🇪🇸 Español</span>
-          <span class="s3-pill">🇯🇵 日本語</span>
-          <span class="s3-pill">🇩🇪 Deutsch</span>
-          <span class="s3-pill">🇫🇷 Français</span>
+        <h1 class="headline"><span class="accent">Three</span> steps. <span class="accent">Private</span> by design.</h1>
+        <p class="subline subline--top" aria-label="Flow">
+          <span class="s2-flow">
+            <span class="s2-step">Pick a photo</span>
+            <span class="s2-arrow" aria-hidden="true">→</span>
+            <span class="s2-step">Auto process</span>
+            <span class="s2-arrow" aria-hidden="true">→</span>
+            <span class="s2-step">Export</span>
+          </span>
+        </p>
+        <div class="s2-cards" aria-label="Privacy highlights">
+          <div class="s2-card">
+            <div class="s2-card-kicker">
+              <div class="s2-card-ico" aria-hidden="true">⚡︎</div>
+              <h3 class="s2-card-title">Simple</h3>
+            </div>
+            <ul class="s2-card-list">
+              <li><span class="s2-card-bullet" aria-hidden="true">✓</span>No account</li>
+              <li><span class="s2-card-bullet" aria-hidden="true">✓</span>No setup</li>
+              <li><span class="s2-card-bullet" aria-hidden="true">✓</span>Complete in seconds</li>
+            </ul>
+          </div>
+          <div class="s2-card">
+            <div class="s2-card-kicker">
+              <div class="s2-card-ico" aria-hidden="true">🔒</div>
+              <h3 class="s2-card-title">Private</h3>
+            </div>
+            <ul class="s2-card-list">
+              <li><span class="s2-card-bullet" aria-hidden="true">✓</span>On-device processing</li>
+              <li><span class="s2-card-bullet" aria-hidden="true">✓</span>No cloud upload</li>
+              <li><span class="s2-card-bullet" aria-hidden="true">✓</span>No IDFA access</li>
+            </ul>
+          </div>
+          <div class="s2-card">
+            <div class="s2-card-kicker">
+              <div class="s2-card-ico" aria-hidden="true">📵</div>
+              <h3 class="s2-card-title">Zero collection</h3>
+            </div>
+            <ul class="s2-card-list">
+              <li><span class="s2-card-bullet" aria-hidden="true">✓</span>No tracking</li>
+              <li><span class="s2-card-bullet" aria-hidden="true">✓</span>Not used to train AI</li>
+              <li><span class="s2-card-bullet" aria-hidden="true">✓</span>All on your iPhone</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -663,8 +896,30 @@
     </div>
   </section>
 
-  <!-- Slide 4: compliance checklist + hero (3/4) -->
-  <section data-slide="4" class="slide slide-4 slide--hero slide--with-fixed-hero gradient-hero" style="display: none;">
+  <!-- Slide 5: languages (was Slide 3) -->
+  <section data-slide="5" class="slide slide-3 slide--hero slide--with-fixed-hero gradient-hero" style="display: none;">
+    <div class="s3-copy" aria-label="Languages" data-copy-slot>
+      <div data-copy-fit>
+        <h1 class="headline"><span class="accent">7 languages</span> supported</h1>
+        <p class="s3-lede">Switch languages anytime in‑app. We’ll also match your iPhone language automatically when supported.</p>
+        <div class="s3-pills">
+          <span class="s3-pill"><span class="s3-flag">🇺🇸</span> English</span>
+          <span class="s3-pill"><span class="s3-flag">🇨🇳</span> 简体中文</span>
+          <span class="s3-pill"><span class="s3-flag">🇹🇼</span> 繁體中文</span>
+          <span class="s3-pill"><span class="s3-flag">🇪🇸</span> Español</span>
+          <span class="s3-pill"><span class="s3-flag">🇯🇵</span> 日本語</span>
+          <span class="s3-pill"><span class="s3-flag">🇩🇪</span> Deutsch</span>
+          <span class="s3-pill"><span class="s3-flag">🇫🇷</span> Français</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shot">
+      <img src="../../demos/hero/IMG_3379.PNG" alt="" decoding="async" loading="eager" />
+    </div>
+  </section>
+
+  <!-- Slide 3: what we check (was Slide 4) -->
+  <section data-slide="3" class="slide slide-4 slide--hero slide--with-fixed-hero gradient-hero" style="display: none;">
     <div class="s4-top" data-copy-slot>
       <svg width="0" height="0" class="s4-sprite" aria-hidden="true" focusable="false">
         <defs>
@@ -675,38 +930,42 @@
         </defs>
       </svg>
       <div data-copy-fit>
-        <h1 class="headline">What we <span class="accent">check</span> for every export</h1>
-        <p class="s4-tagline">Same DS-160-style checks as in the app — right after each successful crop.</p>
+        <h1 class="headline">We <span class="accent">check</span> for every export</h1>
+        <p class="s4-tagline">Meet <span class="accent">DS-160 compliant</span> requirements.</p>
         <div class="s4-wrap">
           <div class="s4-check-card" aria-label="Export checks">
             <div class="s4-check-grid">
               <div class="s4-row">
-                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
-                <span><strong>Print</strong> — 2×2 in, square crop.</span>
+                <svg aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>Print</strong> - 2x2 in, square crop.</span>
               </div>
               <div class="s4-row">
-                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
-                <span><strong>Resolution</strong> — square 600–1200 px.</span>
+                <svg aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>Resolution</strong> - 600-1200 px.</span>
               </div>
               <div class="s4-row">
-                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
-                <span><strong>Eyes</strong> — 56–69% from bottom of frame.</span>
+                <svg aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>Eyes</strong> - 56-69% from frame bottom.</span>
               </div>
               <div class="s4-row">
-                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
-                <span><strong>Head</strong> — 50–69% of image height.</span>
+                <svg aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>Head</strong> - 50-69% of image height.</span>
               </div>
               <div class="s4-row">
-                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
-                <span><strong>Background</strong> — plain white or off-white.</span>
+                <svg aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>Background</strong> - plain white.</span>
               </div>
               <div class="s4-row">
-                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
-                <span><strong>Format</strong> — JPEG for upload or print.</span>
+                <svg aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>Format</strong> - JPEG for upload or print.</span>
               </div>
               <div class="s4-row">
-                <svg width="28" height="28" aria-hidden="true"><use href="#s4-check" /></svg>
-                <span><strong>No face reshape</strong> — crop &amp; background only.</span>
+                <svg aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>No face reshape</strong> - smart crop.</span>
+              </div>
+              <div class="s4-row">
+                <svg aria-hidden="true"><use href="#s4-check" /></svg>
+                <span><strong>No biometric edits</strong> - you stay you.</span>
               </div>
             </div>
           </div>
@@ -718,12 +977,11 @@
     </div>
   </section>
 
-  <!-- Slide 5: pricing + hero (4/4) -->
-  <section data-slide="5" class="slide slide-5 slide--hero slide--with-fixed-hero gradient-hero" style="display: none;">
+  <!-- Slide 2: save money (was Slide 5) -->
+  <section data-slide="2" class="slide slide-5 slide--hero slide--with-fixed-hero gradient-hero" style="display: none;">
     <div class="s5-top" data-copy-slot>
       <div data-copy-fit>
         <h1 class="headline">Save <span class="accent">$15</span> every time.</h1>
-        <p class="s5-lede">Compliant photo on your iPhone — <span class="accent">instant</span>, private, and a fraction of pharmacy pricing.</p>
         <div class="s5-grid" aria-label="Price comparison">
           <div class="s5-app">
             <div class="s5-badge">BEST VALUE</div>
@@ -735,34 +993,45 @@
               <span class="s5-price-big">$1.99</span><span class="s5-price-suf">/ photo</span>
             </div>
             <ul class="s5-list">
-              <li><span class="s5-li-ico" aria-hidden="true">✓</span> DS-160 square — export in seconds</li>
+              <li><span class="s5-li-ico" aria-hidden="true">✓</span> DS-160 compliant</li>
               <li><span class="s5-li-ico" aria-hidden="true">✓</span> AI background removal</li>
-              <li><span class="s5-li-ico" aria-hidden="true">✓</span> On-device · retry anytime</li>
+              <li><span class="s5-li-ico" aria-hidden="true">✓</span> 100% private · On-device</li>
+              <li><span class="s5-li-ico" aria-hidden="true">✓</span> Instant export · in seconds</li>
+              <li><span class="s5-li-ico" aria-hidden="true">✓</span> Retry unlimited times</li>
+              <li><span class="s5-li-ico" aria-hidden="true">✓</span> Anywhere · Anytime</li>
+              <li><span class="s5-li-ico" aria-hidden="true">✓</span> Eco-friendly</li>
             </ul>
           </div>
-          <div class="s5-rival">
-            <div class="s5-rival-head">
-              <span class="s5-rival-ico s5-rival-ico--cvs" aria-hidden="true">🏪</span>
-              <span class="s5-rival-name">CVS Pharmacy</span>
+          <div class="s5-right" aria-label="Pharmacy comparison">
+            <div class="s5-right-lede" aria-label="Subtitle slot">
+              <p class="s5-lede">Why drive to a pharmacy and wait in line when your iPhone does it better?</p>
             </div>
-            <div class="s5-rival-price">$16.99</div>
-            <ul class="s5-list">
-              <li><span class="s5-li-x" aria-hidden="true">✕</span> Drive, wait, in-store only</li>
-              <li><span class="s5-li-x" aria-hidden="true">✕</span> Typical ~$17 photo pricing</li>
-              <li><span class="s5-li-x" aria-hidden="true">✕</span> Retakes cost extra</li>
-            </ul>
-          </div>
-          <div class="s5-rival">
-            <div class="s5-rival-head">
-              <span class="s5-rival-ico s5-rival-ico--wag" aria-hidden="true">🏪</span>
-              <span class="s5-rival-name">Walgreens</span>
+            <div class="s5-right-rivals" aria-label="Pharmacies">
+              <div class="s5-rival">
+                <div class="s5-rival-head">
+                  <span class="s5-rival-ico s5-rival-ico--cvs" aria-hidden="true">🏪</span>
+                  <span class="s5-rival-name">CVS Pharmacy</span>
+                </div>
+                <div class="s5-rival-price">$16.99</div>
+                <ul class="s5-list">
+                  <li><span class="s5-li-x" aria-hidden="true">✕</span> Drive, park, wait, in-store only</li>
+                  <li><span class="s5-li-x" aria-hidden="true">✕</span> Typical ~$17 photo pricing</li>
+                  <li><span class="s5-li-x" aria-hidden="true">✕</span> Retakes cost extra $ and trips</li>
+                </ul>
+              </div>
+              <div class="s5-rival">
+                <div class="s5-rival-head">
+                  <span class="s5-rival-ico s5-rival-ico--wag" aria-hidden="true">🏪</span>
+                  <span class="s5-rival-name">Walgreens</span>
+                </div>
+                <div class="s5-rival-price">$16.99</div>
+                <ul class="s5-list">
+                  <li><span class="s5-li-x" aria-hidden="true">✕</span> E-copy in USB drive costs extra</li>
+                  <li><span class="s5-li-x" aria-hidden="true">✕</span> Inconsistent photo quality</li>
+                  <li><span class="s5-li-x" aria-hidden="true">✕</span> Photo counter closes early</li>
+                </ul>
+              </div>
             </div>
-            <div class="s5-rival-price">$16.99</div>
-            <ul class="s5-list">
-              <li><span class="s5-li-x" aria-hidden="true">✕</span> Drive, wait, in-store only</li>
-              <li><span class="s5-li-x" aria-hidden="true">✕</span> Typical ~$17 photo pricing</li>
-              <li><span class="s5-li-x" aria-hidden="true">✕</span> Retakes cost extra</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -774,6 +1043,12 @@
 
   <script>
     (function () {
+      function enableScrollFromQuery() {
+        var qs = new URLSearchParams(window.location.search);
+        var v = qs.get("scroll");
+        if (v !== "1" && v !== "true" && v !== "yes") return;
+        document.documentElement.classList.add("is-scroll");
+      }
       function showSingleSlideFromQuery() {
         var m = /^([1-5])$/.exec(new URLSearchParams(window.location.search).get("slide") || "");
         if (!m) return;
@@ -814,6 +1089,7 @@
         });
       }
 
+      enableScrollFromQuery();
       showSingleSlideFromQuery();
       // Run multiple times to catch late font/layout changes.
       function runFit() {

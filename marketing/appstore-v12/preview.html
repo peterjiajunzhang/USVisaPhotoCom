@@ -89,32 +89,37 @@
 <body>
   <h1>App Store campaign — live preview</h1>
   <p class="note">
-    <code>campaign.html</code> 按导出尺寸固定为 1284×2778，不能直接塞进窄 iframe。这里用「固定尺寸 + <code>transform: scale</code> + 裁切框」缩成五列同一行，可看到<strong>完整 slide</strong>。屏宽不够时<strong>左右滑动</strong>这一行即可。改完源文件后刷新本页；定稿后在目录运行 <code>npm run export</code> 出 PNG。
+    <code>campaign.html</code> 按导出尺寸固定为 1284×2778，不能直接塞进窄 iframe。这里用「固定尺寸 + <code>transform: scale</code> + 裁切框」缩成五列同一行，可看到<strong>完整 slide</strong>。屏宽不够时<strong>左右滑动</strong>这一行即可。改完 campaign 后<strong>整页刷新</strong>本预览；加载时会为 iframe 追加时间参数，避免沿用缓存里的旧 HTML。单独打开 <code>campaign.html</code> 时可用强制刷新（macOS：⌘⇧R）。定稿后在目录运行 <code>npm run export</code> 出 PNG。
   </p>
   <div class="row" aria-label="Five slides in one row">
     <div class="cell">
       <span class="label">Slide 1</span>
-      <div class="scale-wrap"><iframe src="campaign.html?slide=1" title="Slide 1" loading="eager"></iframe></div>
+      <div class="scale-wrap"><iframe data-campaign="campaign.html?slide=1" title="Slide 1" loading="eager"></iframe></div>
     </div>
     <div class="cell">
       <span class="label">Slide 2</span>
-      <div class="scale-wrap"><iframe src="campaign.html?slide=2" title="Slide 2" loading="lazy"></iframe></div>
+      <div class="scale-wrap"><iframe data-campaign="campaign.html?slide=2" title="Slide 2" loading="lazy"></iframe></div>
     </div>
     <div class="cell">
       <span class="label">Slide 3</span>
-      <div class="scale-wrap"><iframe src="campaign.html?slide=3" title="Slide 3" loading="lazy"></iframe></div>
+      <div class="scale-wrap"><iframe data-campaign="campaign.html?slide=3" title="Slide 3" loading="lazy"></iframe></div>
     </div>
     <div class="cell">
       <span class="label">Slide 4</span>
-      <div class="scale-wrap"><iframe src="campaign.html?slide=4" title="Slide 4" loading="lazy"></iframe></div>
+      <div class="scale-wrap"><iframe data-campaign="campaign.html?slide=4" title="Slide 4" loading="lazy"></iframe></div>
     </div>
     <div class="cell">
       <span class="label">Slide 5</span>
-      <div class="scale-wrap"><iframe src="campaign.html?slide=5" title="Slide 5" loading="lazy"></iframe></div>
+      <div class="scale-wrap"><iframe data-campaign="campaign.html?slide=5" title="Slide 5" loading="lazy"></iframe></div>
     </div>
   </div>
   <script>
     (function () {
+      var bust = Date.now();
+      document.querySelectorAll(".scale-wrap iframe[data-campaign]").forEach(function (ifr) {
+        var base = ifr.getAttribute("data-campaign");
+        if (base) ifr.src = base + (base.indexOf("?") >= 0 ? "&" : "?") + "_=" + bust;
+      });
       function fit() {
         document.querySelectorAll(".scale-wrap").forEach(function (wrap) {
           var s = wrap.clientWidth / 1284;
