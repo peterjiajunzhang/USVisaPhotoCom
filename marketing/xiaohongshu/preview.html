@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>美签 · 小红书套装预览</title>
+  <style>
+    :root {
+      --post-w: 1080;
+      --post-h: 1440;
+      --cell-w: min(180px, calc((100vw - 48px) / 4 - 8px));
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 20px 12px 32px;
+      font-family: -apple-system, "PingFang SC", sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    h1 { font-size: 1.15rem; margin: 0 0 8px; }
+    p { font-size: 0.85rem; color: #94a3b8; max-width: 52rem; line-height: 1.5; margin: 0 0 16px; }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .cell { text-align: center; }
+    .label { font-size: 0.65rem; font-weight: 700; color: #64748b; margin-bottom: 6px; }
+    .wrap {
+      width: var(--cell-w);
+      height: calc(var(--cell-w) * var(--post-h) / var(--post-w));
+      overflow: hidden;
+      border-radius: 10px;
+      border: 1px solid #334155;
+      background: #020617;
+      position: relative;
+    }
+    .wrap iframe {
+      position: absolute;
+      left: 0; top: 0;
+      width: 1080px; height: 1440px;
+      border: 0;
+      transform-origin: 0 0;
+      pointer-events: none;
+    }
+    a { color: #fda4af; }
+  </style>
+</head>
+<body>
+  <h1>美签 · 8 张竖图预览</h1>
+  <p>3:4（1080×1440）。文案见 <a href="copy.md">copy.md</a>（含评论领券）。改完 <code>posts.html</code> 后刷新；导出 <code>npm run export</code>。</p>
+  <div class="row" id="row"></div>
+  <script>
+    (function () {
+      var bust = Date.now();
+      var row = document.getElementById("row");
+      for (var i = 1; i <= 8; i++) {
+        var cell = document.createElement("div");
+        cell.className = "cell";
+        cell.innerHTML = '<div class="label">Post ' + i + '</div><div class="wrap"><iframe title="Post ' + i + '"></iframe></div>';
+        var ifr = cell.querySelector("iframe");
+        ifr.src = "posts.html?post=" + i + "&_=" + bust;
+        row.appendChild(cell);
+      }
+      function fit() {
+        document.querySelectorAll(".wrap").forEach(function (wrap) {
+          var s = wrap.clientWidth / 1080;
+          var ifr = wrap.querySelector("iframe");
+          if (ifr) {
+            ifr.style.transform = "scale(" + s + ")";
+            ifr.style.webkitTransform = "scale(" + s + ")";
+          }
+        });
+      }
+      window.addEventListener("resize", fit);
+      window.addEventListener("load", fit);
+      fit();
+    })();
+  </script>
+</body>
+</html>

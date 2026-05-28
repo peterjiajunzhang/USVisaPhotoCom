@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1080, initial-scale=1.0, user-scalable=no" />
+  <title>US Visa Photo - 小红书图文（美签）</title>
+  <style>
+    :root {
+      --w: 1080px;
+      --h: 1440px;
+      --xhs: #ff2442;
+      --brand: #0071e3;
+      --paper: #fffaf7;
+      --card: #ffffff;
+      --ink: #1c1917;
+      --sub: #57534e;
+      --line: #f5f5f4;
+      --tag-bg: #fff1f2;
+      --green: #16a34a;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: var(--w);
+      height: var(--h);
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background: var(--paper);
+    }
+    html.is-scroll, html.is-scroll body {
+      width: auto;
+      height: auto;
+      overflow: auto;
+      background: #111;
+    }
+    html.is-scroll [data-post] {
+      position: relative;
+      margin: 0 auto 24px;
+    }
+    [data-post] {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: var(--w);
+      height: var(--h);
+      padding: 56px 48px 52px;
+      background: var(--paper);
+      color: var(--ink);
+      overflow: hidden;
+    }
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--xhs);
+      letter-spacing: 0.02em;
+      margin-bottom: 18px;
+    }
+    .kicker-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--xhs);
+    }
+    .title {
+      font-size: 62px;
+      line-height: 1.12;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin: 0 0 16px;
+    }
+    .title .hl {
+      color: var(--brand);
+    }
+    .lede {
+      font-size: 34px;
+      line-height: 1.45;
+      font-weight: 600;
+      color: var(--sub);
+      margin: 0 0 28px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: auto;
+    }
+    .tag {
+      background: var(--tag-bg);
+      color: #be123c;
+      border-radius: 999px;
+      padding: 12px 22px;
+      font-size: 26px;
+      font-weight: 700;
+    }
+    .shot-wrap {
+      border-radius: 28px;
+      overflow: hidden;
+      background: var(--card);
+      border: 2px solid var(--line);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.06);
+      line-height: 0;
+    }
+    .shot-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .shot-label {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--sub);
+      margin: 14px 4px 0;
+      text-align: center;
+    }
+    .flex-col {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .grow { flex: 1; min-height: 0; }
+
+    /* Post 1: XHS-style soft blush background (white photos still pop via cards/shadows) */
+    .post-1 {
+      background:
+        radial-gradient(ellipse 80% 55% at 50% -10%, rgba(255, 36, 66, 0.14) 0%, transparent 55%),
+        radial-gradient(ellipse 70% 55% at 100% 30%, rgba(0, 113, 227, 0.10) 0%, transparent 58%),
+        linear-gradient(180deg, #fff6f7 0%, #fff3f1 45%, #ffffff 100%);
+      color: var(--ink);
+    }
+    .post-1 .kicker {
+      color: #ff2442;
+    }
+    .post-1 .kicker-dot {
+      background: #ff2442;
+    }
+    .post-1 .title {
+      font-size: 54px;
+      margin-bottom: 12px;
+      color: var(--ink);
+    }
+    .post-1 .lede {
+      font-size: 30px;
+      margin-bottom: 18px;
+      color: var(--sub);
+    }
+    .post-1 .title .hl {
+      color: var(--brand);
+    }
+    .post-1 .pill {
+      background: rgba(255, 255, 255, 0.8);
+      border-color: rgba(231, 229, 228, 0.9);
+      backdrop-filter: blur(8px);
+    }
+    .post-1 .page-no {
+      color: rgba(120, 113, 108, 0.7);
+    }
+    .post-1 .ba-duo {
+      position: relative;
+      padding: 14px;
+      border-radius: 26px;
+      background: rgba(245, 245, 244, 0.85);
+      border: 2px solid rgba(231, 229, 228, 0.75);
+      box-shadow: 0 18px 60px rgba(0, 0, 0, 0.10);
+      backdrop-filter: blur(10px);
+    }
+    .post-1 .ba-img {
+      border-color: rgba(231, 229, 228, 0.95);
+      background: #ffffff;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.10);
+    }
+    .post-1 .ba-duo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 16px;
+      flex: 1 1 auto;
+      min-height: 0;
+      align-items: end;
+    }
+    .post-1 .ba-pair {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      min-width: 0;
+      text-align: center;
+    }
+    .ba-img {
+      border-radius: 18px;
+      overflow: hidden;
+      border: 2px solid var(--line);
+      background: #f5f5f4;
+      width: 100%;
+    }
+    .ba-img--original {
+      aspect-ratio: 3 / 2;
+    }
+    .ba-img--result {
+      aspect-ratio: 420 / 560;
+    }
+    .ba-img--effect {
+      aspect-ratio: 1 / 1;
+    }
+    .ba-img img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center top;
+    }
+    .ba-mini {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--sub);
+      margin: 0;
+      line-height: 1.2;
+    }
+    .ba-cap {
+      font-size: 22px;
+      font-weight: 900;
+      margin: 0;
+      color: var(--sub);
+    }
+    .ba-cap--after { color: var(--green); }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0 0;
+    }
+    .pill {
+      background: #fff;
+      border: 2px solid #e7e5e4;
+      border-radius: 999px;
+      padding: 10px 18px;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    /* Post 2: 3×2 square photo wall (fit all 6 in one frame) */
+    .post-2 .lede {
+      margin-bottom: 12px;
+    }
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      flex: 1 1 auto;
+      min-height: 0;
+      align-content: center;
+      margin-bottom: 10px;
+    }
+    .demo-tile {
+      aspect-ratio: 1 / 1;
+      border-radius: 18px;
+      border: 2px solid var(--line);
+      background: #fff;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+    }
+    .demo-tile img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+      object-position: center;
+    }
+    .post-2 .note {
+      font-size: 28px;
+      padding: 14px 18px;
+      margin-top: 0;
+    }
+    .note {
+      background: #fff;
+      border-left: 6px solid var(--xhs);
+      border-radius: 0 16px 16px 0;
+      padding: 20px 22px;
+      font-size: 30px;
+      line-height: 1.42;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 8px;
+    }
+
+    /* Post 3: price */
+    .compare-bar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+    .compare-col {
+      border-radius: 20px;
+      padding: 14px 14px 12px;
+      border: 2px solid rgba(231, 229, 228, 0.9);
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.08);
+    }
+    .compare-col--win {
+      border-color: rgba(0, 113, 227, 0.30);
+      background: linear-gradient(160deg, rgba(0, 113, 227, 0.10), rgba(255, 255, 255, 0.86));
+    }
+    .compare-col--lose {
+      background: rgba(255, 255, 255, 0.72);
+    }
+    .compare-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .compare-name {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .compare-price {
+      font-size: 30px;
+      font-weight: 1000;
+      letter-spacing: -0.02em;
+      color: var(--brand);
+      white-space: nowrap;
+    }
+    .compare-col--lose .compare-price {
+      color: #78716c;
+    }
+    .compare-points {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 22px;
+      line-height: 1.35;
+      font-weight: 650;
+      color: var(--ink);
+      columns: 2;
+      column-gap: 16px;
+    }
+    .compare-col--lose .compare-points {
+      color: #57534e;
+    }
+    .compare-points li {
+      break-inside: avoid;
+      margin: 0 0 8px;
+    }
+    .compare-points li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Post 4: checklist bullets */
+    .check-list {
+      list-style: none;
+      margin: 0 0 20px;
+      padding: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .check-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 28px;
+      line-height: 1.35;
+      font-weight: 650;
+      background: #fff;
+      border-radius: 16px;
+      padding: 14px 16px;
+      border: 2px solid var(--line);
+    }
+    .check-list .ok {
+      flex-shrink: 0;
+      color: var(--green);
+      font-weight: 900;
+      font-size: 26px;
+    }
+
+    /* Post 5: steps */
+    .steps {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0 0 20px;
+    }
+    .step {
+      background: #fff;
+      border: 2px solid #fecdd3;
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 12px 20px;
+      font-size: 28px;
+      font-weight: 800;
+    }
+    .step-arrow { color: var(--xhs); font-weight: 900; font-size: 32px; }
+    .priv-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .priv {
+      background: #fff;
+      border-radius: 18px;
+      padding: 16px 12px;
+      border: 2px solid var(--line);
+      text-align: center;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+    .priv-ico { font-size: 32px; display: block; margin-bottom: 8px; }
+
+    /* Posts 3-7: two app screenshots side by side (473x1024, full frame) */
+    .post--app-duo .flex-col {
+      height: 100%;
+    }
+    .post--app-duo .dual-shots {
+      flex: 1 1 auto;
+      min-height: 360px;
+      max-height: 1024px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      align-items: end;
+      margin-top: 2px;
+    }
+    .post--app-duo .dual-shot-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 0;
+      height: 100%;
+      justify-content: flex-end;
+    }
+    .post--app-duo .dual-shot {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      aspect-ratio: 473 / 1024;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 2px solid var(--line);
+      background: #fafafa;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+    }
+    .post--app-duo .dual-shot img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+      object-position: center top;
+    }
+    .post--app-duo .dual-cap {
+      flex-shrink: 0;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--sub);
+      margin-top: 8px;
+      text-align: center;
+      line-height: 1.2;
+    }
+    .post-3 .lede {
+      margin-bottom: 16px;
+    }
+    .post-3 .lede {
+      white-space: nowrap;
+      font-size: 32px;
+    }
+    .post-4 .check-list {
+      margin-bottom: 12px;
+      gap: 8px;
+    }
+    .post-4 .check-list li {
+      font-size: 24px;
+      padding: 10px 14px;
+    }
+    .post-4 .title {
+      font-size: 56px;
+    }
+    .post-5 .priv-grid {
+      margin-bottom: 10px;
+    }
+    .post-5 .steps {
+      margin-bottom: 12px;
+    }
+    .post-5 .title {
+      font-size: 58px;
+    }
+    .cta {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--brand);
+    }
+
+    /* Post 8: comment keyword -> coupon */
+    .post-8 .coupon-hero {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8px 0 12px;
+    }
+    .post-8 .coupon-keyword {
+      display: inline-block;
+      margin: 20px 0 24px;
+      padding: 22px 40px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+      border: 3px solid var(--xhs);
+      font-size: 72px;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      color: var(--xhs);
+      line-height: 1.1;
+      box-shadow: 0 14px 40px rgba(255, 36, 66, 0.18);
+    }
+    .post-8 .coupon-sub {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--ink);
+      margin: 0 0 8px;
+    }
+    .post-8 .coupon-value {
+      font-size: 44px;
+      font-weight: 900;
+      color: var(--brand);
+      margin: 0 0 28px;
+    }
+    .post-8 .coupon-steps {
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 14px;
+      text-align: left;
+    }
+    .post-8 .coupon-steps li {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: #fff;
+      border: 2px solid var(--line);
+      border-radius: 18px;
+      padding: 18px 20px;
+      font-size: 30px;
+      line-height: 1.35;
+      font-weight: 650;
+    }
+    .post-8 .coupon-num {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: var(--xhs);
+      color: #fff;
+      font-size: 24px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+    .post-8 .coupon-foot {
+      margin-top: 20px;
+      font-size: 24px;
+      color: var(--sub);
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .post-8 .coupon-app {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 8px;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--sub);
+    }
+    .post-8 .coupon-app img {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .page-no {
+      position: absolute;
+      right: 48px;
+      bottom: 40px;
+      font-size: 22px;
+      font-weight: 700;
+      color: #a8a29e;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1 封面：痛点 + 前后对比 (对应 App Store slide 1) -->
+  <section data-post="1" class="post post-1" style="display: block;">
+    <div class="flex-col">
+      <div class="kicker"><span class="kicker-dot"></span>美签 2×2 · 亲测能过</div>
+      <h1 class="title">DS-160 上传照<br /><span class="hl">2×2 规范图</span> so easy</h1>
+      <div class="ba-duo">
+        <div class="ba-pair">
+          <div class="ba-img ba-img--original">
+            <img src="originals/demo-01-original.png" alt="" width="1536" height="1024" decoding="sync" loading="eager" />
+          </div>
+          <p class="ba-mini">原图 · 厨房</p>
+          <div class="ba-img ba-img--effect">
+            <img src="effects/effect-01.png" alt="" width="1024" height="1024" decoding="sync" loading="eager" />
+          </div>
+          <p class="ba-cap ba-cap--after">2×2 白底成品</p>
+        </div>
+        <div class="ba-pair">
+          <div class="ba-img ba-img--original">
+            <img src="originals/demo-02-original.png" alt="" width="1536" height="1024" decoding="sync" loading="eager" />
+          </div>
+          <p class="ba-mini">原图 · 家里</p>
+          <div class="ba-img ba-img--effect">
+            <img src="effects/effect-02.png" alt="" width="1024" height="1024" decoding="sync" loading="eager" />
+          </div>
+          <p class="ba-cap ba-cap--after">2×2 白底成品</p>
+        </div>
+      </div>
+      <div class="pill-row">
+        <span class="pill">DS-160</span>
+        <span class="pill">2×2 inch</span>
+        <span class="pill">白底证件照</span>
+      </div>
+      <span class="page-no">1/7</span>
+    </div>
+  </section>
+
+  <!-- 2 多场景 demo (slide 1 延伸) -->
+  <section data-post="2" class="post post-2" style="display: none;">
+    <div class="flex-col">
+      <div class="kicker"><span class="kicker-dot"></span>真实效果图</div>
+      <h1 class="title">不同肤色年龄<br />都能<span class="hl">出 2×2</span></h1>
+      <p class="lede">下面 6 张都是 App 导出的成品（白底），不是照相馆摆拍。</p>
+      <div class="demo-grid">
+        <div class="demo-tile"><img src="effects/effect-01.png" alt="" width="1024" height="1024" decoding="sync" loading="eager" /></div>
+        <div class="demo-tile"><img src="effects/effect-02.png" alt="" width="1024" height="1024" decoding="sync" loading="eager" /></div>
+        <div class="demo-tile"><img src="effects/effect-03.png" alt="" width="1024" height="1024" decoding="sync" loading="eager" /></div>
+        <div class="demo-tile"><img src="effects/effect-04.png" alt="" width="1024" height="1024" decoding="sync" loading="eager" /></div>
+        <div class="demo-tile"><img src="effects/effect-05.png" alt="" width="1024" height="1024" decoding="sync" loading="eager" /></div>
+        <div class="demo-tile"><img src="effects/effect-06.png" alt="" width="1024" height="1024" decoding="sync" loading="eager" /></div>
+      </div>
+      <div class="note">划重点：2×2 比例 + 白底 + DS-160 清单对照，不是随便加白边。</div>
+      <span class="page-no">2/7</span>
+    </div>
+  </section>
+
+  <!-- 3 价格 (slide 2) -->
+  <section data-post="3" class="post post-3 post--app-duo" style="display: none;">
+    <div class="flex-col">
+      <div class="kicker"><span class="kicker-dot"></span>算账帖</div>
+      <h1 class="title">照相馆 <span class="hl">$19.99</span><br />vs 手机 <span class="hl">$1.99</span></h1>
+      <p class="lede">一张照 unlock 一次，手机里处理导出，不用每次再跑 Walgreens。</p>
+      <div class="compare-bar">
+        <div class="compare-col compare-col--win">
+          <div class="compare-head">
+            <div class="compare-name">US Visa Photo</div>
+            <div class="compare-price">$1.99</div>
+          </div>
+          <ul class="compare-points">
+            <li>1200×1200 DS-160</li>
+            <li>2×2 清单对照</li>
+            <li>照片不出手机</li>
+            <li>无需排队出门</li>
+          </ul>
+        </div>
+        <div class="compare-col compare-col--lose">
+          <div class="compare-head">
+            <div class="compare-name">Walgreens / CVS</div>
+            <div class="compare-price">$19.99</div>
+          </div>
+          <ul class="compare-points">
+            <li>要出门排队</li>
+            <li>电子版常另收费</li>
+            <li>不合格要重拍</li>
+            <li>来回时间成本</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dual-shots">
+        <div class="dual-shot-cell">
+          <div class="dual-shot">
+            <img src="screenshots/app-checklist.png" alt="" width="473" height="1024" decoding="sync" loading="eager" />
+          </div>
+          <div class="dual-cap">清单 / 构图读数</div>
+        </div>
+        <div class="dual-shot-cell">
+          <div class="dual-shot">
+            <img src="screenshots/app-unlock.png" alt="" width="473" height="1024" decoding="sync" loading="eager" />
+          </div>
+          <div class="dual-cap">$1.99 unlock</div>
+        </div>
+      </div>
+      <span class="page-no">3/7</span>
+    </div>
+  </section>
+
+  <!-- 4 清单 (slide 3) -->
+  <section data-post="4" class="post post-4 post--app-duo" style="display: none;">
+    <div class="flex-col">
+      <div class="kicker"><span class="kicker-dot"></span>拒照退件党必看</div>
+      <h1 class="title">官网规则<br /><span class="hl">一条条打勾</span>给你看</h1>
+      <p class="lede">不是「感觉差不多」，是 DS-160 那套：1200×1200、240KB 内、眼位头位都有数。</p>
+      <div class="dual-shots">
+        <div class="dual-shot-cell">
+          <div class="dual-shot">
+            <img src="screenshots/app-home.png" alt="" width="473" height="1024" decoding="sync" loading="eager" />
+          </div>
+          <div class="dual-cap">选图 / 处理</div>
+        </div>
+        <div class="dual-shot-cell">
+          <div class="dual-shot">
+            <img src="screenshots/app-checklist.png" alt="" width="473" height="1024" decoding="sync" loading="eager" />
+          </div>
+          <div class="dual-cap">导出清单</div>
+        </div>
+      </div>
+      <span class="page-no">4/7</span>
+    </div>
+  </section>
+
+  <!-- 5 三步 + 隐私 + 导完下载 (合并原 post-5 + post-6) -->
+  <section data-post="5" class="post post-5 post--app-duo" style="display: none;">
+    <div class="flex-col">
+      <div class="kicker"><span class="kicker-dot"></span>流程超短</div>
+      <h1 class="title">相册选一张 → 本地抠图裁切<br /><span class="hl">下载 / 分享</span></h1>
+      <div class="priv-grid">
+        <div class="priv"><span class="priv-ico">📵</span>不用注册<br />不用登录</div>
+        <div class="priv"><span class="priv-ico">🔒</span>照片不上传<br />全在 iPhone</div>
+        <div class="priv"><span class="priv-ico">🚫</span>不跟踪<br />不拿 IDFA</div>
+      </div>
+      <div class="dual-shots">
+        <div class="dual-shot-cell">
+          <div class="dual-shot">
+            <img src="screenshots/app-unlock.png" alt="" width="473" height="1024" decoding="sync" loading="eager" />
+          </div>
+          <div class="dual-cap">unlock 一次</div>
+        </div>
+        <div class="dual-shot-cell">
+          <div class="dual-shot">
+            <img src="screenshots/app-result.png" alt="" width="473" height="1024" decoding="sync" loading="eager" />
+          </div>
+          <div class="dual-cap">下载 / 分享</div>
+        </div>
+      </div>
+      <span class="page-no">5/7</span>
+    </div>
+  </section>
+
+  <!-- 6 历史记录 (原 post-7) -->
+  <section data-post="6" class="post post-7 post--app-duo" style="display: none;">
+    <div class="flex-col">
+      <div class="kicker"><span class="kicker-dot"></span>历史记录</div>
+      <h1 class="title">以前导过的<br />都在 <span class="hl">Saved Photos</span></h1>
+      <p class="lede">给家人补 DS-160，或者想再导一张，历史照都在 App 里。</p>
+      <div class="dual-shots">
+        <div class="dual-shot-cell">
+          <div class="dual-shot">
+            <img src="screenshots/app-saved.png" alt="" width="473" height="1024" decoding="sync" loading="eager" />
+          </div>
+          <div class="dual-cap">全部已保存</div>
+        </div>
+        <div class="dual-shot-cell">
+          <div class="dual-shot">
+            <img src="screenshots/app-saved-detail.png" alt="" width="473" height="1024" decoding="sync" loading="eager" />
+          </div>
+          <div class="dual-cap">分享处理过的照片</div>
+        </div>
+      </div>
+      <span class="page-no">6/7</span>
+    </div>
+  </section>
+
+  <!-- 7 评论区口令领券 (原 post-8) -->
+  <section data-post="7" class="post post-8" style="display: none;">
+    <div class="flex-col">
+      <div class="kicker"><span class="kicker-dot"></span>限时福利</div>
+      <h1 class="title">评论区打口令<br />领 <span class="hl">1 次免费导出</span></h1>
+      <div class="coupon-hero grow">
+        <div class="coupon-app">
+          <img src="../../AppIcon.png" alt="" width="56" height="56" decoding="async" loading="eager" />
+          <span>US Visa Photo</span>
+        </div>
+        <p class="coupon-sub">评论区回复（四个字，复制就行）</p>
+        <div class="coupon-keyword">美签必过</div>
+        <p class="coupon-value">= App Store 兑换码 · 抵 1 次 $1.99 unlock</p>
+        <ol class="coupon-steps">
+          <li><span class="coupon-num">1</span><span>本条笔记下评论 <strong>美签必过</strong></span></li>
+          <li><span class="coupon-num">2</span><span>我看到后会私信发你兑换码（别在评论里要码）</span></li>
+          <li><span class="coupon-num">3</span><span>用码在 App Store redeem 并下载 App；下一次导出免费</span></li>
+          <li><span class="coupon-num">4</span><span>免费导出 1 次完整 2×2（同付费版）</span></li>
+        </ol>
+        <p class="coupon-foot">前 100 评论发码 · 每人限领 1 次 · 以私信实际回复为准<br />24 小时内没收到私信：直接私信我</p>
+      </div>
+      <span class="page-no">7/7</span>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      var qs = new URLSearchParams(window.location.search);
+      if (["1", "true", "yes"].includes(qs.get("scroll") || "")) {
+        document.documentElement.classList.add("is-scroll");
+      }
+      var m = /^([1-7])$/.exec(qs.get("post") || "");
+      if (m) {
+        document.querySelectorAll("[data-post]").forEach(function (el) {
+          el.style.display = el.getAttribute("data-post") === m[1] ? "block" : "none";
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
