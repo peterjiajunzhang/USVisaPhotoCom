@@ -121,13 +121,13 @@
 
 ---
 
-## 9. App Store Campaign v12（单文件 slides：`marketing/appstore-v12/`）
+## 9. App Store Campaign v12（单文件 slides：`VisaPhotoApps/Marketing/US/appstore/`）
 
 这是另一套「5 张 App Store 截图」的 **单文件 HTML** 方案，用于快速迭代文案与像素级布局（与上面的 A/B/C 不冲突）。核心特性是：
 
-- **入口文件**：`marketing/appstore-v12/campaign.html`
-- **五联预览**：`marketing/appstore-v12/preview.html`
-- **导出脚本**：`marketing/appstore-v12/export.mjs`（Playwright）
+- **入口文件**：`VisaPhotoApps/Marketing/US/appstore/campaign.html`
+- **五联预览**：`VisaPhotoApps/Marketing/US/appstore/preview.html`
+- **导出脚本**：`VisaPhotoApps/Marketing/US/appstore/export.mjs`（Playwright）
 
 ### 9.1 预览方式
 
@@ -157,12 +157,12 @@
 
 ### 9.5 导出
 
-在 `USVisaPhotoCom/marketing/appstore-v12/` 目录：
+在 `USVisaPhotoCom/VisaPhotoApps/Marketing/US/appstore/` 目录：
 
 - `npm install`
 - `npm run export`
 
-输出通常在 `USVisaPhotoCom/dist/appstore-v12/`（以脚本为准）。
+输出通常在 `VisaPhotoApps/Marketing/US/appstore/dist/`（以脚本为准）。
 
 ---
 

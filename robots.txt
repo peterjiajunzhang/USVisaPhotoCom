@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://peterjiajunzhang.github.io/USVisaPhotoCom/sitemap.xml
+Sitemap: https://us.visaphoto1tap.com/sitemap.xml
