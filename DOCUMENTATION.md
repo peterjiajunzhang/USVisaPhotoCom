@@ -4,7 +4,7 @@
 
 > **18:49 Pacific 访问诊断纠正**：先前“浏览器访问禁用”仅由标签页接口报错推断，不能扩大为全部 Chrome 不可用。用户指出后，实测文档支持的原生 Chrome 入口可用，ASC/GSC 已登录，US sitemap 已成功重提。无需因此要求用户修改 Work 设置。下方未完成项为各时点记录，最新回执与后台进度以 sibling `VisaPhotoApps/docs/marketing/search-acquisition.md` 为准。
 
-**Bing 手动验证**：首页加入 Bing Webmaster 实际提供的 `msvalidate.01` 公共所有权标签；不导入 Google property、不授权额外 GSC 数据范围。部署后须回 Bing 点击 Verify 并记录实际结果；标签存在本身不代表验证或收录已完成。
+**Bing 手动验证**：首页加入 Bing Webmaster 实际提供的 `msvalidate.01` 公共所有权标签；不导入 Google property、不授权额外 GSC 数据范围。部署后已回 Bing 验证，实际收到 Site addition successful；sitemap 已提交、Processing。首页索引检查显示 Indexed successfully（旧抓取 9-13），三指南已发现但未抓取；四页各请求一次更新/索引，回执成功。
 
 **同日后续归因配置**：已在已登录 ASC 的 US App → Analytics → Campaigns 页面实际生成首页和指南两条 campaign links，原值记在 `acquisition-campaigns.json`；据 `VisaFlavor.supportLinks` 再次核对 App ID 后接到首页三处下载按钮及隐私/收费指南的下载按钮。JSON-LD 的实体下载 URL 保留干净链接。没有加入点击事件收集器；Cloudflare 记录 page views，Apple campaign 衡量可报告的下载归因。Campaign UI 当前数据不足，并明确至少 5 个独立 Apple Accounts 安装才可展示，不能据链接上线就报告归因安装数。
 
@@ -14,10 +14,10 @@
 - 三篇均标作者、核验日期和官方来源；当前 App **替换背景、没有纯裁剪导出**，文件清单不等于政府认可；不宣传打印排版、补光修正或自动扶正等未上线能力。
 - **原文矛盾及本轮澄清**：基线提交 `50a5c2e` 的首页曾写 “meets U.S. State Department requirements”“DS-160 compliant”“Works for all U.S. photo IDs”，与当前政府用照片编辑边界及已核实支持范围不一致。用户已于 11-04 授权执行此前建议的“收窄承诺”方案；本轮在原文位置改为实际处理能力并添加编辑限制，保留本记录和基线提交以供核验。未核验的 CVS/Walgreens 价格、节省金额及服务比较同时移除。验证方法：`git show 50a5c2e:index.html` 对比当前页面，结合 App 功能状态表与页面所链 Department of State 原文。
 - 首页、指南、隐私页建立站内入口，sitemap 由 2 项扩为 6 项。`robots.txt` 继续通配允许抓取，排除历史 `archive/` 与内部脚本 `scripts/`；没有修改既有训练偏好。允许抓取不代表已经收录或被 AI 推荐。
-- **统计现状**：首页原已有 Cloudflare Web Analytics，本轮沿用同一公开 site token 到指南，不加 GA4。隐私页另加网站统计澄清，避免把 App“无 analytics SDK”与网站访问统计混为一谈。Cloudflare Web Analytics 当前不支持自定义点击事件，不能把页面访问当下载点击；ASC campaign link 尚待登录后台生成，未伪造 provider token。
+- **统计现状**：首页原已有 Cloudflare Web Analytics，本轮沿用同一公开 site token 到指南，不加 GA4。隐私页另加网站统计澄清，避免把 App“无 analytics SDK”与网站访问统计混为一谈。Cloudflare Web Analytics 当前不支持自定义点击事件，不能把页面访问当下载点击；ASC campaign links 同日后续已实际生成并接入四处下载按钮，来源与回读回执见上方及主仓库台账。
 - `indexnow.json` 和根目录同名 key 文本是公开域名验证材料。`python3 scripts/notify_indexnow.py` 默认只预览；部署后用 `--submit --receipt dist/seo-2026-11-04/indexnow.json` 验证线上 key 并通知。200/202 仅代表接收通知，不是收录证明。
-- 本地验证：6 个页面 canonical/description/H1、125 个站内链接和资源、6 条 sitemap URL、指南 JSON-LD、Cloudflare 标签及 App Store 目标一致；`git diff --check`、Python 编译通过。Apple 公共 lookup（US storefront）回读 US Visa Photo 1.1.5、iOS 17.0、免费下载。浏览器视觉验收及 Search Console/Bing/ASC 后台暂因 Work 浏览器访问禁用而未完成，不把它们写成通过。
-- Google/Bing 所有权验证、sitemap 提交、Google AI 展示设置、ASC campaign links 及点击到下载归因仍须后台实际回读。后续部署回执与试点进展记在 `../VisaPhotoApps/docs/marketing/search-acquisition.md`。
+- 本地验证：6 个页面 canonical/description/H1、125 个站内链接和资源、6 条 sitemap URL、指南 JSON-LD、Cloudflare 标签及 App Store 目标一致；`git diff --check`、Python 编译通过。Apple 公共 lookup（US storefront）回读 US Visa Photo 1.1.5、iOS 17.0、免费下载。**纠正原访问诊断后**，Chrome 桌面已查看目录与三篇指南，实际点击指南 campaign 链接到达正确 US App Store 页面；GSC/Bing/ASC 当前后台已验收。手机布局尚未独立验收。
+- Google/Bing 所有权、sitemap 提交及 URL 状态已实际回读，Google Search generative AI 为 Include；ASC 两条链接已上线。Cloudflare 的 US snippet 与网站一致，目录和三篇指南各一次验收访问实际入库，共 4 次 direct page views；不计作自然流量，不当下载点击。Apple campaign 当前低于展示门槛，尚无可报告归因结果。所有回执与当前进展在 sibling `VisaPhotoApps/docs/marketing/search-acquisition.md`。
 
 ---
 
