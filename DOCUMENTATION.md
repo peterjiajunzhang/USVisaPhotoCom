@@ -1,5 +1,20 @@
 # USVisaPhotoCom — 官网与 App Store 营销管线说明
 
+## 2026-11-04 搜索获客试点
+
+本仓库是 `https://us.visaphoto1tap.com/` 的 GitHub Pages 源站（`main` 根目录）。本轮仅修改网站；不改变 US iOS 1.1.5、App Store listing 或已批准截图。产品功能及发布状态以 sibling `VisaPhotoApps/DOCUMENTATION.md` 顶部和 `docs/appstore/version-update-workflow.md` §2 为准；下文旧 `USVisaPhoto/` 路径和旧营销导出方案为历史，不能作为当前发布流程。
+
+- 新增 `guides/index.html` 和三篇英文指南：规格、DS-160 上传失败排查、隐私与收费。它们是直接维护的静态 HTML，没有额外构建依赖；共享样式为 `assets/guides.css`。
+- 三篇均标作者、核验日期和官方来源；当前 App **替换背景、没有纯裁剪导出**，文件清单不等于政府认可；不宣传打印排版、补光修正或自动扶正等未上线能力。
+- **原文矛盾及本轮澄清**：基线提交 `50a5c2e` 的首页曾写 “meets U.S. State Department requirements”“DS-160 compliant”“Works for all U.S. photo IDs”，与当前政府用照片编辑边界及已核实支持范围不一致。用户已于 11-04 授权执行此前建议的“收窄承诺”方案；本轮在原文位置改为实际处理能力并添加编辑限制，保留本记录和基线提交以供核验。未核验的 CVS/Walgreens 价格、节省金额及服务比较同时移除。验证方法：`git show 50a5c2e:index.html` 对比当前页面，结合 App 功能状态表与页面所链 Department of State 原文。
+- 首页、指南、隐私页建立站内入口，sitemap 由 2 项扩为 6 项。`robots.txt` 继续通配允许抓取，排除历史 `archive/` 与内部脚本 `scripts/`；没有修改既有训练偏好。允许抓取不代表已经收录或被 AI 推荐。
+- **统计现状**：首页原已有 Cloudflare Web Analytics，本轮沿用同一公开 site token 到指南，不加 GA4。隐私页另加网站统计澄清，避免把 App“无 analytics SDK”与网站访问统计混为一谈。Cloudflare Web Analytics 当前不支持自定义点击事件，不能把页面访问当下载点击；ASC campaign link 尚待登录后台生成，未伪造 provider token。
+- `indexnow.json` 和根目录同名 key 文本是公开域名验证材料。`python3 scripts/notify_indexnow.py` 默认只预览；部署后用 `--submit --receipt dist/seo-2026-11-04/indexnow.json` 验证线上 key 并通知。200/202 仅代表接收通知，不是收录证明。
+- 本地验证：6 个页面 canonical/description/H1、125 个站内链接和资源、6 条 sitemap URL、指南 JSON-LD、Cloudflare 标签及 App Store 目标一致；`git diff --check`、Python 编译通过。Apple 公共 lookup（US storefront）回读 US Visa Photo 1.1.5、iOS 17.0、免费下载。浏览器视觉验收及 Search Console/Bing/ASC 后台暂因 Work 浏览器访问禁用而未完成，不把它们写成通过。
+- Google/Bing 所有权验证、sitemap 提交、Google AI 展示设置、ASC campaign links 及点击到下载归因仍须后台实际回读。后续部署回执与试点进展记在 `../VisaPhotoApps/docs/marketing/search-acquisition.md`。
+
+---
+
 面向后续维护者 / Agent：本文描述 **`USVisaPhotoCom/` 目录**内静态站点如何组织、**三种 App Store 营销截图方案**各自做什么、如何运行、输出路径与约束。iOS 工程见同 repo 的 [`USVisaPhoto/DOCUMENTATION.md`](../USVisaPhoto/DOCUMENTATION.md)。
 
 ---
