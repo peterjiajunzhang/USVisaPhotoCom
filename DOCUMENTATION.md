@@ -2,6 +2,8 @@
 
 ## 2026-11-04 搜索获客试点
 
+> **18:49 Pacific 访问诊断纠正**：先前“浏览器访问禁用”仅由标签页接口报错推断，不能扩大为全部 Chrome 不可用。用户指出后，实测文档支持的原生 Chrome 入口可用，ASC/GSC 已登录，US sitemap 已成功重提。无需因此要求用户修改 Work 设置。下方未完成项为各时点记录，最新回执与后台进度以 sibling `VisaPhotoApps/docs/marketing/search-acquisition.md` 为准。
+
 本仓库是 `https://us.visaphoto1tap.com/` 的 GitHub Pages 源站（`main` 根目录）。本轮仅修改网站；不改变 US iOS 1.1.5、App Store listing 或已批准截图。产品功能及发布状态以 sibling `VisaPhotoApps/DOCUMENTATION.md` 顶部和 `docs/appstore/version-update-workflow.md` §2 为准；下文旧 `USVisaPhoto/` 路径和旧营销导出方案为历史，不能作为当前发布流程。
 
 - 新增 `guides/index.html` 和三篇英文指南：规格、DS-160 上传失败排查、隐私与收费。它们是直接维护的静态 HTML，没有额外构建依赖；共享样式为 `assets/guides.css`。
