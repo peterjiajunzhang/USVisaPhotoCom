@@ -1,0 +1,93 @@
+{
+  "sourceRelease": "US iOS 1.1.5 screenshot preparation; pinned production source f776bec",
+  "sourceProvenance": "Marketing/US/appstore/versions/1.1.5/repair-en-US-6.5/captures/en-US/6.5/provenance.json",
+  "scope": "Existing native replay captures with fixture results and verified local no-charge StoreKit purchases; not fresh production purchases or device captures. Local source/output hashes, not remote App Store checksums.",
+  "gallery": "12 native saved exports, six different models; original order retained.",
+  "assets": [
+    {
+      "source": "Marketing/US/appstore/versions/1.1.5/repair-en-US-6.5/captures/en-US/6.5/02-before-native.png",
+      "sourceSha256": "799bc80f189b7563a10a4899a7f5e7d7c91d610340fdd44ceea4738d9c5aadc1",
+      "sourcePixels": [
+        1284,
+        2778
+      ],
+      "scene": "original input, before processing",
+      "output": "assets/iphone/02-before-native.webp",
+      "outputSha256": "ae6f0d06a8a5d308f832ad8c79d082a14d425dc042564ef91c1bb833bcaddc5b",
+      "bytes": 72404,
+      "transformation": "Whole native screenshot proportionally resized to 864 px wide and WebP encoded. No crop, retouch, watermark removal, UI or purchase-state change.",
+      "outputPixels": [
+        864,
+        1869
+      ]
+    },
+    {
+      "source": "Marketing/US/appstore/versions/1.1.5/repair-en-US-6.5/captures/en-US/6.5/02-after-native.png",
+      "sourceSha256": "b163e1ac62bbbda325e897c678332e3835cd2af3b3d2a79132c6fcfdd710c041",
+      "sourcePixels": [
+        1284,
+        2778
+      ],
+      "scene": "unlocked result after local StoreKit test purchase",
+      "output": "assets/iphone/02-after-native.webp",
+      "outputSha256": "6760c704a24ec5fc86c404c7b00ca63132690f36d9e4a3d18136ff4288cbb98f",
+      "bytes": 88840,
+      "transformation": "Whole native screenshot proportionally resized to 864 px wide and WebP encoded. No crop, retouch, watermark removal, UI or purchase-state change.",
+      "outputPixels": [
+        864,
+        1869
+      ]
+    },
+    {
+      "source": "Marketing/US/appstore/versions/1.1.5/repair-en-US-6.5/captures/en-US/6.5/03-checklist-native.png",
+      "sourceSha256": "aa29ba54866aea06107705297ea3265e6e5b771db865c587afd9ea62fa33b38f",
+      "sourcePixels": [
+        1284,
+        2778
+      ],
+      "scene": "native full checklist before unlock",
+      "output": "assets/iphone/03-checklist-native.webp",
+      "outputSha256": "8584ada29f473ef26a26cba1d0216144897fefc69100079c13894a8c0c504cb4",
+      "bytes": 144022,
+      "transformation": "Whole native screenshot proportionally resized to 864 px wide and WebP encoded. No crop, retouch, watermark removal, UI or purchase-state change.",
+      "outputPixels": [
+        864,
+        1869
+      ]
+    },
+    {
+      "source": "Marketing/US/appstore/versions/1.1.5/repair-en-US-6.5/captures/en-US/6.5/04-lighting-native.png",
+      "sourceSha256": "979b5722069efc1f1b9e6045a25467a6f614c61df9e5128acdaac4faf6dd6fa8",
+      "sourcePixels": [
+        1284,
+        2778
+      ],
+      "scene": "unlocked result after local StoreKit test purchase",
+      "output": "assets/iphone/04-lighting-native.webp",
+      "outputSha256": "ff0bf631bfd7d082564a29ea3b6556bce197776cf5094472891cf883a16d45f6",
+      "bytes": 103928,
+      "transformation": "Whole native screenshot proportionally resized to 864 px wide and WebP encoded. No crop, retouch, watermark removal, UI or purchase-state change.",
+      "outputPixels": [
+        864,
+        1869
+      ]
+    },
+    {
+      "source": "Marketing/US/appstore/versions/1.1.5/repair-en-US-6.5/captures/en-US/6.5/06-saved-grid-native.png",
+      "sourceSha256": "82854624d52e621b4d26981373bcea73327270ae63cc9c52897c55e4b15dcf6f",
+      "sourcePixels": [
+        1284,
+        2778
+      ],
+      "scene": "native All Saved Photos, exactly twelve exports saved via verified local StoreKit test purchases in the 1.1.4 model order",
+      "output": "assets/iphone/06-saved-grid-native.webp",
+      "outputSha256": "7fe3af79ddf5661b86b349892e2ac3ebeb6b9b1a101b3ab32c37e91dba984ed2",
+      "bytes": 86178,
+      "transformation": "Whole native screenshot proportionally resized to 864 px wide and WebP encoded. No crop, retouch, watermark removal, UI or purchase-state change.",
+      "outputPixels": [
+        864,
+        1869
+      ]
+    }
+  ]
+}

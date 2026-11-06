@@ -1,0 +1,32 @@
+{
+  "observedAtUtc": "2026-11-06T17:50:22.076658+00:00",
+  "baseline": "ec3c8c0",
+  "htmlPages": 9,
+  "localReferencesAndAnchors": 245,
+  "sitemapUrls": [
+    "https://us.visaphoto1tap.com/",
+    "https://us.visaphoto1tap.com/privacy.html",
+    "https://us.visaphoto1tap.com/guides/",
+    "https://us.visaphoto1tap.com/guides/us-visa-photo-requirements.html",
+    "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed.html",
+    "https://us.visaphoto1tap.com/guides/us-visa-photo-privacy-and-pricing.html",
+    "https://us.visaphoto1tap.com/support.html",
+    "https://us.visaphoto1tap.com/privacy-android.html"
+  ],
+  "homeStoreBadges": 4,
+  "guideStoreBadges": 2,
+  "canonicalAndroidPolicyMatch": true,
+  "preserved": [
+    "privacy.html",
+    "privacy-android.html",
+    "support.html",
+    "acquisition-campaigns.json"
+  ],
+  "noAndroidMarketingScreens": true,
+  "legacyAndroidRedirect": true,
+  "structuredDataParsed": true,
+  "allPassed": true,
+  "nativeIPhoneScreens": 5,
+  "nativeIPhoneBytes": 495372,
+  "nativeIPhoneHashesVerified": true
+}

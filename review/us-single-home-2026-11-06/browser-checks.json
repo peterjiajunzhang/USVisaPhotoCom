@@ -1,0 +1,289 @@
+{
+  "observedAtUtc": "2026-11-06T17:54:54.857Z",
+  "homeHeroAndFooter": [
+    {
+      "hero": {
+        "badges": [
+          {
+            "bottom": 535.40625,
+            "height": 40,
+            "top": 495.40625,
+            "width": 120
+          },
+          {
+            "bottom": 605.7734375,
+            "height": 60.3671875,
+            "top": 545.40625,
+            "width": 156
+          }
+        ],
+        "broken": [],
+        "client": 320,
+        "scroll": 320,
+        "width": 320
+      },
+      "footer": {
+        "badges": [
+          {
+            "bottom": 493.9296875,
+            "height": 40,
+            "top": 453.9296875,
+            "width": 120
+          },
+          {
+            "bottom": 564.296875,
+            "height": 60.3671875,
+            "top": 503.9296875,
+            "width": 156
+          }
+        ],
+        "client": 320,
+        "scroll": 320,
+        "width": 320
+      }
+    },
+    {
+      "hero": {
+        "badges": [
+          {
+            "bottom": 473.46875,
+            "height": 40,
+            "top": 433.46875,
+            "width": 120
+          },
+          {
+            "bottom": 483.65625,
+            "height": 60.3671875,
+            "top": 423.2890625,
+            "width": 156
+          }
+        ],
+        "broken": [],
+        "client": 390,
+        "scroll": 390,
+        "width": 390
+      },
+      "footer": {
+        "badges": [
+          {
+            "bottom": 568.7578125,
+            "height": 40,
+            "top": 528.7578125,
+            "width": 120
+          },
+          {
+            "bottom": 578.9453125,
+            "height": 60.3671875,
+            "top": 518.578125,
+            "width": 156
+          }
+        ],
+        "client": 390,
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "hero": {
+        "badges": [
+          {
+            "bottom": 579.46875,
+            "height": 48,
+            "top": 531.46875,
+            "width": 144
+          },
+          {
+            "bottom": 671.8359375,
+            "height": 72.3671875,
+            "top": 599.46875,
+            "width": 187
+          }
+        ],
+        "broken": [],
+        "client": 768,
+        "scroll": 768,
+        "width": 768
+      },
+      "footer": {
+        "badges": [
+          {
+            "bottom": 730.7734375,
+            "height": 48,
+            "top": 682.7734375,
+            "width": 144
+          },
+          {
+            "bottom": 742.9609375,
+            "height": 72.3671875,
+            "top": 670.59375,
+            "width": 187
+          }
+        ],
+        "client": 768,
+        "scroll": 768,
+        "width": 768
+      }
+    },
+    {
+      "hero": {
+        "badges": [
+          {
+            "bottom": 513.640625,
+            "height": 48,
+            "top": 465.640625,
+            "width": 144
+          },
+          {
+            "bottom": 525.828125,
+            "height": 72.3671875,
+            "top": 453.4609375,
+            "width": 187
+          }
+        ],
+        "broken": [],
+        "client": 1440,
+        "scroll": 1440,
+        "width": 1440
+      },
+      "footer": {
+        "badges": [
+          {
+            "bottom": 758.7265625,
+            "height": 48,
+            "top": 710.7265625,
+            "width": 144
+          },
+          {
+            "bottom": 770.9140625,
+            "height": 72.3671875,
+            "top": 698.546875,
+            "width": 187
+          }
+        ],
+        "client": 1440,
+        "scroll": 1440,
+        "width": 1440
+      }
+    }
+  ],
+  "finalNativeHero": [
+    {
+      "broken": [],
+      "client": 320,
+      "heroScreens": [
+        {
+          "complete": true,
+          "height": 1869,
+          "src": "/assets/iphone/02-before-native.webp",
+          "width": 864
+        },
+        {
+          "complete": true,
+          "height": 1869,
+          "src": "/assets/iphone/02-after-native.webp",
+          "width": 864
+        }
+      ],
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "broken": [],
+      "client": 390,
+      "heroScreens": [
+        {
+          "complete": true,
+          "height": 1869,
+          "src": "/assets/iphone/02-before-native.webp",
+          "width": 864
+        },
+        {
+          "complete": true,
+          "height": 1869,
+          "src": "/assets/iphone/02-after-native.webp",
+          "width": 864
+        }
+      ],
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "broken": [],
+      "client": 768,
+      "heroScreens": [
+        {
+          "complete": true,
+          "height": 1869,
+          "src": "/assets/iphone/02-before-native.webp",
+          "width": 864
+        },
+        {
+          "complete": true,
+          "height": 1869,
+          "src": "/assets/iphone/02-after-native.webp",
+          "width": 864
+        }
+      ],
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "broken": [],
+      "client": 1440,
+      "heroScreens": [
+        {
+          "complete": true,
+          "height": 1869,
+          "src": "/assets/iphone/02-before-native.webp",
+          "width": 864
+        },
+        {
+          "complete": true,
+          "height": 1869,
+          "src": "/assets/iphone/02-after-native.webp",
+          "width": 864
+        }
+      ],
+      "scroll": 1440,
+      "width": 1440
+    }
+  ],
+  "guide": [
+    {
+      "badges": 2,
+      "broken": [],
+      "client": 320,
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "badges": 2,
+      "broken": [],
+      "client": 390,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "badges": 2,
+      "broken": [],
+      "client": 768,
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "badges": 2,
+      "broken": [],
+      "client": 1440,
+      "scroll": 1440,
+      "width": 1440
+    }
+  ],
+  "faqAllFive": true,
+  "legacyAndroidRedirect": true,
+  "actualStoreJumps": {
+    "appStore": "US Visa Photo / JIAJUN ZHANG / id6761959861",
+    "googlePlay": "US Visa Photo / Loop Apps / com.loop.usvisaphoto / Install"
+  },
+  "console": [],
+  "scope": "Chrome responsive viewport verification; no app install, purchase or real mobile Safari/Android browser test."
+}

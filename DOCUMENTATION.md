@@ -1,8 +1,21 @@
 # USVisaPhotoCom — 官网与 App Store 营销管线说明
 
+## 2026-11-06 统一首页与官方商店徽章（当前）
+
+用户定案：参照 LoopSplit 的单一产品首页，用 iPhone 界面统一展示，Android 只提供正式商店下载入口。当前首页不再区分 iPhone／Android 产品页或展示 Android 界面；两平台隐私政策继续独立。以下 11-05 双页面交付为当时发布记录，已被本节单页方案替代。
+
+- 从远端最新 `main` `ec3c8c0` 新建 `codex/us-single-home-20261106` 与独立 `us-web-single-home` worktree，保护原 checkout。首页移除 Android 展示区和平台页签；旧 `/android/` 只保留 `noindex,follow`、canonical 指向首页的静态跳转至 `/#download`，并从 sitemap 移除。保留 8 条其他 URL、全部指南与政策路径。
+- 已实际查看 `https://loopsplit.app/`，沿用“统一产品演示＋首尾双官方徽章”方式。首页 hero、末尾下载区与收费指南的商店 CTA 都使用原始官方 App Store／Google Play 徽章，Apple 在前；手机 Apple 徽章 40px、桌面 48px，保留比例和留白。导航 Download 只滚动到徽章，不做自制商店按钮；两个现有 iPhone campaign URL 保持原值。新增 `AGENTS.md` 固化用户规则。
+- 首屏表达一键自动裁剪／白底、免费预览和美国区单次 JPEG `$1.99`／无订阅；真实前后对比旁就是下载入口。其后四项重点为自动处理、实际检查项目、本地照片处理和单次价格；保留 Google SDK／购买数据披露、平台权益独立及背景编辑限制。检查优势以像素、文件大小、头部／眼线比例和光照检查表达，没有虚构竞品排名或政府接受保证。
+- **旧图矛盾与处理**：`ec3c8c0` 首页的 `appstore/inside-app-saved.png` 海报仍含 “Works for Every 2×2 Photo ID”，与现行用途／编辑限制不一致。检查旧图可复核此文字；本轮按用户重做营销展示的授权，在引用位置换为已有 iOS 1.1.5 原生素材，旧海报不再出现在当前页面。未修改 App Store 图片、应用或算法。
+- 当前五张完整 iPhone 原生图来自 `VisaPhotoApps/Marketing/US/appstore/versions/1.1.5/repair-en-US-6.5/captures/en-US/6.5/`，与 Android worktree 所记 provenance SHA-256 一致。来源是已有 release screenshot replay，含 fixture 成片、原生检查与免扣款本地 StoreKit 测试；不冒充新生产交易。完整画面缩放转 WebP，共 495,372 字节；不裁剪、修图、重画或移除水印。03 图保留七行 checklist、Ready 和 PREVIEW；02／04 解锁状态保留；06 图为原生 12 张、六位不同人物，顺序不变；状态栏均为原生 09:41。来源、状态、源／输出哈希见 `assets/iphone/provenance.json`。
+- `privacy.html`、`privacy-android.html`、`support.html`、`acquisition-campaigns.json` 与基线字节一致；Android 政策与应用 canonical 仍一致。未增加统计 SDK、事件采集或安装归因。静态 Tailwind 构建命令不变。
+- 验收：首页首屏＋末尾下载区、收费指南均在 320/390/768/1440px 验证，0 横向溢出或已加载缺图；实际两商店目标核对、五项 FAQ、旧 Android URL 跳转通过，改动页未观察到控制台错误。原生画面、人物、状态和留白已逐图检查；8 条 sitemap、245 个站内引用和结构化数据通过。截图与回执在 `review/us-single-home-2026-11-06/`。本轮是 Chrome 视口验收，不含真实手机 Safari、生产安装／付款或竞品全面测试。
+- 发布沿用 GitHub Pages `main` 根目录；上线构建与公开资源核验后，线上回执另存同一 review 目录。
+
 ## 2026-11-05 Android 上线后的双平台官网
 
-本节为当前网站状态；下方 11-04 及更早记录保留其历史时间范围。基于远端 `main` 的 `949f048` 新建独立 worktree 和 `codex/us-dual-platform-20261105`，未合并旧 Android 预览分支，未触碰原 checkout 的未提交文件。本轮仅更新 US 网站，不修改应用、商店 listing、购买配置或其他国家网站。
+本节为 11-05 当时网站状态；11-06 已按用户决定改为统一首页，见上节。下方 11-04 及更早记录保留其历史时间范围。基于远端 `main` 的 `949f048` 新建独立 worktree 和 `codex/us-dual-platform-20261105`，未合并旧 Android 预览分支，未触碰原 checkout 的未提交文件。本轮仅更新 US 网站，不修改应用、商店 listing、购买配置或其他国家网站。
 
 - **发布依据与公开核验分别记录**：应用仓库 11-05 回执确认 US Android 1.0.0 (6) Production Published。随后实际打开美国区公开 Google Play 页面，看到 **US Visa Photo / Loop Apps**；未登录 Chrome 无痕窗口显示普通 **Install**，无需封测邀请。核验时间为 2026-11-05 21:24 Pacific（11-06 05:24 UTC）。这不是全球所有地区传播或实际安装的证明。详见 `review/us-dual-platform-2026-11-05/store-verification.json`。
 - 首页提供官方 App Store、Google Play 徽章和手动平台导航；保留 iPhone 首页及指南原有 ASC campaign URL，购买与导出额度按平台独立。`/android/` 为可索引的英文正式页，展示实际 Android 流程、免费处理/预览及单次付费 JPEG 导出。美国区 Google Play About 对话框显示 `$1.99 per item`，美国区 App Store 当前描述写 `$1.99 per photo`；页面同时说明以当地商店购买前显示的价格为准。未实际安装或购买。
