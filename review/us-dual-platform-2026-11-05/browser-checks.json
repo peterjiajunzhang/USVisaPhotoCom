@@ -1,0 +1,363 @@
+{
+  "matrix": [
+    {
+      "route": "/",
+      "requestedWidth": 320,
+      "broken": [],
+      "client": 305,
+      "h1": [
+        "US Visa Photo\nPreview & prepare\non your phone"
+      ],
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "route": "/",
+      "requestedWidth": 390,
+      "broken": [],
+      "client": 375,
+      "h1": [
+        "US Visa Photo\nPreview & prepare\non your phone"
+      ],
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "route": "/",
+      "requestedWidth": 768,
+      "broken": [],
+      "client": 753,
+      "h1": [
+        "US Visa Photo\nPreview & prepare\non your phone"
+      ],
+      "scroll": 753,
+      "width": 768
+    },
+    {
+      "route": "/",
+      "requestedWidth": 1440,
+      "broken": [],
+      "client": 1425,
+      "h1": [
+        "US Visa Photo\nPreview & prepare\non your phone"
+      ],
+      "scroll": 1425,
+      "width": 1440
+    },
+    {
+      "route": "/android/",
+      "requestedWidth": 320,
+      "broken": [],
+      "client": 305,
+      "h1": [
+        "Prepare a photo.\nPreview on Android."
+      ],
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "route": "/android/",
+      "requestedWidth": 390,
+      "broken": [],
+      "client": 375,
+      "h1": [
+        "Prepare a photo.\nPreview on Android."
+      ],
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "route": "/android/",
+      "requestedWidth": 768,
+      "broken": [],
+      "client": 753,
+      "h1": [
+        "Prepare a photo.\nPreview on Android."
+      ],
+      "scroll": 753,
+      "width": 768
+    },
+    {
+      "route": "/android/",
+      "requestedWidth": 1440,
+      "broken": [],
+      "client": 1425,
+      "h1": [
+        "Prepare a photo.\nPreview on Android."
+      ],
+      "scroll": 1425,
+      "width": 1440
+    },
+    {
+      "route": "/support.html#en",
+      "requestedWidth": 320,
+      "broken": [],
+      "client": 305,
+      "h1": [
+        "How can we help?"
+      ],
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "route": "/support.html#en",
+      "requestedWidth": 390,
+      "broken": [],
+      "client": 375,
+      "h1": [
+        "How can we help?"
+      ],
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "route": "/support.html#en",
+      "requestedWidth": 768,
+      "broken": [],
+      "client": 768,
+      "h1": [
+        "How can we help?"
+      ],
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "route": "/support.html#en",
+      "requestedWidth": 1440,
+      "broken": [],
+      "client": 1440,
+      "h1": [
+        "How can we help?"
+      ],
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "route": "/privacy.html",
+      "requestedWidth": 320,
+      "broken": [],
+      "client": 305,
+      "h1": [
+        "Privacy Policy"
+      ],
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "route": "/privacy.html",
+      "requestedWidth": 390,
+      "broken": [],
+      "client": 375,
+      "h1": [
+        "Privacy Policy"
+      ],
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "route": "/privacy.html",
+      "requestedWidth": 768,
+      "broken": [],
+      "client": 753,
+      "h1": [
+        "Privacy Policy"
+      ],
+      "scroll": 753,
+      "width": 768
+    },
+    {
+      "route": "/privacy.html",
+      "requestedWidth": 1440,
+      "broken": [],
+      "client": 1425,
+      "h1": [
+        "Privacy Policy"
+      ],
+      "scroll": 1425,
+      "width": 1440
+    },
+    {
+      "route": "/privacy-android.html",
+      "requestedWidth": 320,
+      "broken": [],
+      "client": 305,
+      "h1": [
+        "US Visa Photo\nAndroid Privacy Policy"
+      ],
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "route": "/privacy-android.html",
+      "requestedWidth": 390,
+      "broken": [],
+      "client": 375,
+      "h1": [
+        "US Visa Photo\nAndroid Privacy Policy"
+      ],
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "route": "/privacy-android.html",
+      "requestedWidth": 768,
+      "broken": [],
+      "client": 753,
+      "h1": [
+        "US Visa Photo\nAndroid Privacy Policy"
+      ],
+      "scroll": 753,
+      "width": 768
+    },
+    {
+      "route": "/privacy-android.html",
+      "requestedWidth": 1440,
+      "broken": [],
+      "client": 1425,
+      "h1": [
+        "US Visa Photo\nAndroid Privacy Policy"
+      ],
+      "scroll": 1425,
+      "width": 1440
+    },
+    {
+      "route": "/guides/us-visa-photo-privacy-and-pricing.html",
+      "requestedWidth": 320,
+      "broken": [],
+      "client": 305,
+      "h1": [
+        "US Visa Photo: Privacy, Free Preview & Export Pricing"
+      ],
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "route": "/guides/us-visa-photo-privacy-and-pricing.html",
+      "requestedWidth": 390,
+      "broken": [],
+      "client": 375,
+      "h1": [
+        "US Visa Photo: Privacy, Free Preview & Export Pricing"
+      ],
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "route": "/guides/us-visa-photo-privacy-and-pricing.html",
+      "requestedWidth": 768,
+      "broken": [],
+      "client": 753,
+      "h1": [
+        "US Visa Photo: Privacy, Free Preview & Export Pricing"
+      ],
+      "scroll": 753,
+      "width": 768
+    },
+    {
+      "route": "/guides/us-visa-photo-privacy-and-pricing.html",
+      "requestedWidth": 1440,
+      "broken": [],
+      "client": 1425,
+      "h1": [
+        "US Visa Photo: Privacy, Free Preview & Export Pricing"
+      ],
+      "scroll": 1425,
+      "width": 1440
+    }
+  ],
+  "actions": [
+    {
+      "action": "Android FAQ",
+      "label": "Is the Android app available to download?",
+      "opened": true
+    },
+    {
+      "action": "Android FAQ",
+      "label": "What can I do for free?",
+      "opened": true
+    },
+    {
+      "action": "Android FAQ",
+      "label": "Can I use an iPhone purchase on Android?",
+      "opened": true
+    },
+    {
+      "action": "Android FAQ",
+      "label": "Does the app upload my photo?",
+      "opened": true
+    },
+    {
+      "action": "Android FAQ",
+      "label": "Can it fix lighting or make a print sheet?",
+      "opened": true
+    },
+    {
+      "action": "Android FAQ",
+      "label": "Will the photo be officially accepted?",
+      "opened": true
+    },
+    {
+      "action": "Android privacy link",
+      "url": "http://127.0.0.1:8773/privacy-android.html",
+      "sdkHeading": true
+    },
+    {
+      "action": "iPhone privacy link",
+      "url": "http://127.0.0.1:8773/privacy.html"
+    },
+    {
+      "action": "Support link",
+      "url": "http://127.0.0.1:8773/support.html#en",
+      "width": 320,
+      "client": 305,
+      "scroll": 305
+    },
+    {
+      "action": "Home FAQ",
+      "label": "Can I choose iPhone or Android?",
+      "opened": true
+    },
+    {
+      "action": "Home FAQ",
+      "label": "What is free, and what do I pay for?",
+      "opened": true
+    },
+    {
+      "action": "Home FAQ",
+      "label": "Does my purchase work on both platforms?",
+      "opened": true
+    },
+    {
+      "action": "Home FAQ",
+      "label": "Are photos processed locally?",
+      "opened": true
+    },
+    {
+      "action": "Home FAQ",
+      "label": "Does an export guarantee my photo will be accepted?",
+      "opened": true
+    },
+    {
+      "action": "Country menu",
+      "expanded": "true"
+    },
+    {
+      "action": "Clicked home Google Play badge",
+      "url": "https://play.google.com/store/apps/details?id=com.loop.usvisaphoto",
+      "correctTitle": true,
+      "developer": true,
+      "ordinaryInstallEntry": true
+    },
+    {
+      "action": "Clicked home App Store badge",
+      "url": "https://apps.apple.com/us/app/us-visa-photo/id6761959861",
+      "correctTitle": true,
+      "developer": true
+    }
+  ],
+  "notes": [
+    "Each viewport applied to selected test tab, reloaded and innerWidth asserted. Client width excludes desktop scrollbar.",
+    "No app install, real payment or email message performed.",
+    "Pre-existing Tailwind CDN warning on unchanged iPhone privacy page; no runtime errors observed in changed pages."
+  ]
+}

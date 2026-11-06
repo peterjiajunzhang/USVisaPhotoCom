@@ -1,0 +1,28 @@
+{
+  "verifiedAtUtc": "2026-11-06T05:28:39.369623+00:00",
+  "baseline": "949f048dfd0ea783357469ed504c0f9d3924fb44",
+  "htmlPages": 9,
+  "changedPagesWithCanonicalDescriptionOgAndOneH1": 6,
+  "localReferencesAndAnchors": 268,
+  "sitemapUrls": [
+    "https://us.visaphoto1tap.com/",
+    "https://us.visaphoto1tap.com/privacy.html",
+    "https://us.visaphoto1tap.com/guides/",
+    "https://us.visaphoto1tap.com/guides/us-visa-photo-requirements.html",
+    "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed.html",
+    "https://us.visaphoto1tap.com/guides/us-visa-photo-privacy-and-pricing.html",
+    "https://us.visaphoto1tap.com/android/",
+    "https://us.visaphoto1tap.com/support.html",
+    "https://us.visaphoto1tap.com/privacy-android.html"
+  ],
+  "canonicalAndroidPolicyExactMatch": true,
+  "preservedUnchanged": [
+    "privacy.html",
+    "privacy-android.html",
+    "support.html",
+    "acquisition-campaigns.json"
+  ],
+  "androidAssets": 4,
+  "androidAssetBytes": 288884,
+  "allPassed": true
+}

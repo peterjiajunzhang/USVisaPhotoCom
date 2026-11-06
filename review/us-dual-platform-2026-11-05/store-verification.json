@@ -1,0 +1,38 @@
+{
+  "console": {
+    "release": "1.0.0 (6)",
+    "status": "Production Published",
+    "publishedOn": "2026-11-05",
+    "publishedTime": "19:11 America/Los_Angeles",
+    "source": "android/play/production-release-1.0.0-6-2026-11-05.json"
+  },
+  "publicGooglePlay": {
+    "observedAtUtc": "2026-11-06T05:24:42.290Z",
+    "url": "https://play.google.com/store/apps/details?id=com.loop.usvisaphoto&hl=en_US&gl=US",
+    "environment": "Chrome Incognito, no Google account signed in",
+    "name": "US Visa Photo",
+    "developer": "Loop Apps",
+    "installButtonObserved": true,
+    "noTestInvitationRequired": true,
+    "installPerformed": false
+  },
+  "googlePlayPrice": {
+    "environment": "Signed-in public U.S. storefront, About this app dialog",
+    "value": "$1.99 per item",
+    "requires": "Android 8.0 and up",
+    "version": "1.0.0",
+    "updated": "Nov 5, 2026"
+  },
+  "appStore": {
+    "name": "US Visa Photo",
+    "developer": "JIAJUN ZHANG",
+    "version": "1.1.5",
+    "requirement": "iOS 17.0 or later",
+    "priceEvidence": "Current public U.S. store description says $1.99 per photo, no subscription."
+  },
+  "limits": [
+    "No install or payment performed.",
+    "Public listing availability is separately verified from Console publication.",
+    "Web search tool could not fetch the Google Play detail URL; Chrome signed-in and incognito access both succeeded."
+  ]
+}

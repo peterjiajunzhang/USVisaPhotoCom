@@ -1,5 +1,19 @@
 # USVisaPhotoCom — 官网与 App Store 营销管线说明
 
+## 2026-11-05 Android 上线后的双平台官网
+
+本节为当前网站状态；下方 11-04 及更早记录保留其历史时间范围。基于远端 `main` 的 `949f048` 新建独立 worktree 和 `codex/us-dual-platform-20261105`，未合并旧 Android 预览分支，未触碰原 checkout 的未提交文件。本轮仅更新 US 网站，不修改应用、商店 listing、购买配置或其他国家网站。
+
+- **发布依据与公开核验分别记录**：应用仓库 11-05 回执确认 US Android 1.0.0 (6) Production Published。随后实际打开美国区公开 Google Play 页面，看到 **US Visa Photo / Loop Apps**；未登录 Chrome 无痕窗口显示普通 **Install**，无需封测邀请。核验时间为 2026-11-05 21:24 Pacific（11-06 05:24 UTC）。这不是全球所有地区传播或实际安装的证明。详见 `review/us-dual-platform-2026-11-05/store-verification.json`。
+- 首页提供官方 App Store、Google Play 徽章和手动平台导航；保留 iPhone 首页及指南原有 ASC campaign URL，购买与导出额度按平台独立。`/android/` 为可索引的英文正式页，展示实际 Android 流程、免费处理/预览及单次付费 JPEG 导出。美国区 Google Play About 对话框显示 `$1.99 per item`，美国区 App Store 当前描述写 `$1.99 per photo`；页面同时说明以当地商店购买前显示的价格为准。未实际安装或购买。
+- Android 图像仅来自本次发布暂存目录 `android/build/play-release-submission-2026-11-05/upload-staging/us/en-US/phoneScreenshots/` 的 01、02、03、06；整图等比缩小转 WebP，共 288,884 字节，不裁剪、重绘、移除水印或改变购买状态。来源与输出 SHA-256、尺寸及官方徽章来源见 `android/assets/provenance.json`。七语素材仍以应用发布目录为准；本轮官网先交付英文。
+- 文案按平台区分本地模型与 Apple 框架，明确 Android Google SDK 诊断和购买数据披露；保留背景替换／无纯裁剪导出限制、独立开发者身份及不保证官方接受的说明。未宣传打印排版或补光修正。
+- `privacy.html`、`privacy-android.html`、`support.html`、`acquisition-campaigns.json` 与 `949f048` **字节一致**；Android 政策另与应用仓库最新 `android/play/privacy-android.html` 校验一致。没有用旧预览政策覆盖线上政策。原指南 URL 全部保留，sitemap 扩为 9 项。
+- 首页 Tailwind 改为编译后静态 `assets/home.css`，不再运行 Tailwind CDN；更新 utility class 后执行 `bash scripts/build_home_css.sh`（固定 Tailwind 3.4.17）。`assets/platforms.css` 为双平台公共样式，Android 页不需要构建。既有 Lucide、Cloudflare 网站统计沿用；没有新增下载点击采集器，也不把访问量当安装量。下文旧 Tailwind CDN／营销导出说明仅适用于其历史工具和未改动页面。
+- 验收：6 个主要页面 × 320/390/768/1440 px 共 24 组浏览器检查，无横向溢出或已加载缺图；实际点击两商店入口、平台导航、11 项 FAQ、支持与两份隐私政策链接。静态检查覆盖 9 个 HTML、268 个站内引用与锚点、结构化数据、9 条 sitemap URL 和素材哈希。证据与桌面／手机截图在 `review/us-dual-platform-2026-11-05/`。
+- **验收范围**：Chrome 视口模拟，未另测真实 Safari/Android 浏览器；没有执行真实安装、支付或跨地区价格核验。改动页未观察到运行错误；未改动 iPhone 隐私页仍有既有 Tailwind CDN 生产环境警告，政策正文保持不变。
+- **部署**：沿用 GitHub Pages `main` 根目录；实现提交后核对 Pages 构建及线上资源，回执补入同一 review 目录。
+
 ## 2026-11-04 搜索获客试点
 
 > **18:49 Pacific 访问诊断纠正**：先前“浏览器访问禁用”仅由标签页接口报错推断，不能扩大为全部 Chrome 不可用。用户指出后，实测文档支持的原生 Chrome 入口可用，ASC/GSC 已登录，US sitemap 已成功重提。无需因此要求用户修改 Work 设置。下方未完成项为各时点记录，最新回执与后台进度以 sibling `VisaPhotoApps/docs/marketing/search-acquisition.md` 为准。
