@@ -1,0 +1,185 @@
+{
+  "observedAtUtc": "2026-11-06T05:31:24.798534+00:00",
+  "implementationCommit": "8dc229020aaeb9c793718931c245cd290f2adf9c",
+  "pages": {
+    "status": "built",
+    "commit": "8dc229020aaeb9c793718931c245cd290f2adf9c",
+    "created_at": "2026-11-06T05:29:49Z",
+    "updated_at": "2026-11-06T05:30:31Z"
+  },
+  "resources": [
+    {
+      "path": "index.html",
+      "url": "https://us.visaphoto1tap.com/",
+      "status": 200,
+      "bytes": 47125,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "3ede21638245fbf8a1baf928b774148655a80019d63fdbba91d69fb132ad901f",
+      "matchesCheckout": true
+    },
+    {
+      "path": "android/index.html",
+      "url": "https://us.visaphoto1tap.com/android/",
+      "status": 200,
+      "bytes": 12101,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "0150c7a41ba74ad654b5e81a65afd7b2fc4f7e40b131e5963fcb1f5b8dda4163",
+      "matchesCheckout": true
+    },
+    {
+      "path": "support.html",
+      "url": "https://us.visaphoto1tap.com/support.html",
+      "status": 200,
+      "bytes": 13756,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "04584735c2b7578f3e7b8bbb3647cfe5060e95f1e03e065f9696b8770ad1463e",
+      "matchesCheckout": true
+    },
+    {
+      "path": "privacy.html",
+      "url": "https://us.visaphoto1tap.com/privacy.html",
+      "status": 200,
+      "bytes": 12417,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "c80ea4398478bd58cba2a9a6a32956ee0c2b66b39faf02765fc8d1f7692d0d3d",
+      "matchesCheckout": true
+    },
+    {
+      "path": "privacy-android.html",
+      "url": "https://us.visaphoto1tap.com/privacy-android.html",
+      "status": 200,
+      "bytes": 6719,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "e70b8b7e64ff762fe9a7ce53401edda2a13ae7d0c2ea9ab95b2950053ecf020e",
+      "matchesCheckout": true
+    },
+    {
+      "path": "guides/index.html",
+      "url": "https://us.visaphoto1tap.com/guides/",
+      "status": 200,
+      "bytes": 5164,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "4cab61d5a4b5944c3ce6bcab1ba645bbfb080baff4ed4e9fedd24e7763b5d28c",
+      "matchesCheckout": true
+    },
+    {
+      "path": "guides/us-visa-photo-requirements.html",
+      "url": "https://us.visaphoto1tap.com/guides/us-visa-photo-requirements.html",
+      "status": 200,
+      "bytes": 8952,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "c8a9d4d0e0aaf1d31d8667fb0433a0e095cec4c530c60acdf691e900cfa6fd63",
+      "matchesCheckout": true
+    },
+    {
+      "path": "guides/ds-160-photo-upload-failed.html",
+      "url": "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed.html",
+      "status": 200,
+      "bytes": 9158,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "0cd1e3d696950936ef11a6743c8b73d2fdc289e38bbcd0391fcad9efff3b196e",
+      "matchesCheckout": true
+    },
+    {
+      "path": "guides/us-visa-photo-privacy-and-pricing.html",
+      "url": "https://us.visaphoto1tap.com/guides/us-visa-photo-privacy-and-pricing.html",
+      "status": 200,
+      "bytes": 10321,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "2aa448f5115079162cc840362dc5197be13a3b6fd3ab19be6201bdd804e026d3",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/home.css",
+      "url": "https://us.visaphoto1tap.com/assets/home.css",
+      "status": 200,
+      "bytes": 13803,
+      "contentType": "text/css; charset=utf-8",
+      "sha256": "6966b0009fe4ccd2a5615e57c77a41b4a4c2ed0853ed194ace796a3d9f088e4b",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/platforms.css",
+      "url": "https://us.visaphoto1tap.com/assets/platforms.css",
+      "status": 200,
+      "bytes": 7791,
+      "contentType": "text/css; charset=utf-8",
+      "sha256": "acd3e542909f66d9541dc8dd52cb4b7e35ccbb41512eaf8f8bec2a02c60e97b8",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/badges/app-store.svg",
+      "url": "https://us.visaphoto1tap.com/assets/badges/app-store.svg",
+      "status": 200,
+      "bytes": 10804,
+      "contentType": "image/svg+xml",
+      "sha256": "a26fc5b38380272c92e9019a2eb8b45542a66814b3e2b203772db8904b9fb99f",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/badges/google-play.png",
+      "url": "https://us.visaphoto1tap.com/assets/badges/google-play.png",
+      "status": 200,
+      "bytes": 4904,
+      "contentType": "image/png",
+      "sha256": "f72611e2df8e88204009fd896d05d5e8e83c77009c63943bbffa169559934849",
+      "matchesCheckout": true
+    },
+    {
+      "path": "sitemap.xml",
+      "url": "https://us.visaphoto1tap.com/sitemap.xml",
+      "status": 200,
+      "bytes": 1284,
+      "contentType": "application/xml",
+      "sha256": "ae1ff9762ba3f47e482bff6e839a90af6afea4a77350459b6d1b1626d001e36e",
+      "matchesCheckout": true
+    },
+    {
+      "path": "acquisition-campaigns.json",
+      "url": "https://us.visaphoto1tap.com/acquisition-campaigns.json",
+      "status": 200,
+      "bytes": 552,
+      "contentType": "application/json; charset=utf-8",
+      "sha256": "68e034f4b4a1e3a9e7b6d8fcbb94be8910e4b3f54b2ee1ce49f824a2b18ece9b",
+      "matchesCheckout": true
+    },
+    {
+      "path": "android/assets/01-result.webp",
+      "url": "https://us.visaphoto1tap.com/android/assets/01-result.webp",
+      "status": 200,
+      "bytes": 89476,
+      "contentType": "image/webp",
+      "sha256": "ecee5fdf48a73a048744091532a855935683cbf7b80b91eb67156beec74a6775",
+      "matchesCheckout": true
+    },
+    {
+      "path": "android/assets/03-checklist.webp",
+      "url": "https://us.visaphoto1tap.com/android/assets/03-checklist.webp",
+      "status": 200,
+      "bytes": 85314,
+      "contentType": "image/webp",
+      "sha256": "693c00d51d7ea76d21266115f506915582a74c0ba63a7b3efbe1c316831b2cfa",
+      "matchesCheckout": true
+    },
+    {
+      "path": "android/assets/06-savedGrid.webp",
+      "url": "https://us.visaphoto1tap.com/android/assets/06-savedGrid.webp",
+      "status": 200,
+      "bytes": 53036,
+      "contentType": "image/webp",
+      "sha256": "23edfae210d26da8687c093822f5d201f1ab672f7af4ef2ae5928da98c322d5f",
+      "matchesCheckout": true
+    },
+    {
+      "path": "android/assets/02-beforeAfter.webp",
+      "url": "https://us.visaphoto1tap.com/android/assets/02-beforeAfter.webp",
+      "status": 200,
+      "bytes": 61058,
+      "contentType": "image/webp",
+      "sha256": "53cb73d62461556a5f86058b609535124eec1b34f673857fc9ea8a43e46be52b",
+      "matchesCheckout": true
+    }
+  ],
+  "allPassed": true,
+  "scope": "Public HTTPS resources and Pages build; browser screenshots and interactions recorded separately."
+}

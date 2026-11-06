@@ -12,7 +12,7 @@
 - 首页 Tailwind 改为编译后静态 `assets/home.css`，不再运行 Tailwind CDN；更新 utility class 后执行 `bash scripts/build_home_css.sh`（固定 Tailwind 3.4.17）。`assets/platforms.css` 为双平台公共样式，Android 页不需要构建。既有 Lucide、Cloudflare 网站统计沿用；没有新增下载点击采集器，也不把访问量当安装量。下文旧 Tailwind CDN／营销导出说明仅适用于其历史工具和未改动页面。
 - 验收：6 个主要页面 × 320/390/768/1440 px 共 24 组浏览器检查，无横向溢出或已加载缺图；实际点击两商店入口、平台导航、11 项 FAQ、支持与两份隐私政策链接。静态检查覆盖 9 个 HTML、268 个站内引用与锚点、结构化数据、9 条 sitemap URL 和素材哈希。证据与桌面／手机截图在 `review/us-dual-platform-2026-11-05/`。
 - **验收范围**：Chrome 视口模拟，未另测真实 Safari/Android 浏览器；没有执行真实安装、支付或跨地区价格核验。改动页未观察到运行错误；未改动 iPhone 隐私页仍有既有 Tailwind CDN 生产环境警告，政策正文保持不变。
-- **部署**：沿用 GitHub Pages `main` 根目录；实现提交后核对 Pages 构建及线上资源，回执补入同一 review 目录。
+- **部署已验收**：沿用 GitHub Pages `main` 根目录，实现提交 `8dc229020aaeb9c793718931c245cd290f2adf9c`；Pages 在 2026-11-06 05:30:31 UTC 构建成功。19 个公开 HTTPS 页面／资源均返回 200 且与发布源字节一致；线上首页和 Android 页再跑 4 宽度共 8 组检查，未见溢出、缺图或本次控制台错误。平台导航和 FAQ 线上交互通过；桌面／手机线上截图及 `live-http-verification.json`、`live-browser-verification.json` 已入同一 review 目录。视口 override 已恢复。
 
 ## 2026-11-04 搜索获客试点
 

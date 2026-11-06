@@ -1,0 +1,68 @@
+{
+  "observedAtUtc": "2026-11-06T05:32:25.168Z",
+  "matrix": [
+    {
+      "route": "/",
+      "broken": [],
+      "client": 305,
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "route": "/",
+      "broken": [],
+      "client": 375,
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "route": "/",
+      "broken": [],
+      "client": 753,
+      "scroll": 753,
+      "width": 768
+    },
+    {
+      "route": "/",
+      "broken": [],
+      "client": 1425,
+      "scroll": 1425,
+      "width": 1440
+    },
+    {
+      "route": "/android/",
+      "broken": [],
+      "client": 305,
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "route": "/android/",
+      "broken": [],
+      "client": 375,
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "route": "/android/",
+      "broken": [],
+      "client": 753,
+      "scroll": 753,
+      "width": 768
+    },
+    {
+      "route": "/android/",
+      "broken": [],
+      "client": 1425,
+      "scroll": 1425,
+      "width": 1440
+    }
+  ],
+  "androidNavigation": true,
+  "faqOpened": true,
+  "logsSinceLiveVerification": [],
+  "notes": [
+    "Actual store jumps, all 11 FAQ and policy/support links were exercised in local preview; live resources match those exact bytes.",
+    "Chrome responsive viewport checks; no real-device Safari or Android browser test."
+  ]
+}
