@@ -1,0 +1,181 @@
+{
+  "observedAtUtc": "2026-11-06T18:02:00.447840+00:00",
+  "commit": "22989dd4a2482fcf639bbc644be35ad03fcf9459",
+  "pages": {
+    "status": "built",
+    "commit": "22989dd4a2482fcf639bbc644be35ad03fcf9459",
+    "created_at": "2026-11-06T17:57:47Z",
+    "updated_at": "2026-11-06T18:01:04Z"
+  },
+  "resources": [
+    {
+      "path": "index.html",
+      "url": "https://us.visaphoto1tap.com/",
+      "status": 200,
+      "bytes": 44115,
+      "sha256": "88ed7548b488ecf7ed0099b74ec1fa0f760ae8699b2a789319eccea0504d1af1",
+      "matchesCheckout": true
+    },
+    {
+      "path": "android/index.html",
+      "url": "https://us.visaphoto1tap.com/android/",
+      "status": 200,
+      "bytes": 435,
+      "sha256": "e0c37a0ed292689ef17cfdff4f556c316c8003b39eb09dcc34e6a69fc3c64fd4",
+      "matchesCheckout": true
+    },
+    {
+      "path": "guides/index.html",
+      "url": "https://us.visaphoto1tap.com/guides/",
+      "status": 200,
+      "bytes": 5162,
+      "sha256": "97fb4f60493f8e72260b7b01db37ac7926becd7f7e7c0aa016fb0fc007f7de5e",
+      "matchesCheckout": true
+    },
+    {
+      "path": "guides/us-visa-photo-requirements.html",
+      "url": "https://us.visaphoto1tap.com/guides/us-visa-photo-requirements.html",
+      "status": 200,
+      "bytes": 8950,
+      "sha256": "939db8b5030937228302bc0a330644a635c937c1ea138f4e4ab869994b2d89fa",
+      "matchesCheckout": true
+    },
+    {
+      "path": "guides/ds-160-photo-upload-failed.html",
+      "url": "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed.html",
+      "status": 200,
+      "bytes": 9156,
+      "sha256": "4e8f10f6e281ad3a5150cc66b2d68b7e5e108c83e82f104c590dba62a8e80702",
+      "matchesCheckout": true
+    },
+    {
+      "path": "guides/us-visa-photo-privacy-and-pricing.html",
+      "url": "https://us.visaphoto1tap.com/guides/us-visa-photo-privacy-and-pricing.html",
+      "status": 200,
+      "bytes": 10699,
+      "sha256": "49a9350c6c689b4513ed7cb38590be791e749c6c07454253fad524b2544c47a4",
+      "matchesCheckout": true
+    },
+    {
+      "path": "privacy.html",
+      "url": "https://us.visaphoto1tap.com/privacy.html",
+      "status": 200,
+      "bytes": 12417,
+      "sha256": "c80ea4398478bd58cba2a9a6a32956ee0c2b66b39faf02765fc8d1f7692d0d3d",
+      "matchesCheckout": true
+    },
+    {
+      "path": "privacy-android.html",
+      "url": "https://us.visaphoto1tap.com/privacy-android.html",
+      "status": 200,
+      "bytes": 6719,
+      "sha256": "e70b8b7e64ff762fe9a7ce53401edda2a13ae7d0c2ea9ab95b2950053ecf020e",
+      "matchesCheckout": true
+    },
+    {
+      "path": "support.html",
+      "url": "https://us.visaphoto1tap.com/support.html",
+      "status": 200,
+      "bytes": 13756,
+      "sha256": "04584735c2b7578f3e7b8bbb3647cfe5060e95f1e03e065f9696b8770ad1463e",
+      "matchesCheckout": true
+    },
+    {
+      "path": "acquisition-campaigns.json",
+      "url": "https://us.visaphoto1tap.com/acquisition-campaigns.json",
+      "status": 200,
+      "bytes": 552,
+      "sha256": "68e034f4b4a1e3a9e7b6d8fcbb94be8910e4b3f54b2ee1ce49f824a2b18ece9b",
+      "matchesCheckout": true
+    },
+    {
+      "path": "sitemap.xml",
+      "url": "https://us.visaphoto1tap.com/sitemap.xml",
+      "status": 200,
+      "bytes": 1180,
+      "sha256": "8ab288c53bc337262efcf39ef4cb502aad3c311b390d6058df37801266d55f4f",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/home.css",
+      "url": "https://us.visaphoto1tap.com/assets/home.css",
+      "status": 200,
+      "bytes": 13453,
+      "sha256": "aefcf01919e83d77b2fc1f0c5ec273c5855f5c9ada97ef0a3168e4056c107a96",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/platforms.css",
+      "url": "https://us.visaphoto1tap.com/assets/platforms.css",
+      "status": 200,
+      "bytes": 4602,
+      "sha256": "e168b4d3ec7ba59828b06b1ca4bdc15161d63cf0fd9694121e793cc86e3cb3ac",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/store-badges.css",
+      "url": "https://us.visaphoto1tap.com/assets/store-badges.css",
+      "status": 200,
+      "bytes": 682,
+      "sha256": "a7df6ba72e8e570f76ffc0ee83e6a23afae7ebef1182afc77fd22e87d97ec959",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/badges/app-store.svg",
+      "url": "https://us.visaphoto1tap.com/assets/badges/app-store.svg",
+      "status": 200,
+      "bytes": 10804,
+      "sha256": "a26fc5b38380272c92e9019a2eb8b45542a66814b3e2b203772db8904b9fb99f",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/badges/google-play.png",
+      "url": "https://us.visaphoto1tap.com/assets/badges/google-play.png",
+      "status": 200,
+      "bytes": 4904,
+      "sha256": "f72611e2df8e88204009fd896d05d5e8e83c77009c63943bbffa169559934849",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/iphone/02-before-native.webp",
+      "url": "https://us.visaphoto1tap.com/assets/iphone/02-before-native.webp",
+      "status": 200,
+      "bytes": 72404,
+      "sha256": "ae6f0d06a8a5d308f832ad8c79d082a14d425dc042564ef91c1bb833bcaddc5b",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/iphone/03-checklist-native.webp",
+      "url": "https://us.visaphoto1tap.com/assets/iphone/03-checklist-native.webp",
+      "status": 200,
+      "bytes": 144022,
+      "sha256": "8584ada29f473ef26a26cba1d0216144897fefc69100079c13894a8c0c504cb4",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/iphone/02-after-native.webp",
+      "url": "https://us.visaphoto1tap.com/assets/iphone/02-after-native.webp",
+      "status": 200,
+      "bytes": 88840,
+      "sha256": "6760c704a24ec5fc86c404c7b00ca63132690f36d9e4a3d18136ff4288cbb98f",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/iphone/04-lighting-native.webp",
+      "url": "https://us.visaphoto1tap.com/assets/iphone/04-lighting-native.webp",
+      "status": 200,
+      "bytes": 103928,
+      "sha256": "ff0bf631bfd7d082564a29ea3b6556bce197776cf5094472891cf883a16d45f6",
+      "matchesCheckout": true
+    },
+    {
+      "path": "assets/iphone/06-saved-grid-native.webp",
+      "url": "https://us.visaphoto1tap.com/assets/iphone/06-saved-grid-native.webp",
+      "status": 200,
+      "bytes": 86178,
+      "sha256": "7fe3af79ddf5661b86b349892e2ac3ebeb6b9b1a101b3ab32c37e91dba984ed2",
+      "matchesCheckout": true
+    }
+  ],
+  "allPassed": true
+}

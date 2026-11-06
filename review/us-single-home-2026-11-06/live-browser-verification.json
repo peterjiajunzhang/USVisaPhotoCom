@@ -1,0 +1,82 @@
+{
+  "observedAtUtc": "2026-11-06T18:03:10.276Z",
+  "matrix": [
+    {
+      "androidImages": 0,
+      "badges": 4,
+      "broken": [],
+      "client": 320,
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "androidImages": 0,
+      "badges": 4,
+      "broken": [],
+      "client": 390,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "androidImages": 0,
+      "badges": 4,
+      "broken": [],
+      "client": 768,
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "androidImages": 0,
+      "badges": 4,
+      "broken": [],
+      "client": 1440,
+      "scroll": 1440,
+      "width": 1440
+    }
+  ],
+  "policyAndSupport": [
+    {
+      "name": "iPhone privacy",
+      "url": "https://us.visaphoto1tap.com/privacy.html",
+      "headings": [
+        "Privacy Policy"
+      ]
+    },
+    {
+      "name": "Android privacy",
+      "url": "https://us.visaphoto1tap.com/privacy-android.html",
+      "headings": [
+        "US Visa PhotoAndroid Privacy Policy"
+      ]
+    },
+    {
+      "name": "Support",
+      "url": "https://us.visaphoto1tap.com/support.html#en",
+      "headings": [
+        "How can we help?"
+      ]
+    }
+  ],
+  "guideBadges": [
+    {
+      "href": "https://apps.apple.com/app/apple-store/id6761959861?pt=128765534&ct=us-seo-guides-20261104&mt=8",
+      "image": "/assets/badges/app-store.svg"
+    },
+    {
+      "href": "https://play.google.com/store/apps/details?id=com.loop.usvisaphoto",
+      "image": "/assets/badges/google-play.png"
+    }
+  ],
+  "legacyAndroidRedirect": true,
+  "demoNavigation": true,
+  "downloadNavigation": true,
+  "logs": [
+    {
+      "level": "warn",
+      "message": "cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation",
+      "timestamp": "2026-11-06T18:02:48.381Z",
+      "url": "https://cdn.tailwindcss.com/"
+    }
+  ],
+  "scope": "Chrome responsive checks. Test visits are acceptance traffic, not acquisition or installation. No real install/payment or physical-mobile browser test."
+}

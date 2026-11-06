@@ -11,7 +11,7 @@
 - 当前五张完整 iPhone 原生图来自 `VisaPhotoApps/Marketing/US/appstore/versions/1.1.5/repair-en-US-6.5/captures/en-US/6.5/`，与 Android worktree 所记 provenance SHA-256 一致。来源是已有 release screenshot replay，含 fixture 成片、原生检查与免扣款本地 StoreKit 测试；不冒充新生产交易。完整画面缩放转 WebP，共 495,372 字节；不裁剪、修图、重画或移除水印。03 图保留七行 checklist、Ready 和 PREVIEW；02／04 解锁状态保留；06 图为原生 12 张、六位不同人物，顺序不变；状态栏均为原生 09:41。来源、状态、源／输出哈希见 `assets/iphone/provenance.json`。
 - `privacy.html`、`privacy-android.html`、`support.html`、`acquisition-campaigns.json` 与基线字节一致；Android 政策与应用 canonical 仍一致。未增加统计 SDK、事件采集或安装归因。静态 Tailwind 构建命令不变。
 - 验收：首页首屏＋末尾下载区、收费指南均在 320/390/768/1440px 验证，0 横向溢出或已加载缺图；实际两商店目标核对、五项 FAQ、旧 Android URL 跳转通过，改动页未观察到控制台错误。原生画面、人物、状态和留白已逐图检查；8 条 sitemap、245 个站内引用和结构化数据通过。截图与回执在 `review/us-single-home-2026-11-06/`。本轮是 Chrome 视口验收，不含真实手机 Safari、生产安装／付款或竞品全面测试。
-- 发布沿用 GitHub Pages `main` 根目录；上线构建与公开资源核验后，线上回执另存同一 review 目录。
+- 发布已完成：实现 `22989dd4a2482fcf639bbc644be35ad03fcf9459` 的 GitHub Pages 于 2026-11-06 18:01:04 UTC 构建／部署成功；21 个公开 HTTPS 页面／资源 200 且与提交字节一致。线上首页四宽度无溢出／缺图，未显示 Android 图，4 个官方徽章齐全；Download、See it work、旧 Android 地址、两政策、支持及指南徽章均复验通过。线上桌面／手机／末尾截图与两份 live 回执在同目录；无运行错误，未改 iPhone 隐私页仍有既有 Tailwind CDN 警告。验收访问不计作自然获客或安装。浏览器视口已恢复，本地预览服务已关闭。
 
 ## 2026-11-05 Android 上线后的双平台官网
 
