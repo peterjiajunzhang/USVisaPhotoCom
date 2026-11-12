@@ -1,0 +1,35 @@
+{
+  "pages": [
+    {
+      "path": "guides/index.html",
+      "bytes": 5461,
+      "h1": 1,
+      "canonical": "https://us.visaphoto1tap.com/guides/",
+      "schema": "CollectionPage"
+    },
+    {
+      "path": "guides/ds-160-photo-upload-failed.html",
+      "bytes": 9698,
+      "h1": 1,
+      "canonical": "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed.html",
+      "schema": "Article"
+    },
+    {
+      "path": "guides/ds-160-photo-upload-failed-zh.html",
+      "bytes": 9490,
+      "h1": 1,
+      "canonical": "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed-zh.html",
+      "schema": "Article"
+    },
+    {
+      "path": "guides/us-visa-photo-privacy-and-pricing.html",
+      "bytes": 12850,
+      "h1": 1,
+      "canonical": "https://us.visaphoto1tap.com/guides/us-visa-photo-privacy-and-pricing.html",
+      "schema": "Article"
+    }
+  ],
+  "sitemapURLs": 9,
+  "localHTTP": 200,
+  "errors": []
+}
