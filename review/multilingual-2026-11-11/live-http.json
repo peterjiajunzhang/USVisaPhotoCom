@@ -1,0 +1,120 @@
+{
+  "commit": "499b9a0ea859ecfeec586016b97743fcb6ae4731",
+  "files": [
+    {
+      "url": "https://us.visaphoto1tap.com/",
+      "status": 200,
+      "matches": true,
+      "sha256": "570f476b6f5c9de761b5e72513933e5ac9285936ba10c55cb8c4c247b131769e"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/guides/",
+      "status": 200,
+      "matches": true,
+      "sha256": "cae5f9bf7850f758ee63f96572e459a269a97a78874eb1e98fa153fa9574778b"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/guides/us-visa-photo-requirements.html",
+      "status": 200,
+      "matches": true,
+      "sha256": "4bbbd3152de2e45017c44e0716017397c62d5e9896411f73e2ae2d6e15fda397"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed.html",
+      "status": 200,
+      "matches": true,
+      "sha256": "f803eb93044baa7cb8fefe931260aa9964f943dff95a69f16227a1eb03340575"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/guides/us-visa-photo-privacy-and-pricing.html",
+      "status": 200,
+      "matches": true,
+      "sha256": "cbd03c429e5a2ff4d85d171aa82b6756a3c804b4ef4d65e48d43a240e70a82c3"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/zh-hans/",
+      "status": 200,
+      "matches": true,
+      "sha256": "479e4db553921a2cefc2423b68d25dcf7d5e74d5527c28f38dbd76eae8186e59"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/zh-hans/guides/",
+      "status": 200,
+      "matches": true,
+      "sha256": "2e46e2abd7157814206cf1db011761a68b51b17a88c8a2463cd5f476a19c02d4"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/zh-hans/guides/us-visa-photo-requirements.html",
+      "status": 200,
+      "matches": true,
+      "sha256": "a3a672a7346e0a4780c3434407f7ddb26a4142544e2e9f42c78cb7e7a0bf4e15"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "status": 200,
+      "matches": true,
+      "sha256": "2cc0447756b120aaed6293db7e07995c9ad353979617e8ba24e5a906ac72d27c"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "status": 200,
+      "matches": true,
+      "sha256": "2b403e03de5edcd7b61727cb38d0c0e8915b2f396f3236585c181fe0cebd6567"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/sitemap.xml",
+      "status": 200,
+      "matches": true,
+      "sha256": "e93bbffbe7f4e80f3bb79ba63bb18630bf9ebae69544f7594a7fba23eddcf701"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/robots.txt",
+      "status": 200,
+      "matches": true,
+      "sha256": "b167115fa13b301d95237b15b48a573316deaa3679c4f13cf7a1c3b8611f8a6a"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/assets/locales.css",
+      "status": 200,
+      "matches": true,
+      "sha256": "3c1904a4a0c0af9bf9796e6df7e36b9048944cc578b1f2ff8bdabd42031ebb57"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/assets/locales.js",
+      "status": 200,
+      "matches": true,
+      "sha256": "27f3c121a8dc579d154bf2cbfa146e97e1c13271cdcb7cf4be2e161e3e6cc2d6"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed-zh.html",
+      "status": 200,
+      "matches": true,
+      "sha256": "1de5d9ac4538cb16c7cc17b5066b3a9caae4cd3045b2a20da0d0c8cc291df588"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/privacy.html",
+      "status": 200,
+      "matches": true,
+      "sha256": "c80ea4398478bd58cba2a9a6a32956ee0c2b66b39faf02765fc8d1f7692d0d3d"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/privacy-android.html",
+      "status": 200,
+      "matches": true,
+      "sha256": "e70b8b7e64ff762fe9a7ce53401edda2a13ae7d0c2ea9ab95b2950053ecf020e"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/support.html",
+      "status": 200,
+      "matches": true,
+      "sha256": "04584735c2b7578f3e7b8bbb3647cfe5060e95f1e03e065f9696b8770ad1463e"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/acquisition-campaigns.json",
+      "status": 200,
+      "matches": true,
+      "sha256": "68e034f4b4a1e3a9e7b6d8fcbb94be8910e4b3f54b2ee1ce49f824a2b18ece9b"
+    }
+  ],
+  "allMatch": true
+}

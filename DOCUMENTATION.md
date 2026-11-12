@@ -243,3 +243,5 @@
 ---
 
 *文档路径：`USVisaPhotoCom/DOCUMENTATION.md`（仅描述本目录及与其直接相关的生成脚本）。*
+
+Final visual review found the root FAQ details spacing affecting the language menu. Menu-specific spacing/font resets and centered header alignment now pass 16 focused homepage/language/viewport checks; the locale stylesheet URL is versioned for cache refresh. Evidence: review/multilingual-2026-11-11/header-alignment-qa.json.

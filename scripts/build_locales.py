@@ -115,7 +115,7 @@ for f in FILES:
   if lang=='zh-Hans' and not native:translate(soup)
   soup.html['lang']=lang
   links(soup,f,lang);language_ui(soup,f,lang)
-  css=soup.new_tag('link',rel='stylesheet',href='/assets/locales.css',attrs={'data-page-language':''});soup.head.append(css)
+  css=soup.new_tag('link',rel='stylesheet',href='/assets/locales.css?v=20261111-final',attrs={'data-page-language':''});soup.head.append(css)
   control=soup.new_tag('script',src='/assets/locales.js',defer='',attrs={'data-page-language':''});soup.head.append(control)
   dest=ROOT/(('zh-hans/'+f) if lang=='zh-Hans' else f)
   pending.append((dest,str(soup).rstrip()+'\n'))
