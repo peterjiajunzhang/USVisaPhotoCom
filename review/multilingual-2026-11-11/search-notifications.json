@@ -1,0 +1,28 @@
+{
+  "Google": {
+    "us": {
+      "sitemap": "https://us.visaphoto1tap.com/sitemap.xml",
+      "submission": "Sitemap submitted successfully",
+      "publishedURLCount": 13,
+      "notIndexingProof": true,
+      "observedDiscoveredPages": 13,
+      "observedStatus": "Success"
+    },
+    "root": {
+      "sitemap": "https://visaphoto1tap.com/sitemap.xml",
+      "submission": "Sitemap submitted successfully",
+      "publishedURLCount": 2,
+      "notIndexingProof": true,
+      "observedDiscoveredPages": 1,
+      "observedStatus": "Success; retained previous count pending processing"
+    }
+  },
+  "Bing": {
+    "site": "https://us.visaphoto1tap.com/",
+    "sitemap": "https://us.visaphoto1tap.com/sitemap.xml",
+    "submission": "Re-submit accepted; Processing",
+    "previousDiscoveredPages": 9,
+    "publishedURLCount": 13,
+    "notIndexingProof": true
+  }
+}

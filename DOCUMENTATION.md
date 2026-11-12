@@ -245,3 +245,7 @@
 *文档路径：`USVisaPhotoCom/DOCUMENTATION.md`（仅描述本目录及与其直接相关的生成脚本）。*
 
 Final visual review found the root FAQ details spacing affecting the language menu. Menu-specific spacing/font resets and centered header alignment now pass 16 focused homepage/language/viewport checks; the locale stylesheet URL is versioned for cache refresh. Evidence: review/multilingual-2026-11-11/header-alignment-qa.json.
+
+### 中英文发布后验收 — 2026-11-11
+
+内容 `cf7f988` 的 Pages workflow 于 2026-11-12 02:57:30 UTC 成功。19 个公开文件 200 且与提交字节一致；中文首页四宽度无溢出／已加载缺图，页头语言菜单位于安全区域，同主题中英切换及实际两商店入口通过，控制台未观察到错误。Google US sitemap 已 Success／13 个发现页面；Bing 更新进入 Processing／暂留旧 9 页；仅本轮变化的 11 个 HTML 地址通知 IndexNow，HTTP 200。上述不是页面收录或推荐证明。回执、定稿线上桌面／手机截图在 `review/multilingual-2026-11-11/`，主站另有八文件一致回读。QA 访问不计自然获客，真实手机 Safari／安装／付款仍未验证。

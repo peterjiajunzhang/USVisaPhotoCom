@@ -1,0 +1,133 @@
+{
+  "layouts": [
+    {
+      "site": "us",
+      "broken": [],
+      "control": {
+        "bottom": 42,
+        "height": 32,
+        "left": 157.6640625,
+        "right": 232,
+        "top": 10,
+        "width": 74.3359375,
+        "x": 157.6640625,
+        "y": 10
+      },
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "lang": "zh-Hans",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "broken": [],
+      "control": {
+        "bottom": 42,
+        "height": 32,
+        "left": 227.6640625,
+        "right": 302,
+        "top": 10,
+        "width": 74.3359375,
+        "x": 227.6640625,
+        "y": 10
+      },
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "lang": "zh-Hans",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "broken": [],
+      "control": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 581.6640625,
+        "right": 664,
+        "top": 12,
+        "width": 82.3359375,
+        "x": 581.6640625,
+        "y": 12
+      },
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "lang": "zh-Hans",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "broken": [],
+      "control": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 1097.6640625,
+        "right": 1180,
+        "top": 12,
+        "width": 82.3359375,
+        "x": 1097.6640625,
+        "y": 12
+      },
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "lang": "zh-Hans",
+      "scrollWidth": 1440,
+      "width": 1440
+    }
+  ],
+  "flows": {
+    "rootChineseToEnglish": true,
+    "usSameArticleChineseToEnglish": true,
+    "englishAndChineseDirectoriesHaveThreeTopics": true,
+    "actualStoreClicks": {
+      "AppStore": {
+        "name": "US Visa Photo",
+        "id": "6761959861",
+        "campaignInOutgoingLink": "us-seo-guides-20261104"
+      },
+      "GooglePlay": {
+        "name": "US Visa Photo",
+        "developer": "Loop Apps",
+        "package": "com.loop.usvisaphoto",
+        "downloadControl": "Install on more devices"
+      }
+    },
+    "noInstallOrPurchase": true
+  },
+  "consoleErrors": [],
+  "limitations": "Chrome viewport checks; no physical Safari, installation, purchase or independent network audit. Acceptance visits are QA traffic."
+}

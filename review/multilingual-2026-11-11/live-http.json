@@ -1,65 +1,65 @@
 {
-  "commit": "499b9a0ea859ecfeec586016b97743fcb6ae4731",
+  "commit": "cf7f98811a9f89f30494471e903ffb7ef0479f1a",
   "files": [
     {
       "url": "https://us.visaphoto1tap.com/",
       "status": 200,
       "matches": true,
-      "sha256": "570f476b6f5c9de761b5e72513933e5ac9285936ba10c55cb8c4c247b131769e"
+      "sha256": "60cec994cc13b0b394a2cea920a9804d1e31a2f161cacb7614b8911896e14420"
     },
     {
       "url": "https://us.visaphoto1tap.com/guides/",
       "status": 200,
       "matches": true,
-      "sha256": "cae5f9bf7850f758ee63f96572e459a269a97a78874eb1e98fa153fa9574778b"
+      "sha256": "6ccb321675337a1b17228b8cce9a435ae4db9de0dd010319c7f03fb233c22b40"
     },
     {
       "url": "https://us.visaphoto1tap.com/guides/us-visa-photo-requirements.html",
       "status": 200,
       "matches": true,
-      "sha256": "4bbbd3152de2e45017c44e0716017397c62d5e9896411f73e2ae2d6e15fda397"
+      "sha256": "4a6f4e39ae836965af545ad9fff422c4bcebe1c9eaaefbcba38382e5834c69c9"
     },
     {
       "url": "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed.html",
       "status": 200,
       "matches": true,
-      "sha256": "f803eb93044baa7cb8fefe931260aa9964f943dff95a69f16227a1eb03340575"
+      "sha256": "a4a9d88d0e6d00cc6618495b4131313adffbceac3b5b97e7d3d41bac55a78ad0"
     },
     {
       "url": "https://us.visaphoto1tap.com/guides/us-visa-photo-privacy-and-pricing.html",
       "status": 200,
       "matches": true,
-      "sha256": "cbd03c429e5a2ff4d85d171aa82b6756a3c804b4ef4d65e48d43a240e70a82c3"
+      "sha256": "9ab8a5ef3786a37fc4a89505d1b748f45598fc2794f87d19180d0718e79bf899"
     },
     {
       "url": "https://us.visaphoto1tap.com/zh-hans/",
       "status": 200,
       "matches": true,
-      "sha256": "479e4db553921a2cefc2423b68d25dcf7d5e74d5527c28f38dbd76eae8186e59"
+      "sha256": "40e9500bfa2e412f63021d786a01f65c486f750c3eb2cd30f9901f4c8020eaa6"
     },
     {
       "url": "https://us.visaphoto1tap.com/zh-hans/guides/",
       "status": 200,
       "matches": true,
-      "sha256": "2e46e2abd7157814206cf1db011761a68b51b17a88c8a2463cd5f476a19c02d4"
+      "sha256": "d023002f333a131b319fbc86715b4dc7969e603fb7f24e14723c10c590a8d4ba"
     },
     {
       "url": "https://us.visaphoto1tap.com/zh-hans/guides/us-visa-photo-requirements.html",
       "status": 200,
       "matches": true,
-      "sha256": "a3a672a7346e0a4780c3434407f7ddb26a4142544e2e9f42c78cb7e7a0bf4e15"
+      "sha256": "a1378c6db072268809c0ad4cd1e330cc36f15136900e1306167a64c28dbb6d35"
     },
     {
       "url": "https://us.visaphoto1tap.com/zh-hans/guides/ds-160-photo-upload-failed.html",
       "status": 200,
       "matches": true,
-      "sha256": "2cc0447756b120aaed6293db7e07995c9ad353979617e8ba24e5a906ac72d27c"
+      "sha256": "2b376773b5ce7e5ef54ce85f5bf0332babb48af8ec330765069b7f8e9fb40653"
     },
     {
       "url": "https://us.visaphoto1tap.com/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
       "status": 200,
       "matches": true,
-      "sha256": "2b403e03de5edcd7b61727cb38d0c0e8915b2f396f3236585c181fe0cebd6567"
+      "sha256": "c6dfbfd21aed8f6f04494d0ad1bb64367059c9fd639651114987d688ae9897a8"
     },
     {
       "url": "https://us.visaphoto1tap.com/sitemap.xml",
@@ -77,7 +77,7 @@
       "url": "https://us.visaphoto1tap.com/assets/locales.css",
       "status": 200,
       "matches": true,
-      "sha256": "3c1904a4a0c0af9bf9796e6df7e36b9048944cc578b1f2ff8bdabd42031ebb57"
+      "sha256": "cba7eeee01b3dcd2337537cf42ada98e879540a41aeecc8101d2c72560f97274"
     },
     {
       "url": "https://us.visaphoto1tap.com/assets/locales.js",
