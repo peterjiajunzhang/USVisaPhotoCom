@@ -1,0 +1,17 @@
+{
+  "identicalRepeatBuild": true,
+  "files": {
+    "index.html": "570f476b6f5c9de761b5e72513933e5ac9285936ba10c55cb8c4c247b131769e",
+    "sitemap.xml": "e93bbffbe7f4e80f3bb79ba63bb18630bf9ebae69544f7594a7fba23eddcf701",
+    "zh-hans/index.html": "479e4db553921a2cefc2423b68d25dcf7d5e74d5527c28f38dbd76eae8186e59",
+    "zh-hans/guides/index.html": "2e46e2abd7157814206cf1db011761a68b51b17a88c8a2463cd5f476a19c02d4",
+    "zh-hans/guides/ds-160-photo-upload-failed.html": "2cc0447756b120aaed6293db7e07995c9ad353979617e8ba24e5a906ac72d27c",
+    "zh-hans/guides/us-visa-photo-requirements.html": "a3a672a7346e0a4780c3434407f7ddb26a4142544e2e9f42c78cb7e7a0bf4e15",
+    "zh-hans/guides/us-visa-photo-privacy-and-pricing.html": "2b403e03de5edcd7b61727cb38d0c0e8915b2f396f3236585c181fe0cebd6567",
+    "guides/index.html": "cae5f9bf7850f758ee63f96572e459a269a97a78874eb1e98fa153fa9574778b",
+    "guides/ds-160-photo-upload-failed.html": "f803eb93044baa7cb8fefe931260aa9964f943dff95a69f16227a1eb03340575",
+    "guides/us-visa-photo-requirements.html": "4bbbd3152de2e45017c44e0716017397c62d5e9896411f73e2ae2d6e15fda397",
+    "guides/us-visa-photo-privacy-and-pricing.html": "cbd03c429e5a2ff4d85d171aa82b6756a3c804b4ef4d65e48d43a240e70a82c3",
+    "guides/ds-160-photo-upload-failed-zh.html": "1de5d9ac4538cb16c7cc17b5066b3a9caae4cd3045b2a20da0d0c8cc291df588"
+  }
+}

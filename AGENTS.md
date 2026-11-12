@@ -7,3 +7,5 @@
 - Keep the existing iPhone campaign URLs, Google Play package target, guide URLs, support path and separate platform privacy policies. Photo processing is local; do not turn that into a claim of zero SDK/purchase data collection.
 - Present one-tap preparation, actual file/framing checks, free preview and current single-export pricing clearly. Describe verified checks and measured values; do not invent superiority, official acceptance, price comparisons or unreleased features.
 - Check the hero and final download section at phone and desktop widths before publishing. Preserve real screenshot content, watermarks and purchase state. Follow the existing GitHub Pages `main` workflow and record delivery in `DOCUMENTATION.md`.
+
+- Follow [COPY_GUIDE.md](COPY_GUIDE.md): use factual capabilities and outputs, neutral Original / Result labels, and one selected language per page and article directory.

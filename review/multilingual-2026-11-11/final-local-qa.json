@@ -1,0 +1,353 @@
+{
+  "checks": [
+    {
+      "site": "us",
+      "path": "/zh-hans/",
+      "broken": [],
+      "scrollWidth": 320,
+      "storeBadges": [
+        {
+          "height": 40,
+          "loaded": true,
+          "width": 120
+        },
+        {
+          "height": 60.3671875,
+          "loaded": true,
+          "width": 156
+        },
+        {
+          "height": 40,
+          "loaded": true,
+          "width": 120
+        },
+        {
+          "height": 60.3671875,
+          "loaded": true,
+          "width": 156
+        }
+      ],
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/",
+      "broken": [],
+      "scrollWidth": 390,
+      "storeBadges": [
+        {
+          "height": 40,
+          "loaded": true,
+          "width": 120
+        },
+        {
+          "height": 60.3671875,
+          "loaded": true,
+          "width": 156
+        },
+        {
+          "height": 40,
+          "loaded": true,
+          "width": 120
+        },
+        {
+          "height": 60.3671875,
+          "loaded": true,
+          "width": 156
+        }
+      ],
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/",
+      "broken": [],
+      "scrollWidth": 768,
+      "storeBadges": [
+        {
+          "height": 48,
+          "loaded": true,
+          "width": 144
+        },
+        {
+          "height": 72.3671875,
+          "loaded": true,
+          "width": 187
+        },
+        {
+          "height": 48,
+          "loaded": true,
+          "width": 144
+        },
+        {
+          "height": 72.3671875,
+          "loaded": true,
+          "width": 187
+        }
+      ],
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/",
+      "broken": [],
+      "scrollWidth": 1440,
+      "storeBadges": [
+        {
+          "height": 48,
+          "loaded": true,
+          "width": 144
+        },
+        {
+          "height": 72.3671875,
+          "loaded": true,
+          "width": 187
+        },
+        {
+          "height": 48,
+          "loaded": true,
+          "width": 144
+        },
+        {
+          "height": 72.3671875,
+          "loaded": true,
+          "width": 187
+        }
+      ],
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "scrollWidth": 320,
+      "storeBadges": [
+        {
+          "height": 40,
+          "loaded": true,
+          "width": 120
+        },
+        {
+          "height": 60.3671875,
+          "loaded": true,
+          "width": 156
+        }
+      ],
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "scrollWidth": 390,
+      "storeBadges": [
+        {
+          "height": 40,
+          "loaded": true,
+          "width": 120
+        },
+        {
+          "height": 60.3671875,
+          "loaded": true,
+          "width": 156
+        }
+      ],
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "scrollWidth": 768,
+      "storeBadges": [
+        {
+          "height": 48,
+          "loaded": true,
+          "width": 144
+        },
+        {
+          "height": 72.3671875,
+          "loaded": true,
+          "width": 187
+        }
+      ],
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "scrollWidth": 1440,
+      "storeBadges": [
+        {
+          "height": 48,
+          "loaded": true,
+          "width": 144
+        },
+        {
+          "height": 72.3671875,
+          "loaded": true,
+          "width": 187
+        }
+      ],
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "scrollWidth": 320,
+      "storeBadges": [
+        {
+          "height": 40,
+          "loaded": true,
+          "width": 120
+        },
+        {
+          "height": 60.3671875,
+          "loaded": true,
+          "width": 156
+        }
+      ],
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "scrollWidth": 390,
+      "storeBadges": [
+        {
+          "height": 40,
+          "loaded": true,
+          "width": 120
+        },
+        {
+          "height": 60.3671875,
+          "loaded": true,
+          "width": 156
+        }
+      ],
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "scrollWidth": 768,
+      "storeBadges": [
+        {
+          "height": 48,
+          "loaded": true,
+          "width": 144
+        },
+        {
+          "height": 72.3671875,
+          "loaded": true,
+          "width": 187
+        }
+      ],
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "scrollWidth": 1440,
+      "storeBadges": [
+        {
+          "height": 48,
+          "loaded": true,
+          "width": 144
+        },
+        {
+          "height": 72.3671875,
+          "loaded": true,
+          "width": 187
+        }
+      ],
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "scrollWidth": 320,
+      "storeBadges": [
+        {
+          "height": 40,
+          "loaded": true,
+          "width": 120
+        },
+        {
+          "height": 60.3671875,
+          "loaded": true,
+          "width": 156
+        }
+      ],
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "scrollWidth": 390,
+      "storeBadges": [
+        {
+          "height": 40,
+          "loaded": true,
+          "width": 120
+        },
+        {
+          "height": 60.3671875,
+          "loaded": true,
+          "width": 156
+        }
+      ],
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "scrollWidth": 768,
+      "storeBadges": [
+        {
+          "height": 48,
+          "loaded": true,
+          "width": 144
+        },
+        {
+          "height": 72.3671875,
+          "loaded": true,
+          "width": 187
+        }
+      ],
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "scrollWidth": 1440,
+      "storeBadges": [
+        {
+          "height": 48,
+          "loaded": true,
+          "width": 144
+        },
+        {
+          "height": 72.3671875,
+          "loaded": true,
+          "width": 187
+        }
+      ],
+      "width": 1440
+    }
+  ],
+  "flows": {
+    "sameArticleLanguageSwitch": true,
+    "chineseDirectoryThreeTopics": true
+  },
+  "consoleErrors": []
+}

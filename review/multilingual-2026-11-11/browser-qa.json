@@ -1,0 +1,389 @@
+{
+  "viewports": [
+    {
+      "site": "us",
+      "path": "/zh-hans/",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 3,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 3,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 3,
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 3,
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 3,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 3,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 3,
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 3,
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/guides/",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/guides/",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/guides/",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/guides/",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-requirements.html",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-requirements.html",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-requirements.html",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-requirements.html",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-requirements.html",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-requirements.html",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-requirements.html",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-requirements.html",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/guides/ds-160-photo-upload-failed.html",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/guides/ds-160-photo-upload-failed.html",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/guides/ds-160-photo-upload-failed.html",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/guides/ds-160-photo-upload-failed.html",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-privacy-and-pricing.html",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-privacy-and-pricing.html",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-privacy-and-pricing.html",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-privacy-and-pricing.html",
+      "brokenImages": [],
+      "lang": "en",
+      "pendingLazy": 0,
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "brokenImages": [],
+      "lang": "zh-Hans",
+      "pendingLazy": 0,
+      "scrollWidth": 1440,
+      "width": 1440
+    }
+  ],
+  "flows": {
+    "rootEnglishToChinese": true,
+    "rootChineseToEnglish": true,
+    "chineseFilterAndroidShowsOne": true,
+    "filterStatusLocalized": true,
+    "languageMenuKeyboardAndEscape": true,
+    "chineseUploadToEnglishSameArticle": true,
+    "chinesePrivacyToEnglishSameArticle": true,
+    "legacyChineseRedirectPreservesFragment": true
+  },
+  "limits": {
+    "scope": "English and Simplified Chinese marketing pages and three guide pairs; canonical policies remain at their existing URLs, with English labels where appropriate. Support links use the existing matching language fragment.",
+    "nativeImages": "Existing English iPhone app captures remain unchanged and are identified as such.",
+    "lazyImages": "Below-fold images can remain intentionally unloaded until scrolled into view; only completed images with zero natural width count as broken."
+  },
+  "stores": {
+    "GooglePlay": {
+      "listing": "https://play.google.com/store/apps/details?id=com.loop.usvisaphoto&hl=en_US&gl=US",
+      "developer": "Loop Apps",
+      "displayed": "$1.99 per item",
+      "version": "1.0.0",
+      "noPurchasePerformed": true
+    }
+  },
+  "consoleErrors": []
+}

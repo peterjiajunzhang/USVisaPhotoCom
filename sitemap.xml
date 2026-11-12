@@ -1,10 +1,10 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://us.visaphoto1tap.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-11</lastmod>
   </url>
   <url>
     <loc>https://us.visaphoto1tap.com/privacy.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://us.visaphoto1tap.com/guides/us-visa-photo-requirements.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-11</lastmod>
   </url>
   <url>
     <loc>https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed.html</loc>
@@ -37,7 +37,23 @@
     <lastmod>2026-11-05</lastmod>
   </url>
   <url>
-    <loc>https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed-zh.html</loc>
+    <loc>https://us.visaphoto1tap.com/zh-hans/</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://us.visaphoto1tap.com/zh-hans/guides/</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://us.visaphoto1tap.com/zh-hans/guides/us-visa-photo-requirements.html</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://us.visaphoto1tap.com/zh-hans/guides/ds-160-photo-upload-failed.html</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://us.visaphoto1tap.com/zh-hans/guides/us-visa-photo-privacy-and-pricing.html</loc>
     <lastmod>2026-11-11</lastmod>
   </url>
 </urlset>

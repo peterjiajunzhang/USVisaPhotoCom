@@ -1,0 +1,7 @@
+# Bilingual website acceptance — 2026-11-11
+
+Owner approved English/Simplified Chinese page-level localization after competitor research. Source pages, localized directories and current-page switch links are covered by static-validation.json. browser-qa.json records the earlier 48-page/viewport matrix (8 root checks, 40 US checks); final-local-qa.json records focused final checks after adding official store badges to all guide articles and localizing structured copy. Local screenshots are labeled local and are not evidence of publication. Production checks and screenshots will be saved separately with live names.
+
+Policies, support content, native imagery and existing campaign links are preserved. English iPhone captures remain visible in both page languages and are identified. Policy links are labeled English from Chinese pages. Other destination websites remain unchanged. No App Store metadata, application binary, purchase configuration or account settings changed.
+
+Research: https://pictopassport.com/zh/blog/ds-160-photo-upload-failed/ ; https://zh.visafoto.com/ ; https://photoaid.com/zh-cn . Google implementation reference: https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites . Competitor claims and acceptance guarantees were not adopted.

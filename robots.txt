@@ -1,5 +1,7 @@
 User-agent: *
 Disallow: /archive/
 Disallow: /scripts/
+Disallow: /localization/
+Disallow: /review/
 
 Sitemap: https://us.visaphoto1tap.com/sitemap.xml

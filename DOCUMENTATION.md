@@ -1,6 +1,17 @@
 # USVisaPhotoCom — 官网与 App Store 营销管线说明
 
 
+## 2026-11-11 中英文整页切换与事实文案
+
+用户在实际同类网站调研后批准英文／简体中文先行。首页、指南目录与三篇指南形成五组对应页面；英文旧 URL 保留，中文使用 `/zh-hans/` 前缀，页头语言切换保持同一主题。目录每个主题只出现一次，不再混列英文和中文文章卡片。旧 `/guides/ds-160-photo-upload-failed-zh.html` 通过 canonical、即时跳转和可点击后备链接兼容，脚本跳转保留查询与片段；无服务器 301 能力，不冒称 301。
+
+- 英文 HTML 为编辑源，`localization/zh-Hans.json` 为已审校译文；详细中文排查文保留在 `localization/zh-upload.html` 作为内容源。修改后在独立虚拟环境安装 `scripts/requirements-locales.txt` 并运行 `scripts/build_locales.py`，提交生成的静态文件。缺译先报错、不写半成品；重复运行输出一致。GitHub Pages main 架构不变，无运行时翻译或强制语言跳转。
+- 中英文 title／description／OG、页面语言、结构化文字及文章 inLanguage、自身 canonical、双向 hreflang 和 sitemap 同步；现有英文主页及指南地址保留。sitemap 从 9 项改为 13 项（新增五个中文版本、移除被兼容跳转取代的旧中文地址）。`/localization/` 与 `/scripts/` 不作为公开抓取入口。
+- 图片标签与营销标题按 `COPY_GUIDE.md` 改为事实、动作与结果导向。首页只展示原有真实 iPhone 界面，中文页注明英文 UI；原生水印／购买状态、官方商店徽章保持不变。三篇文章均提供同一组 App Store／Google Play 官方下载徽章，复用已有 guides campaign，不新增 token。
+- iPhone／Android 购买独立、免费预览／单张付费导出、背景替换／无纯裁剪、光照仅检测、不保证官方接受的边界保留。Android SDK 诊断与购买披露保留。`support.html`、两份政策、`acquisition-campaigns.json` 与发布基线逐字节一致，Android 政策与应用仓库 canonical 也一致。中文支持链接使用已有 `#zh-Hans`，英文政策明确标注“英文”。
+- 本地已有 12 页 × 四宽度 48 组基础检查；定稿另复验中文首页与新增指南徽章的 20 组布局。483 个跨主站／US 站内部引用和片段、六组 canonical／语言对应、结构化数据、重复生成与保护文件通过。未观察到横向溢出、已加载缺图或控制台错误。证据、截图及发布回执放 `review/multilingual-2026-11-11/`。未实际安装或付款，未做真实手机 Safari 验收，不能把 QA 页面访问计入自然获客。
+
+
 ### 发布后回执 — 2026-11-11
 
 实现 e244376 在 2026-11-12 01:54:36 UTC Pages built。四个变化 HTML 和 sitemap 均 200、与源逐字节一致；新中文页 390/1440px 线上复验通过，主站中文入口实点可达，控制台无错误。Google 接收九页 sitemap，新中文页已 discovered 并获一次 Indexing requested 回执；Bing 九页地图更新后 Processing／仍旧 8 页。IndexNow 只通知本次四个变化 URL，HTTP 200。接收与队列回执不是收录证明，完整 JSON 及线上截图见同日 review。
