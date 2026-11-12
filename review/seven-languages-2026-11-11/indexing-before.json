@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-11 America/Los_Angeles",
+  "sitemapsBeforeExpansion": {
+    "root": {
+      "status": "Success",
+      "discovered": 2
+    },
+    "us": {
+      "status": "Success",
+      "discovered": 13
+    }
+  },
+  "usHome": {
+    "status": "Crawled - currently not indexed",
+    "lastCrawl": "Nov 4, 2026, 7:01:55 PM",
+    "crawler": "Googlebot smartphone",
+    "crawlAllowed": true,
+    "fetch": "Successful",
+    "indexingAllowed": true,
+    "declaredCanonical": "https://us.visaphoto1tap.com/",
+    "googleSelectedCanonical": "Inspected URL",
+    "referringSitemaps": "No referring sitemaps detected",
+    "referringPages": [
+      "https://india.visaphoto1tap.com/",
+      "https://us.visaphoto1tap.com/sitemap.xml"
+    ],
+    "interpretation": "The indexed snapshot predates the Nov 11 website changes; sitemap acceptance is not indexing.",
+    "liveTest": {
+      "testedOn": "Nov 11, 2026, 7:45 PM",
+      "status": "URL is available to Google",
+      "pageAvailability": "Page can be indexed",
+      "notIndexingProof": true
+    }
+  }
+}

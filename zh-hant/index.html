@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<meta content="1A260C272CBE68A35509D46669EC98F1" name="msvalidate.01"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>US Visa Photo — iPhone 與 Android 一鍵照片處理</title>
+<meta content="US Visa Photo 提供一鍵正方形裁剪、白底和檔案檢查，照片在裝置上處理。預覽免費，美國區每張 JPEG 匯出 $1.99。" name="description"/>
+<link href="https://us.visaphoto1tap.com/zh-hant/" rel="canonical"/>
+<link href="/AppIcon.png" rel="icon" type="image/png"/>
+<link href="/AppIcon.png" rel="apple-touch-icon"/>
+<meta content="#0071e3" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta content="https://us.visaphoto1tap.com/zh-hant/" property="og:url"/>
+<meta content="US Visa Photo — iPhone 與 Android 一鍵照片處理" property="og:title"/>
+<meta content="US Visa Photo 提供一鍵正方形裁剪、白底和檔案檢查，照片在裝置上處理。預覽免費，美國區每張 JPEG 匯出 $1.99。" property="og:description"/>
+<meta content="https://us.visaphoto1tap.com/AppIcon.png" property="og:image"/>
+<meta content="1024" property="og:image:width"/>
+<meta content="1024" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="US Visa Photo — iPhone 與 Android 一鍵照片處理" name="twitter:title"/>
+<meta content="US Visa Photo 提供一鍵正方形裁剪、白底和檔案檢查，照片在裝置上處理。預覽免費，美國區每張 JPEG 匯出 $1.99。" name="twitter:description"/>
+<meta content="https://us.visaphoto1tap.com/AppIcon.png" name="twitter:image"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "@id": "https://us.visaphoto1tap.com/zh-hant/#app", "name": "US Visa Photo（iPhone）", "url": "https://us.visaphoto1tap.com/zh-hant/", "image": "https://us.visaphoto1tap.com/AppIcon.png", "description": "照片在裝置上處理，處理與預覽免費，單張 JPEG 匯出另行購買。背景替換不代表官方接受。", "operatingSystem": "iOS 17.0 or later", "applicationCategory": "PhotographyApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "App 下載與預覽免費，JPEG 匯出需在所用平臺另行購買。"}, "downloadUrl": "https://apps.apple.com/us/app/us-visa-photo/id6761959861"}, {"@type": "SoftwareApplication", "@id": "https://us.visaphoto1tap.com/zh-hant/#android-app", "name": "US Visa Photo（Android）", "url": "https://us.visaphoto1tap.com/zh-hant/", "image": "https://us.visaphoto1tap.com/AppIcon.png", "description": "照片在裝置上處理，處理與預覽免費，單張 JPEG 匯出另行購買。背景替換不代表官方接受。", "operatingSystem": "Android 8.0 or later", "applicationCategory": "PhotographyApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "App 下載與預覽免費，JPEG 匯出需在所用平臺另行購買。"}, "downloadUrl": "https://play.google.com/store/apps/details?id=com.loop.usvisaphoto"}]}</script>
+<link href="/assets/home.css" rel="stylesheet"/>
+<link href="/assets/platforms.css" rel="stylesheet"/>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+        .gradient-hero {
+            background: linear-gradient(135deg, #0a1628 0%, #0d2137 50%, #0f2b46 100%);
+        }
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+        .price-strikethrough {
+            text-decoration: line-through;
+            text-decoration-color: #ef4444;
+            text-decoration-thickness: 2px;
+        }
+        @keyframes complianceRowIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .compliance-row {
+            opacity: 0;
+            animation: complianceRowIn 0.5s ease forwards;
+        }
+        .compliance-row:nth-child(1) { animation-delay: 0.05s; }
+        .compliance-row:nth-child(2) { animation-delay: 0.12s; }
+        .compliance-row:nth-child(3) { animation-delay: 0.19s; }
+        .compliance-row:nth-child(4) { animation-delay: 0.26s; }
+        .compliance-row:nth-child(5) { animation-delay: 0.33s; }
+        .compliance-row:nth-child(6) { animation-delay: 0.40s; }
+        .compliance-row:nth-child(7) { animation-delay: 0.47s; }
+        .compliance-row:nth-child(8) { animation-delay: 0.54s; }
+        /* Demo wall (minimal): single-row results strip + originals film strip */
+        .demo-wall-row {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 4px 2px 14px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .demo-wall-row::-webkit-scrollbar { height: 8px; }
+        .demo-wall-row::-webkit-scrollbar-thumb { background: rgba(15, 23, 42, 0.16); border-radius: 999px; }
+        .demo-wall-item { flex: 0 0 auto; scroll-snap-align: start; width: min(220px, 56vw); }
+        .demo-wall-img {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            object-position: center center;
+            border-radius: 1.25rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            background: #fff;
+        }
+        .demo-film {
+            display: flex;
+            gap: 18px;
+            overflow-x: auto;
+            padding: 4px 2px 10px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .demo-film::-webkit-scrollbar { height: 8px; }
+        .demo-film::-webkit-scrollbar-thumb { background: rgba(15, 23, 42, 0.16); border-radius: 999px; }
+        .demo-film-item {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            width: auto;
+        }
+        .demo-film-original-wrap {
+            width: min(200px, 52vw);
+            border-radius: 22px;
+            overflow: hidden;
+            background: linear-gradient(165deg, #2c2c2e 0%, #1c1c1e 40%, #000 100%);
+            box-shadow:
+                0 16px 40px rgba(0, 0, 0, 0.22),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+            padding: 4px;
+        }
+        .demo-film-thumb {
+            width: 100%;
+            height: auto;
+            max-height: min(340px, 58vh);
+            display: block;
+            object-fit: contain;
+            object-position: center center;
+            border-radius: 18px;
+            background: #000;
+        }
+        .demo-film-label {
+            margin-top: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            color: rgba(15, 23, 42, 0.55);
+        }
+        /* Hero before -> after visual: two matching device screens, same treatment */
+        .hero-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: clamp(6px, 1.5vw, 16px);
+        }
+        @media (min-width: 768px) { .hero-visual { justify-content: flex-end; } }
+        .hero-before { position: relative; flex: 0 0 auto; }
+        /* Animated arrow */
+        @keyframes heroArrowNudge {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(5px); }
+        }
+        .hero-arrow {
+            flex: 0 0 auto;
+            color: #22d3ee;
+            animation: heroArrowNudge 1.6s ease-in-out infinite;
+        }
+        .hero-arrow svg { width: clamp(20px, 4vw, 30px); height: clamp(20px, 4vw, 30px); }
+        /* Both before and after use the same device-screen treatment */
+        .hero-after { position: relative; flex: 0 0 auto; }
+        .hero-phone {
+            width: clamp(150px, 38vw, 220px);
+            border-radius: 32px;
+            padding: 6px;
+            background: linear-gradient(165deg, #2c2c2e 0%, #1c1c1e 40%, #000 100%);
+            box-shadow:
+                0 30px 60px -12px rgba(0, 0, 0, 0.5),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+        }
+        .hero-phone img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 26px;
+            background: #fff;
+        }
+        /* Before/After pills */
+        .hero-pill {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 999px;
+            background: rgba(10, 22, 40, 0.55);
+            color: #fff;
+            backdrop-filter: blur(4px);
+        }
+        /* Reused App Store screenshots (self-contained posters) */
+        .appstore-shot {
+            width: 100%;
+            max-width: 260px;
+            height: auto;
+            display: block;
+            border-radius: 1.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+<!-- Cloudflare Web Analytics --><script data-cf-beacon='{"token": "26f702bb029f48b9a0fed7765dbfcb1b"}' src="https://static.cloudflareinsights.com/beacon.min.js" type="module"></script><!-- End Cloudflare Web Analytics -->
+<link data-page-language="" href="https://us.visaphoto1tap.com/" hreflang="en" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/zh-hans/" hreflang="zh-Hans" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/zh-hant/" hreflang="zh-Hant" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/es/" hreflang="es" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/ja/" hreflang="ja" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/de/" hreflang="de" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/fr/" hreflang="fr" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/" hreflang="x-default" rel="alternate"/><link data-page-language="" href="/assets/locales.css?v=20261111-seven" rel="stylesheet"/><script data-page-language="" defer="" src="/assets/locales.js"></script></head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+<a class="platform-skip" href="#main">跳到正文</a>
+<header class="platform-header"><nav aria-label="主導航" class="platform-nav">
+<a aria-label="US Visa Photo 首頁" class="platform-brand" href="/zh-hant/"><img alt="" height="32" src="/AppIcon.png" width="32"/><span>US Visa Photo</span></a>
+<div class="platform-links"><a href="#demos">檢視效果</a><a class="nav-extra" href="#pricing">收費</a><a class="nav-extra" href="/zh-hant/guides/">照片指南</a><a class="nav-extra" href="/support.html#zh-Hant">支援</a><details class="locale-switcher" id="page-language"><summary aria-label="選擇語言">繁體中文</summary><ul class="locale-list"><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a aria-current="page" href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li></ul></details><div class="relative">
+<button aria-expanded="false" aria-haspopup="true" aria-label="其他目的地簽證照片 App" class="p-2 -m-2 rounded-lg text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition" id="app-switcher-btn" type="button">
+<i class="w-5 h-5" data-lucide="menu"></i>
+</button>
+<div class="hidden fixed right-4 top-16 w-72 max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-100 py-2 z-50 text-left" id="app-switcher-menu">
+<p class="px-4 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">各目的地簽證照片 App</p>
+<a class="flex items-center gap-3 px-4 py-2.5 bg-gray-50" href="/zh-hant/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="/AppIcon.png"/>
+<span class="text-sm font-semibold text-gray-900">US Visa Photo</span>
+<i class="w-4 h-4 text-emerald-500 ml-auto flex-shrink-0" data-lucide="check"></i>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://china.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://china.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">China Visa Photo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://schengen.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://schengen.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">Schengen Visa Photo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://india.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://india.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">India Visa Photo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://japan.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://japan.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">Japan Visa Photo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://canada.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://canada.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">Canada Visa Photo</span>
+</a>
+</div>
+</div><a class="nav-download" href="#download">下載</a></div>
+</nav></header>
+<main id="main">
+<!-- APPSTORE_SHOT:BEGIN:hero -->
+<!-- Hero -->
+<section class="gradient-hero text-white overflow-hidden">
+<div class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+<div class="grid md:grid-cols-2 gap-12 md:gap-8 items-center">
+<!-- Copy -->
+<div class="text-center md:text-left">
+<div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur rounded-full px-4 py-1.5 text-sm mb-8">
+<span class="text-gray-200">適用於 iPhone 和 Android</span>
+</div>
+<h1 class="text-5xl md:text-6xl font-bold tracking-tight leading-tight mb-6"> 美國簽證照片，<br/>
+<span class="text-cyan-400">一鍵處理。</span>
+</h1>
+<p class="text-lg md:text-xl text-gray-300 max-w-xl mx-auto md:mx-0 mb-6 leading-relaxed"> 自動正方形裁剪並替換為白底。付費匯出 JPEG 前，先檢視尺寸、構圖和檔案大小。 </p>
+<p class="hero-price"><strong>免費預覽。</strong> 每張 JPEG 匯出 $1.99，無訂閱。</p>
+<div aria-label="選擇下載平臺" class="store-badges" id="download">
+<a data-store-placement="home" href="https://apps.apple.com/app/apple-store/id6761959861?pt=128765534&amp;ct=us-seo-home-20261104&amp;mt=8" rel="noopener noreferrer" target="_blank"><img alt="在 App Store 下載 US Visa Photo" class="apple-badge" height="48" src="/assets/badges/app-store.svg" width="144"/></a>
+<a data-store-placement="home-android" href="https://play.google.com/store/apps/details?id=com.loop.usvisaphoto" rel="noopener noreferrer" target="_blank"><img alt="在 Google Play 下載 US Visa Photo" class="play-badge" height="72" src="/assets/badges/google-play.png" width="187"/></a>
+</div>
+<p class="text-gray-300 text-sm mt-2">iPhone：iOS 17+ · Android：8.0+</p>
+<p class="hero-store-note">以上為美國區價格，本地價格以商店顯示為準。</p>
+<p class="hero-scope">替換背景屬於照片編輯。 <a href="/zh-hant/guides/us-visa-photo-requirements.html#editing">使用前請檢視官方規則。</a></p>
+</div>
+<!-- Product visual: two matching real app screens, same person -->
+<div><div class="hero-visual">
+<!-- Before: the app's own "Original" screen, full raw device screenshot -->
+<figure class="hero-before">
+<div class="hero-phone">
+<img alt="US Visa Photo 的 iPhone 原圖介面，含裁剪為 2×2 並去除背景按鈕" decoding="async" height="1869" src="/assets/iphone/02-before-native.webp" width="864"/>
+</div>
+</figure>
+<!-- Arrow -->
+<div aria-hidden="true" class="hero-arrow">
+<i data-lucide="arrow-right"></i>
+</div>
+<!-- After: the same person, in the app — background removed, cropped to 2x2, auto-checked -->
+<figure class="hero-after">
+<div class="hero-phone">
+<img alt="同一張照片在 US Visa Photo 中完成白底替換、2×2 裁剪，並顯示 Ready to use" decoding="async" height="1869" src="/assets/iphone/02-after-native.webp" width="864"/>
+</div>
+</figure>
+</div><p class="text-center text-gray-400 text-sm mt-5">展示為 iPhone 英文介面，兩個商店均可下載。</p></div>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:hero -->
+<!-- APPSTORE_SHOT:BEGIN:trust-bar -->
+<!-- Trust Bar -->
+<section class="bg-gray-50 border-b border-gray-100">
+<div class="max-w-4xl mx-auto px-6 py-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-gray-500">
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-brand" data-lucide="wifi-off"></i>
+<span>照片在裝置上處理</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-brand" data-lucide="eye-off"></i>
+<span>不向開發者上傳人像</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-brand" data-lucide="cpu"></i>
+<span>iPhone 與 Android</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-brand" data-lucide="check-circle-2"></i>
+<span>檔案與構圖檢查</span>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:trust-bar -->
+<!-- APPSTORE_SHOT:BEGIN:features -->
+<section class="benefits-section" id="features">
+<div class="benefits-wrap">
+<div class="benefits-heading"><p class="platform-eyebrow">自動照片處理</p><h2>裁剪、白底與檔案檢查。</h2></div>
+<div class="benefits-grid">
+<article><span class="benefit-value">一鍵</span><h3>自動裁剪並替換為白底</h3><p>自動正方形裁剪和白底替換，無需拖動滑塊或手動修圖。</p></article>
+<article><span class="benefit-value">檢視詳情</span><h3>核對尺寸、構圖和檔案大小</h3><p>匯出前檢視畫素、檔案大小、頭部高度、眼位和光照警告。</p><a href="#compliance-checklist">檢視檢查專案 <span aria-hidden="true">↗</span></a></article>
+<article><span class="benefit-value">在手機上</span><h3>人像在本機處理。</h3><p>照片在你的裝置上處理，不會把人像上傳到我們的伺服器。</p><a href="#faq">檢視隱私說明 <span aria-hidden="true">↗</span></a></article>
+<article><span class="benefit-value">$1.99</span><h3>按張購買 JPEG 匯出。</h3><p>處理、預覽和重試免費，確認後再購買一次匯出。以上為美國區價格，無訂閱。</p><a href="#pricing">檢視收費說明 <span aria-hidden="true">↗</span></a></article>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:features -->
+<!-- APPSTORE_SHOT:BEGIN:demos -->
+<!-- Before / After Demo collection -->
+<section class="py-20 md:py-28 scroll-mt-20" id="demos">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-14">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">原圖與處理結果</h2>
+<p class="text-gray-500 text-lg max-w-3xl mx-auto">下方保留原照作對比，展示正方形裁剪和白底。示例來自 iPhone App，效果會因照片而異。</p>
+</div>
+<!-- Results wall: single scrollable row -->
+<div aria-label="處理結果展示" class="demo-wall-row">
+<figure class="demo-wall-item"><img alt="處理結果示例 1" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-01-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="處理結果示例 2" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-02-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="處理結果示例 3" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-03-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="處理結果示例 4" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-04-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="處理結果示例 5" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-05-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="處理結果示例 6" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-06-result.png" width="800"/></figure>
+</div>
+<!-- Originals film strip -->
+<div class="mt-10 max-w-5xl mx-auto">
+<div class="flex items-center justify-between gap-4 mb-3">
+<p class="text-sm font-semibold text-gray-400 uppercase tracking-wider">原圖 · 保留完整比例</p>
+<p class="text-xs text-gray-400 hidden sm:block">橫向瀏覽 →</p>
+</div>
+<div aria-label="原圖展示" class="demo-film">
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="原圖 1" class="demo-film-thumb" decoding="async" src="/demos/demo-01-original.png"/>
+</div>
+<div class="demo-film-label">廚房</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="原圖 2" class="demo-film-thumb" decoding="async" src="/demos/demo-02-original.png"/>
+</div>
+<div class="demo-film-label">室內人像</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="原圖 3" class="demo-film-thumb" decoding="async" src="/demos/demo-03-original.png"/>
+</div>
+<div class="demo-film-label">露臺</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="原圖 4" class="demo-film-thumb" decoding="async" src="/demos/demo-04-original.png"/>
+</div>
+<div class="demo-film-label">室外走廊</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="原圖 5" class="demo-film-thumb" decoding="async" src="/demos/demo-05-original.png"/>
+</div>
+<div class="demo-film-label">人行道</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="原圖 6" class="demo-film-thumb" decoding="async" src="/demos/demo-06-original.png"/>
+</div>
+<div class="demo-film-label">客廳</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:demos -->
+<section class="py-16 md:py-24 bg-gray-50 scroll-mt-24" id="app">
+<div class="max-w-6xl mx-auto px-6 text-center">
+<p class="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-2">App 介面</p>
+<h2 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 mb-3">購買前檢視照片與檢查表</h2>
+<p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto mb-10">檢視檢查專案、光照警告和已匯出的照片。展示為 iPhone 實際英文介面；免費預覽保留原生水印，解鎖示例為已儲存的成片。</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-10 justify-items-center max-w-4xl mx-auto">
+<img alt="iPhone 原生預覽：完整七行檢查表、Ready to use 狀態和購買前保留的 PREVIEW 水印" class="appstore-shot" decoding="async" height="1869" loading="lazy" src="/assets/iphone/03-checklist-native.webp" width="864"/>
+<img alt="iPhone 實際光照檢查介面，以及解鎖後的 JPEG 儲存與分享操作" class="appstore-shot" decoding="async" height="1869" loading="lazy" src="/assets/iphone/04-lighting-native.webp" width="864"/>
+<img alt="iPhone 原生已存照片相簿：六位不同人物的十二張成片" class="appstore-shot" decoding="async" height="1869" loading="lazy" src="/assets/iphone/06-saved-grid-native.webp" width="864"/>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:BEGIN:compliance-checklist -->
+<!-- Compliance checklist (matches in-app export checklist) -->
+<section class="py-16 md:py-24 bg-white border-t border-gray-100" id="compliance-checklist">
+<div class="max-w-3xl mx-auto px-6">
+<div class="text-center mb-10">
+<h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">照片尺寸與構圖測量</h2>
+<p class="text-gray-500">檢視預覽對應的畫素、檔案大小、眼位和頭部高度。App 檢查僅供參考，不代表官方接受。</p>
+</div>
+<div class="bg-gray-50 rounded-2xl border border-gray-100 p-6 md:p-8">
+<ul class="space-y-4 text-left text-sm md:text-base text-gray-800">
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>照片尺寸</strong> — 2 × 2 英寸（51 × 51 毫米），正方形裁剪。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>數字解析度</strong> — 正方形邊長 600 至 1200 畫素；App 展示實際匯出尺寸，例如 1200 × 1200。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>眼位</strong> — 從畫面底部計算，美國指引的參考區間為 56–69%；App 顯示實際測量百分比。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>頭部高度</strong> — 佔照片高度的 50–69%；App 顯示測量值與模板的對照。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>背景</strong> — 白底由處理生成，不代表原始背景已透過檢查。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>光照</strong> — 面部光照不均時可能出現警告；App 不會修正光照。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>檔案格式</strong> — 匯出 JPEG 圖片，不包含多張照片列印排版。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>處理範圍</strong> — 裁剪與背景替換；不提供手動修圖或僅裁剪匯出。</span>
+</li>
+</ul>
+<p class="text-xs text-gray-400 mt-6 leading-relaxed">App 檢查表和“Ready to use”標籤不代表官方批准。請遵循 <a class="underline" href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html">美國國務院照片要求</a>，包括對合適原照與數字編輯的限制。</p>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:compliance-checklist -->
+<!-- APPSTORE_SHOT:BEGIN:languages -->
+<!-- Languages -->
+<section class="py-16 md:py-24 bg-white border-t border-gray-100" id="languages">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<div class="inline-flex items-center justify-center w-12 h-12 bg-blue-50 rounded-xl mb-5">
+<i class="w-6 h-6 text-brand" data-lucide="languages"></i>
+</div>
+<h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">App 支援七種語言</h2>
+<p class="text-gray-500 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"> App 會採用裝置上受支援的語言，也可在 App 內切換。 </p>
+<p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">App 支援的語言</p>
+<ul class="flex flex-wrap items-center justify-center gap-3 max-w-3xl mx-auto text-sm md:text-base">
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">English</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">简体中文</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">繁體中文</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">Español</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">日本語</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">Deutsch</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">Français</li>
+</ul>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:languages -->
+<!-- APPSTORE_SHOT:BEGIN:how-it-works -->
+<!-- How It Works -->
+<section class="py-20 md:py-28" id="how-it-works">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">照片製作流程</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+<div class="text-center">
+<div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-5">1</div>
+<h3 class="font-semibold mb-2">選擇照片</h3>
+<p class="text-gray-500 text-sm leading-relaxed">使用清晰、正面的人像原照，拍攝時安排好背景與光線。</p>
+</div>
+<div class="text-center">
+<div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-5">2</div>
+<h3 class="font-semibold mb-2">一鍵處理</h3>
+<p class="text-gray-500 text-sm leading-relaxed">App 裁剪正方形人像、替換背景，並展示檔案與構圖檢查表。</p>
+</div>
+<div class="text-center">
+<div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-5">3</div>
+<h3 class="font-semibold mb-2">確認並匯出</h3>
+<p class="text-gray-500 text-sm leading-relaxed">付款前檢視結果和編輯限制，按商店顯示的價格購買一次 JPEG 匯出，再儲存或分享。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:how-it-works -->
+<!-- APPSTORE_SHOT:BEGIN:pricing -->
+<section class="bg-gray-50 py-20 md:py-28" id="pricing">
+<div class="max-w-5xl mx-auto px-6">
+<div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">免費預覽，按張購買匯出。</h2><p class="text-gray-500 text-lg">無訂閱。購買前先檢視結果和照片編輯限制。</p></div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="bg-white border border-gray-200 rounded-2xl p-8"><h3 class="text-xl font-semibold mb-4">免費預覽</h3><p class="text-gray-600 leading-relaxed">處理照片、檢視預覽和 App 檢查表；決定匯出前可以重試。</p></div>
+<div class="bg-brand text-white rounded-2xl p-8"><h3 class="text-xl font-semibold mb-4">單張 JPEG 匯出</h3><p class="text-4xl font-bold mb-4">$1.99</p><p class="text-white/90 leading-relaxed">美國區 App Store 與 Google Play 每次匯出的價格。本地價格以付款前顯示為準；兩個平臺的購買和匯出次數獨立，不是不限次使用通行證。</p></div>
+<div class="bg-white border border-gray-200 rounded-2xl p-8"><h3 class="text-xl font-semibold mb-4">當前功能範圍</h3><p class="text-gray-600 leading-relaxed">當前 App 會修改背景。匯出不包含官方接受決定、申請提交或多張照片列印排版。</p></div>
+</div>
+<p class="text-center mt-8"><a class="text-brand underline font-medium" href="/zh-hant/guides/us-visa-photo-privacy-and-pricing.html">完整隱私、收費與功能範圍說明</a></p>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:pricing -->
+<!-- APPSTORE_SHOT:BEGIN:use-cases -->
+<section class="py-16 md:py-20" id="use-cases">
+<div class="max-w-3xl mx-auto px-6 text-center"><h2 class="text-3xl font-bold tracking-tight mb-5">先核對申請的照片要求。</h2><p class="text-gray-600 leading-relaxed">App 處理正方形圖片，展示檔案與構圖資訊。DS-160、護照、綠卡和多元化簽證抽籤分別有自己的說明。尺寸相近不代表 App 輸出適用於所有申請。</p><p class="mt-5"><a class="text-brand underline font-medium" href="/zh-hant/guides/us-visa-photo-requirements.html">檢視美國簽證照片要求指南</a></p></div>
+</section>
+<!-- APPSTORE_SHOT:END:use-cases -->
+<section class="py-16 md:py-24 border-t border-gray-100" id="photo-guides">
+<div class="max-w-6xl mx-auto px-6"><div class="text-center mb-10"><p class="text-brand text-sm font-semibold mb-3">照片指南</p><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">照片要求與上傳問題排查</h2><p class="text-gray-500">由 App 開發者整理，並附官方來源。</p></div>
+<div class="grid md:grid-cols-3 gap-6">
+<article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/zh-hant/guides/us-visa-photo-requirements.html">DS-160 照片要求</a></h3><p class="text-gray-600">正方形畫素、JPEG、檔案大小，以及檔案檢查與合適原照之間的區別。</p></article>
+<article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/zh-hant/guides/ds-160-photo-upload-failed.html">照片上傳失敗？</a></h3><p class="text-gray-600">核對實際檔案和原照，再按官方說明處理確認頁問題。</p></article>
+<article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/zh-hant/guides/us-visa-photo-privacy-and-pricing.html">隱私、收費與功能範圍</a></h3><p class="text-gray-600">照片在哪裡處理、哪些操作免費、JPEG 如何匯出，以及當前功能限制。</p></article>
+</div><p class="text-center mt-8"><a class="text-brand underline" href="/zh-hant/guides/">檢視全部照片指南</a></p>
+</div>
+</section>
+<section class="platform-faq platform-wrap" id="faq"><p class="platform-eyebrow">下載前瞭解</p><h2>常見問題</h2>
+<details><summary>可以選擇 iPhone 或 Android 嗎？</summary><p>可以，在任意裝置上都可自行選擇商店。iPhone 版需要 iOS 17 或以上；Android 版需要 Android 8.0 或以上。 <a href="#download">選擇下載商店。</a></p></details>
+<details><summary>哪些操作免費，哪些需要付費？</summary><p>照片處理、預覽和重試免費。每次購買解鎖一張 JPEG 照片匯出，無訂閱。美國區兩個平臺均為每次匯出 $1.99，本地價格以商店付款前顯示為準。</p></details>
+<details><summary>購買權益能在兩個平臺通用嗎？</summary><p>不能。App Store 和 Google Play 的購買權益及匯出次數獨立，請在需要匯出照片的平臺購買。</p></details>
+<details><summary>照片是在本地處理的嗎？</summary><p>是的，人像處理在裝置上完成。Android 的 Google SDK 可能傳送使用與效能診斷資料，商店也會處理購買資料。詳見 <a href="/privacy.html">iPhone 隱私權政策（英文）</a> 或 <a href="/privacy-android.html">Android 隱私權政策（英文）</a> 。</p></details>
+<details><summary>匯出後一定會被官方接受嗎？</summary><p>不能保證。兩個平臺都會替換背景，不提供僅裁剪匯出。官方申請可能限制數字編輯後的照片，請檢視受理機構的說明。本 App 為獨立應用，與政府或使領館無隸屬關係。 <a href="/zh-hant/guides/us-visa-photo-requirements.html#editing">檢視編輯限制。</a></p></details>
+</section>
+<!-- APPSTORE_SHOT:BEGIN:final-cta -->
+<!-- Final CTA -->
+<section class="bg-gray-50 py-20 md:py-28" id="download-end">
+<div class="max-w-3xl mx-auto px-6 text-center">
+<img alt="US Visa Photo" class="w-20 h-20 rounded-[22px] mx-auto mb-8 shadow-lg" src="/AppIcon.png"/>
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">下載 US Visa Photo</h2>
+<p class="text-gray-500 text-lg mb-10">先免費處理並檢視檢查結果，確認後再購買 JPEG 匯出。美國區每次 $1.99，無訂閱。</p>
+<div aria-label="下載 US Visa Photo" class="store-badges"><a data-store-placement="home-footer-iphone" href="https://apps.apple.com/app/apple-store/id6761959861?pt=128765534&amp;ct=us-seo-home-20261104&amp;mt=8" rel="noopener noreferrer" target="_blank"><img alt="在 App Store 下載 US Visa Photo" class="apple-badge" height="48" src="/assets/badges/app-store.svg" width="144"/></a><a data-store-placement="home-footer-android" href="https://play.google.com/store/apps/details?id=com.loop.usvisaphoto" rel="noopener noreferrer" target="_blank"><img alt="在 Google Play 下載 US Visa Photo" class="play-badge" height="72" src="/assets/badges/google-play.png" width="187"/></a></div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:final-cta -->
+<!-- APPSTORE_SHOT:BEGIN:footer -->
+<!-- Footer -->
+</main>
+<footer class="border-t border-gray-100 py-10">
+<div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+<div class="flex items-center gap-3">
+<img alt="US Visa Photo" class="w-6 h-6 rounded-md" src="/AppIcon.png"/>
+<span>© 2026 US Visa Photo。保留所有權利。</span>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-3">
+<a class="hover:text-gray-600 transition" href="#download">下載</a>
+<a class="hover:text-gray-600 transition" href="https://visaphoto1tap.com/zh-hant/">各目的地 App</a>
+<a class="hover:text-gray-600 transition" href="/zh-hant/guides/">照片指南</a>
+<a class="hover:text-gray-600 transition" href="/privacy.html">iPhone 隱私權政策（英文）</a>
+<a class="hover:text-gray-600 transition" href="/privacy-android.html">Android 隱私權政策（英文）</a>
+<a class="hover:text-gray-600 transition" href="/support.html#zh-Hant">支援</a>
+</div>
+</div>
+</footer>
+<!-- APPSTORE_SHOT:END:footer -->
+<script>
+        (function () {
+            var btn = document.getElementById('app-switcher-btn');
+            var menu = document.getElementById('app-switcher-menu');
+            if (!btn || !menu) return;
+            btn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var willOpen = menu.classList.contains('hidden');
+                menu.classList.toggle('hidden', !willOpen);
+                btn.setAttribute('aria-expanded', String(willOpen));
+            });
+            document.addEventListener('click', function (e) {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && e.target !== btn) {
+                    menu.classList.add('hidden');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') { menu.classList.add('hidden'); btn.setAttribute('aria-expanded', 'false'); }
+            });
+        })();
+    </script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

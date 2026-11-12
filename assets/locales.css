@@ -3,3 +3,5 @@
 @media(max-width:600px){header nav>div>a[href="#apps"]{display:none}}
 
 header nav>div{align-items:center}
+
+.locale-list{max-height:calc(100dvh - 100px);overflow-y:auto}

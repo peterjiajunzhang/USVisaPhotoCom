@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta content="1A260C272CBE68A35509D46669EC98F1" name="msvalidate.01"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>US Visa Photo — iPhone・Androidでワンタップ写真作成</title>
+<meta content="米国ビザ写真をワンタップで処理。正方形の切り抜き、白背景、ファイル確認を端末内で行います。プレビュー無料。米国ストアのJPEG書き出しは1回$1.99。" name="description"/>
+<link href="https://us.visaphoto1tap.com/ja/" rel="canonical"/>
+<link href="/AppIcon.png" rel="icon" type="image/png"/>
+<link href="/AppIcon.png" rel="apple-touch-icon"/>
+<meta content="#0071e3" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta content="https://us.visaphoto1tap.com/ja/" property="og:url"/>
+<meta content="US Visa Photo — iPhone・Androidでワンタップ写真作成" property="og:title"/>
+<meta content="米国ビザ写真をワンタップで処理。正方形の切り抜き、白背景、ファイル確認を端末内で行います。プレビュー無料。米国ストアのJPEG書き出しは1回$1.99。" property="og:description"/>
+<meta content="https://us.visaphoto1tap.com/AppIcon.png" property="og:image"/>
+<meta content="1024" property="og:image:width"/>
+<meta content="1024" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="US Visa Photo — iPhone・Androidでワンタップ写真作成" name="twitter:title"/>
+<meta content="米国ビザ写真をワンタップで処理。正方形の切り抜き、白背景、ファイル確認を端末内で行います。プレビュー無料。米国ストアのJPEG書き出しは1回$1.99。" name="twitter:description"/>
+<meta content="https://us.visaphoto1tap.com/AppIcon.png" name="twitter:image"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "@id": "https://us.visaphoto1tap.com/ja/#app", "name": "US Visa Photo（iPhone）", "url": "https://us.visaphoto1tap.com/ja/", "image": "https://us.visaphoto1tap.com/AppIcon.png", "description": "端末内で写真を処理し、処理とプレビューは無料です。JPEG1枚の書き出しは別途購入します。背景置換は公式の受理を保証しません。", "operatingSystem": "iOS 17.0 or later", "applicationCategory": "PhotographyApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "ダウンロードとプレビューは無料。JPEG書き出しは利用中のプラットフォームで別途アプリ内購入します。"}, "downloadUrl": "https://apps.apple.com/us/app/us-visa-photo/id6761959861"}, {"@type": "SoftwareApplication", "@id": "https://us.visaphoto1tap.com/ja/#android-app", "name": "US Visa Photo（Android）", "url": "https://us.visaphoto1tap.com/ja/", "image": "https://us.visaphoto1tap.com/AppIcon.png", "description": "端末内で写真を処理し、処理とプレビューは無料です。JPEG1枚の書き出しは別途購入します。背景置換は公式の受理を保証しません。", "operatingSystem": "Android 8.0 or later", "applicationCategory": "PhotographyApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "ダウンロードとプレビューは無料。JPEG書き出しは利用中のプラットフォームで別途アプリ内購入します。"}, "downloadUrl": "https://play.google.com/store/apps/details?id=com.loop.usvisaphoto"}]}</script>
+<link href="/assets/home.css" rel="stylesheet"/>
+<link href="/assets/platforms.css" rel="stylesheet"/>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+        .gradient-hero {
+            background: linear-gradient(135deg, #0a1628 0%, #0d2137 50%, #0f2b46 100%);
+        }
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+        .price-strikethrough {
+            text-decoration: line-through;
+            text-decoration-color: #ef4444;
+            text-decoration-thickness: 2px;
+        }
+        @keyframes complianceRowIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .compliance-row {
+            opacity: 0;
+            animation: complianceRowIn 0.5s ease forwards;
+        }
+        .compliance-row:nth-child(1) { animation-delay: 0.05s; }
+        .compliance-row:nth-child(2) { animation-delay: 0.12s; }
+        .compliance-row:nth-child(3) { animation-delay: 0.19s; }
+        .compliance-row:nth-child(4) { animation-delay: 0.26s; }
+        .compliance-row:nth-child(5) { animation-delay: 0.33s; }
+        .compliance-row:nth-child(6) { animation-delay: 0.40s; }
+        .compliance-row:nth-child(7) { animation-delay: 0.47s; }
+        .compliance-row:nth-child(8) { animation-delay: 0.54s; }
+        /* Demo wall (minimal): single-row results strip + originals film strip */
+        .demo-wall-row {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 4px 2px 14px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .demo-wall-row::-webkit-scrollbar { height: 8px; }
+        .demo-wall-row::-webkit-scrollbar-thumb { background: rgba(15, 23, 42, 0.16); border-radius: 999px; }
+        .demo-wall-item { flex: 0 0 auto; scroll-snap-align: start; width: min(220px, 56vw); }
+        .demo-wall-img {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            object-position: center center;
+            border-radius: 1.25rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            background: #fff;
+        }
+        .demo-film {
+            display: flex;
+            gap: 18px;
+            overflow-x: auto;
+            padding: 4px 2px 10px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .demo-film::-webkit-scrollbar { height: 8px; }
+        .demo-film::-webkit-scrollbar-thumb { background: rgba(15, 23, 42, 0.16); border-radius: 999px; }
+        .demo-film-item {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            width: auto;
+        }
+        .demo-film-original-wrap {
+            width: min(200px, 52vw);
+            border-radius: 22px;
+            overflow: hidden;
+            background: linear-gradient(165deg, #2c2c2e 0%, #1c1c1e 40%, #000 100%);
+            box-shadow:
+                0 16px 40px rgba(0, 0, 0, 0.22),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+            padding: 4px;
+        }
+        .demo-film-thumb {
+            width: 100%;
+            height: auto;
+            max-height: min(340px, 58vh);
+            display: block;
+            object-fit: contain;
+            object-position: center center;
+            border-radius: 18px;
+            background: #000;
+        }
+        .demo-film-label {
+            margin-top: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            color: rgba(15, 23, 42, 0.55);
+        }
+        /* Hero before -> after visual: two matching device screens, same treatment */
+        .hero-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: clamp(6px, 1.5vw, 16px);
+        }
+        @media (min-width: 768px) { .hero-visual { justify-content: flex-end; } }
+        .hero-before { position: relative; flex: 0 0 auto; }
+        /* Animated arrow */
+        @keyframes heroArrowNudge {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(5px); }
+        }
+        .hero-arrow {
+            flex: 0 0 auto;
+            color: #22d3ee;
+            animation: heroArrowNudge 1.6s ease-in-out infinite;
+        }
+        .hero-arrow svg { width: clamp(20px, 4vw, 30px); height: clamp(20px, 4vw, 30px); }
+        /* Both before and after use the same device-screen treatment */
+        .hero-after { position: relative; flex: 0 0 auto; }
+        .hero-phone {
+            width: clamp(150px, 38vw, 220px);
+            border-radius: 32px;
+            padding: 6px;
+            background: linear-gradient(165deg, #2c2c2e 0%, #1c1c1e 40%, #000 100%);
+            box-shadow:
+                0 30px 60px -12px rgba(0, 0, 0, 0.5),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+        }
+        .hero-phone img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 26px;
+            background: #fff;
+        }
+        /* Before/After pills */
+        .hero-pill {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 999px;
+            background: rgba(10, 22, 40, 0.55);
+            color: #fff;
+            backdrop-filter: blur(4px);
+        }
+        /* Reused App Store screenshots (self-contained posters) */
+        .appstore-shot {
+            width: 100%;
+            max-width: 260px;
+            height: auto;
+            display: block;
+            border-radius: 1.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+<!-- Cloudflare Web Analytics --><script data-cf-beacon='{"token": "26f702bb029f48b9a0fed7765dbfcb1b"}' src="https://static.cloudflareinsights.com/beacon.min.js" type="module"></script><!-- End Cloudflare Web Analytics -->
+<link data-page-language="" href="https://us.visaphoto1tap.com/" hreflang="en" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/zh-hans/" hreflang="zh-Hans" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/zh-hant/" hreflang="zh-Hant" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/es/" hreflang="es" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/ja/" hreflang="ja" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/de/" hreflang="de" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/fr/" hreflang="fr" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/" hreflang="x-default" rel="alternate"/><link data-page-language="" href="/assets/locales.css?v=20261111-seven" rel="stylesheet"/><script data-page-language="" defer="" src="/assets/locales.js"></script></head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+<a class="platform-skip" href="#main">本文へ移動</a>
+<header class="platform-header"><nav aria-label="メインナビゲーション" class="platform-nav">
+<a aria-label="US Visa Photo ホーム" class="platform-brand" href="/ja/"><img alt="" height="32" src="/AppIcon.png" width="32"/><span>US Visa Photo</span></a>
+<div class="platform-links"><a href="#demos">処理結果を見る</a><a class="nav-extra" href="#pricing">料金</a><a class="nav-extra" href="/ja/guides/">ガイド</a><a class="nav-extra" href="/support.html#ja">サポート</a><details class="locale-switcher" id="page-language"><summary aria-label="言語を選択">日本語</summary><ul class="locale-list"><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a aria-current="page" href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li></ul></details><div class="relative">
+<button aria-expanded="false" aria-haspopup="true" aria-label="他の渡航先のビザ写真アプリ" class="p-2 -m-2 rounded-lg text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition" id="app-switcher-btn" type="button">
+<i class="w-5 h-5" data-lucide="menu"></i>
+</button>
+<div class="hidden fixed right-4 top-16 w-72 max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-100 py-2 z-50 text-left" id="app-switcher-menu">
+<p class="px-4 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">各渡航先のビザ写真アプリ</p>
+<a class="flex items-center gap-3 px-4 py-2.5 bg-gray-50" href="/ja/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="/AppIcon.png"/>
+<span class="text-sm font-semibold text-gray-900">US Visa Photo</span>
+<i class="w-4 h-4 text-emerald-500 ml-auto flex-shrink-0" data-lucide="check"></i>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://china.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://china.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">China Visa Photo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://schengen.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://schengen.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">Schengen Visa Photo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://india.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://india.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">India Visa Photo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://japan.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://japan.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">Japan Visa Photo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://canada.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://canada.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">Canada Visa Photo</span>
+</a>
+</div>
+</div><a class="nav-download" href="#download">ダウンロード</a></div>
+</nav></header>
+<main id="main">
+<!-- APPSTORE_SHOT:BEGIN:hero -->
+<!-- Hero -->
+<section class="gradient-hero text-white overflow-hidden">
+<div class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+<div class="grid md:grid-cols-2 gap-12 md:gap-8 items-center">
+<!-- Copy -->
+<div class="text-center md:text-left">
+<div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur rounded-full px-4 py-1.5 text-sm mb-8">
+<span class="text-gray-200">iPhone・Android対応</span>
+</div>
+<h1 class="text-5xl md:text-6xl font-bold tracking-tight leading-tight mb-6"> 米国ビザ写真を、<br/>
+<span class="text-cyan-400">ワンタップで。</span>
+</h1>
+<p class="text-lg md:text-xl text-gray-300 max-w-xl mx-auto md:mx-0 mb-6 leading-relaxed"> 正方形への自動切り抜きと白背景への置き換え。有料のJPEG書き出し前に、サイズ、構図、ファイル容量を確認できます。 </p>
+<p class="hero-price"><strong>プレビュー無料。</strong> JPEG書き出し1枚$1.99。定期購入なし。</p>
+<div aria-label="ダウンロード先を選択" class="store-badges" id="download">
+<a data-store-placement="home" href="https://apps.apple.com/app/apple-store/id6761959861?pt=128765534&amp;ct=us-seo-home-20261104&amp;mt=8" rel="noopener noreferrer" target="_blank"><img alt="US Visa PhotoをApp Storeでダウンロード" class="apple-badge" height="48" src="/assets/badges/app-store.svg" width="144"/></a>
+<a data-store-placement="home-android" href="https://play.google.com/store/apps/details?id=com.loop.usvisaphoto" rel="noopener noreferrer" target="_blank"><img alt="US Visa PhotoをGoogle Playで入手" class="play-badge" height="72" src="/assets/badges/google-play.png" width="187"/></a>
+</div>
+<p class="text-gray-300 text-sm mt-2">iPhone：iOS 17以降 · Android：8.0以降</p>
+<p class="hero-store-note">米国ストアの価格です。現地価格はご利用のストアに表示されます。</p>
+<p class="hero-scope">背景の置き換えは写真の編集に当たります。 <a href="/ja/guides/us-visa-photo-requirements.html#editing">使用前に公式ルールを確認してください。</a></p>
+</div>
+<!-- Product visual: two matching real app screens, same person -->
+<div><div class="hero-visual">
+<!-- Before: the app's own "Original" screen, full raw device screenshot -->
+<figure class="hero-before">
+<div class="hero-phone">
+<img alt="元の写真と2×2への切り抜き・背景削除ボタンを表示したUS Visa Photo" decoding="async" height="1869" src="/assets/iphone/02-before-native.webp" width="864"/>
+</div>
+</figure>
+<!-- Arrow -->
+<div aria-hidden="true" class="hero-arrow">
+<i data-lucide="arrow-right"></i>
+</div>
+<!-- After: the same person, in the app — background removed, cropped to 2x2, auto-checked -->
+<figure class="hero-after">
+<div class="hero-phone">
+<img alt="同じ写真を白背景・2×2に処理し、実際のReady to use状態を表示したUS Visa Photo" decoding="async" height="1869" src="/assets/iphone/02-after-native.webp" width="864"/>
+</div>
+</figure>
+</div><p class="text-center text-gray-400 text-sm mt-5">掲載画面はiPhoneの英語版です。両ストアから入手できます。</p></div>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:hero -->
+<!-- APPSTORE_SHOT:BEGIN:trust-bar -->
+<!-- Trust Bar -->
+<section class="bg-gray-50 border-b border-gray-100">
+<div class="max-w-4xl mx-auto px-6 py-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-gray-500">
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-brand" data-lucide="wifi-off"></i>
+<span>端末内で画像処理</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-brand" data-lucide="eye-off"></i>
+<span>開発者への人物写真の送信なし</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-brand" data-lucide="cpu"></i>
+<span>iPhone・Android</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-brand" data-lucide="check-circle-2"></i>
+<span>ファイル・構図の確認</span>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:trust-bar -->
+<!-- APPSTORE_SHOT:BEGIN:features -->
+<section class="benefits-section" id="features">
+<div class="benefits-wrap">
+<div class="benefits-heading"><p class="platform-eyebrow">写真の自動処理</p><h2>切り抜き、背景、ファイルの確認。</h2></div>
+<div class="benefits-grid">
+<article><span class="benefit-value">ワンタップ</span><h3>自動切り抜きと白背景</h3><p>正方形に自動で切り抜き、背景を白に置き換えます。スライダー操作や手作業のレタッチはありません。</p></article>
+<article><span class="benefit-value">詳しく見る</span><h3>サイズ・構図・ファイル容量を確認</h3><p>書き出す前に、ピクセル数、容量、頭部の高さ、目の位置、照明の警告を確認できます。</p><a href="#compliance-checklist">確認項目を見る <span aria-hidden="true">↗</span></a></article>
+<article><span class="benefit-value">スマートフォン内で</span><h3>人物写真は端末内で処理。</h3><p>写真は端末上で処理し、当社サーバーに人物写真を送信しません。</p><a href="#faq">プライバシーを確認 <span aria-hidden="true">↗</span></a></article>
+<article><span class="benefit-value">$1.99</span><h3>JPEG1枚、1回の購入。</h3><p>処理、プレビュー、再試行は無料。書き出しは必要なときに1回分購入します。米国ストアの価格で、定期購入はありません。</p><a href="#pricing">料金について <span aria-hidden="true">↗</span></a></article>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:features -->
+<!-- APPSTORE_SHOT:BEGIN:demos -->
+<!-- Before / After Demo collection -->
+<section class="py-20 md:py-28 scroll-mt-20" id="demos">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-14">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">元の写真と処理結果</h2>
+<p class="text-gray-500 text-lg max-w-3xl mx-auto">正方形への切り抜きと白背景を紹介し、下に元の写真を掲載しています。iPhone版の例で、結果は写真によって異なります。</p>
+</div>
+<!-- Results wall: single scrollable row -->
+<div aria-label="処理結果の一覧" class="demo-wall-row">
+<figure class="demo-wall-item"><img alt="処理結果の例1" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-01-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="処理結果の例2" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-02-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="処理結果の例3" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-03-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="処理結果の例4" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-04-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="処理結果の例5" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-05-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="処理結果の例6" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-06-result.png" width="800"/></figure>
+</div>
+<!-- Originals film strip -->
+<div class="mt-10 max-w-5xl mx-auto">
+<div class="flex items-center justify-between gap-4 mb-3">
+<p class="text-sm font-semibold text-gray-400 uppercase tracking-wider">元の写真 · 元の縦横比</p>
+<p class="text-xs text-gray-400 hidden sm:block">横にスクロール →</p>
+</div>
+<div aria-label="元の写真の一覧" class="demo-film">
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="元の写真1" class="demo-film-thumb" decoding="async" src="/demos/demo-01-original.png"/>
+</div>
+<div class="demo-film-label">キッチン</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="元の写真2" class="demo-film-thumb" decoding="async" src="/demos/demo-02-original.png"/>
+</div>
+<div class="demo-film-label">自宅の人物写真</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="元の写真3" class="demo-film-thumb" decoding="async" src="/demos/demo-03-original.png"/>
+</div>
+<div class="demo-film-label">テラス</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="元の写真4" class="demo-film-thumb" decoding="async" src="/demos/demo-04-original.png"/>
+</div>
+<div class="demo-film-label">屋外の通路</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="元の写真5" class="demo-film-thumb" decoding="async" src="/demos/demo-05-original.png"/>
+</div>
+<div class="demo-film-label">歩道</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="元の写真6" class="demo-film-thumb" decoding="async" src="/demos/demo-06-original.png"/>
+</div>
+<div class="demo-film-label">リビング</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:demos -->
+<section class="py-16 md:py-24 bg-gray-50 scroll-mt-24" id="app">
+<div class="max-w-6xl mx-auto px-6 text-center">
+<p class="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-2">アプリの画面</p>
+<h2 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 mb-3">購入前に写真と確認項目を見る</h2>
+<p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto mb-10">確認項目、照明の警告、保存済み写真を表示します。実際のiPhone英語版画面です。無料プレビューは透かしを残し、購入後の例は保存済みの書き出し結果を表示しています。</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-10 justify-items-center max-w-4xl mx-auto">
+<img alt="購入前のiPhoneプレビュー：実際の7項目、Ready to use、元のPREVIEW透かしを表示" class="appstore-shot" decoding="async" height="1869" loading="lazy" src="/assets/iphone/03-checklist-native.webp" width="864"/>
+<img alt="照明の確認と購入後のJPEG保存・共有ボタンを表示したiPhone画面" class="appstore-shot" decoding="async" height="1869" loading="lazy" src="/assets/iphone/04-lighting-native.webp" width="864"/>
+<img alt="6人分・12枚の書き出し写真があるiPhoneの実際の保存済み写真画面" class="appstore-shot" decoding="async" height="1869" loading="lazy" src="/assets/iphone/06-saved-grid-native.webp" width="864"/>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:BEGIN:compliance-checklist -->
+<!-- Compliance checklist (matches in-app export checklist) -->
+<section class="py-16 md:py-24 bg-white border-t border-gray-100" id="compliance-checklist">
+<div class="max-w-3xl mx-auto px-6">
+<div class="text-center mb-10">
+<h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">写真サイズと構図の測定値</h2>
+<p class="text-gray-500">ピクセル数、容量、目の位置、頭部の高さを確認できます。アプリの確認は参考情報で、公式の写真承認ではありません。</p>
+</div>
+<div class="bg-gray-50 rounded-2xl border border-gray-100 p-6 md:p-8">
+<ul class="space-y-4 text-left text-sm md:text-base text-gray-800">
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>印刷サイズ</strong> — 2 × 2インチ（51 × 51 mm）の正方形。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>画像解像度</strong> — 1辺600〜1200ピクセル。実際の書き出しサイズ（例：1200 × 1200）を表示します。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>目の位置</strong> — 画像下端からの割合で、米国の目安は56〜69%。実測値を表示します。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>頭部の高さ</strong> — 画像の高さの50〜69%。実測値とテンプレートを比較して表示します。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>背景</strong> — 処理で白背景を生成します。元の背景を確認・認定するものではありません。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>照明</strong> — 顔の照明が不均一な場合に警告します。照明の補正は行いません。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>ファイル形式</strong> — JPEG画像を書き出します。複数写真の印刷用レイアウトは含みません。</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>処理の範囲</strong> — 切り抜きと背景置換。手作業のレタッチや切り抜きのみの書き出しはありません。</span>
+</li>
+</ul>
+<p class="text-xs text-gray-400 mt-6 leading-relaxed">確認項目や「Ready to use」は公式の承認ではありません。 <a class="underline" href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html">米国国務省の写真要件</a>に従い、適切な元の写真とデジタル編集のルールを確認してください。</p>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:compliance-checklist -->
+<!-- APPSTORE_SHOT:BEGIN:languages -->
+<!-- Languages -->
+<section class="py-16 md:py-24 bg-white border-t border-gray-100" id="languages">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<div class="inline-flex items-center justify-center w-12 h-12 bg-blue-50 rounded-xl mb-5">
+<i class="w-6 h-6 text-brand" data-lucide="languages"></i>
+</div>
+<h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">アプリは7言語に対応</h2>
+<p class="text-gray-500 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"> 端末の対応言語を使用します。アプリ内でも言語を切り替えられます。 </p>
+<p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">アプリの対応言語</p>
+<ul class="flex flex-wrap items-center justify-center gap-3 max-w-3xl mx-auto text-sm md:text-base">
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">English</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">简体中文</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">繁體中文</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">Español</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">日本語</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">Deutsch</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">Français</li>
+</ul>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:languages -->
+<!-- APPSTORE_SHOT:BEGIN:how-it-works -->
+<!-- How It Works -->
+<section class="py-20 md:py-28" id="how-it-works">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">写真の作り方</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+<div class="text-center">
+<div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-5">1</div>
+<h3 class="font-semibold mb-2">写真を選ぶ</h3>
+<p class="text-gray-500 text-sm leading-relaxed">正面を向いた鮮明な元の写真を使い、撮影時に背景と照明を整えます。</p>
+</div>
+<div class="text-center">
+<div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-5">2</div>
+<h3 class="font-semibold mb-2">タップして処理</h3>
+<p class="text-gray-500 text-sm leading-relaxed">アプリが正方形に切り抜き、背景を置き換え、ファイルと構図の確認項目を表示します。</p>
+</div>
+<div class="text-center">
+<div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-5">3</div>
+<h3 class="font-semibold mb-2">確認して書き出す</h3>
+<p class="text-gray-500 text-sm leading-relaxed">支払い前に結果と編集の制限を確認します。ストア表示価格でJPEG1枚を書き出し、保存・共有できます。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:how-it-works -->
+<!-- APPSTORE_SHOT:BEGIN:pricing -->
+<section class="bg-gray-50 py-20 md:py-28" id="pricing">
+<div class="max-w-5xl mx-auto px-6">
+<div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">まず無料で確認。書き出しは有料。</h2><p class="text-gray-500 text-lg">定期購入なし。購入前に結果と編集の制限を確認してください。</p></div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="bg-white border border-gray-200 rounded-2xl p-8"><h3 class="text-xl font-semibold mb-4">無料プレビュー</h3><p class="text-gray-600 leading-relaxed">写真を処理し、プレビューと確認項目を確認できます。書き出すか決める前に再試行できます。</p></div>
+<div class="bg-brand text-white rounded-2xl p-8"><h3 class="text-xl font-semibold mb-4">JPEG1枚の書き出し</h3><p class="text-4xl font-bold mb-4">$1.99</p><p class="text-white/90 leading-relaxed">米国App Store・Google Playでの1回分の価格です。現地価格は購入前にストアで表示されます。購入と書き出し回数はプラットフォームごとに独立し、使い放題ではありません。</p></div>
+<div class="bg-white border border-gray-200 rounded-2xl p-8"><h3 class="text-xl font-semibold mb-4">機能の範囲</h3><p class="text-gray-600 leading-relaxed">現在のアプリは背景を変更します。書き出しに公式の受理判断、申請の提出、複数写真の印刷用シートは含まれません。</p></div>
+</div>
+<p class="text-center mt-8"><a class="text-brand underline font-medium" href="/ja/guides/us-visa-photo-privacy-and-pricing.html">プライバシー・料金・機能の制限</a></p>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:pricing -->
+<!-- APPSTORE_SHOT:BEGIN:use-cases -->
+<section class="py-16 md:py-20" id="use-cases">
+<div class="max-w-3xl mx-auto px-6 text-center"><h2 class="text-3xl font-bold tracking-tight mb-5">まず写真の要件を確認。</h2><p class="text-gray-600 leading-relaxed">このアプリは正方形の画像を作り、ファイルと構図の情報を表示します。DS-160、パスポート、グリーンカード、DV抽選にはそれぞれ固有の指示があります。サイズが似ていても、すべての申請に適することを意味しません。</p><p class="mt-5"><a class="text-brand underline font-medium" href="/ja/guides/us-visa-photo-requirements.html">米国ビザ写真の要件ガイドを読む</a></p></div>
+</section>
+<!-- APPSTORE_SHOT:END:use-cases -->
+<section class="py-16 md:py-24 border-t border-gray-100" id="photo-guides">
+<div class="max-w-6xl mx-auto px-6"><div class="text-center mb-10"><p class="text-brand text-sm font-semibold mb-3">写真ガイド</p><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">写真の要件とアップロードの問題</h2><p class="text-gray-500">開発者が整理したガイドです。公式情報へのリンクを掲載しています。</p></div>
+<div class="grid md:grid-cols-3 gap-6">
+<article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/ja/guides/us-visa-photo-requirements.html">DS-160写真の要件</a></h3><p class="text-gray-600">正方形のピクセル、JPEG、容量上限、ファイル確認と適切な元写真の違い。</p></article>
+<article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/ja/guides/ds-160-photo-upload-failed.html">写真をアップロードできない場合</a></h3><p class="text-gray-600">実際のファイルと元の写真を確認し、確認ページについては公式の指示に従ってください。</p></article>
+<article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/ja/guides/us-visa-photo-privacy-and-pricing.html">プライバシー・料金・制限</a></h3><p class="text-gray-600">端末内に残る情報、無料の範囲、JPEG書き出しの仕組み、現在の機能制限。</p></article>
+</div><p class="text-center mt-8"><a class="text-brand underline" href="/ja/guides/">写真ガイド一覧</a></p>
+</div>
+</section>
+<section class="platform-faq platform-wrap" id="faq"><p class="platform-eyebrow">ダウンロード前に</p><h2>よくある質問</h2>
+<details><summary>iPhoneとAndroidを選べますか？</summary><p>はい。どの端末からでも両方のストアを選べます。iPhone版はiOS 17以降、Android版はAndroid 8.0以降が必要です。 <a href="#download">ストアを選択。</a></p></details>
+<details><summary>無料と有料の範囲は？</summary><p>写真の処理、プレビュー、再試行は無料です。1回の購入でJPEG1枚を書き出せます。定期購入はありません。米国ストアでは両プラットフォームとも1回$1.99です。現地価格は購入前にストアで表示されます。</p></details>
+<details><summary>購入は両プラットフォームで共通ですか？</summary><p>いいえ。App StoreとGoogle Playの購入・書き出し回数は別です。写真を書き出すプラットフォームで購入してください。</p></details>
+<details><summary>写真は端末内で処理されますか？</summary><p>はい。人物写真は端末内で処理します。AndroidのGoogle SDKは使用状況や性能の診断情報を送信する場合があり、購入データは各ストアが処理します。詳しくは <a href="/privacy.html">iPhoneポリシー（英語）</a> または <a href="/privacy-android.html">Androidポリシー（英語）</a> をご確認ください。</p></details>
+<details><summary>書き出せば必ず写真が受理されますか？</summary><p>保証はありません。両アプリとも背景を置き換え、切り抜きのみの書き出しはできません。公式の申請ではデジタル編集した写真が制限される場合があります。申請先の指示を確認してください。政府・大使館と提携していない独立したアプリです。 <a href="/ja/guides/us-visa-photo-requirements.html#editing">編集の制限を確認する。</a></p></details>
+</section>
+<!-- APPSTORE_SHOT:BEGIN:final-cta -->
+<!-- Final CTA -->
+<section class="bg-gray-50 py-20 md:py-28" id="download-end">
+<div class="max-w-3xl mx-auto px-6 text-center">
+<img alt="US Visa Photo" class="w-20 h-20 rounded-[22px] mx-auto mb-8 shadow-lg" src="/AppIcon.png"/>
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">US Visa Photoをダウンロード</h2>
+<p class="text-gray-500 text-lg mb-10">処理と確認項目を試し、必要なときにJPEGを書き出せます。米国ストアでは1回$1.99、定期購入はありません。</p>
+<div aria-label="US Visa Photoをダウンロード" class="store-badges"><a data-store-placement="home-footer-iphone" href="https://apps.apple.com/app/apple-store/id6761959861?pt=128765534&amp;ct=us-seo-home-20261104&amp;mt=8" rel="noopener noreferrer" target="_blank"><img alt="US Visa PhotoをApp Storeでダウンロード" class="apple-badge" height="48" src="/assets/badges/app-store.svg" width="144"/></a><a data-store-placement="home-footer-android" href="https://play.google.com/store/apps/details?id=com.loop.usvisaphoto" rel="noopener noreferrer" target="_blank"><img alt="US Visa PhotoをGoogle Playで入手" class="play-badge" height="72" src="/assets/badges/google-play.png" width="187"/></a></div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:final-cta -->
+<!-- APPSTORE_SHOT:BEGIN:footer -->
+<!-- Footer -->
+</main>
+<footer class="border-t border-gray-100 py-10">
+<div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+<div class="flex items-center gap-3">
+<img alt="US Visa Photo" class="w-6 h-6 rounded-md" src="/AppIcon.png"/>
+<span>© 2026 US Visa Photo。すべての権利を留保します。</span>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-3">
+<a class="hover:text-gray-600 transition" href="#download">ダウンロード</a>
+<a class="hover:text-gray-600 transition" href="https://visaphoto1tap.com/ja/">各渡航先のアプリ</a>
+<a class="hover:text-gray-600 transition" href="/ja/guides/">写真ガイド</a>
+<a class="hover:text-gray-600 transition" href="/privacy.html">iPhoneのプライバシー（英語）</a>
+<a class="hover:text-gray-600 transition" href="/privacy-android.html">Androidのプライバシー（英語）</a>
+<a class="hover:text-gray-600 transition" href="/support.html#ja">サポート</a>
+</div>
+</div>
+</footer>
+<!-- APPSTORE_SHOT:END:footer -->
+<script>
+        (function () {
+            var btn = document.getElementById('app-switcher-btn');
+            var menu = document.getElementById('app-switcher-menu');
+            if (!btn || !menu) return;
+            btn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var willOpen = menu.classList.contains('hidden');
+                menu.classList.toggle('hidden', !willOpen);
+                btn.setAttribute('aria-expanded', String(willOpen));
+            });
+            document.addEventListener('click', function (e) {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && e.target !== btn) {
+                    menu.classList.add('hidden');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') { menu.classList.add('hidden'); btn.setAttribute('aria-expanded', 'false'); }
+            });
+        })();
+    </script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

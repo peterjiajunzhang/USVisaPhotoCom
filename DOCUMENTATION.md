@@ -249,3 +249,13 @@ Final visual review found the root FAQ details spacing affecting the language me
 ### 中英文发布后验收 — 2026-11-11
 
 内容 `cf7f988` 的 Pages workflow 于 2026-11-12 02:57:30 UTC 成功。19 个公开文件 200 且与提交字节一致；中文首页四宽度无溢出／已加载缺图，页头语言菜单位于安全区域，同主题中英切换及实际两商店入口通过，控制台未观察到错误。Google US sitemap 已 Success／13 个发现页面；Bing 更新进入 Processing／暂留旧 9 页；仅本轮变化的 11 个 HTML 地址通知 IndexNow，HTTP 200。上述不是页面收录或推荐证明。回执、定稿线上桌面／手机截图在 `review/multilingual-2026-11-11/`，主站另有八文件一致回读。QA 访问不计自然获客，真实手机 Safari／安装／付款仍未验证。
+
+## 2026-11-11 Seven website languages
+
+The owner approved the five remaining app languages for the root and US marketing websites: Traditional Chinese, Spanish, Japanese, German and French, alongside English and Simplified Chinese. This does not localize the other five country websites or change app releases, store metadata or policies.
+
+`localization/config.json` now declares seven locale codes, native menu names and URL prefixes. Each topic has a static page in each language; the menu stays on the same topic. English remains the editable source, reviewed translations live in `localization/<code>.json`, and authored Chinese troubleshooting content uses explicit source overrides. Traditional Chinese was converted from the reviewed Simplified Chinese content with OpenCC s2twp and checked; it is not a separately commissioned native-speaker review. The generator needs only the existing BeautifulSoup build dependency. No translation service, new browser runtime dependency or automatic language redirect was added.
+
+Rebuild with the documented `scripts/build_locales.py` command. Missing entries are reported by language before any output is written. Repeatability and deliberate missing-entry failure tests passed. The root filter uses per-language singular/plural count templates; all menus link to seven crawlable, self-canonical topic versions with complete reciprocal hreflang. Root sitemap: 7 URLs. US sitemap: 38 URLs, including the unchanged support and platform policy paths.
+
+The 42 localized pages passed 168 Chrome viewport checks at 320/390/768/1440 pixels, with no horizontal overflow, completed broken image or out-of-header language control observed. All seven actual article switches and all seven localized Android filter counts passed. Static checks cover 2,116 internal targets/fragments. English policies are clearly labeled; support uses the existing matching language fragments. Official store badge artwork, native English iPhone captures, watermark/purchase state, policies and campaign URLs remain unchanged. Evidence is in `review/seven-languages-2026-11-11/`. Production and indexing receipts are appended after deployment.

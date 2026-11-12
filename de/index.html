@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta content="1A260C272CBE68A35509D46669EC98F1" name="msvalidate.01"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>US Visa Photo — Mit einem Tippen vorbereiten, für iPhone und Android</title>
+<meta content="US-Visumfoto mit einem Tippen vorbereiten: quadratischer Zuschnitt, weißer Hintergrund und Dateiprüfungen auf dem Smartphone. Kostenlose Vorschau. $1.99 pro JPEG-Export in US-Stores." name="description"/>
+<link href="https://us.visaphoto1tap.com/de/" rel="canonical"/>
+<link href="/AppIcon.png" rel="icon" type="image/png"/>
+<link href="/AppIcon.png" rel="apple-touch-icon"/>
+<meta content="#0071e3" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta content="https://us.visaphoto1tap.com/de/" property="og:url"/>
+<meta content="US Visa Photo — Mit einem Tippen vorbereiten, für iPhone und Android" property="og:title"/>
+<meta content="US-Visumfoto mit einem Tippen vorbereiten: quadratischer Zuschnitt, weißer Hintergrund und Dateiprüfungen auf dem Smartphone. Kostenlose Vorschau. $1.99 pro JPEG-Export in US-Stores." property="og:description"/>
+<meta content="https://us.visaphoto1tap.com/AppIcon.png" property="og:image"/>
+<meta content="1024" property="og:image:width"/>
+<meta content="1024" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="US Visa Photo — Mit einem Tippen vorbereiten, für iPhone und Android" name="twitter:title"/>
+<meta content="US-Visumfoto mit einem Tippen vorbereiten: quadratischer Zuschnitt, weißer Hintergrund und Dateiprüfungen auf dem Smartphone. Kostenlose Vorschau. $1.99 pro JPEG-Export in US-Stores." name="twitter:description"/>
+<meta content="https://us.visaphoto1tap.com/AppIcon.png" name="twitter:image"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "@id": "https://us.visaphoto1tap.com/de/#app", "name": "US Visa Photo für iPhone", "url": "https://us.visaphoto1tap.com/de/", "image": "https://us.visaphoto1tap.com/AppIcon.png", "description": "Fotovorbereitung auf dem Gerät, kostenlose Verarbeitung und Vorschau, separater Kauf eines JPEG-Exports. Hintergrundersatz garantiert keine behördliche Annahme.", "operatingSystem": "iOS 17.0 or later", "applicationCategory": "PhotographyApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "App-Download und Vorschau kostenlos. JPEG-Export wird auf dieser Plattform separat in der App gekauft."}, "downloadUrl": "https://apps.apple.com/us/app/us-visa-photo/id6761959861"}, {"@type": "SoftwareApplication", "@id": "https://us.visaphoto1tap.com/de/#android-app", "name": "US Visa Photo für Android", "url": "https://us.visaphoto1tap.com/de/", "image": "https://us.visaphoto1tap.com/AppIcon.png", "description": "Fotovorbereitung auf dem Gerät, kostenlose Verarbeitung und Vorschau, separater Kauf eines JPEG-Exports. Hintergrundersatz garantiert keine behördliche Annahme.", "operatingSystem": "Android 8.0 or later", "applicationCategory": "PhotographyApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "App-Download und Vorschau kostenlos. JPEG-Export wird auf dieser Plattform separat in der App gekauft."}, "downloadUrl": "https://play.google.com/store/apps/details?id=com.loop.usvisaphoto"}]}</script>
+<link href="/assets/home.css" rel="stylesheet"/>
+<link href="/assets/platforms.css" rel="stylesheet"/>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+        .gradient-hero {
+            background: linear-gradient(135deg, #0a1628 0%, #0d2137 50%, #0f2b46 100%);
+        }
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+        .price-strikethrough {
+            text-decoration: line-through;
+            text-decoration-color: #ef4444;
+            text-decoration-thickness: 2px;
+        }
+        @keyframes complianceRowIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .compliance-row {
+            opacity: 0;
+            animation: complianceRowIn 0.5s ease forwards;
+        }
+        .compliance-row:nth-child(1) { animation-delay: 0.05s; }
+        .compliance-row:nth-child(2) { animation-delay: 0.12s; }
+        .compliance-row:nth-child(3) { animation-delay: 0.19s; }
+        .compliance-row:nth-child(4) { animation-delay: 0.26s; }
+        .compliance-row:nth-child(5) { animation-delay: 0.33s; }
+        .compliance-row:nth-child(6) { animation-delay: 0.40s; }
+        .compliance-row:nth-child(7) { animation-delay: 0.47s; }
+        .compliance-row:nth-child(8) { animation-delay: 0.54s; }
+        /* Demo wall (minimal): single-row results strip + originals film strip */
+        .demo-wall-row {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 4px 2px 14px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .demo-wall-row::-webkit-scrollbar { height: 8px; }
+        .demo-wall-row::-webkit-scrollbar-thumb { background: rgba(15, 23, 42, 0.16); border-radius: 999px; }
+        .demo-wall-item { flex: 0 0 auto; scroll-snap-align: start; width: min(220px, 56vw); }
+        .demo-wall-img {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            object-position: center center;
+            border-radius: 1.25rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            background: #fff;
+        }
+        .demo-film {
+            display: flex;
+            gap: 18px;
+            overflow-x: auto;
+            padding: 4px 2px 10px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .demo-film::-webkit-scrollbar { height: 8px; }
+        .demo-film::-webkit-scrollbar-thumb { background: rgba(15, 23, 42, 0.16); border-radius: 999px; }
+        .demo-film-item {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            width: auto;
+        }
+        .demo-film-original-wrap {
+            width: min(200px, 52vw);
+            border-radius: 22px;
+            overflow: hidden;
+            background: linear-gradient(165deg, #2c2c2e 0%, #1c1c1e 40%, #000 100%);
+            box-shadow:
+                0 16px 40px rgba(0, 0, 0, 0.22),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+            padding: 4px;
+        }
+        .demo-film-thumb {
+            width: 100%;
+            height: auto;
+            max-height: min(340px, 58vh);
+            display: block;
+            object-fit: contain;
+            object-position: center center;
+            border-radius: 18px;
+            background: #000;
+        }
+        .demo-film-label {
+            margin-top: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            color: rgba(15, 23, 42, 0.55);
+        }
+        /* Hero before -> after visual: two matching device screens, same treatment */
+        .hero-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: clamp(6px, 1.5vw, 16px);
+        }
+        @media (min-width: 768px) { .hero-visual { justify-content: flex-end; } }
+        .hero-before { position: relative; flex: 0 0 auto; }
+        /* Animated arrow */
+        @keyframes heroArrowNudge {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(5px); }
+        }
+        .hero-arrow {
+            flex: 0 0 auto;
+            color: #22d3ee;
+            animation: heroArrowNudge 1.6s ease-in-out infinite;
+        }
+        .hero-arrow svg { width: clamp(20px, 4vw, 30px); height: clamp(20px, 4vw, 30px); }
+        /* Both before and after use the same device-screen treatment */
+        .hero-after { position: relative; flex: 0 0 auto; }
+        .hero-phone {
+            width: clamp(150px, 38vw, 220px);
+            border-radius: 32px;
+            padding: 6px;
+            background: linear-gradient(165deg, #2c2c2e 0%, #1c1c1e 40%, #000 100%);
+            box-shadow:
+                0 30px 60px -12px rgba(0, 0, 0, 0.5),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+        }
+        .hero-phone img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 26px;
+            background: #fff;
+        }
+        /* Before/After pills */
+        .hero-pill {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 999px;
+            background: rgba(10, 22, 40, 0.55);
+            color: #fff;
+            backdrop-filter: blur(4px);
+        }
+        /* Reused App Store screenshots (self-contained posters) */
+        .appstore-shot {
+            width: 100%;
+            max-width: 260px;
+            height: auto;
+            display: block;
+            border-radius: 1.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+<!-- Cloudflare Web Analytics --><script data-cf-beacon='{"token": "26f702bb029f48b9a0fed7765dbfcb1b"}' src="https://static.cloudflareinsights.com/beacon.min.js" type="module"></script><!-- End Cloudflare Web Analytics -->
+<link data-page-language="" href="https://us.visaphoto1tap.com/" hreflang="en" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/zh-hans/" hreflang="zh-Hans" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/zh-hant/" hreflang="zh-Hant" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/es/" hreflang="es" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/ja/" hreflang="ja" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/de/" hreflang="de" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/fr/" hreflang="fr" rel="alternate"/><link data-page-language="" href="https://us.visaphoto1tap.com/" hreflang="x-default" rel="alternate"/><link data-page-language="" href="/assets/locales.css?v=20261111-seven" rel="stylesheet"/><script data-page-language="" defer="" src="/assets/locales.js"></script></head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+<a class="platform-skip" href="#main">Zum Inhalt</a>
+<header class="platform-header"><nav aria-label="Hauptnavigation" class="platform-nav">
+<a aria-label="US Visa Photo Startseite" class="platform-brand" href="/de/"><img alt="" height="32" src="/AppIcon.png" width="32"/><span>US Visa Photo</span></a>
+<div class="platform-links"><a href="#demos">Ergebnis ansehen</a><a class="nav-extra" href="#pricing">Preise</a><a class="nav-extra" href="/de/guides/">Ratgeber</a><a class="nav-extra" href="/support.html#de">Support</a><details class="locale-switcher" id="page-language"><summary aria-label="Sprache wählen">Deutsch</summary><ul class="locale-list"><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a aria-current="page" href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li></ul></details><div class="relative">
+<button aria-expanded="false" aria-haspopup="true" aria-label="Weitere Visumfoto-Apps" class="p-2 -m-2 rounded-lg text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition" id="app-switcher-btn" type="button">
+<i class="w-5 h-5" data-lucide="menu"></i>
+</button>
+<div class="hidden fixed right-4 top-16 w-72 max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-100 py-2 z-50 text-left" id="app-switcher-menu">
+<p class="px-4 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">Unsere Visumfoto-Apps</p>
+<a class="flex items-center gap-3 px-4 py-2.5 bg-gray-50" href="/de/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="/AppIcon.png"/>
+<span class="text-sm font-semibold text-gray-900">US Visa Photo</span>
+<i class="w-4 h-4 text-emerald-500 ml-auto flex-shrink-0" data-lucide="check"></i>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://china.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://china.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">China Visa Photo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://schengen.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://schengen.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">Schengen Visa Photo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://india.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://india.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">India Visa Photo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://japan.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://japan.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">Japan Visa Photo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://canada.visaphoto1tap.com/">
+<img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://canada.visaphoto1tap.com/AppIcon.png"/>
+<span class="text-sm font-medium text-gray-800">Canada Visa Photo</span>
+</a>
+</div>
+</div><a class="nav-download" href="#download">Download</a></div>
+</nav></header>
+<main id="main">
+<!-- APPSTORE_SHOT:BEGIN:hero -->
+<!-- Hero -->
+<section class="gradient-hero text-white overflow-hidden">
+<div class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+<div class="grid md:grid-cols-2 gap-12 md:gap-8 items-center">
+<!-- Copy -->
+<div class="text-center md:text-left">
+<div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur rounded-full px-4 py-1.5 text-sm mb-8">
+<span class="text-gray-200">Für iPhone und Android</span>
+</div>
+<h1 class="text-5xl md:text-6xl font-bold tracking-tight leading-tight mb-6"> Ihr US-Visumfoto,<br/>
+<span class="text-cyan-400">mit einem Tippen vorbereitet.</span>
+</h1>
+<p class="text-lg md:text-xl text-gray-300 max-w-xl mx-auto md:mx-0 mb-6 leading-relaxed"> Automatischer quadratischer Zuschnitt und weißer Hintergrund. Prüfen Sie Abmessungen, Bildausschnitt und Dateigröße vor einem kostenpflichtigen JPEG-Export. </p>
+<p class="hero-price"><strong>Kostenlose Vorschau.</strong> $1.99 pro JPEG-Export. Kein Abo.</p>
+<div aria-label="Download-Plattform auswählen" class="store-badges" id="download">
+<a data-store-placement="home" href="https://apps.apple.com/app/apple-store/id6761959861?pt=128765534&amp;ct=us-seo-home-20261104&amp;mt=8" rel="noopener noreferrer" target="_blank"><img alt="US Visa Photo im App Store herunterladen" class="apple-badge" height="48" src="/assets/badges/app-store.svg" width="144"/></a>
+<a data-store-placement="home-android" href="https://play.google.com/store/apps/details?id=com.loop.usvisaphoto" rel="noopener noreferrer" target="_blank"><img alt="US Visa Photo bei Google Play laden" class="play-badge" height="72" src="/assets/badges/google-play.png" width="187"/></a>
+</div>
+<p class="text-gray-300 text-sm mt-2">iPhone: iOS 17+ · Android: 8.0+</p>
+<p class="hero-store-note">Preise der US-Stores. Ihr Store zeigt den lokalen Preis.</p>
+<p class="hero-scope">Das Ersetzen des Hintergrunds verändert Ihr Foto. <a href="/de/guides/us-visa-photo-requirements.html#editing">Vor der Verwendung offizielle Regeln prüfen.</a></p>
+</div>
+<!-- Product visual: two matching real app screens, same person -->
+<div><div class="hero-visual">
+<!-- Before: the app's own "Original" screen, full raw device screenshot -->
+<figure class="hero-before">
+<div class="hero-phone">
+<img alt="US Visa Photo mit dem Originalbildschirm und der Schaltfläche für 2×2-Zuschnitt und Hintergrundentfernung" decoding="async" height="1869" src="/assets/iphone/02-before-native.webp" width="864"/>
+</div>
+</figure>
+<!-- Arrow -->
+<div aria-hidden="true" class="hero-arrow">
+<i data-lucide="arrow-right"></i>
+</div>
+<!-- After: the same person, in the app — background removed, cropped to 2x2, auto-checked -->
+<figure class="hero-after">
+<div class="hero-phone">
+<img alt="Dasselbe Foto in US Visa Photo: Hintergrund entfernt, auf 2×2 zugeschnitten und mit dem nativen Status Ready to use" decoding="async" height="1869" src="/assets/iphone/02-after-native.webp" width="864"/>
+</div>
+</figure>
+</div><p class="text-center text-gray-400 text-sm mt-5">Gezeigt wird die englische iPhone-Oberfläche. In beiden Stores erhältlich.</p></div>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:hero -->
+<!-- APPSTORE_SHOT:BEGIN:trust-bar -->
+<!-- Trust Bar -->
+<section class="bg-gray-50 border-b border-gray-100">
+<div class="max-w-4xl mx-auto px-6 py-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-gray-500">
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-brand" data-lucide="wifi-off"></i>
+<span>Lokale Bildverarbeitung</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-brand" data-lucide="eye-off"></i>
+<span>Keine Porträt-Uploads an den Entwickler</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-brand" data-lucide="cpu"></i>
+<span>iPhone und Android</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-brand" data-lucide="check-circle-2"></i>
+<span>Datei- und Bildausschnittprüfungen</span>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:trust-bar -->
+<!-- APPSTORE_SHOT:BEGIN:features -->
+<section class="benefits-section" id="features">
+<div class="benefits-wrap">
+<div class="benefits-heading"><p class="platform-eyebrow">AUTOMATISCHE FOTOVERARBEITUNG</p><h2>Zuschnitt, Hintergrund und Dateiprüfungen.</h2></div>
+<div class="benefits-grid">
+<article><span class="benefit-value">Ein Tippen</span><h3>Automatischer Zuschnitt und weißer Hintergrund</h3><p>Automatischer quadratischer Zuschnitt und Hintergrundersatz durch Weiß. Keine Regler oder manuelle Retusche.</p></article>
+<article><span class="benefit-value">Details ansehen</span><h3>Abmessungen, Bildausschnitt und Dateigröße prüfen</h3><p>Prüfen Sie Pixel, Dateigröße, Kopfhöhe, Augenposition und Beleuchtungswarnungen vor dem Export.</p><a href="#compliance-checklist">Prüfungen ansehen <span aria-hidden="true">↗</span></a></article>
+<article><span class="benefit-value">Auf Ihrem Smartphone</span><h3>Ihr Porträt wird lokal verarbeitet.</h3><p>Fotos werden auf Ihrem Gerät verarbeitet, ohne Porträt-Upload auf unsere Server.</p><a href="#faq">Datenschutz nachlesen <span aria-hidden="true">↗</span></a></article>
+<article><span class="benefit-value">$1.99</span><h3>Ein JPEG. Eine Zahlung.</h3><p>Verarbeitung, Vorschau und neue Versuche kostenlos. Kaufen Sie einen Export, wenn Sie sich entscheiden. US-Store-Preis; kein Abo.</p><a href="#pricing">Preise verstehen <span aria-hidden="true">↗</span></a></article>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:features -->
+<!-- APPSTORE_SHOT:BEGIN:demos -->
+<!-- Before / After Demo collection -->
+<section class="py-20 md:py-28 scroll-mt-20" id="demos">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-14">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Originalfotos und Ergebnisse</h2>
+<p class="text-gray-500 text-lg max-w-3xl mx-auto">Quadratischer Zuschnitt und weißer Hintergrund, mit den Originalen darunter. Beispiele aus der iPhone-App; Ergebnisse hängen vom Foto ab.</p>
+</div>
+<!-- Results wall: single scrollable row -->
+<div aria-label="Reihe mit Ergebnisfotos" class="demo-wall-row">
+<figure class="demo-wall-item"><img alt="Ergebnisbeispiel 1" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-01-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="Ergebnisbeispiel 2" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-02-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="Ergebnisbeispiel 3" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-03-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="Ergebnisbeispiel 4" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-04-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="Ergebnisbeispiel 5" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-05-result.png" width="800"/></figure>
+<figure class="demo-wall-item"><img alt="Ergebnisbeispiel 6" class="demo-wall-img" decoding="async" height="800" src="/demos/demo-06-result.png" width="800"/></figure>
+</div>
+<!-- Originals film strip -->
+<div class="mt-10 max-w-5xl mx-auto">
+<div class="flex items-center justify-between gap-4 mb-3">
+<p class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Originale (vorher) · volles Seitenverhältnis</p>
+<p class="text-xs text-gray-400 hidden sm:block">Weiterwischen →</p>
+</div>
+<div aria-label="Originalfoto-Reihe" class="demo-film">
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="Original 1" class="demo-film-thumb" decoding="async" src="/demos/demo-01-original.png"/>
+</div>
+<div class="demo-film-label">Küche</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="Original 2" class="demo-film-thumb" decoding="async" src="/demos/demo-02-original.png"/>
+</div>
+<div class="demo-film-label">Porträt zu Hause</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="Original 3" class="demo-film-thumb" decoding="async" src="/demos/demo-03-original.png"/>
+</div>
+<div class="demo-film-label">Terrasse</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="Original 4" class="demo-film-thumb" decoding="async" src="/demos/demo-04-original.png"/>
+</div>
+<div class="demo-film-label">Außengang</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="Original 5" class="demo-film-thumb" decoding="async" src="/demos/demo-05-original.png"/>
+</div>
+<div class="demo-film-label">Gehweg</div>
+</div>
+<div class="demo-film-item">
+<div class="demo-film-original-wrap">
+<img alt="Original 6" class="demo-film-thumb" decoding="async" src="/demos/demo-06-original.png"/>
+</div>
+<div class="demo-film-label">Wohnzimmer</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:demos -->
+<section class="py-16 md:py-24 bg-gray-50 scroll-mt-24" id="app">
+<div class="max-w-6xl mx-auto px-6 text-center">
+<p class="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-2">In der App</p>
+<h2 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 mb-3">Foto und Prüfliste vor dem Kauf ansehen</h2>
+<p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto mb-10">Prüfen Sie die Liste, Beleuchtungswarnungen und gespeicherten Exporte. Echte englische iPhone-App-Oberflächen. Die kostenlose Vorschau behält ihr Wasserzeichen; freigeschaltete Beispiele zeigen gespeicherte Exporte.</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-10 justify-items-center max-w-4xl mx-auto">
+<img alt="iPhone-Vorschau mit allen sieben nativen Prüfzeilen, Ready to use und unverändertem PREVIEW-Wasserzeichen vor dem Kauf" class="appstore-shot" decoding="async" height="1869" loading="lazy" src="/assets/iphone/03-checklist-native.webp" width="864"/>
+<img alt="iPhone-Ergebnis mit nativer Lichtprüfung und freigeschalteten JPEG-Speicher- und Teilen-Funktionen" class="appstore-shot" decoding="async" height="1869" loading="lazy" src="/assets/iphone/04-lighting-native.webp" width="864"/>
+<img alt="Native iPhone-Galerie mit zwölf Exporten von sechs unterschiedlichen Personen" class="appstore-shot" decoding="async" height="1869" loading="lazy" src="/assets/iphone/06-saved-grid-native.webp" width="864"/>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:BEGIN:compliance-checklist -->
+<!-- Compliance checklist (matches in-app export checklist) -->
+<section class="py-16 md:py-24 bg-white border-t border-gray-100" id="compliance-checklist">
+<div class="max-w-3xl mx-auto px-6">
+<div class="text-center mb-10">
+<h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">Fotoabmessungen und Messwerte zum Bildausschnitt</h2>
+<p class="text-gray-500">Sehen Sie Pixel, Dateigröße, Augenposition und Kopfhöhe zur Vorschau. Eine App-Prüfung ist ein Hinweis, keine behördliche Freigabe.</p>
+</div>
+<div class="bg-gray-50 rounded-2xl border border-gray-100 p-6 md:p-8">
+<ul class="space-y-4 text-left text-sm md:text-base text-gray-800">
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>Druckgröße</strong> — 2 × 2 Zoll (51 × 51 mm), quadratischer Zuschnitt.</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>Digitale Auflösung</strong> — 600 bis 1200 Pixel pro Seite; die App zeigt die genauen Exportmaße, z. B. 1200 × 1200.</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>Augenposition</strong> — vom unteren Bildrand gemessen nennt die US-Vorgabe 56–69 %; wir zeigen Ihren Messwert.</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>Kopfhöhe</strong> — 50–69 % der Bildhöhe; wir zeigen den Messwert im Vergleich zur Vorlage.</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>Hintergrund</strong> — der weiße Hintergrund entsteht durch Verarbeitung; dies prüft nicht den ursprünglichen Hintergrund.</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>Beleuchtung</strong> — ungleichmäßiges Gesichtslicht kann eine Warnung auslösen; die App korrigiert es nicht.</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>Dateiformat</strong> — Export eines JPEG-Bildes; kein Drucklayout mit mehreren Fotos enthalten.</span>
+</li>
+<li class="compliance-row flex items-start gap-3">
+<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<span><strong>Verarbeitungsumfang</strong> — Zuschnitt und Hintergrundersatz; keine manuelle Retusche und kein Export mit reinem Zuschnitt.</span>
+</li>
+</ul>
+<p class="text-xs text-gray-400 mt-6 leading-relaxed">Die Prüfliste und „Ready to use“ sind keine behördliche Freigabe. Beachten Sie die <a class="underline" href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html">Fotoanforderungen des US-Außenministeriums</a>, einschließlich der Regeln für ein geeignetes Original und digitale Änderungen.</p>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:compliance-checklist -->
+<!-- APPSTORE_SHOT:BEGIN:languages -->
+<!-- Languages -->
+<section class="py-16 md:py-24 bg-white border-t border-gray-100" id="languages">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<div class="inline-flex items-center justify-center w-12 h-12 bg-blue-50 rounded-xl mb-5">
+<i class="w-6 h-6 text-brand" data-lucide="languages"></i>
+</div>
+<h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">App in sieben Sprachen verfügbar</h2>
+<p class="text-gray-500 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"> Die App übernimmt eine unterstützte Gerätesprache. Sie können die Sprache auch in der App wechseln. </p>
+<p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">Sprachen der App</p>
+<ul class="flex flex-wrap items-center justify-center gap-3 max-w-3xl mx-auto text-sm md:text-base">
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">English</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">简体中文</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">繁體中文</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">Español</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">日本語</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">Deutsch</li>
+<li class="bg-gray-50 border border-gray-200 rounded-full px-4 py-2 font-medium text-gray-800">Français</li>
+</ul>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:languages -->
+<!-- APPSTORE_SHOT:BEGIN:how-it-works -->
+<!-- How It Works -->
+<section class="py-20 md:py-28" id="how-it-works">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Ein Foto vorbereiten</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+<div class="text-center">
+<div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-5">1</div>
+<h3 class="font-semibold mb-2">Foto auswählen</h3>
+<p class="text-gray-500 text-sm leading-relaxed">Verwenden Sie ein scharfes Original von vorn. Sorgen Sie bei der Aufnahme für geeigneten Hintergrund und gleichmäßiges Licht.</p>
+</div>
+<div class="text-center">
+<div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-5">2</div>
+<h3 class="font-semibold mb-2">Zum Verarbeiten tippen</h3>
+<p class="text-gray-500 text-sm leading-relaxed">Die App schneidet ein quadratisches Porträt zu, ersetzt den Hintergrund und zeigt Datei- und Bildausschnittprüfungen.</p>
+</div>
+<div class="text-center">
+<div class="w-14 h-14 bg-brand text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-5">3</div>
+<h3 class="font-semibold mb-2">Prüfen und exportieren</h3>
+<p class="text-gray-500 text-sm leading-relaxed">Prüfen Sie Ergebnis und Bearbeitungsgrenzen vor dem Kauf. Exportieren Sie ein JPEG zum angezeigten Store-Preis und speichern oder teilen Sie es.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:how-it-works -->
+<!-- APPSTORE_SHOT:BEGIN:pricing -->
+<section class="bg-gray-50 py-20 md:py-28" id="pricing">
+<div class="max-w-5xl mx-auto px-6">
+<div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Erst ansehen. Für den Export bezahlen.</h2><p class="text-gray-500 text-lg">Kein Abo. Prüfen Sie Ergebnis und Bearbeitungsgrenzen vor dem Kauf.</p></div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="bg-white border border-gray-200 rounded-2xl p-8"><h3 class="text-xl font-semibold mb-4">Kostenlose Vorschau</h3><p class="text-gray-600 leading-relaxed">Foto verarbeiten, Vorschau ansehen und Prüfliste prüfen. Weitere Versuche sind vor der Exportentscheidung möglich.</p></div>
+<div class="bg-brand text-white rounded-2xl p-8"><h3 class="text-xl font-semibold mb-4">Einzelner JPEG-Export</h3><p class="text-4xl font-bold mb-4">$1.99</p><p class="text-white/90 leading-relaxed">Pro Export im US-App-Store und bei US-Google-Play. Ihr Store zeigt den lokalen Preis vor dem Kauf. Käufe und Guthaben sind je Plattform getrennt. Kein Pass für unbegrenzte Nutzung.</p></div>
+<div class="bg-white border border-gray-200 rounded-2xl p-8"><h3 class="text-xl font-semibold mb-4">Umfang kennen</h3><p class="text-gray-600 leading-relaxed">Die aktuelle App verändert den Hintergrund. Der Export enthält weder behördliche Annahmeentscheidung noch Antragseinreichung oder Druckbogen mit mehreren Fotos.</p></div>
+</div>
+<p class="text-center mt-8"><a class="text-brand underline font-medium" href="/de/guides/us-visa-photo-privacy-and-pricing.html">Datenschutz, Preise und App-Grenzen</a></p>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:pricing -->
+<!-- APPSTORE_SHOT:BEGIN:use-cases -->
+<section class="py-16 md:py-20" id="use-cases">
+<div class="max-w-3xl mx-auto px-6 text-center"><h2 class="text-3xl font-bold tracking-tight mb-5">Zuerst die Anforderungen prüfen.</h2><p class="text-gray-600 leading-relaxed">Diese App bereitet ein quadratisches Bild vor und zeigt Datei- und Bildausschnittdaten. Für DS-160, Reisepass, Green Card und Diversity Visa gelten eigene Anleitungen. Eine ähnliche Fotogröße belegt nicht die Eignung für jeden Antrag.</p><p class="mt-5"><a class="text-brand underline font-medium" href="/de/guides/us-visa-photo-requirements.html">Ratgeber zu US-Visumfoto-Anforderungen lesen</a></p></div>
+</section>
+<!-- APPSTORE_SHOT:END:use-cases -->
+<section class="py-16 md:py-24 border-t border-gray-100" id="photo-guides">
+<div class="max-w-6xl mx-auto px-6"><div class="text-center mb-10"><p class="text-brand text-sm font-semibold mb-3">FOTORATGEBER</p><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Fotoanforderungen und Upload-Probleme</h2><p class="text-gray-500">Ratgeber des App-Entwicklers mit offiziellen Quellen.</p></div>
+<div class="grid md:grid-cols-3 gap-6">
+<article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/de/guides/us-visa-photo-requirements.html">DS-160-Fotoanforderungen</a></h3><p class="text-gray-600">Quadratische Pixelmaße, JPEG-Dateien, Größenlimits und der Unterschied zwischen Dateiprüfung und geeignetem Original.</p></article>
+<article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/de/guides/ds-160-photo-upload-failed.html">Foto-Upload fehlgeschlagen?</a></h3><p class="text-gray-600">Prüfen Sie Datei und Originalfoto und beachten Sie die offiziellen Hinweise zur Bestätigungsseite.</p></article>
+<article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/de/guides/us-visa-photo-privacy-and-pricing.html">Datenschutz, Preise und Grenzen</a></h3><p class="text-gray-600">Was auf dem Smartphone bleibt, was kostenlos ist, wie JPEG-Export funktioniert und was die App nicht bietet.</p></article>
+</div><p class="text-center mt-8"><a class="text-brand underline" href="/de/guides/">Alle Fotoratgeber ansehen</a></p>
+</div>
+</section>
+<section class="platform-faq platform-wrap" id="faq"><p class="platform-eyebrow">VOR DEM DOWNLOAD</p><h2>Häufige Fragen</h2>
+<details><summary>Kann ich iPhone oder Android wählen?</summary><p>Ja. Beide Store-Links sind auf jedem Gerät verfügbar. iPhone benötigt iOS 17 oder neuer; Android benötigt Android 8.0 oder neuer. <a href="#download">Store auswählen.</a></p></details>
+<details><summary>Was ist kostenlos und wofür zahle ich?</summary><p>Verarbeitung, Vorschau und weitere Versuche sind kostenlos. Ein Kauf schaltet einen JPEG-Export frei, ohne Abo. Der US-Preis beträgt auf jeder Plattform $1.99 pro Export. Ihr Store zeigt den lokalen Preis vor dem Kauf.</p></details>
+<details><summary>Gilt mein Kauf auf beiden Plattformen?</summary><p>Nein. Käufe und Exportguthaben im App Store und bei Google Play sind getrennt. Kaufen Sie auf der Plattform, auf der Sie das Foto exportieren möchten.</p></details>
+<details><summary>Werden Fotos lokal verarbeitet?</summary><p>Ja. Porträts werden auf Ihrem Gerät verarbeitet. Google-SDKs unter Android können Nutzungs- und Leistungsdiagnosen senden; die Stores bearbeiten Kaufdaten. Lesen Sie die <a href="/privacy.html">iPhone-Datenschutzrichtlinie (Englisch)</a> oder die <a href="/privacy-android.html">Android-Datenschutzrichtlinie (Englisch)</a> für weitere Details.</p></details>
+<details><summary>Garantiert ein Export die Annahme meines Fotos?</summary><p>Nein. Beide Apps ersetzen den Hintergrund und bieten keinen Export mit reinem Zuschnitt. Offizielle Anträge können digital bearbeitete Fotos einschränken. Lesen Sie die Vorgaben der zuständigen Behörde. Diese unabhängige App gehört zu keiner Regierung oder Botschaft. <a href="/de/guides/us-visa-photo-requirements.html#editing">Bearbeitungsgrenzen lesen.</a></p></details>
+</section>
+<!-- APPSTORE_SHOT:BEGIN:final-cta -->
+<!-- Final CTA -->
+<section class="bg-gray-50 py-20 md:py-28" id="download-end">
+<div class="max-w-3xl mx-auto px-6 text-center">
+<img alt="US Visa Photo" class="w-20 h-20 rounded-[22px] mx-auto mb-8 shadow-lg" src="/AppIcon.png"/>
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">US Visa Photo herunterladen</h2>
+<p class="text-gray-500 text-lg mb-10">Verarbeitung ausprobieren und Prüfliste ansehen. Exportieren Sie ein JPEG, wenn Sie sich entscheiden — $1.99 in US-Stores, ohne Abo.</p>
+<div aria-label="US Visa Photo herunterladen" class="store-badges"><a data-store-placement="home-footer-iphone" href="https://apps.apple.com/app/apple-store/id6761959861?pt=128765534&amp;ct=us-seo-home-20261104&amp;mt=8" rel="noopener noreferrer" target="_blank"><img alt="US Visa Photo im App Store herunterladen" class="apple-badge" height="48" src="/assets/badges/app-store.svg" width="144"/></a><a data-store-placement="home-footer-android" href="https://play.google.com/store/apps/details?id=com.loop.usvisaphoto" rel="noopener noreferrer" target="_blank"><img alt="US Visa Photo bei Google Play laden" class="play-badge" height="72" src="/assets/badges/google-play.png" width="187"/></a></div>
+</div>
+</section>
+<!-- APPSTORE_SHOT:END:final-cta -->
+<!-- APPSTORE_SHOT:BEGIN:footer -->
+<!-- Footer -->
+</main>
+<footer class="border-t border-gray-100 py-10">
+<div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+<div class="flex items-center gap-3">
+<img alt="US Visa Photo" class="w-6 h-6 rounded-md" src="/AppIcon.png"/>
+<span>© 2026 US Visa Photo. Alle Rechte vorbehalten.</span>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-3">
+<a class="hover:text-gray-600 transition" href="#download">Download</a>
+<a class="hover:text-gray-600 transition" href="https://visaphoto1tap.com/de/">Apps für alle Zielländer</a>
+<a class="hover:text-gray-600 transition" href="/de/guides/">Fotoratgeber</a>
+<a class="hover:text-gray-600 transition" href="/privacy.html">iPhone-Datenschutz (Englisch)</a>
+<a class="hover:text-gray-600 transition" href="/privacy-android.html">Android-Datenschutz (Englisch)</a>
+<a class="hover:text-gray-600 transition" href="/support.html#de">Support</a>
+</div>
+</div>
+</footer>
+<!-- APPSTORE_SHOT:END:footer -->
+<script>
+        (function () {
+            var btn = document.getElementById('app-switcher-btn');
+            var menu = document.getElementById('app-switcher-menu');
+            if (!btn || !menu) return;
+            btn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var willOpen = menu.classList.contains('hidden');
+                menu.classList.toggle('hidden', !willOpen);
+                btn.setAttribute('aria-expanded', String(willOpen));
+            });
+            document.addEventListener('click', function (e) {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && e.target !== btn) {
+                    menu.classList.add('hidden');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') { menu.classList.add('hidden'); btn.setAttribute('aria-expanded', 'false'); }
+            });
+        })();
+    </script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

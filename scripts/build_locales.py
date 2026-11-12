@@ -1,20 +1,26 @@
 #!/usr/bin/env python3
-"""Build static Simplified Chinese pages from reviewed copy. No browser translation or locale redirects."""
+"""Build reviewed static localized pages from reviewed copy. No browser translation or locale redirects."""
 from pathlib import Path
 from bs4 import BeautifulSoup, Comment, Doctype
 from urllib.parse import urljoin,urlsplit,urlunsplit
 import json,re,copy,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 CONFIG=json.loads((ROOT/'localization/config.json').read_text())
-ORIGIN=CONFIG['origin'];FILES=CONFIG['pages'];PREFIX='/zh-hans'
-COPY=json.loads((ROOT/'localization/zh-Hans.json').read_text())
+ORIGIN=CONFIG['origin'];FILES=CONFIG['pages'];LOCALES=CONFIG['locales']
+PREFIX='';COPY={}
 ALLOWED=set(CONFIG.get('keepEnglish',[]))
 normalize=lambda t:re.sub(r'\s+',' ',str(t)).strip()
 def route(f):return '/'+f.removesuffix('index.html') if f.endswith('index.html') else '/'+f
 def translated_url(url):
  u=urlsplit(url)
+ path=u.path
+ for locale in LOCALES:
+  prefix=locale['prefix']
+  if prefix and (path==prefix or path.startswith(prefix+'/')):
+   path=path[len(prefix):] or '/';break
+ u=u._replace(path=path)
  hosts={'visaphoto1tap.com':{'/'},'us.visaphoto1tap.com':{'/','/guides/','/guides/us-visa-photo-requirements.html','/guides/ds-160-photo-upload-failed.html','/guides/us-visa-photo-privacy-and-pricing.html'}}
- if u.netloc=='us.visaphoto1tap.com' and u.path=='/support.html':return urlunsplit((u.scheme,u.netloc,u.path,u.query,'zh-Hans'))
+ if u.netloc=='us.visaphoto1tap.com' and u.path=='/support.html':return urlunsplit((u.scheme,u.netloc,u.path,u.query,LANG['code']))
  if u.netloc in hosts and u.path in hosts[u.netloc]:return urlunsplit((u.scheme,u.netloc,PREFIX+u.path,u.query,u.fragment))
  if u.netloc=='us.visaphoto1tap.com' and u.path=='/guides/ds-160-photo-upload-failed-zh.html':return urlunsplit((u.scheme,u.netloc,PREFIX+'/guides/ds-160-photo-upload-failed.html',u.query,u.fragment))
  return url
@@ -42,10 +48,11 @@ def store_actions(soup,f):
 
 def language_ui(soup,f,lang):
  d=soup.new_tag('details',id='page-language',attrs={'class':'locale-switcher'})
- summary=soup.new_tag('summary',attrs={'aria-label':'选择语言' if lang=='zh-Hans' else 'Choose language'})
- summary.string='简体中文' if lang=='zh-Hans' else 'English';d.append(summary)
+ summary=soup.new_tag('summary',attrs={'aria-label':LANG['choose']})
+ summary.string=LANG['name'];d.append(summary)
  ul=soup.new_tag('ul',attrs={'class':'locale-list'})
- for code,label,path in [('en','English',route(f)),('zh-Hans','简体中文',PREFIX+route(f))]:
+ for locale in LOCALES:
+  code,label,path=locale['code'],locale['name'],locale['prefix']+route(f)
   li=soup.new_tag('li');a=soup.new_tag('a',href=path,lang=code,hreflang=code)
   a.string=label
   if lang==code:a['aria-current']='page'
@@ -64,16 +71,16 @@ def translate(soup):
   text=normalize(n)
   if text in COPY:
    raw=str(n);n.replace_with((' ' if raw[:1].isspace() else '')+COPY[text]+(' ' if raw[-1:].isspace() else ''))
-  elif re.search('[A-Za-z]',text) and text not in ALLOWED:missing.add(text)
+  elif re.search('[A-Za-z]',text) and text not in ALLOWED:missing.add(LANG['code']+': '+text)
  for el in soup.find_all(True):
   for attr in ['alt','aria-label','title','placeholder']:
    text=el.get(attr)
    if text in COPY:el[attr]=COPY[text]
-   elif text and re.search('[A-Za-z]',text) and text not in ALLOWED:missing.add(text)
+   elif text and re.search('[A-Za-z]',text) and text not in ALLOWED:missing.add(LANG['code']+': '+text)
   if el.name=='meta' and el.get('name',el.get('property','')) in ['description','og:title','og:description','twitter:title','twitter:description']:
    text=normalize(el.get('content',''))
    if text in COPY:el['content']=COPY[text]
-   elif text and text not in ALLOWED:missing.add(text)
+   elif text and text not in ALLOWED:missing.add(LANG['code']+': '+text)
 
 def links(soup,f,lang):
  for el in soup.find_all(True):
@@ -81,14 +88,14 @@ def links(soup,f,lang):
    v=el.get(attr)
    if not v or v.startswith(('#','mailto:','data:','javascript:')):continue
    absolute=urljoin(ORIGIN+route(f),v)
-   if lang=='zh-Hans' and not (el.name=='link' and el.get('rel')==['alternate']):absolute=translated_url(absolute)
+   if lang!='en' and not (el.name=='link' and el.get('rel')==['alternate']):absolute=translated_url(absolute)
    u=urlsplit(absolute)
    if u.netloc==urlsplit(ORIGIN).netloc:el[attr]=urlunsplit(('','',u.path,u.query,u.fragment))
    else:el[attr]=absolute
  # Language annotations and canonical always use fully qualified URLs.
  for n in soup.select('link[rel="canonical"],meta[property="og:url"]'):
-  attr='href' if n.name=='link' else 'content';n[attr]=ORIGIN+(PREFIX if lang=='zh-Hans' else '')+route(f)
- for code,path in [('en',route(f)),('zh-Hans',PREFIX+route(f)),('x-default',route(f))]:
+  attr='href' if n.name=='link' else 'content';n[attr]=ORIGIN+(PREFIX if lang!='en' else '')+route(f)
+ for code,path in [(locale['code'],locale['prefix']+route(f)) for locale in LOCALES]+[('x-default',route(f))]:
   soup.head.append(soup.new_tag('link',rel='alternate',hreflang=code,href=ORIGIN+path,attrs={'data-page-language':''}))
  for script in soup.select('script[type="application/ld+json"]'):
   data=json.loads(script.string)
@@ -99,31 +106,36 @@ def links(soup,f,lang):
     return result
    if isinstance(o,list):return [localize(v,key) for v in o]
    if isinstance(o,str):
-    if o.startswith('https://') and lang=='zh-Hans':return translated_url(o)
+    if o.startswith('https://') and lang!='en':return translated_url(o)
     if key=='inLanguage':return lang
-    if lang=='zh-Hans' and key in ['name','headline','description','text'] and o in COPY:return COPY[o]
+    if lang!='en' and key in ['name','headline','description','text'] and o in COPY:return COPY[o]
    return o
   script.string=json.dumps(localize(data),ensure_ascii=False)
 
 pending=[]
 for f in FILES:
  source=(ROOT/f).read_text()
- for lang in ['en','zh-Hans']:
-  override=CONFIG.get('chineseSourceOverrides',{}).get(f)
-  native=bool(lang=='zh-Hans' and override)
+ for LANG in LOCALES:
+  lang=LANG['code'];PREFIX=LANG['prefix']
+  COPY=json.loads((ROOT/('localization/'+lang+'.json')).read_text()) if lang!='en' else {}
+  override=CONFIG.get('sourceOverrides',{}).get(lang,{}).get(f)
+  native=bool(override)
   soup=BeautifulSoup((ROOT/override).read_text() if native else source,'html.parser');clean(soup);store_actions(soup,f)
-  if lang=='zh-Hans' and not native:translate(soup)
+  if lang!='en' and not native:translate(soup)
   soup.html['lang']=lang
   links(soup,f,lang);language_ui(soup,f,lang)
-  css=soup.new_tag('link',rel='stylesheet',href='/assets/locales.css?v=20261111-final',attrs={'data-page-language':''});soup.head.append(css)
+  status=soup.select_one('#filter-status')
+  if status:
+   status['data-count-one']=LANG['filterOne'];status['data-count-many']=LANG['filterMany']
+  css=soup.new_tag('link',rel='stylesheet',href='/assets/locales.css?v=20261111-seven',attrs={'data-page-language':''});soup.head.append(css)
   control=soup.new_tag('script',src='/assets/locales.js',defer='',attrs={'data-page-language':''});soup.head.append(control)
-  dest=ROOT/(('zh-hans/'+f) if lang=='zh-Hans' else f)
+  dest=ROOT/(PREFIX.lstrip('/')+'/'+f if PREFIX else f)
   pending.append((dest,str(soup).rstrip()+'\n'))
 if missing:raise SystemExit('Missing reviewed translations:\n'+'\n'.join(sorted(missing)))
 for dest,html in pending:
  dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(html)
 if CONFIG.get('legacyChineseGuide'):
- old=ROOT/CONFIG['legacyChineseGuide'];new=PREFIX+'/guides/ds-160-photo-upload-failed.html'
+ old=ROOT/CONFIG['legacyChineseGuide'];new='/zh-hans/guides/ds-160-photo-upload-failed.html'
  old.write_text(f'<!doctype html>\n<html lang="zh-Hans"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DS-160 照片上传指南</title><link rel="canonical" href="{ORIGIN+new}"><meta http-equiv="refresh" content="0;url={new}"><p>本指南已移至<a href="{new}">中文版照片指南</a>。</p><script>location.replace({json.dumps(new)}+location.search+location.hash);</script></html>\n')
 ns='http://www.sitemaps.org/schemas/sitemap/0.9';ET.register_namespace('',ns)
 site=ET.parse(ROOT/'sitemap.xml');tree=site.getroot();existing={n.find('{'+ns+'}loc').text:n for n in list(tree)}
@@ -131,7 +143,7 @@ if CONFIG.get('legacyChineseGuide'):
  old=ORIGIN+'/'+CONFIG['legacyChineseGuide']
  if old in existing:tree.remove(existing[old])
 for f in FILES:
- for prefix in ['',PREFIX]:
+ for prefix in [locale['prefix'] for locale in LOCALES]:
   url=ORIGIN+prefix+route(f)
   if url in existing:n=existing[url]
   else:n=ET.SubElement(tree,'{'+ns+'}url');ET.SubElement(n,'{'+ns+'}loc').text=url
@@ -139,4 +151,4 @@ for f in FILES:
   if last is None:last=ET.SubElement(n,'{'+ns+'}lastmod')
   last.text=CONFIG['modified']
 ET.indent(tree,space='  ');site.write(ROOT/'sitemap.xml',encoding='utf-8',xml_declaration=True)
-print(f'Built {len(FILES)} English/Chinese page pairs; sitemap has {len(tree)} URLs.')
+print(f'Built {len(FILES)} topics in {len(LOCALES)} languages; sitemap has {len(tree)} URLs.')

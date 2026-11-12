@@ -1,1 +1,94 @@
-{"origin":"https://us.visaphoto1tap.com","pages":["index.html","guides/index.html","guides/us-visa-photo-requirements.html","guides/ds-160-photo-upload-failed.html","guides/us-visa-photo-privacy-and-pricing.html"],"modified":"2026-11-11","chineseSourceOverrides":{"guides/ds-160-photo-upload-failed.html":"localization/zh-upload.html"},"legacyChineseGuide":"guides/ds-160-photo-upload-failed-zh.html","keepEnglish":["US Visa Photo","China Visa Photo","Schengen Visa Photo","India Visa Photo","Japan Visa Photo","Canada Visa Photo","English","Español","Deutsch","Français","iPhone","Android","zhangjj2007@yahoo.com","Language: English ·"]}
+{
+  "origin": "https://us.visaphoto1tap.com",
+  "pages": [
+    "index.html",
+    "guides/index.html",
+    "guides/us-visa-photo-requirements.html",
+    "guides/ds-160-photo-upload-failed.html",
+    "guides/us-visa-photo-privacy-and-pricing.html"
+  ],
+  "modified": "2026-11-11",
+  "legacyChineseGuide": "guides/ds-160-photo-upload-failed-zh.html",
+  "keepEnglish": [
+    "US Visa Photo",
+    "China Visa Photo",
+    "Schengen Visa Photo",
+    "India Visa Photo",
+    "Japan Visa Photo",
+    "Canada Visa Photo",
+    "English",
+    "Español",
+    "Deutsch",
+    "Français",
+    "iPhone",
+    "Android",
+    "zhangjj2007@yahoo.com",
+    "Language: English ·"
+  ],
+  "locales": [
+    {
+      "code": "en",
+      "prefix": "",
+      "name": "English",
+      "choose": "Choose language",
+      "filterOne": "{count} app shown",
+      "filterMany": "{count} apps shown"
+    },
+    {
+      "code": "zh-Hans",
+      "prefix": "/zh-hans",
+      "name": "简体中文",
+      "choose": "选择语言",
+      "filterOne": "显示 {count} 款 App",
+      "filterMany": "显示 {count} 款 App"
+    },
+    {
+      "code": "zh-Hant",
+      "prefix": "/zh-hant",
+      "name": "繁體中文",
+      "choose": "選擇語言",
+      "filterOne": "顯示 {count} 款 App",
+      "filterMany": "顯示 {count} 款 App"
+    },
+    {
+      "code": "es",
+      "prefix": "/es",
+      "name": "Español",
+      "choose": "Elegir idioma",
+      "filterOne": "{count} app disponible",
+      "filterMany": "{count} apps disponibles"
+    },
+    {
+      "code": "ja",
+      "prefix": "/ja",
+      "name": "日本語",
+      "choose": "言語を選択",
+      "filterOne": "{count} 件のアプリ",
+      "filterMany": "{count} 件のアプリ"
+    },
+    {
+      "code": "de",
+      "prefix": "/de",
+      "name": "Deutsch",
+      "choose": "Sprache wählen",
+      "filterOne": "{count} App angezeigt",
+      "filterMany": "{count} Apps angezeigt"
+    },
+    {
+      "code": "fr",
+      "prefix": "/fr",
+      "name": "Français",
+      "choose": "Choisir la langue",
+      "filterOne": "{count} app affichée",
+      "filterMany": "{count} apps affichées"
+    }
+  ],
+  "sourceOverrides": {
+    "zh-Hans": {
+      "guides/ds-160-photo-upload-failed.html": "localization/zh-upload.html"
+    },
+    "zh-Hant": {
+      "guides/ds-160-photo-upload-failed.html": "localization/zh-upload-Hant.html"
+    }
+  }
+}

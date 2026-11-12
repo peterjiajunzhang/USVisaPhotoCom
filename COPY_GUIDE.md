@@ -18,3 +18,5 @@ References reviewed 2026-11-11:
 - https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites
 
 Marketplace search did not return a directly applicable copy-editing integration. These documented rules require no additional service or installation.
+
+Website language scope: English, 简体中文, 繁體中文, Español, 日本語, Deutsch and Français. Website language is separate from destination and app platform. Preserve local legal/price qualifications and indicate English-only external country sites/policies. Language names and the screenshot’s original UI text remain native; do not translate a screenshot by painting over it.

@@ -1,0 +1,4147 @@
+{
+  "viewports": [
+    {
+      "site": "us",
+      "path": "/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 121.484375,
+        "right": 190.828125,
+        "top": 10,
+        "width": 69.34375,
+        "x": 121.484375,
+        "y": 10
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 191.484375,
+        "right": 260.828125,
+        "top": 10,
+        "width": 69.34375,
+        "x": 191.484375,
+        "y": 10
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 546.4296875,
+        "right": 622.828125,
+        "top": 12,
+        "width": 76.3984375,
+        "x": 546.4296875,
+        "y": 12
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 1062.4296875,
+        "right": 1138.828125,
+        "top": 12,
+        "width": 76.3984375,
+        "x": 1062.4296875,
+        "y": 12
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 220.8203125,
+        "right": 290.1640625,
+        "top": 100.4765625,
+        "width": 69.34375,
+        "x": 220.8203125,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 129.6484375,
+        "right": 198.9921875,
+        "top": 100.4765625,
+        "width": 69.34375,
+        "x": 129.6484375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 489.1875,
+        "right": 565.5859375,
+        "top": 74,
+        "width": 76.3984375,
+        "x": 489.1875,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1169.6015625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 76.3984375,
+        "x": 1169.6015625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 220.8203125,
+        "right": 290.1640625,
+        "top": 100.4765625,
+        "width": 69.34375,
+        "x": 220.8203125,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 129.6484375,
+        "right": 198.9921875,
+        "top": 100.4765625,
+        "width": 69.34375,
+        "x": 129.6484375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 489.1875,
+        "right": 565.5859375,
+        "top": 74,
+        "width": 76.3984375,
+        "x": 489.1875,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1169.6015625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 76.3984375,
+        "x": 1169.6015625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 220.8203125,
+        "right": 290.1640625,
+        "top": 100.4765625,
+        "width": 69.34375,
+        "x": 220.8203125,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 129.6484375,
+        "right": 198.9921875,
+        "top": 100.4765625,
+        "width": 69.34375,
+        "x": 129.6484375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 489.1875,
+        "right": 565.5859375,
+        "top": 74,
+        "width": 76.3984375,
+        "x": 489.1875,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1169.6015625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 76.3984375,
+        "x": 1169.6015625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 220.8203125,
+        "right": 290.1640625,
+        "top": 100.4765625,
+        "width": 69.34375,
+        "x": 220.8203125,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 129.6484375,
+        "right": 198.9921875,
+        "top": 100.4765625,
+        "width": 69.34375,
+        "x": 129.6484375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 489.1875,
+        "right": 565.5859375,
+        "top": 74,
+        "width": 76.3984375,
+        "x": 489.1875,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "en",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1169.6015625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 76.3984375,
+        "x": 1169.6015625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 157.6640625,
+        "right": 232,
+        "top": 10,
+        "width": 74.3359375,
+        "x": 157.6640625,
+        "y": 10
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 227.6640625,
+        "right": 302,
+        "top": 10,
+        "width": 74.3359375,
+        "x": 227.6640625,
+        "y": 10
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 581.6640625,
+        "right": 664,
+        "top": 12,
+        "width": 82.3359375,
+        "x": 581.6640625,
+        "y": 12
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 1097.6640625,
+        "right": 1180,
+        "top": 12,
+        "width": 82.3359375,
+        "x": 1097.6640625,
+        "y": 12
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 116.40625,
+        "right": 190.7421875,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 116.40625,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 18,
+        "right": 92.3359375,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 18,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 661.6640625,
+        "right": 744,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 661.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1163.6640625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 1163.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 116.40625,
+        "right": 190.7421875,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 116.40625,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 18,
+        "right": 92.3359375,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 18,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 661.6640625,
+        "right": 744,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 661.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1163.6640625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 1163.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 18,
+        "right": 92.3359375,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 18,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 111,
+        "height": 111,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 96,
+        "height": 32,
+        "left": 270.0078125,
+        "right": 344.34375,
+        "top": 64,
+        "width": 74.3359375,
+        "x": 270.0078125,
+        "y": 64
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 661.6640625,
+        "right": 744,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 661.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1163.6640625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 1163.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 116.40625,
+        "right": 190.7421875,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 116.40625,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 18,
+        "right": 92.3359375,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 18,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 661.6640625,
+        "right": 744,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 661.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hans",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1163.6640625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 1163.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 157.6640625,
+        "right": 232,
+        "top": 10,
+        "width": 74.3359375,
+        "x": 157.6640625,
+        "y": 10
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 227.6640625,
+        "right": 302,
+        "top": 10,
+        "width": 74.3359375,
+        "x": 227.6640625,
+        "y": 10
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 581.6640625,
+        "right": 664,
+        "top": 12,
+        "width": 82.3359375,
+        "x": 581.6640625,
+        "y": 12
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 1097.6640625,
+        "right": 1180,
+        "top": 12,
+        "width": 82.3359375,
+        "x": 1097.6640625,
+        "y": 12
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 116.40625,
+        "right": 190.7421875,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 116.40625,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 18,
+        "right": 92.3359375,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 18,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 661.6640625,
+        "right": 744,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 661.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1163.6640625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 1163.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 116.40625,
+        "right": 190.7421875,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 116.40625,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 18,
+        "right": 92.3359375,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 18,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 661.6640625,
+        "right": 744,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 661.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1163.6640625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 1163.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 18,
+        "right": 92.3359375,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 18,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 111,
+        "height": 111,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 96,
+        "height": 32,
+        "left": 270.0078125,
+        "right": 344.34375,
+        "top": 64,
+        "width": 74.3359375,
+        "x": 270.0078125,
+        "y": 64
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 661.6640625,
+        "right": 744,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 661.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1163.6640625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 1163.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 116.40625,
+        "right": 190.7421875,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 116.40625,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 18,
+        "right": 92.3359375,
+        "top": 100.4765625,
+        "width": 74.3359375,
+        "x": 18,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 661.6640625,
+        "right": 744,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 661.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/zh-hant/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "zh-Hant",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1163.6640625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 82.3359375,
+        "x": 1163.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/es/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 115.0703125,
+        "right": 187.9765625,
+        "top": 10,
+        "width": 72.90625,
+        "x": 115.0703125,
+        "y": 10
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/es/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 185.0703125,
+        "right": 257.9765625,
+        "top": 10,
+        "width": 72.90625,
+        "x": 185.0703125,
+        "y": 10
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/es/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 539.71875,
+        "right": 619.9765625,
+        "top": 12,
+        "width": 80.2578125,
+        "x": 539.71875,
+        "y": 12
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/es/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 1055.71875,
+        "right": 1135.9765625,
+        "top": 12,
+        "width": 80.2578125,
+        "x": 1055.71875,
+        "y": 12
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 190.2421875,
+        "right": 263.1484375,
+        "top": 100.4765625,
+        "width": 72.90625,
+        "x": 190.2421875,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 112.1484375,
+        "right": 185.0546875,
+        "top": 100.4765625,
+        "width": 72.90625,
+        "x": 112.1484375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 488.75,
+        "right": 569.0078125,
+        "top": 74,
+        "width": 80.2578125,
+        "x": 488.75,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1165.7421875,
+        "right": 1246,
+        "top": 18.25,
+        "width": 80.2578125,
+        "x": 1165.7421875,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 190.2421875,
+        "right": 263.1484375,
+        "top": 100.4765625,
+        "width": 72.90625,
+        "x": 190.2421875,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 112.1484375,
+        "right": 185.0546875,
+        "top": 100.4765625,
+        "width": 72.90625,
+        "x": 112.1484375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 488.75,
+        "right": 569.0078125,
+        "top": 74,
+        "width": 80.2578125,
+        "x": 488.75,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1165.7421875,
+        "right": 1246,
+        "top": 18.25,
+        "width": 80.2578125,
+        "x": 1165.7421875,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 190.2421875,
+        "right": 263.1484375,
+        "top": 100.4765625,
+        "width": 72.90625,
+        "x": 190.2421875,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 112.1484375,
+        "right": 185.0546875,
+        "top": 100.4765625,
+        "width": 72.90625,
+        "x": 112.1484375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 488.75,
+        "right": 569.0078125,
+        "top": 74,
+        "width": 80.2578125,
+        "x": 488.75,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1165.7421875,
+        "right": 1246,
+        "top": 18.25,
+        "width": 80.2578125,
+        "x": 1165.7421875,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 190.2421875,
+        "right": 263.1484375,
+        "top": 100.4765625,
+        "width": 72.90625,
+        "x": 190.2421875,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 112.1484375,
+        "right": 185.0546875,
+        "top": 100.4765625,
+        "width": 72.90625,
+        "x": 112.1484375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 488.75,
+        "right": 569.0078125,
+        "top": 74,
+        "width": 80.2578125,
+        "x": 488.75,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/es/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "es",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1165.7421875,
+        "right": 1246,
+        "top": 18.25,
+        "width": 80.2578125,
+        "x": 1165.7421875,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/ja/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 113.6640625,
+        "right": 176,
+        "top": 10,
+        "width": 62.3359375,
+        "x": 113.6640625,
+        "y": 10
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/ja/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 183.6640625,
+        "right": 246,
+        "top": 10,
+        "width": 62.3359375,
+        "x": 183.6640625,
+        "y": 10
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/ja/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 538.6640625,
+        "right": 608,
+        "top": 12,
+        "width": 69.3359375,
+        "x": 538.6640625,
+        "y": 12
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/ja/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 1054.6640625,
+        "right": 1124,
+        "top": 12,
+        "width": 69.3359375,
+        "x": 1054.6640625,
+        "y": 12
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 214.09375,
+        "right": 276.4296875,
+        "top": 100.4765625,
+        "width": 62.3359375,
+        "x": 214.09375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 115.6875,
+        "right": 178.0234375,
+        "top": 100.4765625,
+        "width": 62.3359375,
+        "x": 115.6875,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 674.6640625,
+        "right": 744,
+        "top": 18.25,
+        "width": 69.3359375,
+        "x": 674.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1176.6640625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 69.3359375,
+        "x": 1176.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 214.09375,
+        "right": 276.4296875,
+        "top": 100.4765625,
+        "width": 62.3359375,
+        "x": 214.09375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 115.6875,
+        "right": 178.0234375,
+        "top": 100.4765625,
+        "width": 62.3359375,
+        "x": 115.6875,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 674.6640625,
+        "right": 744,
+        "top": 18.25,
+        "width": 69.3359375,
+        "x": 674.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1176.6640625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 69.3359375,
+        "x": 1176.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 214.09375,
+        "right": 276.4296875,
+        "top": 100.4765625,
+        "width": 62.3359375,
+        "x": 214.09375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 115.6875,
+        "right": 178.0234375,
+        "top": 100.4765625,
+        "width": 62.3359375,
+        "x": 115.6875,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 674.6640625,
+        "right": 744,
+        "top": 18.25,
+        "width": 69.3359375,
+        "x": 674.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1176.6640625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 69.3359375,
+        "x": 1176.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 214.09375,
+        "right": 276.4296875,
+        "top": 100.4765625,
+        "width": 62.3359375,
+        "x": 214.09375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 115.6875,
+        "right": 178.0234375,
+        "top": 100.4765625,
+        "width": 62.3359375,
+        "x": 115.6875,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 674.6640625,
+        "right": 744,
+        "top": 18.25,
+        "width": 69.3359375,
+        "x": 674.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/ja/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "ja",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1176.6640625,
+        "right": 1246,
+        "top": 18.25,
+        "width": 69.3359375,
+        "x": 1176.6640625,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/de/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 115.515625,
+        "right": 190.828125,
+        "top": 10,
+        "width": 75.3125,
+        "x": 115.515625,
+        "y": 10
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/de/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 185.515625,
+        "right": 260.828125,
+        "top": 10,
+        "width": 75.3125,
+        "x": 185.515625,
+        "y": 10
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/de/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 539.9609375,
+        "right": 622.828125,
+        "top": 12,
+        "width": 82.8671875,
+        "x": 539.9609375,
+        "y": 12
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/de/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 1055.9609375,
+        "right": 1138.828125,
+        "top": 12,
+        "width": 82.8671875,
+        "x": 1055.9609375,
+        "y": 12
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 183.953125,
+        "height": 183.953125,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 168.953125,
+        "height": 32,
+        "left": 18,
+        "right": 93.3125,
+        "top": 136.953125,
+        "width": 75.3125,
+        "x": 18,
+        "y": 136.953125
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 237.4609375,
+        "right": 312.7734375,
+        "top": 100.4765625,
+        "width": 75.3125,
+        "x": 237.4609375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 551.09375,
+        "right": 633.9609375,
+        "top": 74,
+        "width": 82.8671875,
+        "x": 551.09375,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1163.1328125,
+        "right": 1246,
+        "top": 18.25,
+        "width": 82.8671875,
+        "x": 1163.1328125,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 183.953125,
+        "height": 183.953125,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 168.953125,
+        "height": 32,
+        "left": 18,
+        "right": 93.3125,
+        "top": 136.953125,
+        "width": 75.3125,
+        "x": 18,
+        "y": 136.953125
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 237.4609375,
+        "right": 312.7734375,
+        "top": 100.4765625,
+        "width": 75.3125,
+        "x": 237.4609375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 551.09375,
+        "right": 633.9609375,
+        "top": 74,
+        "width": 82.8671875,
+        "x": 551.09375,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1163.1328125,
+        "right": 1246,
+        "top": 18.25,
+        "width": 82.8671875,
+        "x": 1163.1328125,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 183.953125,
+        "height": 183.953125,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 168.953125,
+        "height": 32,
+        "left": 18,
+        "right": 93.3125,
+        "top": 136.953125,
+        "width": 75.3125,
+        "x": 18,
+        "y": 136.953125
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 237.4609375,
+        "right": 312.7734375,
+        "top": 100.4765625,
+        "width": 75.3125,
+        "x": 237.4609375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 551.09375,
+        "right": 633.9609375,
+        "top": 74,
+        "width": 82.8671875,
+        "x": 551.09375,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1163.1328125,
+        "right": 1246,
+        "top": 18.25,
+        "width": 82.8671875,
+        "x": 1163.1328125,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 183.953125,
+        "height": 183.953125,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 168.953125,
+        "height": 32,
+        "left": 18,
+        "right": 93.3125,
+        "top": 136.953125,
+        "width": 75.3125,
+        "x": 18,
+        "y": 136.953125
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 237.4609375,
+        "right": 312.7734375,
+        "top": 100.4765625,
+        "width": 75.3125,
+        "x": 237.4609375,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 551.09375,
+        "right": 633.9609375,
+        "top": 74,
+        "width": 82.8671875,
+        "x": 551.09375,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/de/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "de",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1163.1328125,
+        "right": 1246,
+        "top": 18.25,
+        "width": 82.8671875,
+        "x": 1163.1328125,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/fr/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 100.6171875,
+        "right": 177.0078125,
+        "top": 10,
+        "width": 76.390625,
+        "x": 100.6171875,
+        "y": 10
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/fr/",
+      "broken": [],
+      "header": {
+        "bottom": 53,
+        "height": 53,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 42,
+        "height": 32,
+        "left": 170.6171875,
+        "right": 247.0078125,
+        "top": 10,
+        "width": 76.390625,
+        "x": 170.6171875,
+        "y": 10
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/fr/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 525.0546875,
+        "right": 609.0078125,
+        "top": 12,
+        "width": 83.953125,
+        "x": 525.0546875,
+        "y": 12
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/fr/",
+      "broken": [],
+      "header": {
+        "bottom": 60.5,
+        "height": 60.5,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 47.5,
+        "height": 35.5,
+        "left": 1041.0546875,
+        "right": 1125.0078125,
+        "top": 12,
+        "width": 83.953125,
+        "x": 1041.0546875,
+        "y": 12
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 183.953125,
+        "height": 183.953125,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 168.953125,
+        "height": 32,
+        "left": 18,
+        "right": 94.390625,
+        "top": 136.953125,
+        "width": 76.390625,
+        "x": 18,
+        "y": 136.953125
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 166.8515625,
+        "right": 243.2421875,
+        "top": 100.4765625,
+        "width": 76.390625,
+        "x": 166.8515625,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 549.234375,
+        "right": 633.1875,
+        "top": 74,
+        "width": 83.953125,
+        "x": 549.234375,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1162.046875,
+        "right": 1246,
+        "top": 18.25,
+        "width": 83.953125,
+        "x": 1162.046875,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 183.953125,
+        "height": 183.953125,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 168.953125,
+        "height": 32,
+        "left": 18,
+        "right": 94.390625,
+        "top": 136.953125,
+        "width": 76.390625,
+        "x": 18,
+        "y": 136.953125
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 166.8515625,
+        "right": 243.2421875,
+        "top": 100.4765625,
+        "width": 76.390625,
+        "x": 166.8515625,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 549.234375,
+        "right": 633.1875,
+        "top": 74,
+        "width": 83.953125,
+        "x": 549.234375,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/us-visa-photo-requirements.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1162.046875,
+        "right": 1246,
+        "top": 18.25,
+        "width": 83.953125,
+        "x": 1162.046875,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 183.953125,
+        "height": 183.953125,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 168.953125,
+        "height": 32,
+        "left": 18,
+        "right": 94.390625,
+        "top": 136.953125,
+        "width": 76.390625,
+        "x": 18,
+        "y": 136.953125
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 166.8515625,
+        "right": 243.2421875,
+        "top": 100.4765625,
+        "width": 76.390625,
+        "x": 166.8515625,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 549.234375,
+        "right": 633.1875,
+        "top": 74,
+        "width": 83.953125,
+        "x": 549.234375,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/ds-160-photo-upload-failed.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1162.046875,
+        "right": 1246,
+        "top": 18.25,
+        "width": 83.953125,
+        "x": 1162.046875,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 183.953125,
+        "height": 183.953125,
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "width": 320,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 168.953125,
+        "height": 32,
+        "left": 18,
+        "right": 94.390625,
+        "top": 136.953125,
+        "width": 76.390625,
+        "x": 18,
+        "y": 136.953125
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 147.4765625,
+        "height": 147.4765625,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 132.4765625,
+        "height": 32,
+        "left": 166.8515625,
+        "right": 243.2421875,
+        "top": 100.4765625,
+        "width": 76.390625,
+        "x": 166.8515625,
+        "y": 100.4765625
+      },
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 128.5,
+        "height": 128.5,
+        "left": 0,
+        "right": 768,
+        "top": 0,
+        "width": 768,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 109.5,
+        "height": 35.5,
+        "left": 549.234375,
+        "right": 633.1875,
+        "top": 74,
+        "width": 83.953125,
+        "x": 549.234375,
+        "y": 74
+      },
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "site": "us",
+      "path": "/fr/guides/us-visa-photo-privacy-and-pricing.html",
+      "broken": [],
+      "header": {
+        "bottom": 73,
+        "height": 73,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "language": "fr",
+      "localeCount": 7,
+      "menu": {
+        "bottom": 53.75,
+        "height": 35.5,
+        "left": 1162.046875,
+        "right": 1246,
+        "top": 18.25,
+        "width": 83.953125,
+        "x": 1162.046875,
+        "y": 18.25
+      },
+      "scrollWidth": 1440,
+      "width": 1440
+    }
+  ],
+  "articleLanguageSwitches": [
+    {
+      "selected": "简体中文",
+      "url": "http://127.0.0.1:8748/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "lang": "zh-Hans",
+      "title": "美国签证照片上传失败怎么办？"
+    },
+    {
+      "selected": "繁體中文",
+      "url": "http://127.0.0.1:8748/zh-hant/guides/ds-160-photo-upload-failed.html",
+      "lang": "zh-Hant",
+      "title": "美國簽證照片上傳失敗怎麼辦？"
+    },
+    {
+      "selected": "Español",
+      "url": "http://127.0.0.1:8748/es/guides/ds-160-photo-upload-failed.html",
+      "lang": "es",
+      "title": "¿Falló la carga en el DS-160? Comprueba el archivo y la foto"
+    },
+    {
+      "selected": "日本語",
+      "url": "http://127.0.0.1:8748/ja/guides/ds-160-photo-upload-failed.html",
+      "lang": "ja",
+      "title": "DS-160写真のアップロード失敗：ファイルと元写真の確認"
+    },
+    {
+      "selected": "Deutsch",
+      "url": "http://127.0.0.1:8748/de/guides/ds-160-photo-upload-failed.html",
+      "lang": "de",
+      "title": "DS-160-Upload fehlgeschlagen? Datei und Foto prüfen"
+    },
+    {
+      "selected": "Français",
+      "url": "http://127.0.0.1:8748/fr/guides/ds-160-photo-upload-failed.html",
+      "lang": "fr",
+      "title": "Échec de l’envoi DS-160 ? Vérifications du fichier et de la photo"
+    },
+    {
+      "selected": "English",
+      "url": "http://127.0.0.1:8748/guides/ds-160-photo-upload-failed.html",
+      "lang": "en",
+      "title": "DS-160 Photo Upload Failed? File & Photo Checks"
+    }
+  ],
+  "localizedFilters": [
+    {
+      "prefix": "",
+      "status": "1 app shown",
+      "visibleCards": 1
+    },
+    {
+      "prefix": "/zh-hans",
+      "status": "显示 1 款 App",
+      "visibleCards": 1
+    },
+    {
+      "prefix": "/zh-hant",
+      "status": "顯示 1 款 App",
+      "visibleCards": 1
+    },
+    {
+      "prefix": "/es",
+      "status": "1 app disponible",
+      "visibleCards": 1
+    },
+    {
+      "prefix": "/ja",
+      "status": "1 件のアプリ",
+      "visibleCards": 1
+    },
+    {
+      "prefix": "/de",
+      "status": "1 App angezeigt",
+      "visibleCards": 1
+    },
+    {
+      "prefix": "/fr",
+      "status": "1 app affichée",
+      "visibleCards": 1
+    }
+  ],
+  "consoleErrors": [],
+  "scope": "Seven website languages. Screenshots remain actual English iPhone UI. Policies remain canonical English pages; support uses existing locale fragments. Chrome viewport QA, no device purchase or installation."
+}

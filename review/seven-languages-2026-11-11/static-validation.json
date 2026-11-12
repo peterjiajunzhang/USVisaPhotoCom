@@ -1,0 +1,218 @@
+{
+  "origin": "https://us.visaphoto1tap.com",
+  "pages": [
+    {
+      "path": "/",
+      "language": "en",
+      "bytes": 40313,
+      "title": "US Visa Photo — One-Tap Prep for iPhone & Android"
+    },
+    {
+      "path": "/zh-hans/",
+      "language": "zh-Hans",
+      "bytes": 39469,
+      "title": "US Visa Photo — iPhone 与 Android 一键照片处理"
+    },
+    {
+      "path": "/zh-hant/",
+      "language": "zh-Hant",
+      "bytes": 39481,
+      "title": "US Visa Photo — iPhone 與 Android 一鍵照片處理"
+    },
+    {
+      "path": "/es/",
+      "language": "es",
+      "bytes": 41457,
+      "title": "US Visa Photo — Preparación con un toque para iPhone y Android"
+    },
+    {
+      "path": "/ja/",
+      "language": "ja",
+      "bytes": 42127,
+      "title": "US Visa Photo — iPhone・Androidでワンタップ写真作成"
+    },
+    {
+      "path": "/de/",
+      "language": "de",
+      "bytes": 41093,
+      "title": "US Visa Photo — Mit einem Tippen vorbereiten, für iPhone und Android"
+    },
+    {
+      "path": "/fr/",
+      "language": "fr",
+      "bytes": 41573,
+      "title": "US Visa Photo — Préparation en un geste pour iPhone et Android"
+    },
+    {
+      "path": "/guides/",
+      "language": "en",
+      "bytes": 6887,
+      "title": "U.S. Visa Photo Guides | US Visa Photo"
+    },
+    {
+      "path": "/zh-hans/guides/",
+      "language": "zh-Hans",
+      "bytes": 6841,
+      "title": "美国签证照片指南 | US Visa Photo"
+    },
+    {
+      "path": "/zh-hant/guides/",
+      "language": "zh-Hant",
+      "bytes": 6847,
+      "title": "美國簽證照片指南 | US Visa Photo"
+    },
+    {
+      "path": "/es/guides/",
+      "language": "es",
+      "bytes": 7128,
+      "title": "Guías de fotos de visado de EE. UU. | US Visa Photo"
+    },
+    {
+      "path": "/ja/guides/",
+      "language": "ja",
+      "bytes": 7250,
+      "title": "米国ビザ写真ガイド | US Visa Photo"
+    },
+    {
+      "path": "/de/guides/",
+      "language": "de",
+      "bytes": 6831,
+      "title": "US-Visumfoto-Ratgeber | US Visa Photo"
+    },
+    {
+      "path": "/fr/guides/",
+      "language": "fr",
+      "bytes": 7150,
+      "title": "Guides de photos de visa américain | US Visa Photo"
+    },
+    {
+      "path": "/guides/us-visa-photo-requirements.html",
+      "language": "en",
+      "bytes": 11880,
+      "title": "DS-160 Photo Requirements: Size, Format & Editing | US Visa Photo"
+    },
+    {
+      "path": "/zh-hans/guides/us-visa-photo-requirements.html",
+      "language": "zh-Hans",
+      "bytes": 11330,
+      "title": "DS-160 照片要求：尺寸、格式与编辑限制 | US Visa Photo"
+    },
+    {
+      "path": "/zh-hant/guides/us-visa-photo-requirements.html",
+      "language": "zh-Hant",
+      "bytes": 11336,
+      "title": "DS-160 照片要求：尺寸、格式與編輯限制 | US Visa Photo"
+    },
+    {
+      "path": "/es/guides/us-visa-photo-requirements.html",
+      "language": "es",
+      "bytes": 12178,
+      "title": "Foto del DS-160: tamaño, formato y edición | US Visa Photo"
+    },
+    {
+      "path": "/ja/guides/us-visa-photo-requirements.html",
+      "language": "ja",
+      "bytes": 12391,
+      "title": "DS-160写真の要件：サイズ・形式・編集 | US Visa Photo"
+    },
+    {
+      "path": "/de/guides/us-visa-photo-requirements.html",
+      "language": "de",
+      "bytes": 11948,
+      "title": "DS-160-Foto: Größe, Format und Bearbeitung | US Visa Photo"
+    },
+    {
+      "path": "/fr/guides/us-visa-photo-requirements.html",
+      "language": "fr",
+      "bytes": 12283,
+      "title": "Photo DS-160 : dimensions, format et retouche | US Visa Photo"
+    },
+    {
+      "path": "/guides/ds-160-photo-upload-failed.html",
+      "language": "en",
+      "bytes": 12123,
+      "title": "DS-160 Photo Upload Failed? File & Photo Checks | US Visa Photo"
+    },
+    {
+      "path": "/zh-hans/guides/ds-160-photo-upload-failed.html",
+      "language": "zh-Hans",
+      "bytes": 11322,
+      "title": "美国签证照片上传失败怎么办？DS-160 文件检查与确认页 X | US Visa Photo"
+    },
+    {
+      "path": "/zh-hant/guides/ds-160-photo-upload-failed.html",
+      "language": "zh-Hant",
+      "bytes": 11467,
+      "title": "美國簽證照片上傳失敗怎麼辦？DS-160 檔案檢查與確認頁 X | US Visa Photo"
+    },
+    {
+      "path": "/es/guides/ds-160-photo-upload-failed.html",
+      "language": "es",
+      "bytes": 12387,
+      "title": "¿Falló la carga en el DS-160? Comprueba el archivo y la foto | US Visa Photo"
+    },
+    {
+      "path": "/ja/guides/ds-160-photo-upload-failed.html",
+      "language": "ja",
+      "bytes": 12735,
+      "title": "DS-160写真のアップロード失敗：ファイルと元写真の確認 | US Visa Photo"
+    },
+    {
+      "path": "/de/guides/ds-160-photo-upload-failed.html",
+      "language": "de",
+      "bytes": 12254,
+      "title": "DS-160-Upload fehlgeschlagen? Datei und Foto prüfen | US Visa Photo"
+    },
+    {
+      "path": "/fr/guides/ds-160-photo-upload-failed.html",
+      "language": "fr",
+      "bytes": 12406,
+      "title": "Échec de l’envoi DS-160 ? Vérifications du fichier et de la photo | US Visa Photo"
+    },
+    {
+      "path": "/guides/us-visa-photo-privacy-and-pricing.html",
+      "language": "en",
+      "bytes": 15140,
+      "title": "US Visa Photo: Privacy, Free Preview & Export Pricing"
+    },
+    {
+      "path": "/zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "language": "zh-Hans",
+      "bytes": 14339,
+      "title": "US Visa Photo：隐私、免费预览与导出收费"
+    },
+    {
+      "path": "/zh-hant/guides/us-visa-photo-privacy-and-pricing.html",
+      "language": "zh-Hant",
+      "bytes": 14345,
+      "title": "US Visa Photo：隱私、免費預覽與匯出收費"
+    },
+    {
+      "path": "/es/guides/us-visa-photo-privacy-and-pricing.html",
+      "language": "es",
+      "bytes": 15713,
+      "title": "US Visa Photo: privacidad, vista previa gratis y precio de exportación"
+    },
+    {
+      "path": "/ja/guides/us-visa-photo-privacy-and-pricing.html",
+      "language": "ja",
+      "bytes": 16645,
+      "title": "US Visa Photo：プライバシー・無料プレビュー・書き出し料金"
+    },
+    {
+      "path": "/de/guides/us-visa-photo-privacy-and-pricing.html",
+      "language": "de",
+      "bytes": 15544,
+      "title": "US Visa Photo: Datenschutz, kostenlose Vorschau und Exportpreis"
+    },
+    {
+      "path": "/fr/guides/us-visa-photo-privacy-and-pricing.html",
+      "language": "fr",
+      "bytes": 15860,
+      "title": "US Visa Photo : confidentialité, aperçu gratuit et prix de l’export"
+    }
+  ],
+  "internalReferencesChecked": 1773,
+  "sitemapURLs": 38,
+  "errors": []
+}
