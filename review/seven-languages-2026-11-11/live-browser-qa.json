@@ -1,0 +1,29 @@
+{
+  "viewports": [
+    {
+      "site": "us",
+      "path": "/fr/",
+      "broken": [],
+      "language": "fr",
+      "menuItems": 7,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "site": "us",
+      "path": "/fr/",
+      "broken": [],
+      "language": "fr",
+      "menuItems": 7,
+      "scrollWidth": 1440,
+      "width": 1440
+    }
+  ],
+  "actualLiveLanguageSwitch": {
+    "from": "https://us.visaphoto1tap.com/fr/",
+    "to": "https://us.visaphoto1tap.com/ja/",
+    "verified": true
+  },
+  "consoleErrors": [],
+  "limits": "Representative production checks after 168 complete local viewport checks and 57 matching live files. Full production navigation batch hit tool timeouts and its unreturned rows are not counted. Recovered without changing browser security settings. No physical Safari, install or purchase."
+}

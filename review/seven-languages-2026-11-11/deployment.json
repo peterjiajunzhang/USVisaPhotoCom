@@ -1,0 +1,14 @@
+{
+  "contentCommit": "6e59cf94211e2bd87bba53f0d75078db92de1e58",
+  "workflowRun": 43152988003,
+  "workflowURL": "https://github.com/peterjiajunzhang/USVisaPhotoCom/actions/runs/43152988003",
+  "workflowConclusion": "success",
+  "completedAt": "2026-11-12T04:10:50Z",
+  "publicFilesByteMatch": 44,
+  "scope": "Seven languages on six topics across root and US; all 42 HTML pages verified.",
+  "limitations": [
+    "Chrome viewport QA, no physical Safari or install/purchase.",
+    "Google eligibility and queue receipts are not indexing or rank proof.",
+    "Acceptance traffic is QA."
+  ]
+}

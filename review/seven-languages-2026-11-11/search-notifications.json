@@ -1,0 +1,70 @@
+{
+  "Google": {
+    "priority": [
+      {
+        "url": "https://us.visaphoto1tap.com/",
+        "receipt": "Indexing requested",
+        "queue": "priority crawl queue",
+        "indexingConfirmed": false
+      },
+      {
+        "url": "https://us.visaphoto1tap.com/guides/us-visa-photo-requirements.html",
+        "receipt": "Indexing requested",
+        "queue": "priority crawl queue",
+        "indexingConfirmed": false
+      }
+    ],
+    "sitemaps": [
+      {
+        "url": "https://us.visaphoto1tap.com/sitemap.xml",
+        "receipt": "Sitemap submitted successfully",
+        "publishedURLs": 38,
+        "notIndexingProof": true
+      },
+      {
+        "url": "https://visaphoto1tap.com/sitemap.xml",
+        "receipt": "Sitemap submitted successfully",
+        "publishedURLs": 7,
+        "notIndexingProof": true
+      }
+    ],
+    "requirementsBefore": {
+      "url": "https://us.visaphoto1tap.com/guides/us-visa-photo-requirements.html",
+      "status": "Crawled - currently not indexed",
+      "lastCrawl": "Nov 4, 2026, 7:01:55 PM",
+      "fetch": "Successful",
+      "crawlAllowed": true,
+      "indexingAllowed": true,
+      "canonical": "Inspected URL"
+    },
+    "observedMaps": [
+      {
+        "url": "https://visaphoto1tap.com/sitemap.xml",
+        "type": "Sitemap",
+        "submitted": "Nov 11, 2026",
+        "lastRead": "Nov 11, 2026",
+        "status": "Success",
+        "discoveredPages": 2,
+        "videos": 0
+      },
+      {
+        "url": "https://us.visaphoto1tap.com/sitemap.xml",
+        "type": "Sitemap",
+        "submitted": "Nov 11, 2026",
+        "lastRead": "Nov 11, 2026",
+        "status": "Success",
+        "discoveredPages": 38,
+        "videos": 0
+      }
+    ]
+  },
+  "Bing": {
+    "sitemap": "https://us.visaphoto1tap.com/sitemap.xml",
+    "receipt": "Re-submit accepted",
+    "status": "Processing",
+    "displayedPreviousDiscoveredURLs": 13,
+    "publishedURLs": 38,
+    "notIndexingProof": true
+  },
+  "checkedAt": "2026-11-12T04:22:55.076Z"
+}
