@@ -1,0 +1,18 @@
+{
+  "sitemap": {
+    "url": "https://us.visaphoto1tap.com/sitemap.xml",
+    "result": "Sitemap submitted successfully",
+    "localURLCount": 9,
+    "notProofOfIndexing": true
+  },
+  "requests": [
+    {
+      "url": "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed-zh.html",
+      "result": "Indexing requested; added to priority crawl queue",
+      "notProofOfIndexing": true
+    }
+  ],
+  "newChinesePageBeforeRequest": "info\nURL is not on Google\nThis page is not indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it wasn't indexed. Learn more\nVIEW CRAWLED PAGE\nPage changed?\nREQUEST INDEXING\ninfo\nPage indexing\nPage is not indexed: Discovered - currently not indexed\n\nDiscovery\nSitemaps\nhttps://us.visaphoto1tap.com/sitemap.xml\nReferring page\nNone detected\nCrawl\nLast crawl\nN/A\nCrawled as\nN/A\nCrawl allowed?\nN/A\nPage fetch\nN/A\nIndexing allowed?\nN/A\nIndexing\nUser-declared canonical\nN/A\nGoogle-selected canonical\n\nN/A\nLEARN MORE\nOPEN REPORT\nEnhancements & Experience\nOnly indexed URLs can have enhancements",
+  "bingSitemapAfterUpdate": "Sitemaps\nSubmit sitemap\nKnown sitemaps\n1\nSitemaps with errors\n0\nSitemaps with warnings\n0\nTotal URLs discovered\n8\nSitemap details\n\nType:All\n\n\nStatus:All\n\nDownload all\n\nselect all items\nSitemap URL\nLast submit\nLast crawl\nStatus\nURLs discovered\n\nAction\n\nhttps://us.visaphoto1tap.com/sitemap.xml\nSitemap\n\n\n11/12/2026\nSubmitted\n11/12/2026\nProcessing\n8\n\n1 row",
+  "rootIndexingRequest": "Not repeated"
+}

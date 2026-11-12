@@ -1,0 +1,85 @@
+{
+  "siteCommit": "e244376653b6e742c474799967c37959c2b34f14",
+  "files": [
+    {
+      "path": "guides/index.html",
+      "url": "https://us.visaphoto1tap.com/guides/",
+      "status": 200,
+      "bytes": 5461,
+      "sameAsPublishedSource": true,
+      "sha256": "faa1252de46b3ed17279f492d05f3e42f8379f2d8c7e9cd4ba113c9bb8950e9b",
+      "xRobotsTag": null
+    },
+    {
+      "path": "guides/ds-160-photo-upload-failed.html",
+      "url": "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed.html",
+      "status": 200,
+      "bytes": 9698,
+      "sameAsPublishedSource": true,
+      "sha256": "6c043afc44ffc0c0f7ae67aa29e8e4a19e12e8eb602e4390b77cdba5ce301174",
+      "xRobotsTag": null
+    },
+    {
+      "path": "guides/ds-160-photo-upload-failed-zh.html",
+      "url": "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed-zh.html",
+      "status": 200,
+      "bytes": 9490,
+      "sameAsPublishedSource": true,
+      "sha256": "3c5fe1746411a75d3a7fbdeedaee2ca87c7da2977f1cf3a367bdc70916c5f5b7",
+      "xRobotsTag": null
+    },
+    {
+      "path": "guides/us-visa-photo-privacy-and-pricing.html",
+      "url": "https://us.visaphoto1tap.com/guides/us-visa-photo-privacy-and-pricing.html",
+      "status": 200,
+      "bytes": 12850,
+      "sameAsPublishedSource": true,
+      "sha256": "750e35e990273ca6c3eca9285b52702ca6ed3f24115a38d95a094c193848efa4",
+      "xRobotsTag": null
+    },
+    {
+      "path": "sitemap.xml",
+      "url": "https://us.visaphoto1tap.com/sitemap.xml",
+      "status": 200,
+      "bytes": 1317,
+      "sameAsPublishedSource": true,
+      "sha256": "8500271c4bd5f1823fe1a45518c42dc02210254100e9be8fc41c403545a1322d",
+      "xRobotsTag": null
+    }
+  ],
+  "robots": [
+    {
+      "host": "visaphoto1tap.com",
+      "status": 200,
+      "text": "User-agent: *\nAllow: /\nDisallow: /review/\n\nSitemap: https://visaphoto1tap.com/sitemap.xml\n"
+    },
+    {
+      "host": "us.visaphoto1tap.com",
+      "status": 200,
+      "text": "User-agent: *\nDisallow: /archive/\nDisallow: /scripts/\n\nSitemap: https://us.visaphoto1tap.com/sitemap.xml\n"
+    }
+  ],
+  "simulatedUserAgents": [
+    {
+      "userAgent": "Googlebot",
+      "status": 200,
+      "sameBody": true
+    },
+    {
+      "userAgent": "bingbot",
+      "status": 200,
+      "sameBody": true
+    },
+    {
+      "userAgent": "OAI-SearchBot",
+      "status": 200,
+      "sameBody": true
+    },
+    {
+      "userAgent": "Claude-SearchBot",
+      "status": 200,
+      "sameBody": true
+    }
+  ],
+  "limitation": "Requests use this machine/IP with simulated user agents; not real crawler IP/network verification. No search rank or citation improvement inferred."
+}
