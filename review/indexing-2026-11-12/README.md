@@ -4,7 +4,7 @@ Native Chrome was used for signed-in Google/Bing reports and local UI tests. Pub
 
 Changes: inline official Lucide SVG after Google's actual redirect loading failure; a seven-language, browser-only JPEG inspector in the existing upload troubleshooting guide; homepage/index discovery links; truthful per-topic sitemap dates. No new app functionality or store metadata.
 
-`static-validation.json`: 35 HTML pages, self canonical/OG, reciprocal hreflang, local resources/fragments, 38 sitemap URLs, protected policies/support/campaigns, repeatable build. Its first pass preceded the added in-page table-of-contents link, whose seven targets are checked separately before commit.
+`static-validation.json`: 35 HTML pages, self canonical/OG, reciprocal hreflang, local resources/fragments, 38 sitemap URLs, protected policies/support/campaigns, repeatable build. Final pass checks all 14 discovery anchors and the five existing in-page tables of contents. The two native Chinese guides have no table of contents; their checker and discovery anchors are checked directly. An initial assertion incorrectly expected seven tables of contents; the final check follows actual page structure.
 
 `file-check-tests.json`: 12 Node VM boundary/state tests with stubbed image decoder. Native Chrome separately verified real 600x600 JPEG decoding, renamed PNG rejection, and the exact 240000/240001 byte boundary. Fixtures are synthetic flat colors, not user photos. Reproduce on macOS:
 
