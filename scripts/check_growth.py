@@ -16,6 +16,8 @@ for loc in c['locales']:
   route='/'+f.removesuffix('index.html') if f.endswith('index.html') else '/'+f
   canonical=origin+loc['prefix']+route
   assert soup.html['lang']==loc['code'] and soup.select_one('link[rel=canonical]')['href']==canonical
+  if is_us and f=='index.html':
+   assert soup.title.get_text()==soup.select_one('meta[property="og:title"]')['content']==soup.select_one('meta[name="twitter:title"]')['content']
   langs={x['hreflang']:x['href'] for x in soup.select('link[rel=alternate][hreflang]')}
   assert len(langs)==8 and all(langs[l['code']]==origin+l['prefix']+route for l in c['locales'])
   assert sm[canonical]==c.get('pageModified',{}).get(f,c['modified'])

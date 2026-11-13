@@ -1,5 +1,9 @@
 # USVisaPhotoCom — 官网与 App Store 营销管线说明
 
+## 2026-11-12 Homepage title refinement
+
+Following delegated review, homepage title, Open Graph title and Twitter title now express the app and 2×2 use in all seven languages. Headline, body, schema, policies and layout remain unchanged. Content `488bef8` completed [Pages run 43373596793](https://github.com/peterjiajunzhang/USVisaPhotoCom/actions/runs/43373596793); seven homepages and six unchanged sitemap/policy/support/badge paths returned 200 and matched bytes, recorded in `review/growth-2026-11-12/title-live-http.json`. Static localized checks pass, titles agree across metadata, and a repeat build is byte-identical. No index requests were made; public readback is not evidence of indexing or ranking.
+
 ## 2026-11-12 Play campaign link contract
 
 `play-campaigns.json` and `scripts/play_campaigns.py` are identical in the US and root repositories; keep both copies synchronized. The locale builder writes ordinary static badge links, so no JavaScript, cookie, SDK or new collector is required. The Play entity URL in JSON-LD and source citations stays clean. Existing iPhone campaign links and `acquisition-campaigns.json` are independent and unchanged.
