@@ -4,6 +4,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup, Comment, Doctype
 from urllib.parse import urljoin,urlsplit,urlunsplit
 import json,re,copy,xml.etree.ElementTree as ET
+from play_campaigns import play_url
 ROOT=Path(__file__).resolve().parents[1]
 CONFIG=json.loads((ROOT/'localization/config.json').read_text())
 ORIGIN=CONFIG['origin'];FILES=CONFIG['pages'];LOCALES=CONFIG['locales']
@@ -124,6 +125,8 @@ for f in FILES:
   if lang!='en' and not native:translate(soup)
   soup.html['lang']=lang
   links(soup,f,lang);language_ui(soup,f,lang)
+  for badge in soup.select('[data-play-campaign]'):
+   badge['href']=play_url(badge['data-play-campaign'])
   status=soup.select_one('#filter-status')
   if status:
    status['data-count-one']=LANG['filterOne'];status['data-count-many']=LANG['filterMany']

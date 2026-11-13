@@ -1,5 +1,21 @@
 # USVisaPhotoCom — 官网与 App Store 营销管线说明
 
+## 2026-11-12 Play campaign link contract (candidate)
+
+`play-campaigns.json` and `scripts/play_campaigns.py` are identical in the US and root repositories; keep both copies synchronized. The locale builder writes ordinary static badge links, so no JavaScript, cookie, SDK or new collector is required. The Play entity URL in JSON-LD and source citations stays clean. Existing iPhone campaign links and `acquisition-campaigns.json` are independent and unchanged.
+
+| Placement | utm_source | utm_medium | utm_campaign | utm_content |
+| --- | --- | --- | --- | --- |
+| US hero | us_website | website | us_home | hero |
+| US final download | us_website | website | us_home | footer |
+| US guides | us_website | website | us_guides | guide |
+| Root US card | root_website | website | root_country | us_card |
+
+All seven website languages use the same placement values; website language is available separately where Play reports it. The `referrer` value contains the URL-encoded four-key UTM query, nested once inside the Play URL for `com.loop.usvisaphoto`; no personal data is included. Run `/tmp/visa-growth-venv/bin/python scripts/build_locales.py` (or the documented locale environment) and `python scripts/check_growth.py .` after editing. Static checks establish link construction and page metadata, not Play reporting.
+
+Play Console's store listing performance reports describe UTM source and campaign dimensions, with source available under ads and referrals; minimum thresholds may group values as Other. Its current install clicks represent intent, not completed installations. Completed installation/acquisition statistics have separate definitions and must be read separately; do not sum them as a user funnel without matching cohorts. Medium and content are carried in the referrer but their appearance as Play Console dimensions is not promised. Install Referrer retrieval requires an app integration; this change adds none and does not establish per-install attribution. QA clicks must be recorded separately. Confirm reporting after publication with real traffic rather than assuming it works. See [Play reporting](https://support.google.com/googleplay/android-developer/answer/9859173), [monthly export definitions](https://support.google.com/googleplay/android-developer/answer/6135870), and [Install Referrer](https://developer.android.com/google/play/installreferrer).
+
+
 ## 2026-11-12 用户纠正：以产品展示和下载为主
 
 用户明确官网用于吸引下载，合规、背景编辑与接受范围放在已链接的要求及隐私／收费说明页，不在宣传页面反复强调。已撤下新增的七语 JPEG 浏览器检查器、所有入口和运行／测试文件；这不是已发布 App 的功能变更。主站与 US 首页去除重复警告、限制卡片及保证接受式 FAQ，US 上传排查文章去掉“不要假定换白底”“别用修图掩盖”等措辞，改为照片质量和实际测量信息。主站和 US 站保留清楚的隐私／收费入口；政策原文、完整要求／收费指南、支持和 campaign 文件保持字节一致。保留真实产品能力、价格与购买平台区分，不新增保证合格或竞品优越性承诺。此前检查器发布记录为已撤回历史，不作为后续周检继续推广的内容实验。

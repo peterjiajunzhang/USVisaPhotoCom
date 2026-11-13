@@ -1,0 +1,26 @@
+{
+  "package": "com.loop.usvisaphoto",
+  "medium": "website",
+  "placements": {
+    "home-android": {
+      "source": "us_website",
+      "campaign": "us_home",
+      "content": "hero"
+    },
+    "home-footer-android": {
+      "source": "us_website",
+      "campaign": "us_home",
+      "content": "footer"
+    },
+    "guide-android": {
+      "source": "us_website",
+      "campaign": "us_guides",
+      "content": "guide"
+    },
+    "root-country-android": {
+      "source": "root_website",
+      "campaign": "root_country",
+      "content": "us_card"
+    }
+  }
+}
