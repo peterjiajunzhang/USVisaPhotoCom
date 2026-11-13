@@ -1,6 +1,6 @@
 # USVisaPhotoCom — 官网与 App Store 营销管线说明
 
-## 2026-11-12 Play campaign link contract (candidate)
+## 2026-11-12 Play campaign link contract
 
 `play-campaigns.json` and `scripts/play_campaigns.py` are identical in the US and root repositories; keep both copies synchronized. The locale builder writes ordinary static badge links, so no JavaScript, cookie, SDK or new collector is required. The Play entity URL in JSON-LD and source citations stays clean. Existing iPhone campaign links and `acquisition-campaigns.json` are independent and unchanged.
 
@@ -14,6 +14,8 @@
 All seven website languages use the same placement values; website locale is not encoded. Play’s language dimension describes the device/store language and cannot reconstruct which website locale was visited. The `referrer` value contains the URL-encoded four-key UTM query, nested once inside the Play URL for `com.loop.usvisaphoto`; no personal data is included. Run `/tmp/visa-growth-venv/bin/python scripts/build_locales.py` (or the documented locale environment) and `python scripts/check_growth.py .` after editing. Static checks establish link construction and page metadata, not Play reporting.
 
 Play Console's store listing performance reports describe UTM source and campaign dimensions, with source available under ads and referrals; minimum thresholds may group values as Other. Its current install clicks represent intent, not completed installations. Completed installation/acquisition statistics have separate definitions and must be read separately; do not sum them as a user funnel without matching cohorts. Medium and content are carried in the referrer but their appearance as Play Console dimensions is not promised. Install Referrer retrieval requires an app integration; this change adds none and does not establish per-install attribution. QA clicks must be recorded separately. Confirm reporting after publication with real traffic rather than assuming it works. See [Play reporting](https://support.google.com/googleplay/android-developer/answer/9859173), [monthly export definitions](https://support.google.com/googleplay/android-developer/answer/6135870), and [Install Referrer](https://developer.android.com/google/play/installreferrer).
+
+Publication: content `08fb7a9`, Pages run [43372940248](https://github.com/peterjiajunzhang/USVisaPhotoCom/actions/runs/43372940248) succeeded. The 28 changed HTML pages plus sitemap, three policy/support files and two official badge files returned HTTP 200 and matched source bytes; see `review/growth-2026-11-12/live-http.json`. Tagged hero link returned 200 and Play title “US Visa Photo - Apps on Google Play”. No reporting or installs are inferred from this check; no indexing request was made.
 
 
 ## 2026-11-12 用户纠正：以产品展示和下载为主
