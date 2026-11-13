@@ -2,6 +2,8 @@
 
 The owner’s direction is factual, result-oriented product writing. Use concrete actions and outputs to show value. Keep instructions short and make the next action clear.
 
+2026-11-12 owner correction: Landing pages lead with product capabilities, demonstrations, free preview, price and official store downloads. Keep detailed editing/acceptance scope on the linked requirements and privacy/pricing pages; do not repeat warning blocks across promotional sections or use accusatory wording. Do not add browser utilities as an inferred SEO task. The temporary JPEG browser inspector was withdrawn. Preserve accurate claims and ordinary privacy/pricing links.
+
 - Image labels: Original / Result. Use the corresponding neutral translations. Do not rank an original against a preferred/better image.
 - State observable capabilities: automatic crop, white background replacement, file dimensions/framing checks, local portrait processing, free preview, single JPEG export purchase.
 - Explain what a check measures. Say the app checks dimensions or framing; do not turn this into government approval or a guarantee.
