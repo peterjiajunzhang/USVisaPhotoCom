@@ -1,0 +1,41 @@
+{
+  "home": {
+    "testDisplayed": "Nov 12, 2026, 5:51 PM",
+    "http": 200,
+    "status": "URL is available to Google / Page can be indexed",
+    "resourceFailures": 1,
+    "resourceTotal": 22,
+    "failedResource": "https://static.cloudflareinsights.com/beacon.min.js",
+    "console": "No messages",
+    "screenshot": "Styled smartphone hero and both official badges confirmed",
+    "indexSnapshotBeforeFinalRequest": "Crawled - currently not indexed; last crawl Nov 11 8:20:14 PM",
+    "indexingRequest": "Accepted: Indexing requested; priority crawl queue"
+  },
+  "publication": {
+    "contentCommit": "7d08e3747d8bd17ac4d1776f03eac60da355d3af",
+    "githubPages": "built",
+    "liveFilesMatching": 34
+  },
+  "limits": "Live eligibility/rendering and request acceptance do not establish indexing or ranking.",
+  "uploadGuide": {
+    "url": "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed.html",
+    "indexSnapshot": "Crawled - currently not indexed",
+    "lastCrawlDisplayed": "Nov 4, 2026, 7:01:55 PM",
+    "indexingRequest": "Accepted: Indexing requested; priority crawl queue",
+    "scope": "Substantive new seven-language local JPEG checker in existing article"
+  },
+  "sitemapResubmitted": false,
+  "googleSitemaps": {
+    "root": {
+      "status": "Success",
+      "pages": 7,
+      "lastReadDisplayed": "Nov 11, 2026"
+    },
+    "us": {
+      "status": "Success",
+      "pages": 38,
+      "lastReadDisplayed": "Nov 11, 2026"
+    }
+  },
+  "indexNowScope": "21 first-stage changed pages, HTTP 200; later homepage hardening not repeatedly notified"
+}

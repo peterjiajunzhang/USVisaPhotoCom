@@ -6,7 +6,8 @@
     "width": 160,
     "height": 160,
     "bytes": 17994,
-    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes."
+    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes.",
+    "outputSHA256": "bfd0c481ba7a78c7050d14d65316aa93aa126ff25df7e6d4065fd811fde42cb1"
   },
   {
     "source": "https://china.visaphoto1tap.com/AppIcon.png",
@@ -15,7 +16,8 @@
     "width": 64,
     "height": 64,
     "bytes": 5500,
-    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes."
+    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes.",
+    "outputSHA256": "f604f60b87a3326afd7f03b6d3b06cdb3ceda19b23092504411fd68ad0a5a1ce"
   },
   {
     "source": "https://schengen.visaphoto1tap.com/AppIcon.png",
@@ -24,7 +26,8 @@
     "width": 64,
     "height": 64,
     "bytes": 3434,
-    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes."
+    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes.",
+    "outputSHA256": "8d2ed8480758d9bea3f6704e24e84d603f00fd74bc96d18780c49c273b7dabe7"
   },
   {
     "source": "https://india.visaphoto1tap.com/AppIcon.png",
@@ -33,7 +36,8 @@
     "width": 64,
     "height": 64,
     "bytes": 2986,
-    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes."
+    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes.",
+    "outputSHA256": "ef7d4945a7fe399f8a7702a45153bb0ffe4fd3dcd4ef9c465e27a8dd57e516c1"
   },
   {
     "source": "https://japan.visaphoto1tap.com/AppIcon.png",
@@ -42,7 +46,8 @@
     "width": 64,
     "height": 64,
     "bytes": 2922,
-    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes."
+    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes.",
+    "outputSHA256": "a8d707b105ce7e9ca7a89fb8b8f8ef0144a22fcec23f051984d4992356769384"
   },
   {
     "source": "https://canada.visaphoto1tap.com/AppIcon.png",
@@ -51,6 +56,7 @@
     "width": 64,
     "height": 64,
     "bytes": 2778,
-    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes."
+    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes.",
+    "outputSHA256": "a290cd1470e0caf2a104c8ab2c422939bbd50f151d7f6fe452621338e9dc60a4"
   }
 ]

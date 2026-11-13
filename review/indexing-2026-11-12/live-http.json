@@ -1,5 +1,5 @@
 {
-  "commit": "51f4756d56b6727bb7e5c38cdbe317ac0360a874",
+  "commit": "7d08e3747d8bd17ac4d1776f03eac60da355d3af",
   "rows": [
     {
       "path": "de/guides/ds-160-photo-upload-failed.html",
@@ -17,7 +17,7 @@
       "path": "de/index.html",
       "status": 200,
       "matches": true,
-      "sha256": "f5cdb52c442f89ee50d4a762dbf6899812e86dac0ab25648bdb56f96216abfb7"
+      "sha256": "41798b528fcb7431f8f3812f522cd063af94ad4731bf3e984416ab7e888039f0"
     },
     {
       "path": "es/guides/ds-160-photo-upload-failed.html",
@@ -35,7 +35,7 @@
       "path": "es/index.html",
       "status": 200,
       "matches": true,
-      "sha256": "dfbdc30aece38fb4d9be3faa69a6e08d1e2eebd14f0504dd075b8e526f4d9230"
+      "sha256": "0f6911fd31c084dd1d420be0e46056c9defc03bb16e00a472d2771fc8a3c32b5"
     },
     {
       "path": "fr/guides/ds-160-photo-upload-failed.html",
@@ -53,7 +53,7 @@
       "path": "fr/index.html",
       "status": 200,
       "matches": true,
-      "sha256": "6d5afaf77d9c1804021217c9ededb53b54f3adc93db7a9a7ab2c48865b8cd34d"
+      "sha256": "0b2fd25b92cce7a25ddac3119096d753b3b6c1f75f3f53437cc01d4f9ee62c71"
     },
     {
       "path": "guides/ds-160-photo-upload-failed.html",
@@ -71,7 +71,7 @@
       "path": "index.html",
       "status": 200,
       "matches": true,
-      "sha256": "f2f332ed67e37bf33e2f8624902dd6057dcd9a3f6b118a125ae4c7285e4b0c64"
+      "sha256": "b7ca24b50261488ec15e22cc0939e61bd0d3129c617bf050048101ac0f55156f"
     },
     {
       "path": "ja/guides/ds-160-photo-upload-failed.html",
@@ -89,7 +89,7 @@
       "path": "ja/index.html",
       "status": 200,
       "matches": true,
-      "sha256": "bcff0c72534c0fcc39fd1679189d5947aaa627f27b6dda66e59370d14c93d035"
+      "sha256": "1b95fdcf0ba151a4901f89ab43260abf0a5b1ed2dde1a07fc58fb2a2e262771f"
     },
     {
       "path": "zh-hans/guides/ds-160-photo-upload-failed.html",
@@ -107,7 +107,7 @@
       "path": "zh-hans/index.html",
       "status": 200,
       "matches": true,
-      "sha256": "9477e33a028886bb13a9f0d32ebe9d6c233d6bf11c1c28ac19b57f81bdfa398a"
+      "sha256": "3453a85dbcf84e03d7fda1183b3f2da9594ae992d7322fdaf8e2be93dc143a2a"
     },
     {
       "path": "zh-hant/guides/ds-160-photo-upload-failed.html",
@@ -125,7 +125,7 @@
       "path": "zh-hant/index.html",
       "status": 200,
       "matches": true,
-      "sha256": "f3149dee169f690d5b29612c10228f9c04f63071d785505c5f955391cc09c86f"
+      "sha256": "aa316f9290ba21129f6bbbec7fe606c04e9cc9386d471df052efd6db92886f4b"
     },
     {
       "path": "assets/file-check.js",
@@ -168,6 +168,42 @@
       "status": 200,
       "matches": true,
       "sha256": "68e034f4b4a1e3a9e7b6d8fcbb94be8910e4b3f54b2ee1ce49f824a2b18ece9b"
+    },
+    {
+      "path": "assets/icons/canada.webp",
+      "status": 200,
+      "matches": true,
+      "sha256": "a290cd1470e0caf2a104c8ab2c422939bbd50f151d7f6fe452621338e9dc60a4"
+    },
+    {
+      "path": "assets/icons/us.webp",
+      "status": 200,
+      "matches": true,
+      "sha256": "bfd0c481ba7a78c7050d14d65316aa93aa126ff25df7e6d4065fd811fde42cb1"
+    },
+    {
+      "path": "assets/icons/china.webp",
+      "status": 200,
+      "matches": true,
+      "sha256": "f604f60b87a3326afd7f03b6d3b06cdb3ceda19b23092504411fd68ad0a5a1ce"
+    },
+    {
+      "path": "assets/icons/schengen.webp",
+      "status": 200,
+      "matches": true,
+      "sha256": "8d2ed8480758d9bea3f6704e24e84d603f00fd74bc96d18780c49c273b7dabe7"
+    },
+    {
+      "path": "assets/icons/india.webp",
+      "status": 200,
+      "matches": true,
+      "sha256": "ef7d4945a7fe399f8a7702a45153bb0ffe4fd3dcd4ef9c465e27a8dd57e516c1"
+    },
+    {
+      "path": "assets/icons/japan.webp",
+      "status": 200,
+      "matches": true,
+      "sha256": "a8d707b105ce7e9ca7a89fb8b8f8ef0144a22fcec23f051984d4992356769384"
     }
   ],
   "allMatch": true
