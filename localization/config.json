@@ -90,5 +90,10 @@
     "zh-Hant": {
       "guides/ds-160-photo-upload-failed.html": "localization/zh-upload-Hant.html"
     }
+  },
+  "pageModified": {
+    "index.html": "2026-11-12",
+    "guides/index.html": "2026-11-12",
+    "guides/ds-160-photo-upload-failed.html": "2026-11-12"
   }
 }

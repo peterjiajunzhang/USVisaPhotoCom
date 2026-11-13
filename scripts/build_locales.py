@@ -149,6 +149,6 @@ for f in FILES:
   else:n=ET.SubElement(tree,'{'+ns+'}url');ET.SubElement(n,'{'+ns+'}loc').text=url
   last=n.find('{'+ns+'}lastmod')
   if last is None:last=ET.SubElement(n,'{'+ns+'}lastmod')
-  last.text=CONFIG['modified']
+  last.text=CONFIG.get('pageModified',{}).get(f,CONFIG['modified'])
 ET.indent(tree,space='  ');site.write(ROOT/'sitemap.xml',encoding='utf-8',xml_declaration=True)
 print(f'Built {len(FILES)} topics in {len(LOCALES)} languages; sitemap has {len(tree)} URLs.')

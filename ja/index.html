@@ -25,7 +25,6 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "@id": "https://us.visaphoto1tap.com/ja/#app", "name": "US Visa Photo（iPhone）", "url": "https://us.visaphoto1tap.com/ja/", "image": "https://us.visaphoto1tap.com/AppIcon.png", "description": "端末内で写真を処理し、処理とプレビューは無料です。JPEG1枚の書き出しは別途購入します。背景置換は公式の受理を保証しません。", "operatingSystem": "iOS 17.0 or later", "applicationCategory": "PhotographyApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "ダウンロードとプレビューは無料。JPEG書き出しは利用中のプラットフォームで別途アプリ内購入します。"}, "downloadUrl": "https://apps.apple.com/us/app/us-visa-photo/id6761959861"}, {"@type": "SoftwareApplication", "@id": "https://us.visaphoto1tap.com/ja/#android-app", "name": "US Visa Photo（Android）", "url": "https://us.visaphoto1tap.com/ja/", "image": "https://us.visaphoto1tap.com/AppIcon.png", "description": "端末内で写真を処理し、処理とプレビューは無料です。JPEG1枚の書き出しは別途購入します。背景置換は公式の受理を保証しません。", "operatingSystem": "Android 8.0 or later", "applicationCategory": "PhotographyApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "ダウンロードとプレビューは無料。JPEG書き出しは利用中のプラットフォームで別途アプリ内購入します。"}, "downloadUrl": "https://play.google.com/store/apps/details?id=com.loop.usvisaphoto"}]}</script>
 <link href="/assets/home.css" rel="stylesheet"/>
 <link href="/assets/platforms.css" rel="stylesheet"/>
-<script src="https://unpkg.com/lucide@latest"></script>
 <style>
         .gradient-hero {
             background: linear-gradient(135deg, #0a1628 0%, #0d2137 50%, #0f2b46 100%);
@@ -195,14 +194,20 @@
 <a aria-label="US Visa Photo ホーム" class="platform-brand" href="/ja/"><img alt="" height="32" src="/AppIcon.png" width="32"/><span>US Visa Photo</span></a>
 <div class="platform-links"><a href="#demos">処理結果を見る</a><a class="nav-extra" href="#pricing">料金</a><a class="nav-extra" href="/ja/guides/">ガイド</a><a class="nav-extra" href="/support.html#ja">サポート</a><details class="locale-switcher" id="page-language"><summary aria-label="言語を選択">日本語</summary><ul class="locale-list"><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a aria-current="page" href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li></ul></details><div class="relative">
 <button aria-expanded="false" aria-haspopup="true" aria-label="他の渡航先のビザ写真アプリ" class="p-2 -m-2 rounded-lg text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition" id="app-switcher-btn" type="button">
-<i class="w-5 h-5" data-lucide="menu"></i>
+<svg aria-hidden="true" class="w-5 h-5 lucide lucide-menu" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<line x1="4" x2="20" y1="12" y2="12"></line>
+<line x1="4" x2="20" y1="6" y2="6"></line>
+<line x1="4" x2="20" y1="18" y2="18"></line>
+</svg>
 </button>
 <div class="hidden fixed right-4 top-16 w-72 max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-100 py-2 z-50 text-left" id="app-switcher-menu">
 <p class="px-4 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">各渡航先のビザ写真アプリ</p>
 <a class="flex items-center gap-3 px-4 py-2.5 bg-gray-50" href="/ja/">
 <img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="/AppIcon.png"/>
 <span class="text-sm font-semibold text-gray-900">US Visa Photo</span>
-<i class="w-4 h-4 text-emerald-500 ml-auto flex-shrink-0" data-lucide="check"></i>
+<svg aria-hidden="true" class="w-4 h-4 text-emerald-500 ml-auto flex-shrink-0 lucide lucide-check" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 6 9 17l-5-5"></path>
+</svg>
 </a>
 <a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://china.visaphoto1tap.com/">
 <img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://china.visaphoto1tap.com/AppIcon.png"/>
@@ -261,7 +266,10 @@
 </figure>
 <!-- Arrow -->
 <div aria-hidden="true" class="hero-arrow">
-<i data-lucide="arrow-right"></i>
+<svg aria-hidden="true" class="lucide lucide-arrow-right" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14"></path>
+<path d="m12 5 7 7-7 7"></path>
+</svg>
 </div>
 <!-- After: the same person, in the app — background removed, cropped to 2x2, auto-checked -->
 <figure class="hero-after">
@@ -279,19 +287,46 @@
 <section class="bg-gray-50 border-b border-gray-100">
 <div class="max-w-4xl mx-auto px-6 py-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-gray-500">
 <div class="flex items-center gap-2">
-<i class="w-4 h-4 text-brand" data-lucide="wifi-off"></i>
+<svg aria-hidden="true" class="w-4 h-4 text-brand lucide lucide-wifi-off" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 20h.01"></path>
+<path d="M8.5 16.429a5 5 0 0 1 7 0"></path>
+<path d="M5 12.859a10 10 0 0 1 5.17-2.69"></path>
+<path d="M19 12.859a10 10 0 0 0-2.007-1.523"></path>
+<path d="M2 8.82a15 15 0 0 1 4.177-2.643"></path>
+<path d="M22 8.82a15 15 0 0 0-11.288-3.764"></path>
+<path d="m2 2 20 20"></path>
+</svg>
 <span>端末内で画像処理</span>
 </div>
 <div class="flex items-center gap-2">
-<i class="w-4 h-4 text-brand" data-lucide="eye-off"></i>
+<svg aria-hidden="true" class="w-4 h-4 text-brand lucide lucide-eye-off" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"></path>
+<path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"></path>
+<path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"></path>
+<path d="m2 2 20 20"></path>
+</svg>
 <span>開発者への人物写真の送信なし</span>
 </div>
 <div class="flex items-center gap-2">
-<i class="w-4 h-4 text-brand" data-lucide="cpu"></i>
+<svg aria-hidden="true" class="w-4 h-4 text-brand lucide lucide-cpu" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<rect height="16" rx="2" width="16" x="4" y="4"></rect>
+<rect height="6" rx="1" width="6" x="9" y="9"></rect>
+<path d="M15 2v2"></path>
+<path d="M15 20v2"></path>
+<path d="M2 15h2"></path>
+<path d="M2 9h2"></path>
+<path d="M20 15h2"></path>
+<path d="M20 9h2"></path>
+<path d="M9 2v2"></path>
+<path d="M9 20v2"></path>
+</svg>
 <span>iPhone・Android</span>
 </div>
 <div class="flex items-center gap-2">
-<i class="w-4 h-4 text-brand" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-4 h-4 text-brand lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span>ファイル・構図の確認</span>
 </div>
 </div>
@@ -398,35 +433,59 @@
 <div class="bg-gray-50 rounded-2xl border border-gray-100 p-6 md:p-8">
 <ul class="space-y-4 text-left text-sm md:text-base text-gray-800">
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>印刷サイズ</strong> — 2 × 2インチ（51 × 51 mm）の正方形。</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>画像解像度</strong> — 1辺600〜1200ピクセル。実際の書き出しサイズ（例：1200 × 1200）を表示します。</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>目の位置</strong> — 画像下端からの割合で、米国の目安は56〜69%。実測値を表示します。</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>頭部の高さ</strong> — 画像の高さの50〜69%。実測値とテンプレートを比較して表示します。</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>背景</strong> — 処理で白背景を生成します。元の背景を確認・認定するものではありません。</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>照明</strong> — 顔の照明が不均一な場合に警告します。照明の補正は行いません。</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>ファイル形式</strong> — JPEG画像を書き出します。複数写真の印刷用レイアウトは含みません。</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>処理の範囲</strong> — 切り抜きと背景置換。手作業のレタッチや切り抜きのみの書き出しはありません。</span>
 </li>
 </ul>
@@ -440,7 +499,14 @@
 <section class="py-16 md:py-24 bg-white border-t border-gray-100" id="languages">
 <div class="max-w-4xl mx-auto px-6 text-center">
 <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-50 rounded-xl mb-5">
-<i class="w-6 h-6 text-brand" data-lucide="languages"></i>
+<svg aria-hidden="true" class="w-6 h-6 text-brand lucide lucide-languages" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m5 8 6 6"></path>
+<path d="m4 14 6-6 2-3"></path>
+<path d="M2 5h12"></path>
+<path d="M7 2h1"></path>
+<path d="m22 22-5-10-5 10"></path>
+<path d="M14 18h6"></path>
+</svg>
 </div>
 <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">アプリは7言語に対応</h2>
 <p class="text-gray-500 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"> 端末の対応言語を使用します。アプリ内でも言語を切り替えられます。 </p>
@@ -506,7 +572,7 @@
 <div class="max-w-6xl mx-auto px-6"><div class="text-center mb-10"><p class="text-brand text-sm font-semibold mb-3">写真ガイド</p><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">写真の要件とアップロードの問題</h2><p class="text-gray-500">開発者が整理したガイドです。公式情報へのリンクを掲載しています。</p></div>
 <div class="grid md:grid-cols-3 gap-6">
 <article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/ja/guides/us-visa-photo-requirements.html">DS-160写真の要件</a></h3><p class="text-gray-600">正方形のピクセル、JPEG、容量上限、ファイル確認と適切な元写真の違い。</p></article>
-<article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/ja/guides/ds-160-photo-upload-failed.html">写真をアップロードできない場合</a></h3><p class="text-gray-600">実際のファイルと元の写真を確認し、確認ページについては公式の指示に従ってください。</p></article>
+<article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/ja/guides/ds-160-photo-upload-failed.html">写真をアップロードできない場合</a></h3><p class="text-gray-600">実際のファイルと元の写真を確認し、確認ページについては公式の指示に従ってください。</p><p><a href="/ja/guides/ds-160-photo-upload-failed.html#file-check">ブラウザで JPEG ファイルを確認</a></p></article>
 <article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/ja/guides/us-visa-photo-privacy-and-pricing.html">プライバシー・料金・制限</a></h3><p class="text-gray-600">端末内に残る情報、無料の範囲、JPEG書き出しの仕組み、現在の機能制限。</p></article>
 </div><p class="text-center mt-8"><a class="text-brand underline" href="/ja/guides/">写真ガイド一覧</a></p>
 </div>
@@ -571,6 +637,5 @@
             });
         })();
     </script>
-<script>lucide.createIcons();</script>
 </body>
 </html>

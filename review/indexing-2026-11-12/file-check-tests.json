@@ -1,0 +1,81 @@
+{
+  "scope": "Node VM state/boundary tests; image.decode stubbed, actual decoding tested separately in native Chrome",
+  "results": [
+    {
+      "fixture": "valid600.jpg",
+      "status": "done",
+      "pixelCheck": true,
+      "sizeCheck": true,
+      "pass": true
+    },
+    {
+      "fixture": "valid1200.jpg",
+      "status": "done",
+      "pixelCheck": true,
+      "sizeCheck": true,
+      "pass": true
+    },
+    {
+      "fixture": "small599.jpg",
+      "status": "done",
+      "pixelCheck": false,
+      "sizeCheck": true,
+      "pass": true
+    },
+    {
+      "fixture": "wide.jpg",
+      "status": "done",
+      "pixelCheck": false,
+      "sizeCheck": true,
+      "pass": true
+    },
+    {
+      "fixture": "bytes240000.jpg",
+      "status": "done",
+      "pixelCheck": true,
+      "sizeCheck": true,
+      "pass": true
+    },
+    {
+      "fixture": "bytes240001.jpg",
+      "status": "done",
+      "pixelCheck": true,
+      "sizeCheck": false,
+      "pass": true
+    },
+    {
+      "fixture": "renamed.jpg",
+      "status": "invalid",
+      "pixelCheck": null,
+      "sizeCheck": null,
+      "pass": true
+    },
+    {
+      "fixture": "corrupt.jpg",
+      "status": "invalid",
+      "pixelCheck": null,
+      "sizeCheck": null,
+      "pass": true
+    },
+    {
+      "fixture": "too-large.jpg",
+      "status": "large",
+      "pixelCheck": null,
+      "sizeCheck": null,
+      "pass": true
+    },
+    {
+      "case": "browser decode failure",
+      "pass": true
+    },
+    {
+      "case": "clear while reading keeps old results hidden",
+      "pass": true
+    },
+    {
+      "case": "empty selection clears results",
+      "pass": true
+    }
+  ],
+  "noFileNetworkOrPersistenceAPI": true
+}

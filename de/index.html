@@ -25,7 +25,6 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "@id": "https://us.visaphoto1tap.com/de/#app", "name": "US Visa Photo für iPhone", "url": "https://us.visaphoto1tap.com/de/", "image": "https://us.visaphoto1tap.com/AppIcon.png", "description": "Fotovorbereitung auf dem Gerät, kostenlose Verarbeitung und Vorschau, separater Kauf eines JPEG-Exports. Hintergrundersatz garantiert keine behördliche Annahme.", "operatingSystem": "iOS 17.0 or later", "applicationCategory": "PhotographyApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "App-Download und Vorschau kostenlos. JPEG-Export wird auf dieser Plattform separat in der App gekauft."}, "downloadUrl": "https://apps.apple.com/us/app/us-visa-photo/id6761959861"}, {"@type": "SoftwareApplication", "@id": "https://us.visaphoto1tap.com/de/#android-app", "name": "US Visa Photo für Android", "url": "https://us.visaphoto1tap.com/de/", "image": "https://us.visaphoto1tap.com/AppIcon.png", "description": "Fotovorbereitung auf dem Gerät, kostenlose Verarbeitung und Vorschau, separater Kauf eines JPEG-Exports. Hintergrundersatz garantiert keine behördliche Annahme.", "operatingSystem": "Android 8.0 or later", "applicationCategory": "PhotographyApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "App-Download und Vorschau kostenlos. JPEG-Export wird auf dieser Plattform separat in der App gekauft."}, "downloadUrl": "https://play.google.com/store/apps/details?id=com.loop.usvisaphoto"}]}</script>
 <link href="/assets/home.css" rel="stylesheet"/>
 <link href="/assets/platforms.css" rel="stylesheet"/>
-<script src="https://unpkg.com/lucide@latest"></script>
 <style>
         .gradient-hero {
             background: linear-gradient(135deg, #0a1628 0%, #0d2137 50%, #0f2b46 100%);
@@ -195,14 +194,20 @@
 <a aria-label="US Visa Photo Startseite" class="platform-brand" href="/de/"><img alt="" height="32" src="/AppIcon.png" width="32"/><span>US Visa Photo</span></a>
 <div class="platform-links"><a href="#demos">Ergebnis ansehen</a><a class="nav-extra" href="#pricing">Preise</a><a class="nav-extra" href="/de/guides/">Ratgeber</a><a class="nav-extra" href="/support.html#de">Support</a><details class="locale-switcher" id="page-language"><summary aria-label="Sprache wählen">Deutsch</summary><ul class="locale-list"><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a aria-current="page" href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li></ul></details><div class="relative">
 <button aria-expanded="false" aria-haspopup="true" aria-label="Weitere Visumfoto-Apps" class="p-2 -m-2 rounded-lg text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition" id="app-switcher-btn" type="button">
-<i class="w-5 h-5" data-lucide="menu"></i>
+<svg aria-hidden="true" class="w-5 h-5 lucide lucide-menu" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<line x1="4" x2="20" y1="12" y2="12"></line>
+<line x1="4" x2="20" y1="6" y2="6"></line>
+<line x1="4" x2="20" y1="18" y2="18"></line>
+</svg>
 </button>
 <div class="hidden fixed right-4 top-16 w-72 max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-100 py-2 z-50 text-left" id="app-switcher-menu">
 <p class="px-4 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">Unsere Visumfoto-Apps</p>
 <a class="flex items-center gap-3 px-4 py-2.5 bg-gray-50" href="/de/">
 <img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="/AppIcon.png"/>
 <span class="text-sm font-semibold text-gray-900">US Visa Photo</span>
-<i class="w-4 h-4 text-emerald-500 ml-auto flex-shrink-0" data-lucide="check"></i>
+<svg aria-hidden="true" class="w-4 h-4 text-emerald-500 ml-auto flex-shrink-0 lucide lucide-check" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 6 9 17l-5-5"></path>
+</svg>
 </a>
 <a class="flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition" href="https://china.visaphoto1tap.com/">
 <img alt="" class="w-8 h-8 rounded-lg flex-shrink-0" src="https://china.visaphoto1tap.com/AppIcon.png"/>
@@ -261,7 +266,10 @@
 </figure>
 <!-- Arrow -->
 <div aria-hidden="true" class="hero-arrow">
-<i data-lucide="arrow-right"></i>
+<svg aria-hidden="true" class="lucide lucide-arrow-right" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12h14"></path>
+<path d="m12 5 7 7-7 7"></path>
+</svg>
 </div>
 <!-- After: the same person, in the app — background removed, cropped to 2x2, auto-checked -->
 <figure class="hero-after">
@@ -279,19 +287,46 @@
 <section class="bg-gray-50 border-b border-gray-100">
 <div class="max-w-4xl mx-auto px-6 py-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-gray-500">
 <div class="flex items-center gap-2">
-<i class="w-4 h-4 text-brand" data-lucide="wifi-off"></i>
+<svg aria-hidden="true" class="w-4 h-4 text-brand lucide lucide-wifi-off" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 20h.01"></path>
+<path d="M8.5 16.429a5 5 0 0 1 7 0"></path>
+<path d="M5 12.859a10 10 0 0 1 5.17-2.69"></path>
+<path d="M19 12.859a10 10 0 0 0-2.007-1.523"></path>
+<path d="M2 8.82a15 15 0 0 1 4.177-2.643"></path>
+<path d="M22 8.82a15 15 0 0 0-11.288-3.764"></path>
+<path d="m2 2 20 20"></path>
+</svg>
 <span>Lokale Bildverarbeitung</span>
 </div>
 <div class="flex items-center gap-2">
-<i class="w-4 h-4 text-brand" data-lucide="eye-off"></i>
+<svg aria-hidden="true" class="w-4 h-4 text-brand lucide lucide-eye-off" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"></path>
+<path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"></path>
+<path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"></path>
+<path d="m2 2 20 20"></path>
+</svg>
 <span>Keine Porträt-Uploads an den Entwickler</span>
 </div>
 <div class="flex items-center gap-2">
-<i class="w-4 h-4 text-brand" data-lucide="cpu"></i>
+<svg aria-hidden="true" class="w-4 h-4 text-brand lucide lucide-cpu" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<rect height="16" rx="2" width="16" x="4" y="4"></rect>
+<rect height="6" rx="1" width="6" x="9" y="9"></rect>
+<path d="M15 2v2"></path>
+<path d="M15 20v2"></path>
+<path d="M2 15h2"></path>
+<path d="M2 9h2"></path>
+<path d="M20 15h2"></path>
+<path d="M20 9h2"></path>
+<path d="M9 2v2"></path>
+<path d="M9 20v2"></path>
+</svg>
 <span>iPhone und Android</span>
 </div>
 <div class="flex items-center gap-2">
-<i class="w-4 h-4 text-brand" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-4 h-4 text-brand lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span>Datei- und Bildausschnittprüfungen</span>
 </div>
 </div>
@@ -398,35 +433,59 @@
 <div class="bg-gray-50 rounded-2xl border border-gray-100 p-6 md:p-8">
 <ul class="space-y-4 text-left text-sm md:text-base text-gray-800">
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>Druckgröße</strong> — 2 × 2 Zoll (51 × 51 mm), quadratischer Zuschnitt.</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>Digitale Auflösung</strong> — 600 bis 1200 Pixel pro Seite; die App zeigt die genauen Exportmaße, z. B. 1200 × 1200.</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>Augenposition</strong> — vom unteren Bildrand gemessen nennt die US-Vorgabe 56–69 %; wir zeigen Ihren Messwert.</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>Kopfhöhe</strong> — 50–69 % der Bildhöhe; wir zeigen den Messwert im Vergleich zur Vorlage.</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>Hintergrund</strong> — der weiße Hintergrund entsteht durch Verarbeitung; dies prüft nicht den ursprünglichen Hintergrund.</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>Beleuchtung</strong> — ungleichmäßiges Gesichtslicht kann eine Warnung auslösen; die App korrigiert es nicht.</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>Dateiformat</strong> — Export eines JPEG-Bildes; kein Drucklayout mit mehreren Fotos enthalten.</span>
 </li>
 <li class="compliance-row flex items-start gap-3">
-<i class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" data-lucide="check-circle-2"></i>
+<svg aria-hidden="true" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5 lucide lucide-check-circle-2" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
 <span><strong>Verarbeitungsumfang</strong> — Zuschnitt und Hintergrundersatz; keine manuelle Retusche und kein Export mit reinem Zuschnitt.</span>
 </li>
 </ul>
@@ -440,7 +499,14 @@
 <section class="py-16 md:py-24 bg-white border-t border-gray-100" id="languages">
 <div class="max-w-4xl mx-auto px-6 text-center">
 <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-50 rounded-xl mb-5">
-<i class="w-6 h-6 text-brand" data-lucide="languages"></i>
+<svg aria-hidden="true" class="w-6 h-6 text-brand lucide lucide-languages" fill="none" focusable="false" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m5 8 6 6"></path>
+<path d="m4 14 6-6 2-3"></path>
+<path d="M2 5h12"></path>
+<path d="M7 2h1"></path>
+<path d="m22 22-5-10-5 10"></path>
+<path d="M14 18h6"></path>
+</svg>
 </div>
 <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">App in sieben Sprachen verfügbar</h2>
 <p class="text-gray-500 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"> Die App übernimmt eine unterstützte Gerätesprache. Sie können die Sprache auch in der App wechseln. </p>
@@ -506,7 +572,7 @@
 <div class="max-w-6xl mx-auto px-6"><div class="text-center mb-10"><p class="text-brand text-sm font-semibold mb-3">FOTORATGEBER</p><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Fotoanforderungen und Upload-Probleme</h2><p class="text-gray-500">Ratgeber des App-Entwicklers mit offiziellen Quellen.</p></div>
 <div class="grid md:grid-cols-3 gap-6">
 <article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/de/guides/us-visa-photo-requirements.html">DS-160-Fotoanforderungen</a></h3><p class="text-gray-600">Quadratische Pixelmaße, JPEG-Dateien, Größenlimits und der Unterschied zwischen Dateiprüfung und geeignetem Original.</p></article>
-<article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/de/guides/ds-160-photo-upload-failed.html">Foto-Upload fehlgeschlagen?</a></h3><p class="text-gray-600">Prüfen Sie Datei und Originalfoto und beachten Sie die offiziellen Hinweise zur Bestätigungsseite.</p></article>
+<article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/de/guides/ds-160-photo-upload-failed.html">Foto-Upload fehlgeschlagen?</a></h3><p class="text-gray-600">Prüfen Sie Datei und Originalfoto und beachten Sie die offiziellen Hinweise zur Bestätigungsseite.</p><p><a href="/de/guides/ds-160-photo-upload-failed.html#file-check">JPEG-Datei im Browser prüfen</a></p></article>
 <article class="border border-gray-200 rounded-2xl p-7"><h3 class="text-xl font-semibold mb-4"><a class="text-brand underline" href="/de/guides/us-visa-photo-privacy-and-pricing.html">Datenschutz, Preise und Grenzen</a></h3><p class="text-gray-600">Was auf dem Smartphone bleibt, was kostenlos ist, wie JPEG-Export funktioniert und was die App nicht bietet.</p></article>
 </div><p class="text-center mt-8"><a class="text-brand underline" href="/de/guides/">Alle Fotoratgeber ansehen</a></p>
 </div>
@@ -571,6 +637,5 @@
             });
         })();
     </script>
-<script>lucide.createIcons();</script>
 </body>
 </html>
