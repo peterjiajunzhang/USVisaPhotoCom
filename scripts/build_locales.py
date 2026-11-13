@@ -127,7 +127,23 @@ for f in FILES:
   status=soup.select_one('#filter-status')
   if status:
    status['data-count-one']=LANG['filterOne'];status['data-count-many']=LANG['filterMany']
-  css=soup.new_tag('link',rel='stylesheet',href='/assets/locales.css?v=20261111-seven',attrs={'data-page-language':''});soup.head.append(css)
+  if f=='index.html':
+   # The live Google renderer intermittently failed to fetch these small stylesheets.
+   # Keep the home layout available in the same response as its static content.
+   for el in soup.select('link[rel="stylesheet"]'):
+    if el.get('href','').split('?')[0] in ['/assets/home.css','/assets/platforms.css','/assets/locales.css']:el.decompose()
+   css=soup.new_tag('style',attrs={'data-page-language':'','data-home-styles':''})
+   platform_css=(ROOT/'assets/platforms.css').read_text().replace("@import url('/assets/store-badges.css');",'')
+   css.string='\n'.join([(ROOT/'assets/home.css').read_text(),(ROOT/'assets/store-badges.css').read_text(),platform_css])
+   first_style=soup.head.find('style')
+   if first_style:first_style.insert_before(css)
+   else:soup.head.append(css)
+   # Keep the original cascade: base/platform, existing home overrides, locale.
+   css=soup.new_tag('style',attrs={'data-page-language':'','data-locale-styles':''})
+   css.string=(ROOT/'assets/locales.css').read_text()
+  else:
+   css=soup.new_tag('link',rel='stylesheet',href='/assets/locales.css?v=20261111-seven',attrs={'data-page-language':''})
+  soup.head.append(css)
   control=soup.new_tag('script',src='/assets/locales.js',defer='',attrs={'data-page-language':''});soup.head.append(control)
   dest=ROOT/(PREFIX.lstrip('/')+'/'+f if PREFIX else f)
   pending.append((dest,str(soup).rstrip()+'\n'))

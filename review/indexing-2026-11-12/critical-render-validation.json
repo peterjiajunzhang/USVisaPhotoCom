@@ -1,0 +1,45 @@
+{
+  "pages": [
+    {
+      "path": "index.html",
+      "bytes": 66648,
+      "lazyGallery": 12
+    },
+    {
+      "path": "zh-hans/index.html",
+      "bytes": 65812,
+      "lazyGallery": 12
+    },
+    {
+      "path": "zh-hant/index.html",
+      "bytes": 65824,
+      "lazyGallery": 12
+    },
+    {
+      "path": "es/index.html",
+      "bytes": 67803,
+      "lazyGallery": 12
+    },
+    {
+      "path": "ja/index.html",
+      "bytes": 68474,
+      "lazyGallery": 12
+    },
+    {
+      "path": "de/index.html",
+      "bytes": 67427,
+      "lazyGallery": 12
+    },
+    {
+      "path": "fr/index.html",
+      "bytes": 67922,
+      "lazyGallery": 12
+    }
+  ],
+  "repeatable": true,
+  "noExternalImageHosts": true,
+  "noHomepageStylesheetFetchRequired": true,
+  "originalCSSCascadePreserved": true,
+  "badgeImportFlattened": true,
+  "imagePixelContentsPreserved": "Existing demos and native captures unchanged. Menu icon derivatives only."
+}

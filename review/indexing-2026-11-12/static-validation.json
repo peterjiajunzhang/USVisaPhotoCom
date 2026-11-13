@@ -1,10 +1,11 @@
 {
   "pages": 35,
-  "references": 1799,
+  "references": 1813,
   "sitemapURLs": 38,
   "repeatableBuild": true,
   "errors": [],
   "finalTOCLinksChecked": 5,
   "discoveryLinksChecked": 14,
-  "nativeChinesePagesHaveNoTOC": true
+  "nativeChinesePagesHaveNoTOC": true,
+  "criticalRenderChangesRechecked": true
 }

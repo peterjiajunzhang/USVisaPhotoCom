@@ -1,0 +1,56 @@
+[
+  {
+    "source": "https://us.visaphoto1tap.com/AppIcon.png",
+    "sourceSHA256": "bdf37787e88724858dc47c7ff8fc23e408c296762be31ecc00554fbba1d9498e",
+    "output": "assets/icons/us.webp",
+    "width": 160,
+    "height": 160,
+    "bytes": 17994,
+    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes."
+  },
+  {
+    "source": "https://china.visaphoto1tap.com/AppIcon.png",
+    "sourceSHA256": "4d9dcda155e076317675501ec5de8f3054b590d0b90ca9a29acfc8db673bd802",
+    "output": "assets/icons/china.webp",
+    "width": 64,
+    "height": 64,
+    "bytes": 5500,
+    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes."
+  },
+  {
+    "source": "https://schengen.visaphoto1tap.com/AppIcon.png",
+    "sourceSHA256": "ad76ebfdd52aa525c5c2bbde430a9ef580cb371cc811ff431c55584d1fd0485d",
+    "output": "assets/icons/schengen.webp",
+    "width": 64,
+    "height": 64,
+    "bytes": 3434,
+    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes."
+  },
+  {
+    "source": "https://india.visaphoto1tap.com/AppIcon.png",
+    "sourceSHA256": "4b2b86037adf9115e1938b6d82f0397c3c8b706779813268c2e47a884a5afb63",
+    "output": "assets/icons/india.webp",
+    "width": 64,
+    "height": 64,
+    "bytes": 2986,
+    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes."
+  },
+  {
+    "source": "https://japan.visaphoto1tap.com/AppIcon.png",
+    "sourceSHA256": "b0dbc0e1b0a47995a8430b4b93301852545b742fee55fbff5d16a916d389c1d1",
+    "output": "assets/icons/japan.webp",
+    "width": 64,
+    "height": 64,
+    "bytes": 2922,
+    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes."
+  },
+  {
+    "source": "https://canada.visaphoto1tap.com/AppIcon.png",
+    "sourceSHA256": "5ed1e26584b9776adca25ae6108530715fb9e321c13003662002d989d9e1b081",
+    "output": "assets/icons/canada.webp",
+    "width": 64,
+    "height": 64,
+    "bytes": 2778,
+    "method": "Official current icon; resize for display, lossless WebP encoding. No artwork changes."
+  }
+]

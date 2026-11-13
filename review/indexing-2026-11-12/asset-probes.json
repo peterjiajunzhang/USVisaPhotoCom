@@ -1,0 +1,125 @@
+{
+  "scope": "Public HTTP probes with user-agent strings; not authenticated Googlebot-origin requests.",
+  "rows": [
+    {
+      "url": "https://us.visaphoto1tap.com/assets/home.css",
+      "ua": "Mozilla/5.0",
+      "status": 200,
+      "bytes": 13453,
+      "seconds": 0.16,
+      "server": "GitHub.com",
+      "cache": "HIT",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/assets/home.css",
+      "ua": "Googlebot",
+      "status": 200,
+      "bytes": 13453,
+      "seconds": 0.17,
+      "server": "GitHub.com",
+      "cache": "MISS",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/assets/platforms.css",
+      "ua": "Mozilla/5.0",
+      "status": 200,
+      "bytes": 4602,
+      "seconds": 0.2,
+      "server": "GitHub.com",
+      "cache": "MISS",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/assets/platforms.css",
+      "ua": "Googlebot",
+      "status": 200,
+      "bytes": 4602,
+      "seconds": 0.19,
+      "server": "GitHub.com",
+      "cache": "HIT",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/assets/iphone/02-before-native.webp",
+      "ua": "Mozilla/5.0",
+      "status": 200,
+      "bytes": 72404,
+      "seconds": 0.16,
+      "server": "GitHub.com",
+      "cache": "MISS",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/assets/iphone/02-before-native.webp",
+      "ua": "Googlebot",
+      "status": 200,
+      "bytes": 72404,
+      "seconds": 0.19,
+      "server": "GitHub.com",
+      "cache": "HIT",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/assets/badges/google-play.png",
+      "ua": "Mozilla/5.0",
+      "status": 200,
+      "bytes": 4904,
+      "seconds": 0.14,
+      "server": "GitHub.com",
+      "cache": "MISS",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/assets/badges/google-play.png",
+      "ua": "Googlebot",
+      "status": 200,
+      "bytes": 4904,
+      "seconds": 0.14,
+      "server": "GitHub.com",
+      "cache": "HIT",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/robots.txt",
+      "ua": "Mozilla/5.0",
+      "status": 200,
+      "bytes": 149,
+      "seconds": 0.16,
+      "server": "GitHub.com",
+      "cache": "MISS",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://us.visaphoto1tap.com/robots.txt",
+      "ua": "Googlebot",
+      "status": 200,
+      "bytes": 149,
+      "seconds": 0.14,
+      "server": "GitHub.com",
+      "cache": "HIT",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://china.visaphoto1tap.com/AppIcon.png",
+      "ua": "Mozilla/5.0",
+      "status": 200,
+      "bytes": 1297545,
+      "seconds": 0.3,
+      "server": "GitHub.com",
+      "cache": "MISS",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://china.visaphoto1tap.com/AppIcon.png",
+      "ua": "Googlebot",
+      "status": 200,
+      "bytes": 1297545,
+      "seconds": 0.33,
+      "server": "GitHub.com",
+      "cache": "HIT",
+      "contentType": "image/png"
+    }
+  ]
+}
