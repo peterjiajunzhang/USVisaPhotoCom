@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-12 America/Los_Angeles",
+  "contentCommit": "8c0a916ba82338054c71c68162bb80a3c77289ef",
+  "githubPages": "built",
+  "liveFilesVerified": 40,
+  "liveFilesAllHTTP200AndByteMatch": true,
+  "browser": {
+    "channel": "native Chrome",
+    "page": "https://us.visaphoto1tap.com/zh-hans/",
+    "representativeViews": [
+      "desktop",
+      "iPhone 16 emulation 393 x 852"
+    ],
+    "observations": [
+      "Hero, product images and official store badges displayed",
+      "No repeated promotional scope/acceptance warning blocks",
+      "Requirements and privacy/pricing links remain available"
+    ],
+    "limits": [
+      "Representative visual inspection; no fresh full viewport matrix or numerical overflow measurement",
+      "DevTools issue counters are not a zero-issues claim; no console error messages visible"
+    ]
+  },
+  "noIndexingRequestsForThisCorrection": true
+}

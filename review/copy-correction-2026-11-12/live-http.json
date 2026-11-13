@@ -1,0 +1,206 @@
+{
+  "commit": "8c0a916ba82338054c71c68162bb80a3c77289ef",
+  "allMatch": true,
+  "rows": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "guides/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "guides/us-visa-photo-requirements.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "guides/ds-160-photo-upload-failed.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "guides/us-visa-photo-privacy-and-pricing.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "zh-hans/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "zh-hans/guides/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "zh-hans/guides/us-visa-photo-requirements.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "zh-hans/guides/ds-160-photo-upload-failed.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "zh-hans/guides/us-visa-photo-privacy-and-pricing.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "zh-hant/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "zh-hant/guides/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "zh-hant/guides/us-visa-photo-requirements.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "zh-hant/guides/ds-160-photo-upload-failed.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "zh-hant/guides/us-visa-photo-privacy-and-pricing.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "es/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "es/guides/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "es/guides/us-visa-photo-requirements.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "es/guides/ds-160-photo-upload-failed.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "es/guides/us-visa-photo-privacy-and-pricing.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "ja/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "ja/guides/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "ja/guides/us-visa-photo-requirements.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "ja/guides/ds-160-photo-upload-failed.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "ja/guides/us-visa-photo-privacy-and-pricing.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "de/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "de/guides/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "de/guides/us-visa-photo-requirements.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "de/guides/ds-160-photo-upload-failed.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "de/guides/us-visa-photo-privacy-and-pricing.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "fr/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "fr/guides/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "fr/guides/us-visa-photo-requirements.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "fr/guides/ds-160-photo-upload-failed.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "fr/guides/us-visa-photo-privacy-and-pricing.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "privacy.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "privacy-android.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "support.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "acquisition-campaigns.json",
+      "status": 200,
+      "matches": true
+    }
+  ]
+}
