@@ -1,5 +1,9 @@
 # USVisaPhotoCom — 官网与 App Store 营销管线说明
 
+## 2026-11-14 Homepage image weight and share card
+
+Homepage demo images now reference WebP copies (`demos/demo-0N-{original,result}.webp`, long side capped at 640 px, quality 90, alpha kept on results); the original PNG files stay in the repo. Homepage image bytes dropped from 16,592,826 to 1,056,190. `og:image` / `twitter:image` use `assets/og/us-before-after.jpg` (1200x630, a crop of the existing demo-01 original beside the existing demo-01 result; no added text). The edit is in `index.html` (the English source) and `scripts/build_locales.py` regenerates all seven languages; only the homepage `lastmod` moved (`pageModified` in `localization/config.json`). Homepage card headings already contained heading text only, so no heading change was needed.
+
 ## 2026-11-12 Homepage title refinement
 
 Following delegated review, homepage title, Open Graph title and Twitter title now express the app and 2×2 use in all seven languages. Headline, body, schema, policies and layout remain unchanged. Content `488bef8` completed [Pages run 43373596793](https://github.com/peterjiajunzhang/USVisaPhotoCom/actions/runs/43373596793); seven homepages and six unchanged sitemap/policy/support/badge paths returned 200 and matched bytes, recorded in `review/growth-2026-11-12/title-live-http.json`. Static localized checks pass, titles agree across metadata, and a repeat build is byte-identical. No index requests were made; public readback is not evidence of indexing or ranking.
