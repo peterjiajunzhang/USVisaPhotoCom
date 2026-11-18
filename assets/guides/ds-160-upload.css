@@ -1,0 +1,49 @@
+.upload-situations ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.upload-situations a {
+  display: inline-block;
+  padding-block: 0.25rem;
+}
+
+.upload-sample {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--wash);
+}
+
+.upload-sample img {
+  flex: none;
+  width: clamp(68px, 20vw, 104px);
+  border-radius: 8px;
+}
+
+.upload-sample figcaption {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.upload-sample strong {
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.upload-sample a {
+  width: fit-content;
+  padding-block: 0.25rem;
+}
+
+@media (max-width: 480px) {
+  .upload-sample {
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+}

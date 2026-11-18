@@ -21,7 +21,10 @@ for loc in c['locales']:
    assert soup.title.get_text()==soup.select_one('meta[property="og:title"]')['content']==soup.select_one('meta[name="twitter:title"]')['content']
   langs={x['hreflang']:x['href'] for x in soup.select('link[rel=alternate][hreflang]')}
   assert len(langs)==8 and all(langs[l['code']]==origin+l['prefix']+route for l in c['locales'])
-  assert sm[canonical]==c.get('pageModified',{}).get(f,c['modified'])
+  page_modified = c.get('pageModified', {}).get(f, c['modified'])
+  if loc['code'] == 'en':
+   page_modified = c.get('englishPageModified', {}).get(f, page_modified)
+  assert sm[canonical] == page_modified
   expected=(2 if f=='index.html' else (0 if f=='guides/index.html' else 1)) if is_us else 1
   badges=soup.select('a[data-play-campaign]'); assert len(badges)==expected,(file,len(badges))
   for a in badges:

@@ -13,6 +13,11 @@ PREFIX='';COPY={}
 ALLOWED=set(CONFIG.get('keepEnglish',[]))
 normalize=lambda t:re.sub(r'\s+',' ',str(t)).strip()
 def route(f):return '/'+f.removesuffix('index.html') if f.endswith('index.html') else '/'+f
+def page_modified(file, lang):
+ if lang == 'en' and file in CONFIG.get('englishPageModified', {}):
+  return CONFIG['englishPageModified'][file]
+ return CONFIG.get('pageModified', {}).get(file, CONFIG['modified'])
+
 def translated_url(url):
  u=urlsplit(url)
  path=u.path
@@ -116,8 +121,8 @@ def links(soup,f,lang):
    if isinstance(o,dict):
     result={k:localize(v,k) for k,v in o.items()}
     if o.get('@type') in ['WebSite','WebPage','Article']:result['inLanguage']=lang
-    if o.get('@type')=='Article' and f in CONFIG.get('pageModified',{}):
-     result['dateModified']=CONFIG['pageModified'][f]
+    if o.get('@type')=='Article' and (f in CONFIG.get('pageModified',{}) or (lang=='en' and f in CONFIG.get('englishPageModified',{}))):
+     result['dateModified']=page_modified(f,lang)
     return result
    if isinstance(o,list):return [localize(v,key) for v in o]
    if isinstance(o,str):
@@ -135,7 +140,9 @@ for f in FILES:
   COPY=json.loads((ROOT/('localization/'+lang+'.json')).read_text()) if lang!='en' else {}
   override=CONFIG.get('sourceOverrides',{}).get(lang,{}).get(f)
   native=bool(override)
-  soup=BeautifulSoup((ROOT/override).read_text() if native else source,'html.parser');clean(soup);store_actions(soup,f,native)
+  translation_source=CONFIG.get('translationSources', {}).get(f) if lang!='en' else None
+  source_path=override or translation_source
+  soup=BeautifulSoup((ROOT/source_path).read_text() if source_path else source,'html.parser');clean(soup);store_actions(soup,f,native)
   if lang!='en' and not native:translate(soup)
   soup.html['lang']=lang
   links(soup,f,lang);language_ui(soup,f,lang)
@@ -179,12 +186,12 @@ if CONFIG.get('legacyChineseGuide'):
  old=ORIGIN+'/'+CONFIG['legacyChineseGuide']
  if old in existing:tree.remove(existing[old])
 for f in FILES:
- for prefix in [locale['prefix'] for locale in LOCALES]:
-  url=ORIGIN+prefix+route(f)
+ for locale in LOCALES:
+  url=ORIGIN+locale['prefix']+route(f)
   if url in existing:n=existing[url]
   else:n=ET.SubElement(tree,'{'+ns+'}url');ET.SubElement(n,'{'+ns+'}loc').text=url
   last=n.find('{'+ns+'}lastmod')
   if last is None:last=ET.SubElement(n,'{'+ns+'}lastmod')
-  last.text=CONFIG.get('pageModified',{}).get(f,CONFIG['modified'])
+  last.text=page_modified(f,locale['code'])
 ET.indent(tree,space='  ');site.write(ROOT/'sitemap.xml',encoding='utf-8',xml_declaration=True)
 print(f'Built {len(FILES)} topics in {len(LOCALES)} languages; sitemap has {len(tree)} URLs.')

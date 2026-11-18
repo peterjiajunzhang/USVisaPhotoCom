@@ -1,5 +1,15 @@
 # USVisaPhotoCom — 官网与 App Store 营销管线说明
 
+## 2026-11-18 English DS-160 photo troubleshooting guide
+
+The English guide routes applicants by file rejection, a photo quality flag, a session timeout or service error, and an X on the confirmation page before offering the app. It links directly to HEIC conversion, square cropping and compression instructions on the main site. The State Department and CEAC links describe recovery of completed pages and the embassy or consulate’s printed-photo instructions. The app preview still identifies background replacement and links to the editing requirements.
+
+`assets/guides/ds-160-sample-export.jpg` is the original 1200 × 1200, 177,055-byte JPEG from the app repository’s `android/play/videos/us-ds160-upload-tutorial-2026-11-18/example-export.jpg`. SHA-256 is `da7b8c32d976fbfc3bf2ff7d21a6d65cbf79471d49359ebb02f74273a24b6e75`. It came from the Play build 11 test-order export recorded in `android/play/production-11-2026-11-18/play-device-qa.json` and is provided for comparing file properties. The image link opens the actual bytes.
+
+The locale build uses `localization/ds160-upload-translation-source.html` as the reviewed source for existing Spanish, Japanese, German and French translations until those versions are updated. Simplified and Traditional Chinese keep their own sources. The other six language pages are byte-identical to the previous site. The English guide updates its Article metadata and the corresponding sitemap date.
+
+Local verification covered all 35 generated pages, keyboard navigation, image loading and no horizontal overflow at 320, 390, 768 and 1440 px in Chromium. The article had zero axe violations. The shared language picker still has an existing accessible-name mismatch between the visible language name and its “Choose language” label. Click tests intercepted the website collector and checked standard, YouTube, QA, Global Privacy Control and Do Not Track behavior for both stores. Deployment, crawler readback and indexing remain pending.
+
 ## 2026-11-14 Homepage image weight and share card
 
 Homepage demo images now reference WebP copies (`demos/demo-0N-{original,result}.webp`, long side capped at 640 px, quality 90, alpha kept on results); the original PNG files stay in the repo. Homepage image bytes dropped from 16,592,826 to 1,056,190. `og:image` / `twitter:image` use `assets/og/us-before-after.jpg` (1200x630, a crop of the existing demo-01 original beside the existing demo-01 result; no added text). The edit is in `index.html` (the English source) and `scripts/build_locales.py` regenerates all seven languages; only the homepage `lastmod` moved (`pageModified` in `localization/config.json`). Homepage card headings already contained heading text only, so no heading change was needed.
