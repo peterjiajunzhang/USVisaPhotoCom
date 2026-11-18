@@ -362,5 +362,14 @@
   "Preview a new JPEG": "Prévisualisez une nouvelle photo JPEG",
   "US Visa Photo crops your image, replaces the background with white and shows file size and framing. Preview and retry for free on iPhone or Android. One purchase unlocks one JPEG export at the price shown in the app.": "US Visa Photo recadre la photo, remplace le fond par un fond blanc et affiche la taille du fichier et le cadrage. Prévisualisez et essayez une autre photo gratuitement sur iPhone ou Android. Chaque achat permet d’exporter un JPEG au prix affiché dans l’app.",
   "Follow your consulate’s editing rules. If it requires an unedited photo, take a new photo against a white or off-white background.": "Suivez les règles de retouche de votre consulat. S’il exige une photo non retouchée, prenez une nouvelle photo sur un fond blanc ou blanc cassé.",
-  "If your confirmation page shows an X, follow the instructions for a printed photo.": "Si un X apparaît sur votre page de confirmation, suivez les instructions pour fournir une photo imprimée."
+  "If your confirmation page shows an X, follow the instructions for a printed photo.": "Si un X apparaît sur votre page de confirmation, suivez les instructions pour fournir une photo imprimée.",
+  "Use a color photo taken within the past six months.": "Utilisez une photo en couleur prise au cours des six derniers mois.",
+  "Use a plain white or off-white background and even lighting. Check for shadows on the face and behind the person.": "Utilisez un fond uni blanc ou blanc cassé et un éclairage uniforme. Vérifiez qu’il n’y a pas d’ombre sur le visage ni derrière la personne.",
+  "Center the head and keep it fully in the frame. Look straight at the camera with both eyes open and a neutral expression.": "Centrez la tête et cadrez-la en entier. Regardez l’objectif de face, les deux yeux ouverts et avec une expression neutre.",
+  "Take off glasses unless you qualify for the official medical exception. Retake the photo if it is blurry.": "Retirez vos lunettes, sauf si vous remplissez les conditions de l’exception médicale officielle. Reprenez la photo si elle est floue.",
+  "Share the photo checklist": "Partager la liste pour prendre la photo",
+  "Copy the checklist link": "Copier le lien de la liste",
+  "Copy link manually": "Copier le lien manuellement",
+  "Select and copy this link": "Sélectionnez et copiez ce lien",
+  "Checklist link copied.": "Lien de la liste copié."
 }

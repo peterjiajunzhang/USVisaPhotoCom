@@ -139,6 +139,9 @@ for f in FILES:
   if lang!='en' and not native:translate(soup)
   soup.html['lang']=lang
   links(soup,f,lang);language_ui(soup,f,lang)
+  checklist_link=soup.select_one('#checklist-link')
+  if checklist_link:
+   checklist_link['value']=soup.select_one('link[rel=canonical]')['href']+'#capture'
   for badge in soup.select('[data-play-campaign]'):
    badge['href']=play_url(badge['data-play-campaign'])
   status=soup.select_one('#filter-status')

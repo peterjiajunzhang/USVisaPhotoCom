@@ -3,3 +3,16 @@
 .guide-preview{background:#fff}
 .guide-preview .store-badges{justify-content:flex-start;padding:0;margin-inline:-12px}
 @media(max-width:650px){.guide-preview .store-badges{margin-inline:-10px}}
+
+#capture{scroll-margin-top:16px}
+.capture-checklist{padding-inline-start:24px}
+.checklist-share button{font:inherit;font-weight:650;border:0;cursor:pointer}
+.checklist-share button[hidden]{display:none}
+.checklist-share button.secondary:hover{background:#dcecff}
+.checklist-share :is(button,input):focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.checklist-share-status{margin:4px 0}
+.checklist-share-status:empty{margin:0}
+.checklist-share details{margin-top:8px}
+.checklist-share summary{width:fit-content;color:var(--blue);cursor:pointer;padding-block:6px}
+.checklist-share label{display:block}
+.checklist-share input{display:block;width:100%;max-width:620px;padding:8px 10px;border:1px solid var(--muted);border-radius:6px;font:inherit;color:var(--ink);background:#fff}

@@ -363,5 +363,14 @@
   "Preview a new JPEG": "免费预览新的 JPEG 照片",
   "US Visa Photo crops your image, replaces the background with white and shows file size and framing. Preview and retry for free on iPhone or Android. One purchase unlocks one JPEG export at the price shown in the app.": "US Visa Photo 会裁剪照片、换成白色背景，并显示文件大小和构图。在 iPhone 或 Android 上可以免费预览和换照重试。按 App 显示的价格购买一次，可导出一张 JPEG。",
   "Follow your consulate’s editing rules. If it requires an unedited photo, take a new photo against a white or off-white background.": "请遵循受理使领馆的照片编辑规定。如果要求未编辑的照片，请在白色或米白色背景前重新拍摄。",
-  "If your confirmation page shows an X, follow the instructions for a printed photo.": "如果确认页照片框显示 X，请按指引准备纸质照片。"
+  "If your confirmation page shows an X, follow the instructions for a printed photo.": "如果确认页照片框显示 X，请按指引准备纸质照片。",
+  "Use a color photo taken within the past six months.": "使用近六个月拍摄的彩色照片。",
+  "Use a plain white or off-white background and even lighting. Check for shadows on the face and behind the person.": "使用纯白色或米白色背景，光线要均匀。检查脸上和身后是否有阴影。",
+  "Center the head and keep it fully in the frame. Look straight at the camera with both eyes open and a neutral expression.": "将头部置于画面中央，确保整个头部都在画面内。直视镜头，双眼睁开，表情自然。",
+  "Take off glasses unless you qualify for the official medical exception. Retake the photo if it is blurry.": "请摘下眼镜，除非符合官方规定的医疗例外。如照片模糊，请重新拍摄。",
+  "Share the photo checklist": "分享拍照清单",
+  "Copy the checklist link": "复制清单链接",
+  "Copy link manually": "手动复制链接",
+  "Select and copy this link": "选择并复制此链接",
+  "Checklist link copied.": "已复制清单链接。"
 }

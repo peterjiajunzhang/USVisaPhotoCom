@@ -362,5 +362,14 @@
   "Preview a new JPEG": "新しいJPEG写真をプレビュー",
   "US Visa Photo crops your image, replaces the background with white and shows file size and framing. Preview and retry for free on iPhone or Android. One purchase unlocks one JPEG export at the price shown in the app.": "US Visa Photoは写真をトリミングし、背景を白に変更して、ファイルサイズと構図を表示します。iPhoneやAndroidで無料でプレビューでき、別の写真でやり直せます。アプリに表示される価格で、購入1回につきJPEG画像1枚を書き出せます。",
   "Follow your consulate’s editing rules. If it requires an unedited photo, take a new photo against a white or off-white background.": "申請先の大使館・領事館の写真加工ルールに従ってください。未加工の写真が必要な場合は、白またはオフホワイトの背景で撮り直してください。",
-  "If your confirmation page shows an X, follow the instructions for a printed photo.": "確認ページの写真欄にXが表示された場合は、印刷した写真の提出方法を確認してください。"
+  "If your confirmation page shows an X, follow the instructions for a printed photo.": "確認ページの写真欄にXが表示された場合は、印刷した写真の提出方法を確認してください。",
+  "Use a color photo taken within the past six months.": "過去6か月以内に撮影したカラー写真を使ってください。",
+  "Use a plain white or off-white background and even lighting. Check for shadows on the face and behind the person.": "白かそれに近い無地の背景を使い、光が均等に当たるようにしてください。顔や背後に影がないか確認してください。",
+  "Center the head and keep it fully in the frame. Look straight at the camera with both eyes open and a neutral expression.": "頭を中央に置き、頭全体が画面に収まるようにしてください。両目を開け、無表情でカメラを正面から見てください。",
+  "Take off glasses unless you qualify for the official medical exception. Retake the photo if it is blurry.": "公式の医療上の例外に該当する場合を除き、眼鏡を外してください。写真がぼけていたら撮り直してください。",
+  "Share the photo checklist": "撮影チェックリストを共有",
+  "Copy the checklist link": "チェックリストのリンクをコピー",
+  "Copy link manually": "リンクを手動でコピー",
+  "Select and copy this link": "このリンクを選択してコピー",
+  "Checklist link copied.": "チェックリストのリンクをコピーしました。"
 }
