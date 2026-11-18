@@ -2,7 +2,7 @@
 
 ## 2026-11-18 English DS-160 photo troubleshooting guide
 
-The English guide routes applicants by file rejection, a photo quality flag, a session timeout or service error, and an X on the confirmation page before offering the app. It links directly to HEIC conversion, square cropping and compression instructions on the main site. The State Department and CEAC links describe recovery of completed pages and the embassy or consulate’s printed-photo instructions. The app preview still identifies background replacement and links to the editing requirements.
+The English guide opens with routes for file rejection, a photo quality flag, a session timeout or service error, and an X on the confirmation page. The store badges follow the file-specific remedies. It links directly to HEIC conversion, square cropping and compression instructions on the main site. The State Department and CEAC links describe recovery of completed pages and the embassy or consulate’s printed-photo instructions. The app preview still identifies background replacement and links to the editing requirements.
 
 `assets/guides/ds-160-sample-export.jpg` is the original 1200 × 1200, 177,055-byte JPEG from the app repository’s `android/play/videos/us-ds160-upload-tutorial-2026-11-18/example-export.jpg`. SHA-256 is `da7b8c32d976fbfc3bf2ff7d21a6d65cbf79471d49359ebb02f74273a24b6e75`. It came from the Play build 11 test-order export recorded in `android/play/production-11-2026-11-18/play-device-qa.json` and is provided for comparing file properties. The image link opens the actual bytes.
 
