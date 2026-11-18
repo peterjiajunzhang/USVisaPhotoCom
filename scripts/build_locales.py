@@ -37,15 +37,26 @@ def clean(soup):
    p=a.find_parent('p')
    if p and len(p.find_all('a'))==1 and normalize(p.get_text())==normalize(a.get_text()):p.decompose()
 
-def store_actions(soup,f):
- if not f.startswith('guides/') or f.endswith('index.html') or soup.select_one('.store-badges'):return
- source=BeautifulSoup((ROOT/'guides/us-visa-photo-privacy-and-pricing.html').read_text(),'html.parser')
- badges=copy.copy(source.select_one('.store-badges'))
- if badges is None:raise ValueError('Missing canonical guide store badges')
- sourceblock=soup.select_one('section.sources')
- if sourceblock:sourceblock.insert_before(badges)
- else:soup.main.append(badges)
- if not soup.select_one('link[href="/assets/store-badges.css"]'):soup.head.append(soup.new_tag('link',rel='stylesheet',href='/assets/store-badges.css'))
+def store_actions(soup, f, native):
+ if not f.startswith('guides/') or f.endswith('index.html'):return
+ badges=soup.select_one('.store-badges')
+ if badges is None:
+  source=BeautifulSoup((ROOT/'guides/us-visa-photo-privacy-and-pricing.html').read_text(),'html.parser')
+  badges=copy.copy(source.select_one('.store-badges'))
+  if badges is None:raise ValueError('Missing canonical guide store badges')
+  if native:
+   for el in [badges, *badges.find_all(True)]:
+    for attr in ('aria-label','alt'):
+     if el.has_attr(attr):el[attr]=COPY[el[attr]]
+ preview=soup.select_one('#preview')
+ if preview and badges.parent is not preview:
+  preview.append(badges.extract())
+ elif badges.parent is None:
+  sourceblock=soup.select_one('section.sources')
+  if sourceblock:sourceblock.insert_before(badges)
+  else:soup.main.append(badges)
+ if not soup.select_one('link[href="/assets/store-badges.css"]'):
+  soup.head.append(soup.new_tag('link',rel='stylesheet',href='/assets/store-badges.css'))
 
 def language_ui(soup,f,lang):
  d=soup.new_tag('details',id='page-language',attrs={'class':'locale-switcher'})
@@ -104,6 +115,8 @@ def links(soup,f,lang):
    if isinstance(o,dict):
     result={k:localize(v,k) for k,v in o.items()}
     if o.get('@type') in ['WebSite','WebPage','Article']:result['inLanguage']=lang
+    if o.get('@type')=='Article' and f in CONFIG.get('pageModified',{}):
+     result['dateModified']=CONFIG['pageModified'][f]
     return result
    if isinstance(o,list):return [localize(v,key) for v in o]
    if isinstance(o,str):
@@ -121,7 +134,7 @@ for f in FILES:
   COPY=json.loads((ROOT/('localization/'+lang+'.json')).read_text()) if lang!='en' else {}
   override=CONFIG.get('sourceOverrides',{}).get(lang,{}).get(f)
   native=bool(override)
-  soup=BeautifulSoup((ROOT/override).read_text() if native else source,'html.parser');clean(soup);store_actions(soup,f)
+  soup=BeautifulSoup((ROOT/override).read_text() if native else source,'html.parser');clean(soup);store_actions(soup,f,native)
   if lang!='en' and not native:translate(soup)
   soup.html['lang']=lang
   links(soup,f,lang);language_ui(soup,f,lang)

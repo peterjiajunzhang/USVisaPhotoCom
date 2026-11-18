@@ -313,3 +313,13 @@ The 42 localized pages passed 168 Chrome viewport checks at 320/390/768/1440 pix
 Root content `77e1ac5` and US content `6e59cf9` completed GitHub Pages deployment successfully at 2026-11-12 04:10:42/04:10:50 UTC. All 42 localized HTML pages and 15 supporting/compatibility files (57 total) return 200 and match source bytes. Representative root/US French homepages pass 390/1440px production checks; an actual US French-to-Japanese switch succeeds with seven language choices. Full local coverage remains 168 checks. A full production navigation batch timed out in the browser tool and unreturned measurements are excluded; representative checks were recovered without changing browser security or asking for Work settings. Production screenshots and the navigation limitation are recorded.
 
 Google accepted both updated sitemaps. The US map is Success with 38 discovered pages; the root map temporarily retains Success with the previous 2 pages, versus 7 published. Bing progressed to Success/13 for the prior bilingual map, then accepted this update as Processing with the previous 13 shown. IndexNow received exactly the 35 changed US public HTML URLs, HTTP 200; unchanged policy/support URLs were excluded. Google priority crawl requests for the English US homepage and requirements guide both returned Indexing requested. These receipts do not establish page indexing, ranking or AI recommendation improvements. Observe the next crawl date and actual page state before attributing effects.
+
+## 2026-11-17 · DS-160 指南下载路径
+
+390×844 手机视口的线上基线覆盖七语四个指南页面，共 28 页。上传失败指南的双商店徽章距页顶 2,400–2,859 px，照片要求指南 2,673–3,659 px，隐私和收费指南 4,310–6,065 px；指南目录已有三篇直达入口。
+
+本轮将上传失败与照片要求两篇指南的原有徽章移到快速答案后，标题、快速答案和申请指南先于产品信息。页眉的选择商店链接在本页直达预览说明。说明免费预览及换照重试、一次购买导出一张 JPEG、App 会换白底，以及申请要求未编辑照片时应重拍的路径。上传失败指南的快速答案保留确认页出现 X 时的纸质照片指引。网站没有新增文件检查工具。隐私和收费指南留作详细参考。
+
+本轮沿用七语静态构建、原有徽章和归因。iPhone 使用 `us-seo-guides-20261104`，Google Play 使用 `us_website / website / us_guides / guide`。两个公开商店页均已回读。功能描述以 VisaPhotoApps 的功能对账和公开商店说明核验，照片编辑规则参考国务院原文。 [App Store](https://apps.apple.com/us/app/us-visa-photo/id6761959861) · [Google Play](https://play.google.com/store/apps/details?id=com.loop.usvisaphoto) · [国务院照片要求](https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html)
+
+本地 14 页在 320、390、768、1440 px 下共通过 56 项视口检查，含双徽章显示顺序、宽度、语言切换、预览锚点和纸质照片指引。390×844 下上传失败指南的徽章距页顶 911–1,255 px，照片要求指南 888–1,206 px。这些值反映入口深度。
