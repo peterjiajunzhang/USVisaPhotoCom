@@ -323,3 +323,5 @@ Google accepted both updated sitemaps. The US map is Success with 38 discovered 
 本轮沿用七语静态构建、原有徽章和归因。iPhone 使用 `us-seo-guides-20261104`，Google Play 使用 `us_website / website / us_guides / guide`。两个公开商店页均已回读。功能描述以 VisaPhotoApps 的功能对账和公开商店说明核验，照片编辑规则参考国务院原文。 [App Store](https://apps.apple.com/us/app/us-visa-photo/id6761959861) · [Google Play](https://play.google.com/store/apps/details?id=com.loop.usvisaphoto) · [国务院照片要求](https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html)
 
 本地 14 页在 320、390、768、1440 px 下共通过 56 项视口检查，含双徽章显示顺序、宽度、语言切换、预览锚点和纸质照片指引。390×844 下上传失败指南的徽章距页顶 911–1,255 px，照片要求指南 888–1,206 px。这些值反映入口深度。
+
+生产回读：内容提交 `3f7a6fb` 的 14 个 canonical 页面均返回 HTTP 200，响应字节、CSS、语言、canonical 和 hreflang 与发布源码吻合。四种视口的 56 项检查通过，390×844 的位置复测与本地数字一致；实点通过语言切换、页眉预览跳转和确认页 X 的纸质照片指引。两个带归因的商店目标均返回正确的 US Visa Photo 产品页。本轮只对这 14 个改动页面发送一次 IndexNow，HTTP 200，响应正文为空。后续收录和成交需要各自报表验证。 [GitHub Pages 发布](https://github.com/peterjiajunzhang/USVisaPhotoCom/actions/runs/44217155844) · [IndexNow HTTP 回执](review/guide-preview-2026-11-17/indexnow.json)
