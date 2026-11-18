@@ -333,3 +333,9 @@ Coverage includes 28 pages with existing store actions. Guide indexes, policy an
 Website attribution uses one campaign for each canonical page and destination app. Repeated links to the same app on a page share its campaign. iPhone links retain the developer's existing provider token. Google Play uses its supported campaign parameter for eligible US links. The previous shared campaigns remain in deployment history and existing campaign records.
 
 Direct store links still work if the counter cannot load. A real store link click sends the canonical page path and store/app target to a first-party counter. It uses no cookies or user/device identifiers, sends no photos, and stores aggregate counts. Automated checks use a separate QA flag. The counter records supported browser activations of direct store links. Store reports provide downloads when their reporting thresholds are met. Choosing a country site attributes the eventual download to the page that links directly to the store. [Website analytics disclosure](https://us.visaphoto1tap.com/privacy.html#website-analytics)
+
+## 2026-11-17 七语拍照清单分享
+
+访客可以把拍摄要求发给帮忙拍照的人。美签七语要求页在 `#capture` 提供四项拍摄要点、美国国务院原文及本页语言的分享链接。手动点分享才调用系统分享面板。在不支持系统分享的浏览器中可复制链接；禁用脚本时仍可选取链接。页面尊重系统的减少动态效果设置。[中文拍摄清单](https://us.visaphoto1tap.com/zh-hans/guides/us-visa-photo-requirements.html#capture) · [美国国务院照片要求](https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html)
+
+公网七个 HTML、JS 和 CSS 共九个响应与发布源一致，七页的 14 个商店地址逐一与上一版相同。在 320、390、768、1280 像素视口分别验证四项清单、无脚本手动复制及同语言锚点。本地另有 28 项 Chromium 检查，系统分享用浏览器模拟接口验证，覆盖用户主动分享、取消、复制与剪贴板拒绝的回退。Google 检查英文要求页时显示已抓取、未收录，上次抓取是 11 月 11 日。11 月 17 日申请后显示已加入优先抓取队列。IndexNow 接收本次七个改动地址并返回 HTTP 200。截至发布验收，新增自然下载和内购尚待观察。[GitHub Pages 发布](https://github.com/peterjiajunzhang/USVisaPhotoCom/actions/runs/44236439801) · [IndexNow 回执](review/guide-preview-2026-11-17/indexnow-share.json)
