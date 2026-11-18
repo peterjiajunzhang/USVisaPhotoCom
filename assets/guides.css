@@ -16,3 +16,7 @@
 .checklist-share summary{width:fit-content;color:var(--blue);cursor:pointer;padding-block:6px}
 .checklist-share label{display:block}
 .checklist-share input{display:block;width:100%;max-width:620px;padding:8px 10px;border:1px solid var(--muted);border-radius:6px;font:inherit;color:var(--ink);background:#fff}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
