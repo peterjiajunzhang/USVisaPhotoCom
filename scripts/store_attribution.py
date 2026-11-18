@@ -37,7 +37,7 @@ LANG_PREFIX = re.compile(r"^/(?:zh-hans|zh-hant|es|ja|de|fr)(?=/)")
 ANCHOR = re.compile(r"""<a\b(?:"[^"]*"|'[^']*'|[^>'"])*>""", re.I)
 HREF = re.compile(r'\bhref="([^"]+)"', re.I)
 DATA_ATTR = re.compile(r'\sdata-acquisition-(?:store|app)="[^"]*"')
-SCRIPT = re.compile(r'<script\b[^>]*src="/assets/store-clicks-v[12]\.js"[^>]*></script>')
+SCRIPT = re.compile(r'<script\b[^>]*src="/assets/store-clicks-v[123]\.js"[^>]*></script>')
 REFERRAL_PAGES = {
     "https://us.visaphoto1tap.com/",
     "https://us.visaphoto1tap.com/guides/ds-160-photo-upload-failed.html",
@@ -105,7 +105,7 @@ def tag_store_links(html, canonical, locale):
             raise ValueError(f"Page with store links has no closing head: {canonical}")
         page = urlsplit(canonical)
         source = f"{page.scheme}://{page.netloc}{LANG_PREFIX.sub('', page.path) or '/'}"
-        version = 2 if source in REFERRAL_PAGES else 1
+        version = 3 if source in REFERRAL_PAGES else 1
         click_script = f'<script defer src="/assets/store-clicks-v{version}.js"></script>'
         html = html.replace("</head>", click_script + "</head>", 1)
     return html
