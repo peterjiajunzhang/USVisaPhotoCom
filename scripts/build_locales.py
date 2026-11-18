@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup, Comment, Doctype
 from urllib.parse import urljoin,urlsplit,urlunsplit
 import json,re,copy,xml.etree.ElementTree as ET
 from play_campaigns import play_url
+from store_attribution import tag_store_links
 ROOT=Path(__file__).resolve().parents[1]
 CONFIG=json.loads((ROOT/'localization/config.json').read_text())
 ORIGIN=CONFIG['origin'];FILES=CONFIG['pages'];LOCALES=CONFIG['locales']
@@ -162,7 +163,7 @@ for f in FILES:
   soup.head.append(css)
   control=soup.new_tag('script',src='/assets/locales.js',defer='',attrs={'data-page-language':''});soup.head.append(control)
   dest=ROOT/(PREFIX.lstrip('/')+'/'+f if PREFIX else f)
-  pending.append((dest,str(soup).rstrip()+'\n'))
+  pending.append((dest,tag_store_links(str(soup).rstrip()+'\n', ORIGIN+PREFIX+route(f), lang)))
 if missing:raise SystemExit('Missing reviewed translations:\n'+'\n'.join(sorted(missing)))
 for dest,html in pending:
  dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(html)

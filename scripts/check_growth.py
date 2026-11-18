@@ -4,6 +4,7 @@ import json,sys,xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 root=Path(sys.argv[1]);sys.path.insert(0,str(root/'scripts'))
 from play_campaigns import CONFIG,play_url
+from store_attribution import campaign_for,store_destination,tag_store_links
 c=json.loads((root/'localization/config.json').read_text());origin=c['origin'];is_us='us.' in origin
 assert CONFIG['package']=='com.loop.usvisaphoto' and CONFIG['medium']=='website'
 assert CONFIG['placements']=={'home-android':{'source':'us_website','campaign':'us_home','content':'hero'},'home-footer-android':{'source':'us_website','campaign':'us_home','content':'footer'},'guide-android':{'source':'us_website','campaign':'us_guides','content':'guide'},'root-country-android':{'source':'root_website','campaign':'root_country','content':'us_card'}}
@@ -24,14 +25,15 @@ for loc in c['locales']:
   expected=(2 if f=='index.html' else (0 if f=='guides/index.html' else 1)) if is_us else 1
   badges=soup.select('a[data-play-campaign]'); assert len(badges)==expected,(file,len(badges))
   for a in badges:
-   placement=a['data-play-campaign'];url=a['href'];assert url==play_url(placement)
+   placement=a['data-play-campaign'];url=a['href'];assert url==store_destination(play_url(placement),canonical,loc['code'])[2]
    u=urlsplit(url);q=parse_qs(u.query,strict_parsing=True);assert u.scheme=='https' and u.netloc=='play.google.com' and u.path=='/store/apps/details' and q['id']==[CONFIG['package']] and set(q)=={'id','referrer'}
    ref=parse_qs(q['referrer'][0],strict_parsing=True);p=CONFIG['placements'][placement]
-   assert ref=={'utm_source':[p['source']],'utm_medium':[CONFIG['medium']],'utm_campaign':[p['campaign']],'utm_content':[p['content']]}
+   assert ref=={'utm_source':[p['source']],'utm_medium':[CONFIG['medium']],'utm_campaign':[campaign_for(canonical,loc['code'],'us')],'utm_content':[p['content']]}
    assert a.img and a.img.get('src','').endswith('google-play.png')
   for a in soup.select('a[href*="apps.apple.com"]'):
    if a.find('img'): assert a.img.get('src','').endswith('app-store.svg')
   for ld in soup.select('script[type="application/ld+json"]'):
    data=json.loads(ld.string); assert 'referrer=' not in json.dumps(data)
+  raw=file.read_text(); assert tag_store_links(raw,canonical,loc['code'])==raw, file
   n+=1
 print(f'{n} localized pages: campaigns, decoded referrers, badges, canonical, hreflang, sitemap and JSON-LD passed')

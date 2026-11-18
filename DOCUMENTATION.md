@@ -325,3 +325,11 @@ Google accepted both updated sitemaps. The US map is Success with 38 discovered 
 本地 14 页在 320、390、768、1440 px 下共通过 56 项视口检查，含双徽章显示顺序、宽度、语言切换、预览锚点和纸质照片指引。390×844 下上传失败指南的徽章距页顶 911–1,255 px，照片要求指南 888–1,206 px。这些值反映入口深度。
 
 生产回读：内容提交 `3f7a6fb` 的 14 个 canonical 页面均返回 HTTP 200，响应字节、CSS、语言、canonical 和 hreflang 与发布源码吻合。四种视口的 56 项检查通过，390×844 的位置复测与本地数字一致；实点通过语言切换、页眉预览跳转和确认页 X 的纸质照片指引。两个带归因的商店目标均返回正确的 US Visa Photo 产品页。本轮只对这 14 个改动页面发送一次 IndexNow，HTTP 200，响应正文为空。后续收录和成交需要各自报表验证。 [GitHub Pages 发布](https://github.com/peterjiajunzhang/USVisaPhotoCom/actions/runs/44217155844) · [IndexNow HTTP 回执](review/guide-preview-2026-11-17/indexnow.json)
+
+## Page-level store attribution
+
+Coverage includes 28 pages with existing store actions. Guide indexes, policy and support pages without store links retain their original navigation.
+
+Website attribution uses one campaign for each canonical page and destination app. Repeated links to the same app on a page share its campaign. iPhone links retain the developer's existing provider token. Google Play uses its supported campaign parameter for eligible US links. The previous shared campaigns remain in deployment history and existing campaign records.
+
+Direct store links still work if the counter cannot load. A real store link click sends the canonical page path and store/app target to a first-party counter. It uses no cookies or user/device identifiers, sends no photos, and stores aggregate counts. Automated checks use a separate QA flag. The counter records supported browser activations of direct store links. Store reports provide downloads when their reporting thresholds are met. Choosing a country site attributes the eventual download to the page that links directly to the store. [Website analytics disclosure](https://us.visaphoto1tap.com/privacy.html#website-analytics)
